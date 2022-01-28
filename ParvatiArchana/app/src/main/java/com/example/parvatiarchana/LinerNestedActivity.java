@@ -12,9 +12,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.parvatiarchana.bo.Product;
 import com.example.parvatiarchana.imageloder.ImageLoader;
+import com.example.parvatiarchana.so.ProductSO;
 
 import java.io.InputStream;
+import java.util.List;
 
 public class LinerNestedActivity extends AppCompatActivity {
 
@@ -26,6 +29,40 @@ public class LinerNestedActivity extends AppCompatActivity {
         System.out.println("LinerNestedActivity 2");
         /** Adding multiple Linerlayout in that image */
         LinearLayout cat_linear = (LinearLayout) findViewById(R.id.linernestedlay);
+
+
+        ProductSO pso = new ProductSO();
+       List<Product> prodts=pso.serachProduct("test");
+       for( Product pro :prodts){
+           System.out.println("LinerNestedActivity 3");
+           ImageView imageView23 = new ImageView(LinerNestedActivity.this);
+           LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(400 ,400);
+           imageView23.setLayoutParams(params);
+           imageView23.setImageResource(R.drawable.img2);
+           System.out.println("LinerNestedActivity 4");
+           TextView tv23 = new TextView(LinerNestedActivity.this);
+
+           System.out.println("LinerNestedActivity 5");
+           LinearLayout ll23 = new LinearLayout(LinerNestedActivity.this);
+           ll23.setOrientation(LinearLayout.VERTICAL);
+           //   ll.setId();
+           System.out.println("LinerNestedActivity 6");
+           String url23 = pro.getDisplayImageURL();//"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16485962/2021/12/11/efac2f88-8856-4397-9dd2-3d680de385b61639214687618SochWomenBlackYokeDesignLayeredVelvetKurtiwithTrousers1.jpg";
+           setImage(imageView23, url23);
+
+           ll23.addView(imageView23);
+           Button bt23 = new Button(LinerNestedActivity.this);
+           bt23.setText("Add");
+           ll23.addView(bt23);
+           System.out.println("LinerNestedActivity 7");
+           tv23.setText(""+pro.getPrice());
+           System.out.println("LinerNestedActivity 8");
+            ll23.addView(tv23);
+           System.out.println("LinerNestedActivity 9");
+           cat_linear.addView(ll23);
+       }
+
+
         System.out.println("LinerNestedActivity 3");
         ImageView imageView = new ImageView(LinerNestedActivity.this);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(400 ,400);
