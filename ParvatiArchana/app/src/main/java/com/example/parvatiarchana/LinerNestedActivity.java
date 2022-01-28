@@ -2,17 +2,21 @@ package com.example.parvatiarchana;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ClipData;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.parvatiarchana.bo.Product;
+import com.example.parvatiarchana.carddata.CardItem;
+import com.example.parvatiarchana.carddata.Carddata;
 import com.example.parvatiarchana.imageloder.ImageLoader;
 import com.example.parvatiarchana.so.ProductSO;
 
@@ -53,6 +57,17 @@ public class LinerNestedActivity extends AppCompatActivity {
            ll23.addView(imageView23);
            Button bt23 = new Button(LinerNestedActivity.this);
            bt23.setText("Add");
+           bt23.setOnClickListener(new View.OnClickListener() {
+                                       @Override
+                                       public void onClick(View view) {
+                                           CardItem it = new CardItem();
+                                 // String code=         pro.getCode();
+                                           it.setItemCode(""+pro.getCode());
+                                           it.setPrice(pro.getPrice());
+                                           Carddata.addItem(it);
+                                       }
+                                   }
+           );
            ll23.addView(bt23);
            System.out.println("LinerNestedActivity 7");
            tv23.setText(""+pro.getPrice());
