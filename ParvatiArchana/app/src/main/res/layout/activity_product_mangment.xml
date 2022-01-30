@@ -19,26 +19,63 @@
     android:orientation="vertical"
     android:padding="15dp"
     tools:context=".inventry.Product_Mangment">
-    <Spinner
-        android:id="@+id/cat"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Categorary" />
+
+        <Spinner
+            android:id="@+id/cat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Sub Categorary" />
     <Spinner
         android:id="@+id/subcat"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@android:drawable/btn_dropdown"
+        android:layout_weight="0.75"
         android:spinnerMode="dropdown"/>
-
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text=" Sub Sub Categorary" />
     <Spinner
         android:id="@+id/subsubcat"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="0.75"
         android:layout_height="wrap_content"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"/>
-
+    </LinearLayout>
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
