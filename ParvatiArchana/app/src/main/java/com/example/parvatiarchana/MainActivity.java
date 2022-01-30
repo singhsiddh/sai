@@ -17,6 +17,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
 
 import com.example.parvatiarchana.imagegrid.ImgGridActivity;
+import com.example.parvatiarchana.inventry.Product_Mangment;
 import com.example.parvatiarchana.scanner.BarCodeActivity;
 import com.example.parvatiarchana.sqlite.AddCountryActivity;
 //import androidx.appcompat.widget.Toolbar;
@@ -137,6 +138,19 @@ System.out.println(" GOinmg to add menu dynamic in toolbar");
                 startActivity(intent4);
 
                 return true;
+
+            case R.id.item22001:
+                Toast.makeText(getApplicationContext(),"Nested layout",Toast.LENGTH_LONG).show();
+                Intent intent5 = new Intent(MainActivity.this, Product_Mangment.class);
+                System.out.println("  before nested layout ");
+                startActivity(intent5);
+
+                return true;
+                 /*  Intent intent=new Intent(Product_Mangment.this,Log_In.class);
+                                        startActivity(intent);
+                                        finish();
+
+                                       */
             default:
                 return super.onOptionsItemSelected(item);
         }
