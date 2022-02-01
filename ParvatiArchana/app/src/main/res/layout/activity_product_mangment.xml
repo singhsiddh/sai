@@ -9,6 +9,10 @@
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 -->
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -107,6 +111,31 @@ android:layout_width="match_parent"
  />
 <!--android:src="@drawable/ic_insert_photo_white_48dp" -->
     <!--android:background="@drawable/button" -->
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight=".50"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <ImageView
+        android:background="@drawable/img1"
+        android:id="@+id/IdProf1"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        />
+    <Button
+
+        android:id="@+id/getimagBtn1"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_width="180dp"
+        android:text="GetImage"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 <Button
 
 android:id="@+id/UploadBtn"
@@ -120,3 +149,4 @@ android:textColor="@color/white"
 android:textStyle="bold" />
 
 </LinearLayout>
+</ScrollView>

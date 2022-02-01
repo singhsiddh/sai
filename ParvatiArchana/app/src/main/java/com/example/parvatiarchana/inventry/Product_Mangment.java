@@ -1,10 +1,14 @@
 //http://www.codeplayon.com/2018/11/android-image-upload-to-server-from-camera-and-gallery/
 package com.example.parvatiarchana.inventry;
 
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.ContextThemeWrapper;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -55,21 +59,27 @@ import java.util.HashMap;
 import java.util.Map;
 
 //Hint : http://www.androidcoding.in/2020/06/08/android-multilevel-spinner/
-public class Product_Mangment extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener{
+public class Product_Mangment extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener {
     public static final String KEY_User_Document1 = "doc1";
-    ImageView IDProf;
-    Button Upload_Btn;
+    ImageView IDProf, IDProf1;
+    Button Upload_Btn, getimagBtn1;
+    private String uploadtriggerbuttonname = "";
+    private String Document_img1 = "";
+    private String Registration_URL = "";
+    private Uri selectedImage = null;
+    private static final int CAMERA_REQUEST = 1888;
 
-    private String Document_img1="";
-private String Registration_URL="";
+    private static final int MY_CAMERA_PERMISSION_CODE = 100;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_mangment);
 
         IDProf = (ImageView) findViewById(R.id.IdProf);
+        IDProf1 = (ImageView) findViewById(R.id.IdProf1);
         Upload_Btn = (Button) findViewById(R.id.UploadBtn);
-
+        getimagBtn1 = (Button) findViewById(R.id.getimagBtn1);
         IDProf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,6 +87,14 @@ private String Registration_URL="";
 
             }
         });
+        IDProf1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selectImage1();
+
+            }
+        });
+
 
         Upload_Btn.setOnClickListener(this);
 /** Category drop down  */
@@ -124,27 +142,70 @@ private String Registration_URL="";
 */
     }
 
+    /**
+     * Sai siddharth
+     */
+    private void selectImage1() {
+
+    /*    Intent intent = new Intent();
+        intent.setType("image/*");
+        int REQUEST_CODE_LOAD_IMAGE = 2;
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        //..mGetContent .launch(intent);
+        startActivityForResult(intent, REQUEST_CODE_LOAD_IMAGE);
+
+     */
+        uploadtriggerbuttonname = "img1";
+        selectImage();
+
+    }
+
+    ActivityResultLauncher<String> mGetContent = registerForActivityResult(new ActivityResultContracts.GetContent(),
+            new ActivityResultCallback<Uri>() {
+                @Override
+                public void onActivityResult(Uri uri) {
+                    // Handle the returned Uri
+                }
+            });
+
+    private void selectMultipleDoc() {
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+        intent.setType("image/*");
+        uploadtriggerbuttonname = "mul";
+        startActivityForResult(intent, 2);//1 for taking image by camera
+
+    }
+
     private void selectImage() {
-        final CharSequence[] options = { "Take Photo", "Choose from Gallery","Cancel" };
-       // android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(Product_Mangment.this);
+        final CharSequence[] options = {"Take Photo", "Choose from Gallery", "Cancel"};
+        // android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(Product_Mangment.this);
         AlertDialog.Builder builder = new AlertDialog.Builder(Product_Mangment.this);
         builder.setTitle("Add Photo!");
         builder.setItems(options, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int item) {
-                if (options[item].equals("Take Photo"))
-                {
+                if (options[item].equals("Take Photo")) {
                     Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     File f = new File(Environment.getExternalStorageDirectory(), "temp.jpg");
                     intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(f));
                     startActivityForResult(intent, 1);
-                }
-                else if (options[item].equals("Choose from Gallery"))
-                {
-                    Intent intent = new   Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+
+
+                    /*;
+                    Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                    startActivityForResult(cameraIntent, CAMERA_REQUEST);
+                    */
+
+
+                } else if (options[item].equals("Choose from Gallery")) {
+                    Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                     startActivityForResult(intent, 2);
-                }
-                else if (options[item].equals("Cancel")) {
+
+
+
+                } else if (options[item].equals("Cancel")) {
                     dialog.dismiss();
                 }
             }
@@ -155,6 +216,31 @@ private String Registration_URL="";
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
+        System.out.println(" After load image onActivityResult is called ......................... ");
+        if ("img1".equals(uploadtriggerbuttonname)) {
+            System.out.println(" After load image onActivityResult is called . IMG1........................... ");
+            if (true) { //(requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
+                if (requestCode == 2) {//Select from galary
+                    try {
+                        Uri filePath = data.getData();
+                        // bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), filePath);
+                        //imageView.setImageBitmap(bitmap);
+                        IDProf1.setImageBitmap(MediaStore.Images.Media.getBitmap(getContentResolver(), filePath));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                } else if (requestCode == 1) {//take by camera
+                    if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK)
+                    {
+                        Bitmap photo = (Bitmap) data.getExtras().get("data");
+                        IDProf1.setImageBitmap(photo);
+                    }
+                }
+            }
+            uploadtriggerbuttonname="";
+            return;
+        }
         if (resultCode == RESULT_OK) {
             if (requestCode == 1) {
                 File f = new File(Environment.getExternalStorageDirectory().toString());
@@ -168,7 +254,7 @@ private String Registration_URL="";
                     Bitmap bitmap;
                     BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
                     bitmap = BitmapFactory.decodeFile(f.getAbsolutePath(), bitmapOptions);
-                    bitmap=getResizedBitmap(bitmap, 400);
+                    bitmap = getResizedBitmap(bitmap, 400);
                     IDProf.setImageBitmap(bitmap);
                     BitMapToString(bitmap);
                     String path = android.os.Environment
@@ -195,20 +281,21 @@ private String Registration_URL="";
                 }
             } else if (requestCode == 2) {
                 Uri selectedImage = data.getData();
-                String[] filePath = { MediaStore.Images.Media.DATA };
-                Cursor c = getContentResolver().query(selectedImage,filePath, null, null, null);
+                String[] filePath = {MediaStore.Images.Media.DATA};
+                Cursor c = getContentResolver().query(selectedImage, filePath, null, null, null);
                 c.moveToFirst();
                 int columnIndex = c.getColumnIndex(filePath[0]);
                 String picturePath = c.getString(columnIndex);
                 c.close();
                 Bitmap thumbnail = (BitmapFactory.decodeFile(picturePath));
-                thumbnail=getResizedBitmap(thumbnail, 400);
-                Log.w("pathofimage", picturePath+"");
+                thumbnail = getResizedBitmap(thumbnail, 400);
+                Log.w("pathofimage", picturePath + "");
                 IDProf.setImageBitmap(thumbnail);
                 BitMapToString(thumbnail);
             }
         }
     }
+
     public String BitMapToString(Bitmap userImage1) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         userImage1.compress(Bitmap.CompressFormat.PNG, 60, baos);
@@ -221,7 +308,7 @@ private String Registration_URL="";
         int width = image.getWidth();
         int height = image.getHeight();
 
-        float bitmapRatio = (float)width / (float) height;
+        float bitmapRatio = (float) width / (float) height;
         if (bitmapRatio > 1) {
             width = maxSize;
             height = (int) (width / bitmapRatio);
@@ -250,7 +337,7 @@ private String Registration_URL="";
                             String error_status = eventObject.getString("error");
                             if (error_status.equals("true")) {
                                 String error_msg = eventObject.getString("msg");
-                                ContextThemeWrapper ctw = new ContextThemeWrapper( Product_Mangment.this, R.style.Theme_AlertDialog);
+                                ContextThemeWrapper ctw = new ContextThemeWrapper(Product_Mangment.this, R.style.Theme_AlertDialog);
                                 final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ctw);
                                 alertDialogBuilder.setTitle("Vendor Detail");
                                 alertDialogBuilder.setCancelable(false);
@@ -264,7 +351,7 @@ private String Registration_URL="";
 
                             } else {
                                 String error_msg = eventObject.getString("msg");
-                                ContextThemeWrapper ctw = new ContextThemeWrapper( Product_Mangment.this, R.style.Theme_AlertDialog);
+                                ContextThemeWrapper ctw = new ContextThemeWrapper(Product_Mangment.this, R.style.Theme_AlertDialog);
                                 final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ctw);
                                 alertDialogBuilder.setTitle("Registration");
                                 alertDialogBuilder.setCancelable(false);
@@ -282,7 +369,7 @@ private String Registration_URL="";
                                 });
                                 alertDialogBuilder.show();
                             }
-                        }catch(Exception e){
+                        } catch (Exception e) {
                             Log.d("Tag", e.getMessage());
 
                         }
@@ -293,7 +380,7 @@ private String Registration_URL="";
                     public void onErrorResponse(VolleyError error) {
                         loading.dismiss();
                         if (error instanceof TimeoutError || error instanceof NoConnectionError) {
-                            ContextThemeWrapper ctw = new ContextThemeWrapper( Product_Mangment.this, R.style.Theme_AlertDialog);
+                            ContextThemeWrapper ctw = new ContextThemeWrapper(Product_Mangment.this, R.style.Theme_AlertDialog);
                             final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ctw);
                             alertDialogBuilder.setTitle("No connection");
                             alertDialogBuilder.setMessage(" Connection time out error please try again ");
@@ -304,7 +391,7 @@ private String Registration_URL="";
                             });
                             alertDialogBuilder.show();
                         } else if (error instanceof AuthFailureError) {
-                            ContextThemeWrapper ctw = new ContextThemeWrapper( Product_Mangment.this, R.style.Theme_AlertDialog);
+                            ContextThemeWrapper ctw = new ContextThemeWrapper(Product_Mangment.this, R.style.Theme_AlertDialog);
                             final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ctw);
                             alertDialogBuilder.setTitle("Connection Error");
                             alertDialogBuilder.setMessage(" Authentication failure connection error please try again ");
@@ -316,7 +403,7 @@ private String Registration_URL="";
                             alertDialogBuilder.show();
                             //TODO
                         } else if (error instanceof ServerError) {
-                            ContextThemeWrapper ctw = new ContextThemeWrapper( Product_Mangment.this, R.style.Theme_AlertDialog);
+                            ContextThemeWrapper ctw = new ContextThemeWrapper(Product_Mangment.this, R.style.Theme_AlertDialog);
                             final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ctw);
                             alertDialogBuilder.setTitle("Connection Error");
                             alertDialogBuilder.setMessage("Connection error please try again");
@@ -328,7 +415,7 @@ private String Registration_URL="";
                             alertDialogBuilder.show();
                             //TODO
                         } else if (error instanceof NetworkError) {
-                            ContextThemeWrapper ctw = new ContextThemeWrapper( Product_Mangment.this, R.style.Theme_AlertDialog);
+                            ContextThemeWrapper ctw = new ContextThemeWrapper(Product_Mangment.this, R.style.Theme_AlertDialog);
                             final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ctw);
                             alertDialogBuilder.setTitle("Connection Error");
                             alertDialogBuilder.setMessage("Network connection error please try again");
@@ -340,7 +427,7 @@ private String Registration_URL="";
                             alertDialogBuilder.show();
                             //TODO
                         } else if (error instanceof ParseError) {
-                            ContextThemeWrapper ctw = new ContextThemeWrapper( Product_Mangment.this, R.style.Theme_AlertDialog);
+                            ContextThemeWrapper ctw = new ContextThemeWrapper(Product_Mangment.this, R.style.Theme_AlertDialog);
                             final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ctw);
                             alertDialogBuilder.setTitle("Error");
                             alertDialogBuilder.setMessage("Parse error");
@@ -353,11 +440,11 @@ private String Registration_URL="";
                         }
 //                        Toast.makeText(Login_Activity.this,error.toString(), Toast.LENGTH_LONG ).show();
                     }
-                }){
+                }) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String,String> map = new HashMap<String,String>();
-                map.put(KEY_User_Document1,Document_img1);
+                Map<String, String> map = new HashMap<String, String>();
+                map.put(KEY_User_Document1, Document_img1);
                 return map;
             }
         };
@@ -371,7 +458,7 @@ private String Registration_URL="";
     @Override
     public void onClick(View v) {
         if (Document_img1.equals("") || Document_img1.equals(null)) {
-            ContextThemeWrapper ctw = new ContextThemeWrapper( Product_Mangment.this, R.style.Theme_AlertDialog);
+            ContextThemeWrapper ctw = new ContextThemeWrapper(Product_Mangment.this, R.style.Theme_AlertDialog);
             final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ctw);
             alertDialogBuilder.setTitle("Id Prof Can't Empty ");
             alertDialogBuilder.setMessage("Id Prof Can't empty please select any one document");
@@ -382,8 +469,7 @@ private String Registration_URL="";
             });
             alertDialogBuilder.show();
             return;
-        }
-        else{
+        } else {
       /*...comment Siddh
             if (AppStatus.getInstance(this).isOnline()) {
                 SendDetail();
@@ -400,20 +486,18 @@ private String Registration_URL="";
 
         }
     }
-    //For Drop down listener
 
+    //Hint :For Drop down listener
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
-        if(parent.getId() == R.id.cat)
-        {
+        if (parent.getId() == R.id.cat) {
             Spinner dropdown = findViewById(R.id.cat);
-            String[] items1={};
-            if(dropdown.getSelectedItem().equals("1")){
+            String[] items1 = {};
+            if (dropdown.getSelectedItem().equals("1")) {
                 items1 = new String[]{"Aloo", "pyaj"};
 
-            }
-            else if(dropdown.getSelectedItem().equals("2")){
-                items1 = new String[]{"Goat Meat", "Fish","Egg"};
+            } else if (dropdown.getSelectedItem().equals("2")) {
+                items1 = new String[]{"Goat Meat", "Fish", "Egg"};
             }
             final Spinner subcat = findViewById(R.id.subcat);
 
@@ -423,16 +507,14 @@ private String Registration_URL="";
             subcat.setAdapter(adapter1);
 
 
-        }
-        else if(parent.getId() == R.id.subcat){
+        } else if (parent.getId() == R.id.subcat) {
 
             Spinner dropdown = findViewById(R.id.subcat);
-            String[] items1={};
-            if(dropdown.getSelectedItem().equals("Aloo")){
+            String[] items1 = {};
+            if (dropdown.getSelectedItem().equals("Aloo")) {
                 items1 = new String[]{"lalima", "kufari"};
 
-            }
-            else if(dropdown.getSelectedItem().equals("pyaj")){
+            } else if (dropdown.getSelectedItem().equals("pyaj")) {
                 items1 = new String[]{"white", "red"};
             }
             final Spinner subsubcat = findViewById(R.id.subsubcat);
@@ -442,7 +524,7 @@ private String Registration_URL="";
 //se
             subsubcat.setAdapter(adapter1);
 
-        } else if(parent.getId() == R.id.subsubcat){
+        } else if (parent.getId() == R.id.subsubcat) {
 
         }
     }
