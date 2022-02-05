@@ -6,7 +6,9 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -30,11 +32,37 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         private TextView name;
         private TextView date;
+        private Button btn;
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
             name = (TextView) itemView.findViewById(R.id.name);
             date = (TextView) itemView.findViewById(R.id.date);
+            btn =(Button) itemView.findViewById(R.id.tab_btn);
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(view.getContext(), "name"+name.getText()+"dt : "+date.getText(), Toast.LENGTH_SHORT).show();
+                   Holidays hol = new Holidays(""+name.getText(),""+date.getText());
+                    // open popup and display  item and update list
+                  for ( Object obj : listRecyclerItem)  {
+                      if (obj instanceof Holidays) {
+                          Toast.makeText(view.getContext(), " holidays instance", Toast.LENGTH_SHORT).show();
+
+                          Holidays hol1 = (Holidays)obj;
+                          if(hol1.getName().equals(""+name.getText())){
+                              listRecyclerItem.remove(hol1);
+                              //Hint : How to refresh view ...
+                              notifyDataSetChanged();
+                              break;
+                          }
+                      }else{
+                          Toast.makeText(view.getContext(), "Not holiday instance", Toast.LENGTH_SHORT).show();
+
+                      }
+                  }
+                }
+            });
         }
     }
 
