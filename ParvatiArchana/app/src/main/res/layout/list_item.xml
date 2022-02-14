@@ -27,21 +27,21 @@
             android:layout_height="wrap_content"
             android:text="Holiday Name"
             android:textColor="@android:color/black"
-            android:textSize="28sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/date"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Holiday Date"
-            android:textSize="23sp" />
-        <Button
-            android:id="@+id/tab_btn"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:text="Holiday Date"
+            android:textSize="13sp" />
+        <Button
+            android:id="@+id/tab_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Delete"
-            android:textSize="23sp" />
+            android:textSize="10sp" />
 
     </LinearLayout>
     <!--

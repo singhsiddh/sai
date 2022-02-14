@@ -1,8 +1,11 @@
 package com.example.parvatiarchana.table;
 
+import android.app.Activity;
 import android.content.Context;
 //import android.support.annotation.NonNull;
 //import android.support.v7.widget.RecyclerView;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,7 +48,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     Toast.makeText(view.getContext(), "name"+name.getText()+"dt : "+date.getText(), Toast.LENGTH_SHORT).show();
                    Holidays hol = new Holidays(""+name.getText(),""+date.getText());
                     // open popup and display  item and update list
-                  for ( Object obj : listRecyclerItem)  {
+                /*  for ( Object obj : listRecyclerItem)  {
                       if (obj instanceof Holidays) {
                           Toast.makeText(view.getContext(), " holidays instance", Toast.LENGTH_SHORT).show();
 
@@ -61,6 +64,17 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
                       }
                   }
+
+                 */
+                    if (context instanceof Activity) {
+
+                        CustomDialogClass cdd = new CustomDialogClass( (Activity)context,hol,listRecyclerItem);
+                        cdd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                        cdd.show();
+                    }
+
+
+                    notifyDataSetChanged();
                 }
             });
         }

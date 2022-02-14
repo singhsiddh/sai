@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,58 +8,90 @@
     >
 
 
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    android:id="@+id/saimain1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.parvatiarchana.MainActivity
-
-">
-    <LinearLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/saimain1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:orientation="vertical"
-        >
+        tools:context="com.example.parvatiarchana.MainActivity
+
+">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:id="@+id/hsv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fillViewport="true"
+                    android:measureAllChildren="false"
+                    android:scrollbars="none">
 
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar1"
-            android:layout_width="343dp"
-            android:layout_height="107dp"
-            android:padding="20dp"
-            android:background="#A829BD">
 
-            <Button
-                android:layout_width="wrap_content"
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbar1"
+                            android:layout_width="343dp"
+                            android:layout_height="107dp"
+                            android:background="#A829BD"
+                            android:padding="20dp">
+
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="20dp"
+                            android:text="button10"></Button>
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="20dp"
+                            android:text="button100"></Button>
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="20dp"
+                            android:text="button1"></Button>
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="20dp"
+                            android:text="Button2"></Button>
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:padding="20dp"
+                            android:text="Name saibaba" />
+                        </androidx.appcompat.widget.Toolbar>
+
+                </HorizontalScrollView>
+            </ScrollView>
+
+            <FrameLayout
+                android:id="@+id/fragmetsaibabaContainer"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:text="button1"></Button>
-            >
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:text="Button2"></Button>
-
-            <EditText
-                android:id="@+id/editTextTextPersonName2"
-                android:padding="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name saibaba" />
-        </androidx.appcompat.widget.Toolbar>
-
-        <FrameLayout
-    android:id="@+id/fragmetsaibabaContainer"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="20dp"
-    ></FrameLayout>
-    </LinearLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+                android:padding="20dp"></FrameLayout>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </ScrollView>

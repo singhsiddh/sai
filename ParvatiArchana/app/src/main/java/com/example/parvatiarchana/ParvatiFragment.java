@@ -1,4 +1,4 @@
- package com.example.parvatiarchana;
+package com.example.parvatiarchana;
 
 import android.os.Bundle;
 
@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
- /**
+/**
  * A simple {@link Fragment} subclass.
  * Use the {@link ParvatiFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -25,7 +25,7 @@ public class ParvatiFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private View view ;
+    private View view;
 
     public ParvatiFragment() {
         // Required empty public constructor
@@ -62,30 +62,30 @@ public class ParvatiFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-       view=inflater.inflate(R.layout.fragment_parvati, container, false);
-Button bt = (Button) view.findViewById(R.id.button2par);
-    bt.setOnClickListener(this::onClick);
+        view = inflater.inflate(R.layout.fragment_parvati, container, false);
+        Button bt = (Button) view.findViewById(R.id.button2par);
+        bt.setOnClickListener(this::onClick);
         Button bt1 = (Button) view.findViewById(R.id.button2par1);
         bt1.setOnClickListener(this::onClick);
-       return view;
+        return view;
     }
 
     @Override
     public void onClick(View view) {
-System.out.println(" Click inside Parvati Listener called :::::::::::::::::::::::::::::::::................");
+        System.out.println(" Click inside Parvati Listener called :::::::::::::::::::::::::::::::::................");
 
-        Toast.makeText(view.getContext(),"Click in Parvati frgmanet id ="+view.getId(),Toast.LENGTH_SHORT).show();
+        Toast.makeText(view.getContext(), "Click in Parvati frgmanet id =" + view.getId(), Toast.LENGTH_SHORT).show();
         switch (view.getId()) {
             case R.id.button2par:
-               // c *= fComm.fragmentContactActivity(2);
-                Toast.makeText(view.getContext(),"first button="+view.getId(),Toast.LENGTH_SHORT).show();
+                // c *= fComm.fragmentContactActivity(2);
+                Toast.makeText(view.getContext(), "first button=" + view.getId(), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.button2par1:
-                Toast.makeText(view.getContext(),"2nd  button="+view.getId(),Toast.LENGTH_SHORT).show();
-               // c *= fComm.fragmentContactActivity(4);
+                Toast.makeText(view.getContext(), "2nd  button=" + view.getId(), Toast.LENGTH_SHORT).show();
+                // c *= fComm.fragmentContactActivity(4);
                 break;
             default:
-               // c *= fComm.fragmentContactActivity(100);
+                // c *= fComm.fragmentContactActivity(100);
                 break;
         }
     }

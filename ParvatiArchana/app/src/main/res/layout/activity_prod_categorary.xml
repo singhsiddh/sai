@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="om.sme.portal.merchent.product.ProdCategoraryActivity">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <EditText
+                android:id="@+id/prodcat"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25">
+                Categoray
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/prodsubcat"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25">
+                Sub Categoray
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/prodsubsubcat"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25">
+                sUB Sub Categoray
+
+            </EditText>
+
+            <Button
+                android:id="@+id/addprodcat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Toolbar
+        android:id="@+id/prodmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Toolbar>
+</ScrollView>

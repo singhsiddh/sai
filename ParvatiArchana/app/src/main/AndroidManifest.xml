@@ -24,6 +24,12 @@
         android:theme="@style/Theme.ParvatiArchana"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".myntra.MyntraMainActivity"
+            android:exported="false" />
+        <activity
+            android:name="om.sme.portal.merchent.product.ProdCategoraryActivity"
+            android:exported="false" />
+        <activity
             android:name=".table.TableMainActivity"
             android:exported="false" />
         <activity
