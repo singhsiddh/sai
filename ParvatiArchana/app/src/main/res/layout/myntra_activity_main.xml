@@ -15,7 +15,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     >
-
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,32 +29,34 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="button1"></Button>
+            android:text="button2"></Button>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="button1"></Button>
+            android:text="button3"></Button>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="button1"></Button>
+            android:text="button4"></Button>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="button1"></Button>
+            android:text="button5"></Button>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="button1"></Button>
+            android:text="button6"></Button>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="button1"></Button>
+            android:text="button7"></Button>
+    </LinearLayout>
+    -->
 
 </FrameLayout>
     </HorizontalScrollView>
@@ -61,12 +68,66 @@
 
         android:layout_weight=".67"
        >
-
+        <!--
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="middle"></Button>
-
+            android:text="middle8"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="middle8-1"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="middle8-2"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="middle8"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="middle8-1"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="middle8-2"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="middle8-3"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="middle8-4"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="middle8-5"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="middle8-6"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="middle8-7"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="middle8-8"></Button>
+</LinearLayout>
+        </ScrollView>
+        -->
     </FrameLayout>
 
     <FrameLayout
@@ -76,11 +137,16 @@
         android:layout_weight=".12"
         
         >
-
+<!--
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="middle"></Button>
+            android:text="btm-1"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="btm-11"></Button>
+            -->
     </FrameLayout>
 
 </LinearLayout>
