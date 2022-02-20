@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.example.parvatiarchana.ParvatiFragment;
 import com.example.parvatiarchana.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyntraMainActivity extends AppCompatActivity {
 
@@ -26,10 +31,14 @@ public class MyntraMainActivity extends AppCompatActivity {
             //If a fragment is not already loaded into your container, then add one...
             if (manager120.findFragmentById(R.id.myntra_top) == null) {
                 MyntraHeaderFragment  fragment = new MyntraHeaderFragment();
+               
                 manager120.beginTransaction().add(R.id.myntra_top, fragment).commit();
+
+
             }
             if (manager120.findFragmentById(R.id.myntra_mid) == null) {
                 MyntrMainFragment fragment = new MyntrMainFragment();
+
                 manager120.beginTransaction().add(R.id.myntra_mid, fragment).commit();
             }
             if (manager120.findFragmentById(R.id.myntra_btm) == null) {
@@ -37,5 +46,13 @@ public class MyntraMainActivity extends AppCompatActivity {
                 manager120.beginTransaction().add(R.id.myntra_btm, fragment).commit();
             }
         }
+    }
+
+
+
+
+
+    private  void  debug(String msg){
+        System.out.println(""+msg);
     }
 }
