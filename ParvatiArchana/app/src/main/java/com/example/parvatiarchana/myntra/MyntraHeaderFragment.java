@@ -1,8 +1,10 @@
 package com.example.parvatiarchana.myntra;
 //https://stackoverflow.com/questions/20656208/android-adding-view-dynamically-in-a-nested-layout
+import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,20 +22,24 @@ import java.util.List;
  * Use the {@link MyntraHeaderFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MyntraHeaderFragment extends Fragment {
+public class MyntraHeaderFragment extends Fragment implements View.OnClickListener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
+public Activity parent=null;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
+    public interface InterFragCommuncation{
+        public void communicateH(String input);
+    }
     public MyntraHeaderFragment() {
         // Required empty public constructor
     }
+
 
     /**
      * Use this factory method to create a new instance of
@@ -60,13 +66,14 @@ public class MyntraHeaderFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
+       parent= requireActivity();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
        View view= inflater.inflate(R.layout.myntra_header_fragment, container, false);
 try {
     addCatInFragment(container, view);
@@ -88,10 +95,12 @@ try {
             debug("sai button going to create ..2");
             bt.setText(cat.getDispplayName());
             debug("sai button going to create ..3");
+            bt.setOnClickListener(this);
             ll.addView(bt);
             debug("sai button going to create ..4");
 
         }
+
     }
 
     private List<ProductCategorary> getProdCat(){
@@ -196,5 +205,21 @@ Clothing
 
     private  void  debug(String msg){
         System.out.println(""+msg);
+    }
+
+    @Override
+    public void onClick(View view) {
+        System.out.println(" Going to refresh Middle fragment & going to pass cat or sub cat name");
+        //https://stackoverflow.com/questions/22386109/how-to-update-the-listview-of-a-fragment-from-another-fragment
+
+        //FragmentManager fm = getSupportFragmentManager();
+       // fm.beginTransaction().replace(R.id.frameBuy, YourFragment.newInstance(), "yourFragTag").commit();
+
+        if( parent instanceof MyntraMainActivity){
+            System.out.println("sai parent instanceof MyntraMainActivity");
+            ((MyntraMainActivity) parent).communicateM("Categoray data");
+        }else{
+            System.out.println("sai parent NOT instanceof MyntraMainActivity");
+        }
     }
 }
