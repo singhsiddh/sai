@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.parvatiarchana.R;
 
@@ -100,6 +101,10 @@ try {
             debug("sai button going to create ..4");
 
         }
+        TextView tv = new TextView(container.getContext());
+       // int id =2307;
+        tv.setId( R.id.my_edit_text_1);
+        ll.addView(tv);
 
     }
 
