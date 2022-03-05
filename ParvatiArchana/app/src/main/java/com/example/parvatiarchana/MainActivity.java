@@ -19,6 +19,7 @@ import androidx.fragment.app.FragmentManager;
 import com.example.parvatiarchana.imagegrid.ImgGridActivity;
 import com.example.parvatiarchana.inventry.Product_Mangment;
 import com.example.parvatiarchana.myntra.MyntraMainActivity;
+import com.example.parvatiarchana.myntra.mainfragment.recycleview.RecycleViewMainActivity;
 import com.example.parvatiarchana.scanner.BarCodeActivity;
 import com.example.parvatiarchana.sqlite.AddCountryActivity;
 import com.example.parvatiarchana.table.TableMainActivity;
@@ -165,6 +166,13 @@ System.out.println(" GOinmg to add menu dynamic in toolbar");
                 Intent intent7 = new Intent(MainActivity.this, MyntraMainActivity.class);
                 System.out.println("  Mynmtra Activity nested layout ");
                 startActivity(intent7);
+
+                return true;
+            case R.id.item22004:
+                Toast.makeText(getApplicationContext()," Recycle myntra layout",Toast.LENGTH_LONG).show();
+                Intent intent8 = new Intent(MainActivity.this, RecycleViewMainActivity.class);
+                System.out.println("  Mynmtra Activity nested layout ");
+                startActivity(intent8);
 
                 return true;
             default:
