@@ -1,5 +1,6 @@
 package com.example.parvatiarchana.myntra.mainfragment.recycleview;
 //http://www.devexchanges.info/2017/02/android-recyclerview-dynamically-load.html
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -21,7 +22,7 @@ public class MyntraProducts implements Serializable {
     private Double price = 0d;
     private String description = "...";
     private String prodAttributeJSON = "";
-    private String currencyType="Euro";
+    private String currencyType = "Euro";
 
     public String getCurrencyType() {
         return currencyType;
