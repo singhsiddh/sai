@@ -109,7 +109,7 @@ public class ContactAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             MyntraProducts contact = contacts.get(position);
             UserViewHolder userViewHolder = (UserViewHolder) holder;
             //...TODO userViewHolder.item_img.setImageURI(contact.getDisplayImageURL());
-
+            userViewHolder.sai_it_om.setText("sai: " + contact.getShortDesc());
             // userViewHolder.
             userViewHolder.item_desc.setText("" + contact.getShortDesc());
 
@@ -153,14 +153,15 @@ public class ContactAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         public TextView wrap_content;
         public TextView item_desc;
         public TextView item_price;
+        public TextView sai_it_om;
 
         public UserViewHolder(View view) {
             super(view);
-            item_img = (ImageView) view.findViewById(R.id.item_img);
+           item_img = (ImageView) view.findViewById(R.id.item_img);
             wrap_content = (TextView) view.findViewById(R.id.wrap_content);
             item_desc = (TextView) view.findViewById(R.id.item_desc);
             item_price = (TextView) view.findViewById(R.id.item_price);
-
+            sai_it_om = (TextView) view.findViewById(R.id.sai_it_om);
 
         }
 

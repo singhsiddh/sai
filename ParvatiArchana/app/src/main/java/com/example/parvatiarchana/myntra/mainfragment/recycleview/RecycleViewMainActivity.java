@@ -38,13 +38,14 @@ private MyRecyclerViewAdapter adapter;
         animalNames.add("Goat");
 
         // set up the RecyclerView
+      /*
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-         adapter = new MyRecyclerViewAdapter(this, animalNames);
+        adapter = new MyRecyclerViewAdapter(this, animalNames);
         adapter.setClickListener(this);
         recyclerView.setAdapter(adapter);
 
-        /*
+        */
         contacts = new ArrayList<MyntraProducts>();
         random = new Random();
 
@@ -106,7 +107,7 @@ private MyRecyclerViewAdapter adapter;
             }
         });
 
-        */
+
     }
 
     private String phoneNumberGenerating() {

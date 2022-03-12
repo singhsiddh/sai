@@ -1,22 +1,32 @@
 package com.example.parvatiarchana.myntra;
 //https://stackoverflow.com/questions/20656208/android-adding-view-dynamically-in-a-nested-layout
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.SubMenu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import com.example.parvatiarchana.R;
+import com.example.parvatiarchana.myntra.bo.Cat;
+import com.example.parvatiarchana.myntra.bo.GetProduct;
+import com.example.parvatiarchana.myntra.bo.SubCat;
+import com.example.parvatiarchana.myntra.bo.SubSubCat;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,6 +39,8 @@ public class MyntraHeaderFragment extends Fragment implements View.OnClickListen
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private List<Cat> catsGlobal=null;
+    private Context context;
 public Activity parent=null;
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -74,7 +86,7 @@ public Activity parent=null;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
+        this.context = container.getContext();
        View view= inflater.inflate(R.layout.myntra_header_fragment, container, false);
 try {
     addCatInFragment(container, view);
@@ -90,11 +102,18 @@ try {
 
         debug(" kali-sai-fragment...... layout instance ="+vg);
         LinearLayout ll=(LinearLayout) vg;
-        for(ProductCategorary cat: cats){
+        int i =100;
+       List<Cat> cats1= GetProduct.getProduct();
+        catsGlobal=cats1;
+       // for(ProductCategorary cat: cats){
+         for (Cat cat:cats1){
+        i++;
             debug("sai button going to create ..1");
             bt = new Button(container.getContext()); //new Button(this)
             debug("sai button going to create ..2");
-            bt.setText(cat.getDispplayName());
+            bt.setId(i);
+               bt.setText(cat.getName());
+          //  bt.setText(cat.getDispplayName());
             debug("sai button going to create ..3");
             bt.setOnClickListener(this);
             ll.addView(bt);
@@ -107,6 +126,64 @@ try {
         ll.addView(tv);
 
     }
+
+    /**
+     * catDepthLevel ={subcat,subsubcat}
+     * getnextdepth Cat if null then on clickdisplayitem in main fragment  else fetch & make popup menu sub item
+
+
+     */
+    //https://learningprogramming.net/mobile/android/create-dynamically-popup-menu-in-android/
+    private void popupMenuDisplay(List<SubCat> subcats, Button buttonPopupMenu ){
+        PopupMenu popupMenu = new PopupMenu(this.context, buttonPopupMenu);
+        int MENU=0;
+        int MENU_ITEM = Menu.FIRST;
+        int MENU_ITEM1 = Menu.FIRST;
+        int MENU_ITEM2 = Menu.FIRST;
+        int SUB_MENU=0;
+        int i=-1;
+        int j =-1;
+        for(SubCat subcat :subcats){
+            MENU++;
+            i++;
+
+            if(subcat.getSubsubcat()==null || subcat.getSubsubcat().size()==0 ){
+                // Bind listner with data
+                popupMenu.getMenu().add(MENU,MENU_ITEM,i,subcat.getName());
+            }else{
+                //Cretae submenu
+                MENU_ITEM1 = Menu.FIRST;
+                MENU_ITEM2 = Menu.FIRST;
+                List<SubSubCat> subsubcats = subcat.getSubsubcat();
+                SubMenu subMenu = popupMenu.getMenu().addSubMenu(MENU, MENU_ITEM, i,subcat.getName());
+                for(SubSubCat sscat : subsubcats ) {
+                    j++;
+                    subMenu.add(MENU_ITEM1,MENU_ITEM2,j,sscat.getName());
+                    //Bind Listener with data
+                    MENU_ITEM2++;
+                }
+            }
+            MENU_ITEM++;
+        }
+/*
+        popupMenu.getMenu().add(MENU1, MENU_1_ITEM, 0, getText(R.string.menu1));
+        popupMenu.getMenu().add(MENU2, MENU_2_ITEM, 1, getText(R.string.menu2));
+        SubMenu menu3 = popupMenu.getMenu().addSubMenu(MENU3, MENU_3_ITEM, 2, getText(R.string.menu3));
+        menu3.add(MENU3, MENU_3_1_ITEM, 0, getText(R.string.menu3_1));
+        menu3.add(MENU3, MENU_3_2_ITEM, 1, getText(R.string.menu3_2));
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        });
+
+ */
+        popupMenu.show();
+
+    }
+
 
     private List<ProductCategorary> getProdCat(){
 
@@ -220,11 +297,40 @@ Clothing
         //FragmentManager fm = getSupportFragmentManager();
        // fm.beginTransaction().replace(R.id.frameBuy, YourFragment.newInstance(), "yourFragTag").commit();
 
+Object objB=view.findViewById(view.getId());
+int buttonId = view.getId();
+if(objB instanceof Button){
+    Button bt =(Button)objB;
+    bt.getText();
+    bt.getId();
+    System.out.println("sai 10 march  button text"+ bt.getText()+" id "+ bt.getId());
+    //
+Map<String,List<SubCat>> map = GetProduct.getAllCatMap(catsGlobal);
+if(map.get(bt.getText())!=null){
+    //https://learningprogramming.net/mobile/android/create-dynamically-popup-menu-in-android/
+    // SHOW popup menu
+    System.out.println("12march SaiPopmenu category="+bt.getText());
+    List<SubCat> subact =map.get(bt.getText());
+    System.out.println("12march SaiPopmenu Sub Categorery="+subact);
+    if(subact!=null && subact.size()>0) {
+        popupMenuDisplay(subact, bt);
+
+      //  return;
+    }
+}else{
+    //clean Main Fragment
+
+
+}
+    System.out.println("sai 10 march not button ");
+}
+//TODO : This code will move at last menu Item call where no parent
+
         if( parent instanceof MyntraMainActivity){
-            System.out.println("sai parent instanceof MyntraMainActivity");
+            System.out.println("sai111 parent instanceof MyntraMainActivity");
             ((MyntraMainActivity) parent).communicateM("Categoray data");
         }else{
-            System.out.println("sai parent NOT instanceof MyntraMainActivity");
+            System.out.println("sai111 parent NOT instanceof MyntraMainActivity");
         }
     }
 }
