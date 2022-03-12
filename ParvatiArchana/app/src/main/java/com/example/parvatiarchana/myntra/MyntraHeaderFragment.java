@@ -42,6 +42,9 @@ public class MyntraHeaderFragment extends Fragment implements View.OnClickListen
     private static final String ARG_PARAM2 = "param2";
     private List<Cat> catsGlobal=null;
     private Context context;
+    private String catCurrent="";
+    private String subcatCurrent="";
+    private String subsubcatCurrent="";
 public Activity parent=null;
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -152,17 +155,33 @@ try {
             if(subcat.getSubsubcat()==null || subcat.getSubsubcat().size()==0 ){
                 // Bind listner with data
               Menu m=  popupMenu.getMenu();
-                        m.add(MENU,MENU_ITEM,i,subcat.getName());
-
+                MenuItem mi=        m.add(MENU,MENU_ITEM,i,subcat.getName());
+      mi.setOnMenuItemClickListener((mitem)->{
+          subcatCurrent=subcat.getName();
+          subsubcatCurrent="";
+       return false;
+      });
             }else{
                 //Cretae submenu
                 MENU_ITEM1 = Menu.FIRST;
                 MENU_ITEM2 = Menu.FIRST;
                 List<SubSubCat> subsubcats = subcat.getSubsubcat();
+
                 SubMenu subMenu = popupMenu.getMenu().addSubMenu(MENU, MENU_ITEM, i,subcat.getName());
+                subMenu.getItem().setOnMenuItemClickListener((sItem)->{
+                    subcatCurrent=subcat.getName();
+                    return false;
+                });
+
+
                 for(SubSubCat sscat : subsubcats ) {
                     j++;
-                    subMenu.add(MENU_ITEM1,MENU_ITEM2,j,sscat.getName());
+                  MenuItem smItem=  subMenu.add(MENU_ITEM1,MENU_ITEM2,j,sscat.getName());
+                    smItem.setOnMenuItemClickListener((mitem)->{
+
+                        subsubcatCurrent=sscat.getName();
+                        return false;
+                    });
                     //Bind Listener with data
                     MENU_ITEM2++;
                 }
@@ -189,9 +208,10 @@ try {
             public boolean onMenuItemClick(MenuItem item) {
 
 if (item.getSubMenu()!=null ){
-    Toast.makeText(context," Sub Menu FOiund "+ item.getTitle(), Toast.LENGTH_SHORT).show();
+    Toast.makeText(context,"1:"+catCurrent+"2:>"+subcatCurrent+"3:>"+subsubcatCurrent+">"+" Sub Menu FOiund "+ item.getTitle(), Toast.LENGTH_SHORT).show();
+
 }else{
-    Toast.makeText(context," No Sub Menu"+ item.getTitle(), Toast.LENGTH_SHORT).show();
+    Toast.makeText(context,"1:"+catCurrent+"2:>"+subcatCurrent+"3:>"+subsubcatCurrent+">"+" No Sub Menu"+ item.getTitle(), Toast.LENGTH_SHORT).show();
     if( parent instanceof MyntraMainActivity){
         System.out.println("sai111 parent instanceof MyntraMainActivity");
         ((MyntraMainActivity) parent).communicateM("Categoray data");
@@ -321,12 +341,14 @@ Clothing
 
         //FragmentManager fm = getSupportFragmentManager();
        // fm.beginTransaction().replace(R.id.frameBuy, YourFragment.newInstance(), "yourFragTag").commit();
-
+        catCurrent="";
+        subcatCurrent="";
+         subsubcatCurrent="";
 Object objB=view.findViewById(view.getId());
 int buttonId = view.getId();
 if(objB instanceof Button){
     Button bt =(Button)objB;
-    bt.getText();
+    catCurrent=""+ bt.getText();
     bt.getId();
     System.out.println("sai 10 march  button text"+ bt.getText()+" id "+ bt.getId());
     //
@@ -338,6 +360,7 @@ if(map.get(bt.getText())!=null){
     List<SubCat> subact =map.get(bt.getText());
     System.out.println("12march SaiPopmenu Sub Categorery="+subact);
     if(subact!=null && subact.size()>0) {
+
         popupMenuDisplay(subact, bt);
 
       //  return;
