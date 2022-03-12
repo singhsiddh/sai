@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.parvatiarchana.R;
 import com.example.parvatiarchana.myntra.bo.Cat;
@@ -123,6 +124,7 @@ try {
         TextView tv = new TextView(container.getContext());
        // int id =2307;
         tv.setId( R.id.my_edit_text_1);
+        tv.setText("dummy text ..");
         ll.addView(tv);
 
     }
@@ -149,7 +151,9 @@ try {
 
             if(subcat.getSubsubcat()==null || subcat.getSubsubcat().size()==0 ){
                 // Bind listner with data
-                popupMenu.getMenu().add(MENU,MENU_ITEM,i,subcat.getName());
+              Menu m=  popupMenu.getMenu();
+                        m.add(MENU,MENU_ITEM,i,subcat.getName());
+
             }else{
                 //Cretae submenu
                 MENU_ITEM1 = Menu.FIRST;
@@ -180,6 +184,27 @@ try {
         });
 
  */
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+
+if (item.getSubMenu()!=null ){
+    Toast.makeText(context," Sub Menu FOiund "+ item.getTitle(), Toast.LENGTH_SHORT).show();
+}else{
+    Toast.makeText(context," No Sub Menu"+ item.getTitle(), Toast.LENGTH_SHORT).show();
+    if( parent instanceof MyntraMainActivity){
+        System.out.println("sai111 parent instanceof MyntraMainActivity");
+        ((MyntraMainActivity) parent).communicateM("Categoray data");
+    }else{
+        System.out.println("sai111 parent NOT instanceof MyntraMainActivity");
+    }
+
+}
+
+               //invoke data based on Item text
+                return false;
+            }
+        });
         popupMenu.show();
 
     }
@@ -325,12 +350,14 @@ if(map.get(bt.getText())!=null){
     System.out.println("sai 10 march not button ");
 }
 //TODO : This code will move at last menu Item call where no parent
-
+/*
         if( parent instanceof MyntraMainActivity){
             System.out.println("sai111 parent instanceof MyntraMainActivity");
             ((MyntraMainActivity) parent).communicateM("Categoray data");
         }else{
             System.out.println("sai111 parent NOT instanceof MyntraMainActivity");
         }
+
+ */
     }
 }
