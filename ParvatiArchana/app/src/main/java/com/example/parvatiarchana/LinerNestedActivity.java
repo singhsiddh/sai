@@ -40,7 +40,8 @@ public class LinerNestedActivity extends AppCompatActivity {
 
         // RelativeLayout cat_linear = (RelativeLayout) findViewById(R.id.linernestedlay);
         ProductSO pso = new ProductSO();
-        List<Product> prodts = pso.serachProduct("test");
+        String[] catInputdata= new String[3];
+        List<Product> prodts = pso.serachProduct(catInputdata);
         LinearLayout.LayoutParams params = null;
         LinearLayout ll23_0 = null;
         LinearLayout ll23 = null;

@@ -17,7 +17,7 @@ import com.example.parvatiarchana.R;
  */
 public class MyntrMainFragment extends Fragment {
     public interface InterFragCommuncation{
-        public void communicateM(String input);
+        public void communicateM(String[] input);
     }
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

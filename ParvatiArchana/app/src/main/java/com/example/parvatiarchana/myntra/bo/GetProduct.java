@@ -15,8 +15,8 @@ public class GetProduct {
 
             String jsonString="{\"cat\":\r\n" +
                     "[\r\n" +
-                    "{\"name\":\"New Product\",\r\n" +
-                    "\"subcat\":[{}]\r\n" +
+                    "{\"name\":\"New Product\"\r\n" +
+
                     "\r\n" +
                     "},\r\n" +
                     "{\r\n" +

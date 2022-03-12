@@ -73,8 +73,8 @@ public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFr
     }
 
     @Override
-    public void communicateM(String input) {
-        System.out.println("Sai Communicate M is called  ");
+    public void communicateM(String[] input) {
+        System.out.println("Sai Communicate M is called Input Data   "+input);
         FragmentManager manager120 = getSupportFragmentManager();
         try {
             if (manager120.findFragmentById(R.id.myntra_mid) != null) {
@@ -92,7 +92,7 @@ public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFr
                 bt.setText("Main Section");
                 vg.addView(bt);
                 System.out.println("Sai Communicate M is called going toremove 555");
-                displayDatainMainFragment((LinearLayout)vg);
+                displayDatainMainFragment((LinearLayout)vg,input);
                 System.out.println("Sai Communicate M is called going toremove 666-kaliji");
             } else {
                 System.out.println("Sai Communicate M is called going toremove ELSE ");
@@ -102,12 +102,12 @@ public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFr
             e.printStackTrace();
         }
     }
-    private void displayDatainMainFragment( LinearLayout layout){
+    private void displayDatainMainFragment( LinearLayout layout,String[] catDet){
        //.. LinearLayout cat_linear = (LinearLayout) findViewById(R.id.linernestedlay);
         LinearLayout cat_linear =layout;
         // RelativeLayout cat_linear = (RelativeLayout) findViewById(R.id.linernestedlay);
         ProductSO pso = new ProductSO();
-        List<Product> prodts = pso.serachProduct("test");
+        List<Product> prodts = pso.serachProduct(catDet);
         LinearLayout.LayoutParams params = null;
         LinearLayout ll23_0 = null;
         LinearLayout ll23 = null;

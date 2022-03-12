@@ -7,12 +7,12 @@ import java.util.List;
 
 public class ProductSO {
 
-    public List<Product> serachProduct(String keyWord){
+    public List<Product> serachProduct(String[] keyWord){
 
         return mock();
     }
 
-    public List<Product> serachProductByCat(String cat){
+    public List<Product> serachProductByCat(String[] cat){
 
         return null;
     }
