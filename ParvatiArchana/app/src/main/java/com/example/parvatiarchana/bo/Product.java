@@ -21,7 +21,7 @@ public class Product implements Serializable {
     private Double price = 0d;
     private String description = "";
     private String prodAttributeJSON = "";
-private String currencyType="";
+    private String currencyType = "";
 
     public String getCurrencyType() {
         return currencyType;

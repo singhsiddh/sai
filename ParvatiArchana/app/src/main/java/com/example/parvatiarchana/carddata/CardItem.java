@@ -1,7 +1,7 @@
 package com.example.parvatiarchana.carddata;
 
 public class CardItem {
-    private String itemCode="";
+    private String itemCode = "";
     private int count;
     private Double price;
     private Double discount;

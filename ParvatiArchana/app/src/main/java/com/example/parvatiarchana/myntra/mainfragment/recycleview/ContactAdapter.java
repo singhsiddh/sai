@@ -21,7 +21,7 @@ public class ContactAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     //public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHolder> {
 
 
-        private final int VIEW_TYPE_ITEM = 0;
+    private final int VIEW_TYPE_ITEM = 0;
     private final int VIEW_TYPE_LOADING = 1;
     private OnLoadMoreListenerMyntra onLoadMoreListener;
     private LayoutInflater mInflater;
@@ -78,10 +78,9 @@ public class ContactAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         if (viewType == VIEW_TYPE_ITEM) {
             //View view = LayoutInflater.from(activity).inflate(R.layout.item_recycler_view_row, parent, false);
 
-            View view=null;
+            View view = null;
             //    view = LayoutInflater.from(activity).inflate(R.layout.myntra_recyview_items_row_layout, parent, false);
-             view = mInflater.inflate(R.layout.myntra_recyview_items_row_layout, parent, false);
-
+            view = mInflater.inflate(R.layout.myntra_recyview_items_row_layout, parent, false);
 
 
             System.out.println(" sai  6 view Holder at userviewHolder" + view);
@@ -157,7 +156,7 @@ public class ContactAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
         public UserViewHolder(View view) {
             super(view);
-           item_img = (ImageView) view.findViewById(R.id.item_img);
+            item_img = (ImageView) view.findViewById(R.id.item_img);
             wrap_content = (TextView) view.findViewById(R.id.wrap_content);
             item_desc = (TextView) view.findViewById(R.id.item_desc);
             item_price = (TextView) view.findViewById(R.id.item_price);

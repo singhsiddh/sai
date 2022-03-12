@@ -204,7 +204,6 @@ public class Product_Mangment extends AppCompatActivity implements View.OnClickL
                     startActivityForResult(intent, 2);
 
 
-
                 } else if (options[item].equals("Cancel")) {
                     dialog.dismiss();
                 }
@@ -231,14 +230,13 @@ public class Product_Mangment extends AppCompatActivity implements View.OnClickL
                         e.printStackTrace();
                     }
                 } else if (requestCode == 1) {//take by camera
-                    if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK)
-                    {
+                    if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK) {
                         Bitmap photo = (Bitmap) data.getExtras().get("data");
                         IDProf1.setImageBitmap(photo);
                     }
                 }
             }
-            uploadtriggerbuttonname="";
+            uploadtriggerbuttonname = "";
             return;
         }
         if (resultCode == RESULT_OK) {

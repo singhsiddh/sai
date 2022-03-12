@@ -1,5 +1,6 @@
 package com.example.parvatiarchana.imagegrid;
 //https://www.youtube.com/watch?v=5UCPa54V1cI
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Bitmap;
@@ -17,26 +18,26 @@ import com.example.parvatiarchana.R;
 import java.io.InputStream;
 
 public class ImgGridActivity extends AppCompatActivity {
-private int image[] ={R.drawable.img1,R.drawable.img2,R.drawable.img3,R.drawable.img4,R.drawable.img6,R.drawable.img1};
-private GridView gv ;
+    private int image[] = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img6, R.drawable.img1};
+    private GridView gv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_img_grid);
         gv = (GridView) findViewById(R.id.imggridview);
-        SaiGridAdapater adpter =new SaiGridAdapater(this,image);
+        SaiGridAdapater adpter = new SaiGridAdapater(this, image);
         gv.setAdapter(adpter);
         // Events
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                                       @Override
                                       public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                                           System.out.println(" img click");
-                                          Toast.makeText(getApplicationContext(),"Images "+i,Toast.LENGTH_SHORT).show();
+                                          Toast.makeText(getApplicationContext(), "Images " + i, Toast.LENGTH_SHORT).show();
                                       }
                                   }
         );
     }
-
 
 
 }

@@ -149,7 +149,7 @@ public class MyntraHeaderFragment extends Fragment implements View.OnClickListen
         int SUB_MENU = 0;
         int i = -1;
         int j = -1;
-        String[] inputD=new String[3];
+        String[] inputD = new String[3];
         for (SubCat subcat : subcats) {
             MENU++;
             i++;
@@ -161,13 +161,13 @@ public class MyntraHeaderFragment extends Fragment implements View.OnClickListen
                 mi.setOnMenuItemClickListener((mitem) -> {
                     subcatCurrent = subcat.getName();
                     subsubcatCurrent = "";
-                    if( parent instanceof MyntraMainActivity){
+                    if (parent instanceof MyntraMainActivity) {
                         System.out.println("sai111 parent instanceof MyntraMainActivity");
-                        inputD[0]=catCurrent;
-                        inputD[1]=subcatCurrent;
-                        inputD[2]=subsubcatCurrent;
+                        inputD[0] = catCurrent;
+                        inputD[1] = subcatCurrent;
+                        inputD[2] = subsubcatCurrent;
                         ((MyntraMainActivity) parent).communicateM(inputD);// catCurrent + ":" + subcatCurrent + ":" + subsubcatCurrent);
-                    }else{
+                    } else {
                         System.out.println("sai111 parent NOT instanceof MyntraMainActivity");
                     }
                     return false;
@@ -191,13 +191,13 @@ public class MyntraHeaderFragment extends Fragment implements View.OnClickListen
                     smItem.setOnMenuItemClickListener((mitem) -> {
 
                         subsubcatCurrent = sscat.getName();
-                        inputD[0]=catCurrent;
-                        inputD[1]=subcatCurrent;
-                        inputD[2]=subsubcatCurrent;
-                        if( parent instanceof MyntraMainActivity){
+                        inputD[0] = catCurrent;
+                        inputD[1] = subcatCurrent;
+                        inputD[2] = subsubcatCurrent;
+                        if (parent instanceof MyntraMainActivity) {
                             System.out.println("sai111 parent instanceof MyntraMainActivity");
                             ((MyntraMainActivity) parent).communicateM(inputD);
-                        }else{
+                        } else {
                             System.out.println("sai111 parent NOT instanceof MyntraMainActivity");
                         }
                         return false;
@@ -384,16 +384,16 @@ Clothing
 
                     //  return;
                 }
-            }else {
+            } else {
                 //Populate Itenms as no sub categoray
-                if( parent instanceof MyntraMainActivity){
+                if (parent instanceof MyntraMainActivity) {
                     System.out.println("sai111 parent instanceof MyntraMainActivity");
                     String inputD[] = new String[3];
-                    inputD[0]=catCurrent;
-                    inputD[1]="";
-                    inputD[2]="";//""
+                    inputD[0] = catCurrent;
+                    inputD[1] = "";
+                    inputD[2] = "";//""
                     ((MyntraMainActivity) parent).communicateM(inputD);
-                }else{
+                } else {
                     System.out.println("sai111 parent NOT instanceof MyntraMainActivity");
                 }
 

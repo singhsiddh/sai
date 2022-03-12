@@ -41,12 +41,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             super(itemView);
             name = (TextView) itemView.findViewById(R.id.name);
             date = (TextView) itemView.findViewById(R.id.date);
-            btn =(Button) itemView.findViewById(R.id.tab_btn);
+            btn = (Button) itemView.findViewById(R.id.tab_btn);
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(view.getContext(), "name"+name.getText()+"dt : "+date.getText(), Toast.LENGTH_SHORT).show();
-                   Holidays hol = new Holidays(""+name.getText(),""+date.getText());
+                    Toast.makeText(view.getContext(), "name" + name.getText() + "dt : " + date.getText(), Toast.LENGTH_SHORT).show();
+                    Holidays hol = new Holidays("" + name.getText(), "" + date.getText());
                     // open popup and display  item and update list
                 /*  for ( Object obj : listRecyclerItem)  {
                       if (obj instanceof Holidays) {
@@ -68,7 +68,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                  */
                     if (context instanceof Activity) {
 
-                        CustomDialogClass cdd = new CustomDialogClass( (Activity)context,hol,listRecyclerItem);
+                        CustomDialogClass cdd = new CustomDialogClass((Activity) context, hol, listRecyclerItem);
                         cdd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                         cdd.show();
                     }

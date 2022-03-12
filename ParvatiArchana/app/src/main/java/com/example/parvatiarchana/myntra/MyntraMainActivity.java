@@ -27,7 +27,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFragment.InterFragCommuncation,MyntraHeaderFragment.InterFragCommuncation {
+public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFragment.InterFragCommuncation, MyntraHeaderFragment.InterFragCommuncation {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,7 @@ public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFr
         setContentView(R.layout.myntra_activity_main);
         initializeAll3fragments();
     }
+
     private MyntrMainFragment fragmentMain;
 
 
@@ -46,35 +47,32 @@ public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFr
 
             //If a fragment is not already loaded into your container, then add one...
             if (manager120.findFragmentById(R.id.myntra_top) == null) {
-                MyntraHeaderFragment  fragment = new MyntraHeaderFragment();
-               
+                MyntraHeaderFragment fragment = new MyntraHeaderFragment();
+
                 manager120.beginTransaction().add(R.id.myntra_top, fragment).commit();
 
 
             }
             if (manager120.findFragmentById(R.id.myntra_mid) == null) {
                 MyntrMainFragment fragment = new MyntrMainFragment();
-                this.fragmentMain=fragment;
+                this.fragmentMain = fragment;
                 manager120.beginTransaction().add(R.id.myntra_mid, fragment).commit();
             }
             if (manager120.findFragmentById(R.id.myntra_btm) == null) {
-                MyntraButtomFragment  fragment = new MyntraButtomFragment();
+                MyntraButtomFragment fragment = new MyntraButtomFragment();
                 manager120.beginTransaction().add(R.id.myntra_btm, fragment).commit();
             }
         }
     }
 
 
-
-
-
-    private  void  debug(String msg){
-        System.out.println(""+msg);
+    private void debug(String msg) {
+        System.out.println("" + msg);
     }
 
     @Override
     public void communicateM(String[] input) {
-        System.out.println("Sai Communicate M is called Input Data   "+input);
+        System.out.println("Sai Communicate M is called Input Data   " + input);
         FragmentManager manager120 = getSupportFragmentManager();
         try {
             if (manager120.findFragmentById(R.id.myntra_mid) != null) {
@@ -92,19 +90,20 @@ public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFr
                 bt.setText("Main Section");
                 vg.addView(bt);
                 System.out.println("Sai Communicate M is called going toremove 555");
-                displayDatainMainFragment((LinearLayout)vg,input);
+                displayDatainMainFragment((LinearLayout) vg, input);
                 System.out.println("Sai Communicate M is called going toremove 666-kaliji");
             } else {
                 System.out.println("Sai Communicate M is called going toremove ELSE ");
             }
 
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    private void displayDatainMainFragment( LinearLayout layout,String[] catDet){
-       //.. LinearLayout cat_linear = (LinearLayout) findViewById(R.id.linernestedlay);
-        LinearLayout cat_linear =layout;
+
+    private void displayDatainMainFragment(LinearLayout layout, String[] catDet) {
+        //.. LinearLayout cat_linear = (LinearLayout) findViewById(R.id.linernestedlay);
+        LinearLayout cat_linear = layout;
         // RelativeLayout cat_linear = (RelativeLayout) findViewById(R.id.linernestedlay);
         ProductSO pso = new ProductSO();
         List<Product> prodts = pso.serachProduct(catDet);
@@ -152,7 +151,7 @@ public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFr
                                             it.setPrice(pro.getPrice());
                                             Carddata.addItem(it);
 
-                                            String totaldesc =" Total Type of  Item :"+Carddata.count+"\n Total Price :"+Carddata.totalPrice+" Total count"+Carddata.totalCount;
+                                            String totaldesc = " Total Type of  Item :" + Carddata.count + "\n Total Price :" + Carddata.totalPrice + " Total count" + Carddata.totalCount;
                                             communicateH(totaldesc);
                                            /* TextView totalitemsummary =(TextView) findViewById(R.id.totalitemsummary);
                                             totalitemsummary.setText(totaldesc);
@@ -180,12 +179,13 @@ public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFr
     @Override
     public void communicateH(String input) {
         System.out.println(" Inside method communicateH() -1 ");
-        System.out.println(" Inside method communicateH() -2 "+input);
-        int id =2307;
-        TextView totalitemsummary =(TextView) findViewById( R.id.my_edit_text_1);//R.id.totalitemsummary); dynamic id added in dynamic text view
+        System.out.println(" Inside method communicateH() -2 " + input);
+        int id = 2307;
+        TextView totalitemsummary = (TextView) findViewById(R.id.my_edit_text_1);//R.id.totalitemsummary); dynamic id added in dynamic text view
         totalitemsummary.setText(input);
 
     }
+
     private void setImage(ImageView bmImage, String url) {
         new MyntraMainActivity.DownloadImageTask(bmImage).execute(url);
 

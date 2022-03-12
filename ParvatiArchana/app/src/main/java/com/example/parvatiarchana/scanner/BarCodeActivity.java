@@ -21,24 +21,24 @@ public class BarCodeActivity extends AppCompatActivity {
 */
 
 import androidx.appcompat.app.AppCompatActivity;
-        import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityCompat;
 
-        import android.Manifest;
-        import android.content.pm.PackageManager;
-        import android.media.AudioManager;
-        import android.media.ToneGenerator;
-        import android.os.Bundle;
-        import android.util.SparseArray;
-        import android.view.SurfaceHolder;
-        import android.view.SurfaceView;
-        import android.widget.TextView;
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.media.AudioManager;
+import android.media.ToneGenerator;
+import android.os.Bundle;
+import android.util.SparseArray;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+import android.widget.TextView;
 
-        import com.google.android.gms.vision.CameraSource;
-        import com.google.android.gms.vision.Detector;
-        import com.google.android.gms.vision.barcode.Barcode;
-        import com.google.android.gms.vision.barcode.BarcodeDetector;
+import com.google.android.gms.vision.CameraSource;
+import com.google.android.gms.vision.Detector;
+import com.google.android.gms.vision.barcode.Barcode;
+import com.google.android.gms.vision.barcode.BarcodeDetector;
 
-        import java.io.IOException;
+import java.io.IOException;
 
 public class BarCodeActivity extends AppCompatActivity {
 
@@ -50,7 +50,6 @@ public class BarCodeActivity extends AppCompatActivity {
     private ToneGenerator toneGen1;
     private TextView barcodeText;
     private String barcodeData;
-
 
 
     @Override

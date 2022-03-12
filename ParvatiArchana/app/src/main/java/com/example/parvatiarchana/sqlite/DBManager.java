@@ -3,6 +3,7 @@ package com.example.parvatiarchana.sqlite;
 /**
  * Created by anupamchugh on 19/10/15.
  */
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -39,7 +40,7 @@ public class DBManager {
     }
 
     public Cursor fetch() {
-        String[] columns = new String[] { DatabaseHelper._ID, DatabaseHelper.SUBJECT, DatabaseHelper.DESC };
+        String[] columns = new String[]{DatabaseHelper._ID, DatabaseHelper.SUBJECT, DatabaseHelper.DESC};
         Cursor cursor = database.query(DatabaseHelper.TABLE_NAME, columns, null, null, null, null, null);
         if (cursor != null) {
             cursor.moveToFirst();

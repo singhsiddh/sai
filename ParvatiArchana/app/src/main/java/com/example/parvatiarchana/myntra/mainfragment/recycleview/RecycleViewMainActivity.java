@@ -15,18 +15,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class RecycleViewMainActivity extends AppCompatActivity implements MyRecyclerViewAdapter.ItemClickListener{
+public class RecycleViewMainActivity extends AppCompatActivity implements MyRecyclerViewAdapter.ItemClickListener {
 
     private List<MyntraProducts> contacts;
     private ContactAdapter contactAdapter;
     private Random random;
-private MyRecyclerViewAdapter adapter;
+    private MyRecyclerViewAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // setContentView(R.layout.activity_main);
         setContentView(R.layout.muntra_recycle_view_main_activity);
-
 
 
         // data to populate the RecyclerView with
@@ -64,7 +64,7 @@ private MyRecyclerViewAdapter adapter;
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         System.out.println("2:sai recyclerView..:" + recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        contactAdapter = new ContactAdapter(this,recyclerView, contacts, this);
+        contactAdapter = new ContactAdapter(this, recyclerView, contacts, this);
         recyclerView.setAdapter(contactAdapter);
 
         //set load more listener for the RecyclerView adapter

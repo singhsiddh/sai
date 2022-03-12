@@ -119,15 +119,15 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if("gautam".equalsIgnoreCase(""+passwordEditText.getText()) &&
-                        "singhsiddh@yahoo.com".equalsIgnoreCase(""+ usernameEditText.getText())){
+                if ("gautam".equalsIgnoreCase("" + passwordEditText.getText()) &&
+                        "singhsiddh@yahoo.com".equalsIgnoreCase("" + usernameEditText.getText())) {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                     System.out.println(" bypassing authentication sidd");
 
-                }else{
+                } else {
                     System.out.println("  authentication Failed ...");
-                    Toast.makeText(LoginActivity.this,"Login failed used singhsiddh@yahoo.com gautam",Toast.LENGTH_LONG);
+                    Toast.makeText(LoginActivity.this, "Login failed used singhsiddh@yahoo.com gautam", Toast.LENGTH_LONG);
 
                 }
 

@@ -40,7 +40,7 @@ public class LinerNestedActivity extends AppCompatActivity {
 
         // RelativeLayout cat_linear = (RelativeLayout) findViewById(R.id.linernestedlay);
         ProductSO pso = new ProductSO();
-        String[] catInputdata= new String[3];
+        String[] catInputdata = new String[3];
         List<Product> prodts = pso.serachProduct(catInputdata);
         LinearLayout.LayoutParams params = null;
         LinearLayout ll23_0 = null;
@@ -85,8 +85,8 @@ public class LinerNestedActivity extends AppCompatActivity {
                                             it.setItemCode("" + pro.getCode());
                                             it.setPrice(pro.getPrice());
                                             Carddata.addItem(it);
-                                            TextView totalitemsummary =(TextView) findViewById(R.id.totalitemsummary);
-                                            String totaldesc =" Total Type of  Item :"+Carddata.count+"\n Total Price :"+Carddata.totalPrice+" Total count"+Carddata.totalCount;
+                                            TextView totalitemsummary = (TextView) findViewById(R.id.totalitemsummary);
+                                            String totaldesc = " Total Type of  Item :" + Carddata.count + "\n Total Price :" + Carddata.totalPrice + " Total count" + Carddata.totalCount;
                                             totalitemsummary.setText(totaldesc);
                                         }
                                     }

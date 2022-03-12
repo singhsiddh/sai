@@ -24,6 +24,7 @@ import androidx.cursoradapter.widget.SimpleCursorAdapter;
 import androidx.fragment.app.FragmentActivity;
 
 import com.example.parvatiarchana.R;
+
 public class CountryListActivity extends /*ActionBarActivity */FragmentActivity {
 
     private DBManager dbManager;
@@ -32,10 +33,10 @@ public class CountryListActivity extends /*ActionBarActivity */FragmentActivity 
 
     private SimpleCursorAdapter adapter;
 
-    final String[] from = new String[] { DatabaseHelper._ID,
-            DatabaseHelper.SUBJECT, DatabaseHelper.DESC };
+    final String[] from = new String[]{DatabaseHelper._ID,
+            DatabaseHelper.SUBJECT, DatabaseHelper.DESC};
 
-    final int[] to = new int[] { R.id.id, R.id.title, R.id.desc };
+    final int[] to = new int[]{R.id.id, R.id.title, R.id.desc};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -161,7 +162,7 @@ public class CountryListActivity extends /*ActionBarActivity */FragmentActivity 
             }
 
             public Cursor fetch() {
-                String[] columns = new String[] {_ID, SUBJECT, DESC};
+                String[] columns = new String[]{_ID, SUBJECT, DESC};
                 Cursor cursor = database.query(TABLE_NAME, columns, null, null, null, null, null);
                 if (cursor != null) {
                     cursor.moveToFirst();

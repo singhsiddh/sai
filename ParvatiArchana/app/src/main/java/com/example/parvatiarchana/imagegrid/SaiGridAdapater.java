@@ -1,5 +1,6 @@
 package com.example.parvatiarchana.imagegrid;
 //https://www.youtube.com/watch?v=5UCPa54V1cI
+
 import android.content.Context;
 import android.media.Image;
 import android.net.Uri;
@@ -12,12 +13,14 @@ import android.widget.ImageView;
 import java.net.URI;
 
 public class SaiGridAdapater extends BaseAdapter {
-private Context contex;
-private int[] images;
-public SaiGridAdapater(Context context, int[] images){
-    this.contex = context;
-    this.images = images;
-}
+    private Context contex;
+    private int[] images;
+
+    public SaiGridAdapater(Context context, int[] images) {
+        this.contex = context;
+        this.images = images;
+    }
+
     @Override
     public int getCount() {
         return images.length;
@@ -37,9 +40,9 @@ public SaiGridAdapater(Context context, int[] images){
     public View getView(int i, View view, ViewGroup viewGroup) {
         ImageView imageV = new ImageView(contex);
         imageV.setImageResource(images[i]);
-      imageV.setMinimumHeight(400);
+        imageV.setMinimumHeight(400);
         imageV.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        imageV.setLayoutParams(new GridView.LayoutParams(115,115));
+        imageV.setLayoutParams(new GridView.LayoutParams(115, 115));
         return imageV;
     }
 }

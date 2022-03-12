@@ -3,12 +3,12 @@ package com.example.parvatiarchana.myntra;
 import java.io.Serializable;
 import java.util.List;
 
-public class ProductCategorary  implements Serializable {
+public class ProductCategorary implements Serializable {
     private String Id;
     private int seqNo;
     private String dispplayName;
     private String imgSource;
-private List<ProductSubCat> subCat;
+    private List<ProductSubCat> subCat;
 
     public List<ProductSubCat> getSubCat() {
         return subCat;

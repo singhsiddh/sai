@@ -31,6 +31,7 @@ public class TableMainActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
 
     private static final String TAG = "MainActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,13 +54,14 @@ public class TableMainActivity extends AppCompatActivity {
 
         addItemsFromJSON();
     }
+
     private void addItemsFromJSON() {
         try {
 
             String jsonDataString = readJSONDataFromFile();
             JSONArray jsonArray = new JSONArray(jsonDataString);
 
-            for (int i=0; i<jsonArray.length(); ++i) {
+            for (int i = 0; i < jsonArray.length(); ++i) {
 
                 JSONObject itemObj = jsonArray.getJSONObject(i);
 
@@ -75,7 +77,7 @@ public class TableMainActivity extends AppCompatActivity {
         }
     }
 
-    private String readJSONDataFromFile() throws IOException{
+    private String readJSONDataFromFile() throws IOException {
 
         InputStream inputStream = null;
         StringBuilder builder = new StringBuilder();

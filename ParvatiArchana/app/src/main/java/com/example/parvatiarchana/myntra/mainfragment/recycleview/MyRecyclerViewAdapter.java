@@ -41,7 +41,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         String animal = mData.get(position);
-        holder.textview1.setText("desc"+animal);
+        holder.textview1.setText("desc" + animal);
         holder.myTextView.setText(animal);
     }
 
@@ -56,10 +56,11 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView myTextView;
         TextView textview1;
+
         ViewHolder(View itemView) {
             super(itemView);
-         // myTextView = itemView.findViewById(R.id.sai_it);
-             textview1=itemView.findViewById(R.id.item_desc);
+            // myTextView = itemView.findViewById(R.id.sai_it);
+            textview1 = itemView.findViewById(R.id.item_desc);
 
             itemView.setOnClickListener(this);
 

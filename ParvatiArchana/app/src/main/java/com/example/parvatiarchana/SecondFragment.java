@@ -27,16 +27,19 @@ public class SecondFragment extends Fragment {
         return binding.getRoot();
 
     }
-public void thridFragmentxxx(View view){
-        System.out.println(" In side 3rd frame ");
-        FragmentManager manager =getParentFragmentManager();;// getFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-    BlankFragment trdFragment = new BlankFragment();
 
-        transaction.replace(R.id.container,trdFragment,"YOUR_FRAGMENT_STRING_TAG");
+    public void thridFragmentxxx(View view) {
+        System.out.println(" In side 3rd frame ");
+        FragmentManager manager = getParentFragmentManager();
+        ;// getFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        BlankFragment trdFragment = new BlankFragment();
+
+        transaction.replace(R.id.container, trdFragment, "YOUR_FRAGMENT_STRING_TAG");
         transaction.addToBackStack(null);
         transaction.commit();
     }
+
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 

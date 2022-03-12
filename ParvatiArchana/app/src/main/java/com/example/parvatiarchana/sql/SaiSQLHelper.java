@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class SaiSQLHelper extends SQLiteOpenHelper {
-   //https://www.journaldev.com/9438/android-sqlite-database-example-tutorial
+    //https://www.journaldev.com/9438/android-sqlite-database-example-tutorial
 
     // Table Name
     public static final String TABLE_NAME = "COUNTRIES";
@@ -32,6 +32,7 @@ public class SaiSQLHelper extends SQLiteOpenHelper {
     public SaiSQLHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
+
     public SaiSQLHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }

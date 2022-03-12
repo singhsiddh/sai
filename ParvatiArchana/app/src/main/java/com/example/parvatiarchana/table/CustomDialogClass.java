@@ -114,17 +114,17 @@ public class CustomDialogClass extends Dialog implements
     }
 
     private void updateRecord() {
-       // int i = -1;
-       // for (Object obj : holidays) {
-          for( int i =0; i < holidays.size();i++)  {
-           Object   obj =holidays.get(i);
+        // int i = -1;
+        // for (Object obj : holidays) {
+        for (int i = 0; i < holidays.size(); i++) {
+            Object obj = holidays.get(i);
             if (obj instanceof Holidays) {
 
                 //    Toast.makeText(view.getContext(), " holidays instance", Toast.LENGTH_SHORT).show();
 
                 Holidays hol1 = (Holidays) obj;
                 if (hol1.getName().equals("" + holiday.getName())) {
-                   holidays.remove(hol1);
+                    holidays.remove(hol1);
                     holidays.add(i, holiday);
                     //holidays.add(holiday);
                     //Hint : How to refresh view ...

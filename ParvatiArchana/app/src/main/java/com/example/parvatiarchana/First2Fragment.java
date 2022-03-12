@@ -8,11 +8,12 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
+
 import com.example.parvatiarchana.databinding.FragmentFirst2Binding;
 
 public class First2Fragment extends Fragment {
 
-private FragmentFirst2Binding binding;
+    private FragmentFirst2Binding binding;
 
     @Override
     public View onCreateView(
@@ -20,8 +21,8 @@ private FragmentFirst2Binding binding;
             Bundle savedInstanceState
     ) {
 
-      binding = FragmentFirst2Binding.inflate(inflater, container, false);
-      return binding.getRoot();
+        binding = FragmentFirst2Binding.inflate(inflater, container, false);
+        return binding.getRoot();
 
     }
 
@@ -37,7 +38,7 @@ private FragmentFirst2Binding binding;
         });
     }
 
-@Override
+    @Override
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;

@@ -3,6 +3,7 @@ package com.example.parvatiarchana.sqlite;
 /**
  * Created by anupamchugh on 19/10/15.
  */
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +11,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+
 import com.example.parvatiarchana.R;
+
 public class ModifyCountryActivity extends Activity implements OnClickListener {
 
     private EditText titleText;

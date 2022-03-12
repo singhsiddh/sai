@@ -38,7 +38,7 @@ public class DBManager {
     }
 
     public Cursor fetch() {
-        String[] columns = new String[] { SaiSQLHelper._ID, SaiSQLHelper.SUBJECT, SaiSQLHelper.DESC };
+        String[] columns = new String[]{SaiSQLHelper._ID, SaiSQLHelper.SUBJECT, SaiSQLHelper.DESC};
         Cursor cursor = database.query(SaiSQLHelper.TABLE_NAME, columns, null, null, null, null, null);
         if (cursor != null) {
             cursor.moveToFirst();

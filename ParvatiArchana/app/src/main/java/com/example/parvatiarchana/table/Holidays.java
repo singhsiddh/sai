@@ -5,8 +5,8 @@ import java.util.Objects;
 
 public class Holidays {
 
-    private  String name;
-    private  String date;
+    private String name;
+    private String date;
 
     public void setName(String name) {
         this.name = name;

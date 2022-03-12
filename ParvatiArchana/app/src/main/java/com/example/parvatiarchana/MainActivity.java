@@ -31,13 +31,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-      //  Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-     //   setSupportActionBar(toolbar);
+        //  Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //   setSupportActionBar(toolbar);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar1);
         setSupportActionBar(toolbar);
 
         ///.
-System.out.println(" GOinmg to add menu dynamic in toolbar");
+        System.out.println(" GOinmg to add menu dynamic in toolbar");
         //toolbar.getMenu().add(Menu.NONE,Menu.FIRST,Menu.NONE,"Om01"+R.string.placeholder1);
         //toolbar.getMenu().add(Menu.NONE,Menu.FIRST+1,Menu.NONE,R.string.placeholder2);
 
@@ -63,8 +63,8 @@ System.out.println(" GOinmg to add menu dynamic in toolbar");
 
         ///.
         System.out.println(" GOinmg to add menu dynamic in toolbar");
-        toolbar.getMenu().add(Menu.NONE,Menu.FIRST,Menu.NONE,"Om1.."+R.string.placeholder1);
-        toolbar.getMenu().add(Menu.NONE,Menu.FIRST+1,Menu.NONE,""+"Om2.."+R.string.placeholder2);
+        toolbar.getMenu().add(Menu.NONE, Menu.FIRST, Menu.NONE, "Om1.." + R.string.placeholder1);
+        toolbar.getMenu().add(Menu.NONE, Menu.FIRST + 1, Menu.NONE, "" + "Om2.." + R.string.placeholder2);
         //..
         SubMenu topChannelMenu = toolbar.getMenu().addSubMenu("Top Channels");
         topChannelMenu.add("Foo");
@@ -79,9 +79,9 @@ System.out.println(" GOinmg to add menu dynamic in toolbar");
     public boolean onOptionsItemSelected(MenuItem item) {
         System.out.println(" Inside onOptionsItemSelected ");
         int id = item.getItemId();
-        switch (id){
+        switch (id) {
             case R.id.item11:
-                Toast.makeText(getApplicationContext(),"IMG Grid ..",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "IMG Grid ..", Toast.LENGTH_LONG).show();
                 System.out.println("  before ImgGrifactivity1 ");
                 Intent intent = new Intent(MainActivity.this, ImgGridActivity.class);
                 System.out.println("  before ImgGrifactivity2 ");
@@ -89,53 +89,53 @@ System.out.println(" GOinmg to add menu dynamic in toolbar");
                 System.out.println(" After starting ImgGrifactivity");
                 return true;
             case R.id.item22:
-                Toast.makeText(getApplicationContext(),"Parvati frgment",Toast.LENGTH_LONG).show();
-                FragmentManager manager120= getSupportFragmentManager();
+                Toast.makeText(getApplicationContext(), "Parvati frgment", Toast.LENGTH_LONG).show();
+                FragmentManager manager120 = getSupportFragmentManager();
 
 
-                if(manager120 !=null&& manager120.findFragmentById(R.id.fragmetsaibabaContainer) == null) {
+                if (manager120 != null && manager120.findFragmentById(R.id.fragmetsaibabaContainer) == null) {
 
                     //If a fragment is not already loaded into your container, then add one...
 
-                    ParvatiFragment    fragment = new ParvatiFragment();
-                    manager120.beginTransaction().add(R.id.fragmetsaibabaContainer,fragment).commit();
+                    ParvatiFragment fragment = new ParvatiFragment();
+                    manager120.beginTransaction().add(R.id.fragmetsaibabaContainer, fragment).commit();
 
-                }else {
+                } else {
                     System.out.println(" Fragmenat manager is null");
 
                 }
-                    return true;
+                return true;
             case R.id.item33:
-                Toast.makeText(getApplicationContext(),"Item 3 Selected",Toast.LENGTH_LONG).show();
-              FragmentManager manager12= getSupportFragmentManager();
+                Toast.makeText(getApplicationContext(), "Item 3 Selected", Toast.LENGTH_LONG).show();
+                FragmentManager manager12 = getSupportFragmentManager();
 
 
-                  if(manager12 !=null&& manager12.findFragmentById(R.id.fragmetsaibabaContainer) == null) {
+                if (manager12 != null && manager12.findFragmentById(R.id.fragmetsaibabaContainer) == null) {
 
-                      //If a fragment is not already loaded into your container, then add one...
+                    //If a fragment is not already loaded into your container, then add one...
 
-                      SaibabakFragment    fragment = new SaibabakFragment();
-                     manager12.beginTransaction().add(R.id.fragmetsaibabaContainer,fragment).commit();
+                    SaibabakFragment fragment = new SaibabakFragment();
+                    manager12.beginTransaction().add(R.id.fragmetsaibabaContainer, fragment).commit();
 
-              }else{
-                  System.out.println(" Fragmenat manager is null");
-              }
+                } else {
+                    System.out.println(" Fragmenat manager is null");
+                }
                 return true;
             case R.id.item221:
-                Toast.makeText(getApplicationContext(),"Bar Code ",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Bar Code ", Toast.LENGTH_LONG).show();
                 Intent intent1 = new Intent(MainActivity.this, BarCodeActivity.class);
                 System.out.println("  before ImgGrifactivity2 ");
                 startActivity(intent1);
                 return true;
             case R.id.item222:
-                Toast.makeText(getApplicationContext(),"SQLite",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "SQLite", Toast.LENGTH_LONG).show();
                 Intent intent2 = new Intent(MainActivity.this, AddCountryActivity.class);
                 System.out.println("  before ImgGrifactivity2 ");
                 startActivity(intent2);
 
                 return true;
             case R.id.item2200:
-                Toast.makeText(getApplicationContext(),"Nested layout",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Nested layout", Toast.LENGTH_LONG).show();
                 Intent intent4 = new Intent(MainActivity.this, LinerNestedActivity.class);
                 System.out.println("  before nested layout ");
                 startActivity(intent4);
@@ -143,7 +143,7 @@ System.out.println(" GOinmg to add menu dynamic in toolbar");
                 return true;
 
             case R.id.item22001:
-                Toast.makeText(getApplicationContext(),"Nested layout",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Nested layout", Toast.LENGTH_LONG).show();
                 Intent intent5 = new Intent(MainActivity.this, Product_Mangment.class);
                 System.out.println("  before nested layout ");
                 startActivity(intent5);
@@ -155,21 +155,21 @@ System.out.println(" GOinmg to add menu dynamic in toolbar");
 
                                        */
             case R.id.item22002:
-                Toast.makeText(getApplicationContext(),"Table layout",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Table layout", Toast.LENGTH_LONG).show();
                 Intent intent6 = new Intent(MainActivity.this, TableMainActivity.class);
                 System.out.println("  before nested layout ");
                 startActivity(intent6);
 
                 return true;
             case R.id.item22003:
-                Toast.makeText(getApplicationContext(),"myntra layout",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "myntra layout", Toast.LENGTH_LONG).show();
                 Intent intent7 = new Intent(MainActivity.this, MyntraMainActivity.class);
                 System.out.println("  Mynmtra Activity nested layout ");
                 startActivity(intent7);
 
                 return true;
             case R.id.item22004:
-                Toast.makeText(getApplicationContext()," Recycle myntra layout",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), " Recycle myntra layout", Toast.LENGTH_LONG).show();
                 Intent intent8 = new Intent(MainActivity.this, RecycleViewMainActivity.class);
                 System.out.println("  Mynmtra Activity nested layout ");
                 startActivity(intent8);

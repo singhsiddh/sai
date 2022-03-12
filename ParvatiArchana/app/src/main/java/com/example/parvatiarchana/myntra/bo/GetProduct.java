@@ -1,5 +1,7 @@
 package com.example.parvatiarchana.myntra.bo;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,12 +10,12 @@ import java.util.Map;
 
 public class GetProduct {
 
-    public static List<Cat> getProduct(){
-        List<Cat> cats=null;
+    public static List<Cat> getProduct() {
+        List<Cat> cats = null;
 
         try {
 
-            String jsonString="{\"cat\":\r\n" +
+            String jsonString = "{\"cat\":\r\n" +
                     "[\r\n" +
                     "{\"name\":\"New Product\"\r\n" +
 
@@ -69,32 +71,33 @@ public class GetProduct {
                     "}\r\n" +
                     "";
             Product saiP = new ObjectMapper().readValue(jsonString, Product.class);
-            System.out.println("sai p"+saiP);
-            cats= saiP.getCat();
-            System.out.println("sai cat"+saiP.getCat());
+            System.out.println("sai p" + saiP);
+            cats = saiP.getCat();
+            System.out.println("sai cat" + saiP.getCat());
 
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-return cats;
+        return cats;
     }
 
-    public static List<String> getAllCat(List<Cat> cats){
+    public static List<String> getAllCat(List<Cat> cats) {
 
-        List<String> catL= new ArrayList<>();
+        List<String> catL = new ArrayList<>();
 
-        for(Cat c :cats){
+        for (Cat c : cats) {
             catL.add(c.getName());
         }
         return catL;
     }
-    public static Map<String,List<SubCat>> getAllCatMap(List<Cat> cats){
+
+    public static Map<String, List<SubCat>> getAllCatMap(List<Cat> cats) {
 
 
-        Map<String,List<SubCat>> map = new HashMap<>();
-        for(Cat c :cats){
-            map.put(c.getName(),c.getSubcat());
+        Map<String, List<SubCat>> map = new HashMap<>();
+        for (Cat c : cats) {
+            map.put(c.getName(), c.getSubcat());
         }
         return map;
     }
