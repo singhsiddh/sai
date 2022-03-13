@@ -1,0 +1,96 @@
+{
+  "cat": [
+    {
+      "name": "New Product"
+    },
+    {
+      "name": "Men",
+      "subcat": [
+        {
+          "name": " Top Wear",
+          "subsubcat": [
+            {
+              "name": "T-SHirt"
+            },
+            {
+              "name": "Casul shirt"
+            }
+          ]
+        },
+        {
+          "name": " bottom Wear",
+          "subsubcat": [
+            {
+              "name": "Jeans"
+            },
+            {
+              "name": "short"
+            },
+            {
+              "name": "joggers"
+            }
+          ]
+        },
+        {
+          "name": " Sport Wear",
+          "subsubcat": [
+            {
+              "name": "Active Tshirt"
+            },
+            {
+              "name": "Shopt Shoes"
+            },
+            {
+              "name": "Swimm wear"
+            }
+          ]
+        },
+        {
+          "name": "Shoes"
+        },
+        {
+          "name": "Tie"
+        }
+      ]
+    },
+    {
+      "name": "Women",
+      "subcat": [
+        {
+          "name": " Top Wear",
+          "subsubcat": [
+            {
+              "name": "Kurti"
+            },
+            {
+              "name": "Saree"
+            },
+            {
+              "name": "Suit Set"
+            }
+          ]
+        },
+        {
+          "name": " Wester Wear",
+          "subsubcat": [
+            {
+              "name": "Top"
+            },
+            {
+              "name": "T Shirt"
+            },
+            {
+              "name": "Skirts"
+            }
+          ]
+        },
+        {
+          "name": "Shoes"
+        },
+        {
+          "name": "makeup"
+        }
+      ]
+    }
+  ]
+}

@@ -110,7 +110,7 @@ public class MyntraHeaderFragment extends Fragment implements View.OnClickListen
         debug(" kali-sai-fragment...... layout instance =" + vg);
         LinearLayout ll = (LinearLayout) vg;
         int i = 100;
-        List<Cat> cats1 = GetProduct.getProduct();
+        List<Cat> cats1 = GetProduct.getProduct(context);
         catsGlobal = cats1;
         // for(ProductCategorary cat: cats){
         for (Cat cat : cats1) {
