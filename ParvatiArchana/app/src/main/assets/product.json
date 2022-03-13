@@ -1,5 +1,37 @@
-
-[{"cat": "","subcat": "","subsubcat": "","itemcode": "","itemimage": "","description": ""}
-,
-{}
+[
+  {
+    "cat": "",
+    "subcat": "",
+    "subsubcat": "",
+    "base-itemcode": "",
+    "base-image": "",
+    "description": "",
+    "base-model-price": 1000,
+    "discount-amount": 10,
+    "discount-per": 5,
+    "other-images": [],
+    "model": [
+      {
+        "name": "XL",
+        "price": 1200,
+        "color": "pink",
+        "discount-amount": 10,
+        "discount-per": 5,
+        "bar-code": "12345",
+        "max-allowed-qty": 2,
+        "avilable-qty": 10,
+        "model-description": "",
+        "other-attributes": [{"febric": "cotton"},{"key": "value"}]
+      },
+      {
+        "name": "XL",
+        "price": 1400,
+        "color": "yellow",
+        "discount-amount": 10,
+        "discount-per": 5
+      }
+    ],
+    "other-attributes": [{"key": "value"},{"key": "value"}]
+  },
+  {}
 ]
