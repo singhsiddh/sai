@@ -1,7 +1,9 @@
 package com.example.parvatiarchana.myntra.bo;
 
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.util.List;
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Cat {
     private String name;
 

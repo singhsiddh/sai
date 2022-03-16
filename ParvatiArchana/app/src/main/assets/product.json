@@ -1,37 +1,42 @@
+
 [
   {
-    "cat": "",
-    "subcat": "",
-    "subsubcat": "",
-    "base-itemcode": "",
-    "base-image": "",
+    "cat": "Men",
+    "subcat": "Top Wear",
+    "subsubcat": "T-Shirt",
+    "base_itemcode": "ment001",
+    "base_image": "",
     "description": "",
-    "base-model-price": 1000,
-    "discount-amount": 10,
-    "discount-per": 5,
-    "other-images": [],
+    "description_en": "",
+    "description_ch": "",
+    "base_model_price": 1000,
+    "discount_amount": 10,
+    "discount_per": 5,
+    "other_images": [],
+    "model_desc": "size",
+
     "model": [
       {
         "name": "XL",
         "price": 1200,
         "color": "pink",
-        "discount-amount": 10,
-        "discount-per": 5,
-        "bar-code": "12345",
-        "max-allowed-qty": 2,
-        "avilable-qty": 10,
-        "model-description": "",
-        "other-attributes": [{"febric": "cotton"},{"key": "value"}]
+        "discount_amount": 10,
+        "discount_per": 5,
+        "bar_code": "12345",
+        "max_allowed_qty": 2,
+        "avilable_qty": 10,
+        "model_description": "",
+        "other_attributes": [{"febric": "cotton"},{"key": "value"}]
       },
       {
         "name": "XL",
         "price": 1400,
         "color": "yellow",
-        "discount-amount": 10,
-        "discount-per": 5
+        "discount_amount": 10,
+        "discount_per": 5
       }
     ],
-    "other-attributes": [{"key": "value"},{"key": "value"}]
+    "other_attributes": [{"key1": "value1"},{"key2": "value2"}]
   },
   {}
 ]

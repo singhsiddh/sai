@@ -1,10 +1,12 @@
 {
   "cat": [
     {
-      "name": "New Product"
+      "name": "New Product",
+      "prod_template_name": "standard"
     },
     {
       "name": "Men",
+      "prod_template_name": "standard",
       "subcat": [
         {
           "name": " Top Wear",

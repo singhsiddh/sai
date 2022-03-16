@@ -25,7 +25,9 @@ import com.example.parvatiarchana.myntra.bo.Cat;
 import com.example.parvatiarchana.myntra.bo.GetProduct;
 import com.example.parvatiarchana.myntra.bo.SubCat;
 import com.example.parvatiarchana.myntra.bo.SubSubCat;
+import com.example.parvatiarchana.myntra.so.MyntraSO;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -103,7 +105,7 @@ public class MyntraHeaderFragment extends Fragment implements View.OnClickListen
     }
 
     private void addCatInFragment(ViewGroup container, View view) {
-        List<ProductCategorary> cats = getProdCat();
+      //  List<ProductCategorary> cats = getProdCat();
         Button bt = null;
         ViewGroup vg = view.findViewById(R.id.myntra_head_ll_sai);
 
@@ -250,102 +252,6 @@ public class MyntraHeaderFragment extends Fragment implements View.OnClickListen
     }
 
 
-    private List<ProductCategorary> getProdCat() {
-
-        List<ProductCategorary> prodCats = new ArrayList<>();
-        ProductCategorary cat = null;
-        List<ProductSubCat> subCats = null;
-        List<ProdSuSubCat> subSubCats = null;
-        ProdSuSubCat prodSuSubCat = null;
-        ProductSubCat subCat = null;
-        cat = new ProductCategorary();
-        cat.setDispplayName("New Launch");
-        prodCats.add(cat);
-/*
-New Arrivals
-
-Clothing
-        TopWear
-                Tshirts
-                format-tshirts
-
-        Bottom
-                Jeans
-                Causul Tousers
- */
-//cat1
-        cat = new ProductCategorary();
-        cat.setDispplayName("Clothing");
-        prodCats.add(cat);
-        //sub cat-1 Topwear
-        subCats = new ArrayList<>();
-        cat.setSubCat(subCats);
-
-        //subcat-1
-        subCat = new ProductSubCat();
-        subCat.setDispplayName("TopWear");
-        subCats.add(subCat);
-
-        subSubCats = new ArrayList<>();
-        subCat.setSubSubCats(subSubCats);
-
-        prodSuSubCat = new ProdSuSubCat();
-
-        prodSuSubCat.setDispplayName("T-Shirt");
-
-        subSubCats.add(prodSuSubCat);
-
-        prodSuSubCat = new ProdSuSubCat();
-
-        prodSuSubCat.setDispplayName("Formal Shirts");
-
-        subSubCats.add(prodSuSubCat);
-
-        prodSuSubCat = new ProdSuSubCat();
-
-        prodSuSubCat.setDispplayName("Casual Shirts");
-
-        subSubCats.add(prodSuSubCat);
-
-//Sub cat 2
-
-
-        // cat = new ProductCategorary();
-        subCats = new ArrayList<>();
-
-
-        cat.setSubCat(subCats);
-        subCat = new ProductSubCat();
-        subCat.setDispplayName("Bottom");
-
-        subSubCats = new ArrayList<>();
-        subCat.setSubSubCats(subSubCats);
-
-        prodSuSubCat = new ProdSuSubCat();
-
-        prodSuSubCat.setDispplayName("Jeans");
-
-
-        subSubCats.add(prodSuSubCat);
-
-        prodSuSubCat = new ProdSuSubCat();
-
-        prodSuSubCat.setDispplayName("Casul Tousers");
-
-        subSubCats.add(prodSuSubCat);
-
-        prodSuSubCat = new ProdSuSubCat();
-
-        prodSuSubCat.setDispplayName("Shorts");
-
-        subSubCats.add(prodSuSubCat);
-
-
-        debug("prodCats " + prodCats);
-
-        return prodCats;
-    }
-
     private String prodCatJson = "" +
             "  [{ \"displayName\":\"Cloathing\",\"subCat\":[]}]  ";
 
@@ -360,6 +266,11 @@ Clothing
 
         //FragmentManager fm = getSupportFragmentManager();
         // fm.beginTransaction().replace(R.id.frameBuy, YourFragment.newInstance(), "yourFragTag").commit();
+        try {
+            MyntraSO.loadGenPruducts(context);//TODO testing purpose only
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         catCurrent = "";
         subcatCurrent = "";
         subsubcatCurrent = "";
