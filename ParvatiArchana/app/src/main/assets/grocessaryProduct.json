@@ -1,0 +1,57 @@
+[
+{
+  "cat": "Grocessory",
+  "subcat": "Vegitable",
+  "base_itemcode": "Potatato_white",
+  "base_image": "",
+  "description": "",
+  "base_model_price": 1.9,
+  "discount_amount": 10,
+  "discount_per": 5,
+  "unit": "Kg",
+  "expiry_date": "N/A",
+  "size_price": [
+    {"unit":".5","price":1},
+    {"unit":"1","price":1.90},
+    {"unit":"2.5","price":3}
+  ]
+
+}
+  ,
+  {
+    "cat": "Grocessory",
+    "subcat": "Vegitable",
+    "base_itemcode": "Onion",
+    "base_image": "",
+    "description": "",
+    "base_model_price": 1000,
+    "discount_amount": 10,
+    "discount_per": 5,
+    "unit": "Kg",
+    "expiry_date": "N/A",
+    "size_price": [
+      {"unit":".5","price":1},
+      {"unit":"1","price":1.90},
+      {"unit":"2.5","price":3}
+    ]
+
+  },
+  {
+    "cat": "Grocessory",
+    "subcat": "Meat_Fish",
+    "base_itemcode": "Salmon",
+    "base_image": "",
+    "description": "",
+    "base_model_price": 1000,
+    "discount_amount": 10,
+    "discount_per": 5,
+    "unit": "Kg",
+    "expiry_date": "N/A",
+    "size_price": [
+      {"unit":".5","price":1},
+      {"unit":"1","price":1.90},
+      {"unit":"2.5","price":3}
+    ]
+
+  }
+  ]

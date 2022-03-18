@@ -93,6 +93,28 @@
           "name": "makeup"
         }
       ]
+    },
+    {
+
+      "name": "Grocessary",
+      "prod_template_name": "standard",
+      "subcat": [
+        {
+          "name": "Vegitable"
+
+        },{
+          "name": "spices"
+
+        }
+        ,{
+          "name": "oil"
+
+        } ,{
+          "name": "soap"
+
+        }
+
+        ]
     }
   ]
 }
