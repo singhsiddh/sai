@@ -17,7 +17,7 @@ public class Util {
       //  tv1= (ImageView) findViewById(R.id.image);
         AssetManager am= context.getAssets();
         try {
-        InputStream si1 = am.open("image/" + imageName + ".png");
+        InputStream si1 = am.open("image/" + imageName );
         Bitmap bitmap1 = BitmapFactory.decodeStream(si1);
         imageView.setImageBitmap(bitmap1);
 

@@ -21,6 +21,8 @@ import com.example.parvatiarchana.R;
 import com.example.parvatiarchana.bo.Product;
 import com.example.parvatiarchana.carddata.CardItem;
 import com.example.parvatiarchana.carddata.Carddata;
+import com.example.parvatiarchana.myntra.so.ui.render.productrender.BaseProductRender;
+import com.example.parvatiarchana.myntra.so.ui.render.productrender.GrocessyRender;
 import com.example.parvatiarchana.so.ProductSO;
 
 import java.io.InputStream;
@@ -103,6 +105,15 @@ public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFr
 
     private void displayDatainMainFragment(LinearLayout layout, String[] catDet) {
         //.. LinearLayout cat_linear = (LinearLayout) findViewById(R.id.linernestedlay);
+        if("Grocessary".equals(catDet[0])){
+System.out.println("19thMarch going to render Grocessory");
+            BaseProductRender ren = new GrocessyRender();
+
+          ren.render(MyntraMainActivity.this,layout, catDet);
+            return;
+        }else{
+            System.out.println("19thMarch NOT NNNNNN going to render Grocessory");
+        }
         LinearLayout cat_linear = layout;
         // RelativeLayout cat_linear = (RelativeLayout) findViewById(R.id.linernestedlay);
         ProductSO pso = new ProductSO();
