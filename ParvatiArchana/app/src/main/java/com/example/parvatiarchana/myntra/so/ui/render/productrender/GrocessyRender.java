@@ -72,6 +72,8 @@ public class GrocessyRender implements BaseProductRender {
                                                 String totaldesc = " Total Type of  Item :" + Carddata.count + "\n Total Price :" + Carddata.totalPrice + " Total count" + Carddata.totalCount;
                                                 //TODO ..siddharth 19 march
                                                 ( (MyntraMainActivity)myntraMainActivity).communicateH(totaldesc);
+
+                                                ( (MyntraMainActivity)myntraMainActivity).  communicateButtom();
                                            /* TextView totalitemsummary =(TextView) findViewById(R.id.totalitemsummary);
                                             totalitemsummary.setText(totaldesc);
 

@@ -29,7 +29,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFragment.InterFragCommuncation, MyntraHeaderFragment.InterFragCommuncation {
+public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFragment.InterFragCommuncation, MyntraHeaderFragment.InterFragCommuncation,MyntraButtomFragment.ButtonFragmentInterface {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -218,6 +218,22 @@ e.printStackTrace();
 
 */
 
+    }
+
+    @Override
+    public void communicateButtom() {
+        System.out.println(" Inside communicateButtom ....");
+
+        // TODO Set Total Item on bell Icon text
+        try {
+            Button totalitemsummary = (Button) findViewById(R.id.notif_count);//R.id.totalitemsummary); dynamic id added in dynamic text view
+
+
+            totalitemsummary.setText(Carddata.cardItems.size());
+        }catch( Exception e){
+            System.out.println(" Inside communicateButtom  ERROR EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE....");
+            e.printStackTrace();
+        }
     }
 
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {

@@ -8,11 +8,12 @@
   "base_model_price": 1.9,
   "discount_amount": 10,
   "discount_per": 5,
-  "unit": "Kg",
+  "unitOfM": "Kg",
+  "unit": "1",
   "expiry_date": "N/A",
-  "size_price": [
+  "other_size": [
     {"unit":".5","price":1},
-    {"unit":"1","price":1.90},
+    {"unit":"2","price":2.5},
     {"unit":"2.5","price":3}
   ]
 
@@ -24,12 +25,13 @@
     "base_itemcode": "Onion",
     "base_image": "",
     "description": "",
-    "base_model_price": 1000,
+    "base_model_price": 0.45,
     "discount_amount": 10,
     "discount_per": 5,
-    "unit": "Kg",
+    "unitOfM": "Kg",
+    "unit": "1",
     "expiry_date": "N/A",
-    "size_price": [
+    "other_size": [
       {"unit":".5","price":1},
       {"unit":"1","price":1.90},
       {"unit":"2.5","price":3}

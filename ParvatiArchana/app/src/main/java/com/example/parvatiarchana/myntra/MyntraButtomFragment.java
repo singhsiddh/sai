@@ -7,15 +7,21 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.parvatiarchana.R;
+import com.example.parvatiarchana.carddata.CardItem;
+import com.example.parvatiarchana.carddata.Carddata;
+
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link MyntraButtomFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MyntraButtomFragment extends Fragment {
+public class MyntraButtomFragment extends Fragment implements View.OnClickListener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,7 +31,10 @@ public class MyntraButtomFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    private View view;
+interface ButtonFragmentInterface{
+    public void communicateButtom();
+}
     public MyntraButtomFragment() {
         // Required empty public constructor
     }
@@ -61,6 +70,26 @@ public class MyntraButtomFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.myntra_buttom_fragment, container, false);
+       this.view= inflater.inflate(R.layout.myntra_buttom_fragment, container, false);
+       Button bt =view.findViewById(R.id.notif_count);
+       bt.setOnClickListener( this);
+        return view;
+    }
+
+    @Override
+    public void onClick(View view) {
+        Object objB = view.findViewById(view.getId());
+        if(objB instanceof Button){
+            Button bt= (Button)objB;
+            if(bt.getId()==R.id.notif_count){
+                //Call chekout Activity and disaply Details
+                List<CardItem> cardItems= Carddata.cardItems;
+                String ItemDet="";
+                for(CardItem it :cardItems ){
+                    ItemDet+=""+it;
+                }
+                Toast.makeText(getContext(), "All Items :"+ItemDet, Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 }
