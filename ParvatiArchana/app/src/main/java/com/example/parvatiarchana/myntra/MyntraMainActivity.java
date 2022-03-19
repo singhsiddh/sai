@@ -39,6 +39,7 @@ public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFr
     }
 
     private MyntrMainFragment fragmentMain;
+    private MyntraButtomFragment buttomFragment ;
 
 
     private void initializeAll3fragments() {
@@ -62,6 +63,7 @@ public class MyntraMainActivity extends AppCompatActivity implements MyntrMainFr
             }
             if (manager120.findFragmentById(R.id.myntra_btm) == null) {
                 MyntraButtomFragment fragment = new MyntraButtomFragment();
+                this.buttomFragment =fragment;
                 manager120.beginTransaction().add(R.id.myntra_btm, fragment).commit();
             }
         }
@@ -226,10 +228,11 @@ e.printStackTrace();
 
         // TODO Set Total Item on bell Icon text
         try {
-            Button totalitemsummary = (Button) findViewById(R.id.notif_count);//R.id.totalitemsummary); dynamic id added in dynamic text view
+
+            Button totalitemsummary =  this.buttomFragment.getView().findViewById(R.id.notif_count);//R.id.totalitemsummary); dynamic id added in dynamic text view
 
 
-            totalitemsummary.setText(Carddata.cardItems.size());
+            totalitemsummary.setText(""+Carddata.cardItems.size());
         }catch( Exception e){
             System.out.println(" Inside communicateButtom  ERROR EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE....");
             e.printStackTrace();
