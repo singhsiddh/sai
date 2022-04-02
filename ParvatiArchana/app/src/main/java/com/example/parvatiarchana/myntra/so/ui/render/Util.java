@@ -15,6 +15,7 @@ public class Util {
        // ImageView imageView = (ImageView) findViewById(R.id.imageView1);
       //  ImageView tv1;
       //  tv1= (ImageView) findViewById(R.id.image);
+        System.out.println("Image name 2ndapr"+imageName);
         AssetManager am= context.getAssets();
         try {
         InputStream si1 = am.open("image/" + imageName );

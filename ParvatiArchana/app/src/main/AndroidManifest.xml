@@ -24,6 +24,9 @@
         android:theme="@style/Theme.ParvatiArchana"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".myntra.ProductSummayActivity"
+            android:exported="false" />
+        <activity
             android:name=".myntra.mainfragment.recycleview.RecycleViewMainActivity"
             android:exported="false" />
         <activity

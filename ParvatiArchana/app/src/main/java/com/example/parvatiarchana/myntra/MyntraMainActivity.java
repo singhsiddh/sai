@@ -22,6 +22,7 @@ import com.example.parvatiarchana.bo.Product;
 import com.example.parvatiarchana.carddata.CardItem;
 import com.example.parvatiarchana.carddata.Carddata;
 import com.example.parvatiarchana.myntra.so.ui.render.productrender.BaseProductRender;
+import com.example.parvatiarchana.myntra.so.ui.render.productrender.ClothProductRender;
 import com.example.parvatiarchana.myntra.so.ui.render.productrender.GrocessyRender;
 import com.example.parvatiarchana.so.ProductSO;
 
@@ -115,7 +116,12 @@ System.out.println("19thMarch going to render Grocessory");
             return;
         }else{
             System.out.println("19thMarch NOT NNNNNN going to render Grocessory");
+            BaseProductRender ren = new ClothProductRender();
+
+            ren.render(MyntraMainActivity.this,layout, catDet);
+            return;
         }
+        /*
         LinearLayout cat_linear = layout;
         // RelativeLayout cat_linear = (RelativeLayout) findViewById(R.id.linernestedlay);
         ProductSO pso = new ProductSO();
@@ -166,11 +172,9 @@ System.out.println("19thMarch going to render Grocessory");
 
                                             String totaldesc = " Total Type of  Item :" + Carddata.count + "\n Total Price :" + Carddata.totalPrice + " Total count" + Carddata.totalCount;
                                             communicateH(totaldesc);
-                                           /* TextView totalitemsummary =(TextView) findViewById(R.id.totalitemsummary);
-                                            totalitemsummary.setText(totaldesc);
-
-                                            */
-                                        }
+                                           //TextView totalitemsummary =(TextView) findViewById(R.id.totalitemsummary);
+                                           // totalitemsummary.setText(totaldesc);
+                                }
                                     }
             );
             System.out.println("LinerNestedActivity 6 3");
@@ -186,7 +190,7 @@ System.out.println("19thMarch going to render Grocessory");
             cat_linear.addView(ll23_0);
             System.out.println("LinerNestedActivity 9 0 .");
         }
-
+*/
     }
 
     @Override

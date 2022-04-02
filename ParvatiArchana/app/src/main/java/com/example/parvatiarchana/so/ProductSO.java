@@ -55,7 +55,9 @@ public class ProductSO {
                 "\n" +
                 "Specifications");
         prodL.add(prod);
-        url = "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13351936/2021/4/23/87651751-7392-4cee-aa11-6b9d406afddd1619163799029-Levis-Women-Shirts-1561619163798318-1.jpg";
+        //url = "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13351936/2021/4/23/87651751-7392-4cee-aa11-6b9d406afddd1619163799029-Levis-Women-Shirts-1561619163798318-1.jpg";
+       url="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7319901/2018/9/18/d6b6acab-2d2d-453b-9bc9-bc1a4053d5ed1537268175305-Libas-Women-Pink--Grey-Printed-Kurta-with-Palazzos--Dupatta-4071537268175098-2.jpg"
+       ;
         prod = new Product();
         prod.setCode("poo3");
         prod.setPrice(8050d);

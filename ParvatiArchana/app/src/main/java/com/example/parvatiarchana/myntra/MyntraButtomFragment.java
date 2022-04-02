@@ -1,5 +1,6 @@
 package com.example.parvatiarchana.myntra;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -89,7 +90,14 @@ interface ButtonFragmentInterface{
                     ItemDet+=""+it;
                 }
                 Toast.makeText(getContext(), "All Items :"+ItemDet, Toast.LENGTH_SHORT).show();
+                //Call ProductSummayActivity
+                Intent intent = new Intent(getActivity(), ProductSummayActivity.class);
+
+                startActivity(intent);
+
+
             }
-        }
+            }
+
     }
 }

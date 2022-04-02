@@ -17,9 +17,9 @@ import com.example.parvatiarchana.so.ProductSO;
 
 import java.util.List;
 
-public class GrocessyRender implements BaseProductRender {
+public class ClothProductRender implements BaseProductRender {
     @Override
-    public void render(Activity myntraMainActivity,LinearLayout layout, String[] catDet) {
+    public void render(Activity myntraMainActivity, LinearLayout layout, String[] catDet) {
         LinearLayout cat_linear = layout;
         // RelativeLayout cat_linear = (RelativeLayout) findViewById(R.id.linernestedlay);
         ProductSO pso = new ProductSO();
@@ -33,6 +33,7 @@ public class GrocessyRender implements BaseProductRender {
                 ImageView imageView23 = new ImageView(myntraMainActivity);
                 params = new LinearLayout.LayoutParams(400, 400);
                 imageView23.setLayoutParams(params);
+
                 imageView23.setImageResource(R.drawable.img2);
                 System.out.println("LinerNestedActivity 4");
                 TextView tv23 = new TextView(myntraMainActivity);
@@ -51,16 +52,16 @@ public class GrocessyRender implements BaseProductRender {
                 //   ll.setId();
                 System.out.println("LinerNestedActivity 6");
                 String url23 = pro.getDisplayImageURL();//"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16485962/2021/12/11/efac2f88-8856-4397-9dd2-3d680de385b61639214687618SochWomenBlackYokeDesignLayeredVelvetKurtiwithTrousers1.jpg";
-                Util.displayBitmapImage(myntraMainActivity, imageView23, "aloo.jpg");
+                Util.displayBitmapImage(myntraMainActivity, imageView23, url23);
                 System.out.println("LinerNestedActivity 6 0");
                 ll23_0.addView(imageView23);
                 System.out.println("LinerNestedActivity 6 1");
 
                 ll23_0.addView(ll23);
                 System.out.println("LinerNestedActivity 6 2");
-                Button bt23 = new Button(myntraMainActivity);
-                bt23.setText("Add");
-                bt23.setOnClickListener(new View.OnClickListener() {
+                Button addButton = new Button(myntraMainActivity);
+                addButton.setText("Add");
+                addButton.setOnClickListener(new View.OnClickListener() {
                                             @Override
                                             public void onClick(View view) {
                                                 CardItem it = new CardItem();
@@ -82,7 +83,7 @@ public class GrocessyRender implements BaseProductRender {
                                         }
                 );
                 System.out.println("LinerNestedActivity 6 3");
-                ll23.addView(bt23);
+                ll23.addView(addButton);
                 System.out.println("LinerNestedActivity 7");
                 tv23.setText("Price : " + pro.getPrice());
                 System.out.println("LinerNestedActivity 8");
