@@ -29,7 +29,7 @@ private Activity activity;
         System.out.println("Inside public class ProductSummayActivity  ");
         setContentView(R.layout.myntra_activity_product_summay);
         this.activity=getParent();
-        
+
 try {
     renderBucketItemsSummary();
 }catch( Exception e){
@@ -47,15 +47,15 @@ LinearLayout cat_linear=findViewById(R.id.product_sumamry_l);
         LinearLayout ll23_0 = null;
         LinearLayout ll23 = null;
         Activity myntraMainActivity =this;
-
+Double total =0d;
         for (CardItem pro : prodts) {
-            {
+            total=total+pro.getCount()*pro.getPrice();
                 System.out.println("LinerNestedActivity 3");
                 ImageView imageView23 = new ImageView(myntraMainActivity);
                 params = new LinearLayout.LayoutParams(400, 400);
                 imageView23.setLayoutParams(params);
 
-                imageView23.setImageResource(R.drawable.img2);
+               // imageView23.setImageResource(R.drawable.img2);
                 System.out.println("LinerNestedActivity 4");
                 TextView tv23 = new TextView(myntraMainActivity);
 
@@ -116,7 +116,15 @@ LinearLayout cat_linear=findViewById(R.id.product_sumamry_l);
                 System.out.println("LinerNestedActivity 9");
                 cat_linear.addView(ll23_0);
                 System.out.println("LinerNestedActivity 9 0 .");
+            TextView totalV1=new TextView(this);
+            totalV1.setText("qty "+pro.getItemCode()+" .."+pro.getCount());
+            cat_linear.addView(totalV1);
             }
+
+            TextView totalV=new TextView(this);
+            totalV.setText("Total Price "+total);
+            cat_linear.addView(totalV);
+
         }
-    }
+
 }

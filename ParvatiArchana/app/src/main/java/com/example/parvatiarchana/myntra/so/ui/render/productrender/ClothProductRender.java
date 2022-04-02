@@ -1,6 +1,9 @@
 package com.example.parvatiarchana.myntra.so.ui.render.productrender;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -15,6 +18,7 @@ import com.example.parvatiarchana.myntra.MyntraMainActivity;
 import com.example.parvatiarchana.myntra.so.ui.render.Util;
 import com.example.parvatiarchana.so.ProductSO;
 
+import java.io.InputStream;
 import java.util.List;
 
 public class ClothProductRender implements BaseProductRender {
@@ -34,7 +38,7 @@ public class ClothProductRender implements BaseProductRender {
                 params = new LinearLayout.LayoutParams(400, 400);
                 imageView23.setLayoutParams(params);
 
-                imageView23.setImageResource(R.drawable.img2);
+               //.. imageView23.setImageResource(R.drawable.img2);
                 System.out.println("LinerNestedActivity 4");
                 TextView tv23 = new TextView(myntraMainActivity);
 
@@ -52,7 +56,8 @@ public class ClothProductRender implements BaseProductRender {
                 //   ll.setId();
                 System.out.println("LinerNestedActivity 6");
                 String url23 = pro.getDisplayImageURL();//"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16485962/2021/12/11/efac2f88-8856-4397-9dd2-3d680de385b61639214687618SochWomenBlackYokeDesignLayeredVelvetKurtiwithTrousers1.jpg";
-                Util.displayBitmapImage(myntraMainActivity, imageView23, url23);
+            //    Util.displayBitmapImage(myntraMainActivity, imageView23, url23);
+                setImage(imageView23, url23);
                 System.out.println("LinerNestedActivity 6 0");
                 ll23_0.addView(imageView23);
                 System.out.println("LinerNestedActivity 6 1");
@@ -96,4 +101,33 @@ public class ClothProductRender implements BaseProductRender {
                 System.out.println("LinerNestedActivity 9 0 .");
             }
         }
-    }}
+    }
+
+    private void setImage(ImageView bmImage, String url) {
+        new ClothProductRender.DownloadImageTask(bmImage).execute(url);
+    }
+    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
+        ImageView bmImage;
+
+        public DownloadImageTask(ImageView bmImage) {
+            this.bmImage = bmImage;
+        }
+
+        protected Bitmap doInBackground(String... urls) {
+            String urldisplay = urls[0];
+            Bitmap mIcon11 = null;
+            try {
+                InputStream in = new java.net.URL(urldisplay).openStream();
+                mIcon11 = BitmapFactory.decodeStream(in);
+            } catch (Exception e) {
+                // Log.e("Error", e.getMessage());
+                e.printStackTrace();
+            }
+            return mIcon11;
+        }
+
+        protected void onPostExecute(Bitmap result) {
+            bmImage.setImageBitmap(result);
+        }
+    }
+}
