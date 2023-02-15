@@ -9,7 +9,7 @@
 		<version>2.6.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
+	<groupId>aum.kaali</groupId>
 	<artifactId>kaali</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kaali</name>
@@ -24,8 +24,8 @@
 		</dependency>
 <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
 <dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-web</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
    
 </dependency>
 
@@ -43,6 +43,12 @@
 	</dependencies>
 
 	<build>
+	<resources>
+        <resource>
+            <directory>src/main/resources</directory>
+            <filtering>true</filtering>
+        </resource>
+    </resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
