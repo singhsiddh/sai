@@ -1,13 +1,28 @@
 package aum.kaali.demo.bo;
 
 import java.io.Serializable;
+
 import java.util.List;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "SlotData")
 public class SlotData implements Serializable{
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "rowid")
+    private int rowid;
 	private Integer slotId;
 	private Integer sequanceNumber;
 	private Float slotStartTime;
@@ -17,6 +32,10 @@ public class SlotData implements Serializable{
 	private List<String> reservServiceGuys;
 	private int reserved;
 	private int available;
+	
+	public SlotData() {
+		
+	}
 	public Integer getSlotId() {
 		return slotId;
 	}
