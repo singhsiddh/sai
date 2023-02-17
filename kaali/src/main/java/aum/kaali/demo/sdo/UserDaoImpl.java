@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import aum.kaali.demo.bo.SlotData;
 
 
-
+//https://www.devglan.com/spring-boot/spring-boot-h2-database-example
 
 @Repository
 public class UserDaoImpl implements UserDao {

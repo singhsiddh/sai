@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -28,8 +29,9 @@ public class SlotData implements Serializable{
 	private Float slotStartTime;
 	private Float slotEndTime;
 	private Integer totalAvailability;
-	private List<String> serviceGuys;// list size =total availability
-	private List<String> reservServiceGuys;
+	//@OneToMany(targetEntity=Student.class, mappedBy="college", fetch=FetchType.EAGER)
+	//..private List<String> serviceGuys;// list size =total availability
+	//..private List<String> reservServiceGuys;
 	private int reserved;
 	private int available;
 	
@@ -66,18 +68,18 @@ public class SlotData implements Serializable{
 	public void setTotalAvailability(Integer totalAvailability) {
 		this.totalAvailability = totalAvailability;
 	}
-	public List<String> getServiceGuys() {
-		return serviceGuys;
-	}
-	public void setServiceGuys(List<String> serviceGuys) {
-		this.serviceGuys = serviceGuys;
-	}
-	public List<String> getReservServiceGuys() {
-		return reservServiceGuys;
-	}
-	public void setReservServiceGuys(List<String> reservServiceGuys) {
-		this.reservServiceGuys = reservServiceGuys;
-	}
+//	public List<String> getServiceGuys() {
+//		return serviceGuys;
+//	}
+//	public void setServiceGuys(List<String> serviceGuys) {
+//		this.serviceGuys = serviceGuys;
+//	}
+//	public List<String> getReservServiceGuys() {
+//		return reservServiceGuys;
+//	}
+//	public void setReservServiceGuys(List<String> reservServiceGuys) {
+//		this.reservServiceGuys = reservServiceGuys;
+//	}
 	public int getReserved() {
 		return reserved;
 	}
