@@ -5,6 +5,10 @@ import java.util.Date;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+
 @Document("SloReservationData")
 public class SloReservationData  implements Serializable{
 	/**
@@ -16,7 +20,13 @@ public class SloReservationData  implements Serializable{
 	private String reserverId;
 	private String reserverName;
 	private String reservationTrnsactionNumber;
+
+	//@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
+
+	@JsonFormat(pattern="yyyy/MM/dd'T'HH:mm:ss")
 	private Date slotDate;
+	//  @JsonFormat(pattern = "hh:mm:ss a")
+		//  private LocalTime time;
 	private Integer slotId;
 	private Integer totalReservation=1;//1 is default
 	
