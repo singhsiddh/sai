@@ -11,7 +11,7 @@ import aum.kaali.demo.sdo.SlotMetadataRepository;
 public class AppointmentBookingServiceImpl implements AppointmentBookingService {
 	  @Autowired
 	  private AppointmentRepository appointmentRepository;
-	  
+	  @Autowired
 	  private SlotMetadataRepository slotRepository; 
 
 	@Override

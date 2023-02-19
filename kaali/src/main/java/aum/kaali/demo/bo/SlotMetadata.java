@@ -8,13 +8,14 @@ import java.util.List;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document("SlotMetadata")
+@Document("AppointmentMetadata")
 public class SlotMetadata implements Serializable{
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
+	private String rowid;
 	private Date slotDate;
 	private List<SlotData> slotData;
 	
