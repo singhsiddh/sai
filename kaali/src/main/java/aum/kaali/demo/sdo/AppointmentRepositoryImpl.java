@@ -11,7 +11,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.repository.query.FluentQuery.FetchableFluentQuery;
 import org.springframework.stereotype.Repository;
 
-import aum.kaali.demo.bo.SlotDataIn;
+import aum.kaali.demo.bo.SlotMetadata;
 
 @Repository
 public class AppointmentRepositoryImpl /*implements  AppointmentRepository*/ {

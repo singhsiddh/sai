@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import aum.kaali.demo.bo.Employee;
-import aum.kaali.demo.bo.SloReservationData;
+import aum.kaali.demo.bo.SlotReservationData;
 import aum.kaali.demo.bo.SlotData;
-import aum.kaali.demo.bo.SlotDataIn;
+import aum.kaali.demo.bo.SlotMetadata;
 import aum.kaali.demo.so.AppointmentBookingService;
 
 @RestController
@@ -41,26 +41,26 @@ public class AppointmentBookingRest {
 		return newEmployee;
 	}
 
-	@PostMapping("/slotDataAdd")
-	public void slotDataAdd(@RequestBody SlotDataIn in) {
-		// service.add(in);
+	@PostMapping("/slotMetaDataAdd")
+	public void slotMetaDataAdd(@RequestBody SlotMetadata data) {
+		service.addAppointmrntMetaData(data);
 	}
 
-	public SlotDataIn slotDataModify(@RequestBody SlotDataIn in) {
+	public SlotMetadata slotMetaDataModify(@RequestBody SlotMetadata in) {
 		return in;
 	}
 
-	public Integer slotDataDelete(@RequestBody SlotDataIn in) {
+	public Integer slotMetaDataDelete(@RequestBody SlotMetadata in) {
 		return 0;
 	}
 
-	public Boolean reserveSlot(@RequestBody SloReservationData in) {
+	public Boolean reserveSlot(@RequestBody SlotReservationData in) {
 		return true;
 	}
 
 	@PostMapping("/slotReservation")
-	public SloReservationData reserveSlotUpdate(@RequestBody SloReservationData in) {
-		service.add(in);
+	public SlotReservationData reserveSlotUpdate(@RequestBody SlotReservationData in) {
+		service.addAppoirntment(in);
 		return in;
 	}
 

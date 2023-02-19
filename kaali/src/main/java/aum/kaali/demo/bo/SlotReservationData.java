@@ -9,8 +9,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 
-@Document("SloReservationData")
-public class SloReservationData  implements Serializable{
+@Document("SlotReservationData")
+public class SlotReservationData  implements Serializable{
 	/**
 	 * 
 	 */
@@ -31,7 +31,7 @@ public class SloReservationData  implements Serializable{
 	private Integer totalReservation=1;//1 is default
 	
 	
-	public SloReservationData(String rowid,String reserverId, String reserverName, String reservationTrnsactionNumber, Date slotDate,
+	public SlotReservationData(String rowid,String reserverId, String reserverName, String reservationTrnsactionNumber, Date slotDate,
 			Integer slotId, Integer totalReservation) {
 		super();
 		this.rowid =rowid;
