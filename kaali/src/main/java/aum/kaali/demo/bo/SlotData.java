@@ -33,7 +33,7 @@ public class SlotData implements Serializable{
 	private List<String> serviceGuys;// list size =total availability
 	private List<String> reservServiceGuys;
 	private int reserved;
-	private int available;
+	private int available=1;
 	
 	public SlotData() {
 		

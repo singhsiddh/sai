@@ -1,7 +1,10 @@
 package aum.kaali.demo.se;
 
+import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
+
+import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -12,6 +15,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoDatabase;
 
 import aum.kaali.demo.bo.Employee;
 import aum.kaali.demo.bo.SlotReservationData;
@@ -24,7 +30,15 @@ import aum.kaali.demo.so.AppointmentBookingService;
 public class AppointmentBookingRest {
 	@Autowired
 	private AppointmentBookingService service;
+	@Autowired
+	DataSource dataSource;
 
+	@Autowired
+	MongoClient mongoClient;
+	//@Autowired
+	//MongoDatabase database ;
+		
+		
 	@GetMapping("/employees")
 	List<Employee> all() {
 		return null;
@@ -64,6 +78,35 @@ public class AppointmentBookingRest {
 		return in;
 	}
 
+	@PostMapping("/findBySlotDate")
+	public SlotMetadata findBySlotDate(@RequestBody SlotMetadata slotMetadata) {
+		System.out.println("date ..."+slotMetadata.getSlotDate());
+		
+		SlotMetadata meta= service.findBySlotDate(slotMetadata.getSlotDate());
+		System.out.println("meata ..."+meta);
+		
+			System.out.println("dataSource="+dataSource+" mongoClient="+mongoClient);
+		
+		return meta;
+	}
+
+	@PostMapping("/findBySlotDateANDSlotId")
+	public SlotReservationData findBySlotDateANDSlotId(@RequestBody SlotReservationData in) {
+		return service.findBySlotDateANDSlotId(in.getSlotDate(), in.getSlotId());
+	}
+	
+
+	@PostMapping("/findBySlotId")
+	public SlotReservationData findBySlotId(@RequestBody SlotReservationData in) {
+		return service.findBySlotId( in.getSlotId());
+	}
+
+	@PostMapping("/findAllBySlotDate")
+	public List<SlotReservationData> findAllBySlotDate(@RequestBody SlotReservationData in){
+		return service.findAllBySlotDate(in.getSlotDate());
+	}
+	
+	
 	public Boolean slotMetedataClone(@RequestBody Date date) {
 		return true;
 	}
