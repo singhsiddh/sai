@@ -2,6 +2,7 @@ package aum.kaali.demo.bo;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -29,10 +30,11 @@ public class SlotReservationData  implements Serializable{
 		//  private LocalTime time;
 	private Integer slotId;
 	private Integer totalReservation=1;//1 is default
+	private List<ServicExecutive> serviceExecutives;
 	
 	
 	public SlotReservationData(String rowid,String reserverId, String reserverName, String reservationTrnsactionNumber, Date slotDate,
-			Integer slotId, Integer totalReservation) {
+			Integer slotId, Integer totalReservation,List<ServicExecutive> serviceExecutives) {
 		super();
 		this.rowid =rowid;
 		this.reserverId = reserverId;
@@ -41,6 +43,7 @@ public class SlotReservationData  implements Serializable{
 		this.slotDate = slotDate;
 		this.slotId = slotId;
 		this.totalReservation = totalReservation;
+		this.serviceExecutives =serviceExecutives;
 	}
 	public String getReserverId() {
 		return reserverId;

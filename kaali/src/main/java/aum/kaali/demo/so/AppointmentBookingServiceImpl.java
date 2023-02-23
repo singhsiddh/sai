@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import aum.kaali.demo.bo.SlotReservationData;
-import aum.kaali.demo.bo.SlotMetadata;
+import aum.kaali.demo.bo.AppointmentMetadata;
 import aum.kaali.demo.sdo.AppointmentRepository;
 import aum.kaali.demo.sdo.SlotMetadataRepository;
 @Service
@@ -24,7 +24,7 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 	}
 
 	@Override
-	public void addAppointmrntMetaData(SlotMetadata data) {
+	public void addAppointmrntMetaData(AppointmentMetadata data) {
 		slotRepository.save(data);
 		
 	}
@@ -48,7 +48,7 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 	}
 
 	@Override
-	public SlotMetadata findBySlotDate(Date date) {
+	public AppointmentMetadata findBySlotDate(Date date) {
 		// TODO Auto-generated method stub
 		return slotRepository.findBySlotDate(date);
 	}

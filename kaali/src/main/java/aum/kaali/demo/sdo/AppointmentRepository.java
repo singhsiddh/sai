@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import aum.kaali.demo.bo.Customer;
 import aum.kaali.demo.bo.SlotReservationData;
-import aum.kaali.demo.bo.SlotMetadata;
+import aum.kaali.demo.bo.AppointmentMetadata;
 
 public interface AppointmentRepository extends MongoRepository<SlotReservationData, String> {
 

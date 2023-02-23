@@ -9,7 +9,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document("AppointmentMetadata")
-public class SlotMetadata implements Serializable{
+public class AppointmentMetadata implements Serializable{
 	/**
 	 * 
 	 */
@@ -21,7 +21,7 @@ public class SlotMetadata implements Serializable{
 	
 	
 	
-	public SlotMetadata(Date slotDate, List<SlotData> slotData) {
+	public AppointmentMetadata(Date slotDate, List<SlotData> slotData) {
 		super();
 		this.slotDate = slotDate;
 		this.slotData = slotData;

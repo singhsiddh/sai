@@ -30,8 +30,9 @@ public class SlotData implements Serializable{
 	private Float slotEndTime;
 	private Integer totalAvailability;
 	//@OneToMany(targetEntity=Student.class, mappedBy="college", fetch=FetchType.EAGER)
-	private List<String> serviceGuys;// list size =total availability
-	private List<String> reservServiceGuys;
+	private List<ServicExecutive> serviceGuys;// list size =total availability
+	private List<ServicExecutive> reservServiceGuys;
+	
 	private int reserved;
 	private int available=1;
 	
@@ -68,16 +69,16 @@ public class SlotData implements Serializable{
 	public void setTotalAvailability(Integer totalAvailability) {
 		this.totalAvailability = totalAvailability;
 	}
-	public List<String> getServiceGuys() {
+	public List<ServicExecutive> getServiceGuys() {
 		return serviceGuys;
 	}
-	public void setServiceGuys(List<String> serviceGuys) {
+	public void setServiceGuys(List<ServicExecutive> serviceGuys) {
 		this.serviceGuys = serviceGuys;
 	}
-	public List<String> getReservServiceGuys() {
+	public List<ServicExecutive> getReservServiceGuys() {
 		return reservServiceGuys;
 	}
-	public void setReservServiceGuys(List<String> reservServiceGuys) {
+	public void setReservServiceGuys(List<ServicExecutive> reservServiceGuys) {
 		this.reservServiceGuys = reservServiceGuys;
 	}
 	public int getReserved() {

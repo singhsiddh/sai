@@ -22,7 +22,7 @@ import com.mongodb.client.MongoDatabase;
 import aum.kaali.demo.bo.Employee;
 import aum.kaali.demo.bo.SlotReservationData;
 import aum.kaali.demo.bo.SlotData;
-import aum.kaali.demo.bo.SlotMetadata;
+import aum.kaali.demo.bo.AppointmentMetadata;
 import aum.kaali.demo.so.AppointmentBookingService;
 
 @RestController
@@ -56,15 +56,15 @@ public class AppointmentBookingRest {
 	}
 
 	@PostMapping("/slotMetaDataAdd")
-	public void slotMetaDataAdd(@RequestBody SlotMetadata data) {
+	public void slotMetaDataAdd(@RequestBody AppointmentMetadata data) {
 		service.addAppointmrntMetaData(data);
 	}
 
-	public SlotMetadata slotMetaDataModify(@RequestBody SlotMetadata in) {
+	public AppointmentMetadata slotMetaDataModify(@RequestBody AppointmentMetadata in) {
 		return in;
 	}
 
-	public Integer slotMetaDataDelete(@RequestBody SlotMetadata in) {
+	public Integer slotMetaDataDelete(@RequestBody AppointmentMetadata in) {
 		return 0;
 	}
 
@@ -79,10 +79,10 @@ public class AppointmentBookingRest {
 	}
 
 	@PostMapping("/findBySlotDate")
-	public SlotMetadata findBySlotDate(@RequestBody SlotMetadata slotMetadata) {
-		System.out.println("date ..."+slotMetadata.getSlotDate());
+	public AppointmentMetadata findBySlotDate(@RequestBody AppointmentMetadata appointmentMetadata) {
+		System.out.println("date ..."+appointmentMetadata.getSlotDate());
 		
-		SlotMetadata meta= service.findBySlotDate(slotMetadata.getSlotDate());
+		AppointmentMetadata meta= service.findBySlotDate(appointmentMetadata.getSlotDate());
 		System.out.println("meata ..."+meta);
 		
 			System.out.println("dataSource="+dataSource+" mongoClient="+mongoClient);

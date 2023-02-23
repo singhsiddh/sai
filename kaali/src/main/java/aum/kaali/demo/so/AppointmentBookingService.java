@@ -6,12 +6,12 @@ import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import aum.kaali.demo.bo.SlotReservationData;
-import aum.kaali.demo.bo.SlotMetadata;
+import aum.kaali.demo.bo.AppointmentMetadata;
 
 public interface AppointmentBookingService {
 	public void addAppoirntment(SlotReservationData in);
-	public SlotMetadata findBySlotDate(Date date);
-	public void addAppointmrntMetaData(SlotMetadata  data);
+	public AppointmentMetadata findBySlotDate(Date date);
+	public void addAppointmrntMetaData(AppointmentMetadata  data);
 	public SlotReservationData findBySlotDateANDSlotId(Date date,int id);
 	public SlotReservationData findBySlotId(int id);
 	
