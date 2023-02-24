@@ -82,11 +82,12 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 	@Override
 	public Boolean bookAppointment(SlotReservationData transactionData) {
 		AppointmentSlotData currentData = appointmentSlotRepository.findByDateAndSlotId(transactionData.getSlotDate(), transactionData.getSlotId());
+		System.out.println(("Currentdata="+currentData));
 		Boolean flag=transactionSDO.bookAppointment(currentData, transactionData);
 		if(flag) {
 			// insert in to transaction table : SloReservationData
 			slotTransaction.save(transactionData);
-			
+			System.out.println("Slot reserved ");
 		}else {
 			System.out.println("Warning Some has booked your slot prior your transaction completion ");
 			return false; // It means some other has book that slot 

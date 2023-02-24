@@ -60,6 +60,16 @@ public class AppointmentSlotData implements Serializable{
 	}
 	
 	
+	@Override
+	public String toString() {
+		return "AppointmentSlotData [rowid=" + rowid + ", date=" + date + ", slotId=" + slotId + ", sequanceNumber="
+				+ sequanceNumber + ", slotStartTime=" + slotStartTime + ", slotEndTime=" + slotEndTime
+				+ ", totalAvailability=" + totalAvailability + ", serviceGuys=" + serviceGuys + ", reservServiceGuys="
+				+ reservServiceGuys + ", reserved=" + reserved + ", available=" + available + ", dateStamp=" + dateStamp
+				+ "]";
+	}
+
+
 	public long getDateStamp() {
 		return dateStamp;
 	}

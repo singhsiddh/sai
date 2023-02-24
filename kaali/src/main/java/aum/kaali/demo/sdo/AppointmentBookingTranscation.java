@@ -34,22 +34,22 @@ public class AppointmentBookingTranscation {
 	private int available;// ==totalAvailability-reserved
  */
 		// First Query for AppointmentSlotData
-		if( currentData.getAvailable() - transactionData.getTotalReservation() < 0) {
+	/*	if( currentData.getAvailable() - transactionData.getTotalReservation() < 0) {
 			return false;
 		}
-		
+		*/
 		BasicDBObject searchQuery = new BasicDBObject();
 		searchQuery.append("date", currentData.getDate());
 		searchQuery.append("slotId", currentData.getSlotId());
 		searchQuery.append("dateStamp", currentData.getDateStamp());//Optimistic Lock
 		// greater than slected number 
-
+System.out.println("searchQuery"+searchQuery);
 		BasicDBObject updateQuery = new BasicDBObject();
 		updateQuery.append("$set", new BasicDBObject().append("available", currentData.getAvailable() - transactionData.getTotalReservation() ));
 		updateQuery.append("$set", new BasicDBObject().append("dateStamp",(new Date()).getTime()));
 		MongoDatabase db = mongoClient.getDatabase("local");// TODO remove hardcoded value
 
-		UpdateResult result = db.getCollection("webHostInfo").updateMany(searchQuery, updateQuery);
+		UpdateResult result = db.getCollection("AppointmentSlotData").updateMany(searchQuery, updateQuery);
 		if (result.getModifiedCount() <= 0) {
 			return false;
 		}
