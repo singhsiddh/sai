@@ -17,14 +17,14 @@ public class AppointmentMetadata implements Serializable{
 	@Id
 	private String rowid;
 	private Date slotDate;
-	private List<SlotData> slotData;
+	private List<AppointmentSlotData> appointmentSlotData;
 	
 	
 	
-	public AppointmentMetadata(Date slotDate, List<SlotData> slotData) {
+	public AppointmentMetadata(Date slotDate, List<AppointmentSlotData> appointmentSlotData) {
 		super();
 		this.slotDate = slotDate;
-		this.slotData = slotData;
+		this.appointmentSlotData = appointmentSlotData;
 	}
 	public Date getSlotDate() {
 		return slotDate;
@@ -32,11 +32,11 @@ public class AppointmentMetadata implements Serializable{
 	public void setSlotDate(Date slotDate) {
 		this.slotDate = slotDate;
 	}
-	public List<SlotData> getSlotData() {
-		return slotData;
+	public List<AppointmentSlotData> getSlotData() {
+		return appointmentSlotData;
 	}
-	public void setSlotData(List<SlotData> slotData) {
-		this.slotData = slotData;
+	public void setSlotData(List<AppointmentSlotData> appointmentSlotData) {
+		this.appointmentSlotData = appointmentSlotData;
 	}
 	
 	

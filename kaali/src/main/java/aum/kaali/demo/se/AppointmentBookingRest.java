@@ -21,7 +21,7 @@ import com.mongodb.client.MongoDatabase;
 
 import aum.kaali.demo.bo.Employee;
 import aum.kaali.demo.bo.SlotReservationData;
-import aum.kaali.demo.bo.SlotData;
+import aum.kaali.demo.bo.AppointmentSlotData;
 import aum.kaali.demo.bo.AppointmentMetadata;
 import aum.kaali.demo.so.AppointmentBookingService;
 
@@ -111,11 +111,11 @@ public class AppointmentBookingRest {
 		return true;
 	}
 
-	public List<SlotData> getSlotData(Date date) {
+	public List<AppointmentSlotData> getSlotData(Date date) {
 		return null;
 	}
 
-	public List<SlotData> getSlotDataByServiceGuy(Date date) {
+	public List<AppointmentSlotData> getSlotDataByServiceGuy(Date date) {
 		return null;
 	}
 }

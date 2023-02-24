@@ -9,7 +9,7 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
-import aum.kaali.demo.bo.SlotData;
+import aum.kaali.demo.bo.AppointmentSlotData;
 
 
 //https://www.devglan.com/spring-boot/spring-boot-h2-database-example
@@ -21,7 +21,7 @@ public class UserDaoImpl implements UserDao {
     private EntityManager entityManager;
 	
 	public List getUserDetails() {
-		Criteria criteria = entityManager.unwrap(Session.class).createCriteria(SlotData.class);
+		Criteria criteria = entityManager.unwrap(Session.class).createCriteria(AppointmentSlotData.class);
 		return criteria.list();
 	}
 

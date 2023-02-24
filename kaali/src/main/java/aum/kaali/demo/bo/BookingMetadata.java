@@ -5,7 +5,7 @@ import java.util.List;
 
 public class BookingMetadata {
 	private Date bokkingDate;
-	private List<SlotData> slots;
+	private List<AppointmentSlotData> slots;
 	
 	public Date getBokkingDate() {
 		return bokkingDate;
@@ -13,10 +13,10 @@ public class BookingMetadata {
 	public void setBokkingDate(Date bokkingDate) {
 		this.bokkingDate = bokkingDate;
 	}
-	public List<SlotData> getSlots() {
+	public List<AppointmentSlotData> getSlots() {
 		return slots;
 	}
-	public void setSlots(List<SlotData> slots) {
+	public void setSlots(List<AppointmentSlotData> slots) {
 		this.slots = slots;
 	}
 	
