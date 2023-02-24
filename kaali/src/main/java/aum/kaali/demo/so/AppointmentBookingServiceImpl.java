@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 
 import aum.kaali.demo.bo.SlotReservationData;
 import aum.kaali.demo.bo.AppointmentMetadata;
+import aum.kaali.demo.bo.AppointmentSlotData;
 import aum.kaali.demo.sdo.AppointmentRepository;
+import aum.kaali.demo.sdo.AppointmentSlotMetadataRepository;
 import aum.kaali.demo.sdo.SlotMetadataRepository;
 @Service
 public class AppointmentBookingServiceImpl implements AppointmentBookingService {
@@ -16,6 +18,9 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 	  private AppointmentRepository appointmentRepository;
 	  @Autowired
 	  private SlotMetadataRepository slotRepository; 
+	  
+	  @Autowired
+	  private AppointmentSlotMetadataRepository appointmentSlotRepository; 
 
 	@Override
 	public void addAppoirntment(SlotReservationData in) {
@@ -53,4 +58,18 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 		return slotRepository.findBySlotDate(date);
 	}
 
+	@Override
+	public void addAppointmentSlotData(AppointmentSlotData data) {
+		
+		appointmentSlotRepository.save(data);
+	}
+
+	@Override
+	public List<AppointmentSlotData> findAppointmentSlotDataByDate(Date date) {
+		return appointmentSlotRepository.findAllByDate(date);
+	}
+	@Override
+	public AppointmentSlotData findAppointmentSlotDataByDateAndSlotId(Date date,Integer id) {
+		return appointmentSlotRepository.findByDateAndSlotId( date, id);
+	}
 }

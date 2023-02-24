@@ -40,7 +40,7 @@ public class AppointmentSlotData implements Serializable{
 	private int reserved;
 	private int available;// ==totalAvailability-reserved
 	
-	
+	private long dateStamp;// for optimistic lock
 	public AppointmentSlotData(int rowid, Date date, Integer slotId, Integer sequanceNumber, Float slotStartTime,
 			Float slotEndTime, Integer totalAvailability, List<ServicExecutive> serviceGuys,
 			List<ServicExecutive> reservServiceGuys, int reserved, int available) {
@@ -56,7 +56,20 @@ public class AppointmentSlotData implements Serializable{
 		this.reservServiceGuys = reservServiceGuys;
 		this.reserved = reserved;
 		this.available = available;
+		this.dateStamp= (new Date()).getTime();
 	}
+	
+	
+	public long getDateStamp() {
+		return dateStamp;
+	}
+
+
+	public void setDateStamp(long dateStamp) {
+		this.dateStamp = dateStamp;
+	}
+
+
 	public Date getDate() {
 		return date;
 	}

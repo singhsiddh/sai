@@ -106,6 +106,21 @@ public class AppointmentBookingRest {
 		return service.findAllBySlotDate(in.getSlotDate());
 	}
 	
+	@PostMapping("/addAppointmentSlotData")
+	public void addAppointmentSlotData(@RequestBody AppointmentSlotData data) {
+		
+		service.addAppointmentSlotData(data);
+	}
+
+	@PostMapping("/findAppointmentSlotDataByDate")
+	public List<AppointmentSlotData> findAppointmentSlotDataByDate(@RequestBody AppointmentSlotData data) {
+		return service.findAppointmentSlotDataByDate(data.getDate());
+	}
+	
+	@PostMapping("/findAppointmentSlotDataByDateAndSlotId")
+	public AppointmentSlotData findAppointmentSlotDataByDateAndSlotId(@RequestBody AppointmentSlotData data) {
+		return service.findAppointmentSlotDataByDateAndSlotId(data.getDate(), data.getSlotId());
+	}
 	
 	public Boolean slotMetedataClone(@RequestBody Date date) {
 		return true;
