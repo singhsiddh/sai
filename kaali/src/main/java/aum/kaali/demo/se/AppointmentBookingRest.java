@@ -122,6 +122,15 @@ public class AppointmentBookingRest {
 		return service.findAppointmentSlotDataByDateAndSlotId(data.getDate(), data.getSlotId());
 	}
 	
+	@PostMapping("/bookAppointment")
+	public String bookAppointment(@RequestBody SlotReservationData transactionData) {
+	Boolean	flag =service.bookAppointment(transactionData);
+	if(!flag) {
+		return "Fail";
+	}
+		return "Sucess";
+	}
+	
 	public Boolean slotMetedataClone(@RequestBody Date date) {
 		return true;
 	}

@@ -21,4 +21,6 @@ public interface AppointmentBookingService {
 	
 	public List<AppointmentSlotData> findAppointmentSlotDataByDate(Date date);
 	public AppointmentSlotData findAppointmentSlotDataByDateAndSlotId(Date date, Integer id);
+	public Boolean bookAppointment( SlotReservationData transactionData);
+	
 }

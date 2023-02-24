@@ -9,9 +9,11 @@ import org.springframework.stereotype.Service;
 import aum.kaali.demo.bo.SlotReservationData;
 import aum.kaali.demo.bo.AppointmentMetadata;
 import aum.kaali.demo.bo.AppointmentSlotData;
+import aum.kaali.demo.sdo.AppointmentBookingTranscation;
 import aum.kaali.demo.sdo.AppointmentRepository;
 import aum.kaali.demo.sdo.AppointmentSlotMetadataRepository;
 import aum.kaali.demo.sdo.SlotMetadataRepository;
+import aum.kaali.demo.sdo.SlotTransactioRepository;
 @Service
 public class AppointmentBookingServiceImpl implements AppointmentBookingService {
 	  @Autowired
@@ -21,6 +23,10 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 	  
 	  @Autowired
 	  private AppointmentSlotMetadataRepository appointmentSlotRepository; 
+	  @Autowired
+	  AppointmentBookingTranscation transactionSDO;
+	  @Autowired
+	  SlotTransactioRepository slotTransaction;
 
 	@Override
 	public void addAppoirntment(SlotReservationData in) {
@@ -71,5 +77,20 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 	@Override
 	public AppointmentSlotData findAppointmentSlotDataByDateAndSlotId(Date date,Integer id) {
 		return appointmentSlotRepository.findByDateAndSlotId( date, id);
+	}
+
+	@Override
+	public Boolean bookAppointment(SlotReservationData transactionData) {
+		AppointmentSlotData currentData = appointmentSlotRepository.findByDateAndSlotId(transactionData.getSlotDate(), transactionData.getSlotId());
+		Boolean flag=transactionSDO.bookAppointment(currentData, transactionData);
+		if(flag) {
+			// insert in to transaction table : SloReservationData
+			slotTransaction.save(transactionData);
+			
+		}else {
+			System.out.println("Warning Some has booked your slot prior your transaction completion ");
+			return false; // It means some other has book that slot 
+		}
+		return true;	
 	}
 }
