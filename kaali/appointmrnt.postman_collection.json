@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "71cc899b-612c-46e7-9b87-b45950d20026",
+		"name": "appointmrnt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": []
+		},
+		{
+			"name": "reservationbooking",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "appointmentMetadata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"slotMetaDataAdd\":\"2023-03-19\",\r\n\"slotData\":[\r\n{\r\n    \"slotId\":\"1\",\r\n    \"sequanceNumber\":\"1\",\r\n    \"slotStartTime\":\"09:00\",\r\n    \"slotEndTime\":\"09.30\"\r\n},\r\n{   \"slotId\":\"2\",\r\n    \"sequanceNumber\":\"2\",\r\n    \"slotStartTime\":\"09:30\",\r\n    \"slotEndTime\":\"10:00\"\r\n}\r\n,\r\n{   \"slotId\":\"3\",\r\n    \"sequanceNumber\":\"3\",\r\n    \"slotStartTime\":\"10:00\",\r\n    \"slotEndTime\":\"10:30\"\r\n}\r\n,\r\n{   \"slotId\":\"4\",\r\n    \"sequanceNumber\":\"4\",\r\n    \"slotStartTime\":\"10:30\",\r\n    \"slotEndTime\":\"11:00\"\r\n}\r\n]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/kaali/appointmnet/slotMetaDataAdd",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kaali",
+						"appointmnet",
+						"slotMetaDataAdd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBySloatdate",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "findBySlotDateANDSlotId",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "findBySlotDate",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "addAppointmentSlotData",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "findAppointmentSlotDataByDate",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "findAppointmentSlotDataByDateAndSlotId",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "BookAppointment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"slotDate\":\"2023-02-24\",\r\n\"slotId\":\"1\",\r\n\"totalReservation\":2\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/kaali/appointmnet/bookAppointment",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kaali",
+						"appointmnet",
+						"bookAppointment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BookAppointment25feb",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"slotDate\":\"2023-02-24\",\r\n\"slotId\":\"1\",\r\n\"totalReservation\":2\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/kaali/appointmnet/bookAppointment",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kaali",
+						"appointmnet",
+						"bookAppointment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
