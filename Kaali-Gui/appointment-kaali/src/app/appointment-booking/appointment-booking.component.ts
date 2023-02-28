@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {MatSelectModule} from '@angular/material/select';
 @Component({
   selector: 'app-appointment-booking',
   templateUrl: './appointment-booking.component.html',
@@ -10,7 +10,10 @@ export class AppointmentBookingComponent {
   bmonth = 2;
   byear = 2023;
   bookingMonthData:String[][]=[[]];
-  
+  months:number[]=[1,2,3,4,5,6,7,8,9,10,11,12];
+  selectOption(ee: String){
+console.log(ee);
+  }
   fillData() {
     console.log("fill data started");
     let firstDate = new Date(this.byear, this.bmonth - 1, 1);

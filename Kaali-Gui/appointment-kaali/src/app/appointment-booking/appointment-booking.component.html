@@ -2,3 +2,21 @@
 Sai baba ki jai
 jai Buddha babaa 
 <button class="button" (click)="fillData()">data..</button>
+<h4>Basic mat-select</h4>
+
+<select 
+[(ngModel)]="bmonth">
+    <option *ngFor="let month of months" [value]="month">
+      {{month}}
+    </option>
+  </select>
+
+<ul> 
+    <li *ngFor="let data of   bookingMonthData    ; let i = index"> 
+        
+      <span *ngFor="let dayData of   bookingMonthData[i]    ; let j = index"> 
+      <!-- this also works <button class="button" >sai{{bookingMonthData[i][j]}}</button>-->
+      <button class="button" > {{dayData}}</button> 
+      </span>
+    </li>
+  </ul>
