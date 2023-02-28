@@ -15,6 +15,7 @@ export class AppointmentBookingComponent {
 console.log(ee);
   }
   fillData() {
+    this.bookingMonthData=[];
     console.log("fill data started");
     let firstDate = new Date(this.byear, this.bmonth - 1, 1);
     let lastDate = new Date(this.byear, this.bmonth, 0);
