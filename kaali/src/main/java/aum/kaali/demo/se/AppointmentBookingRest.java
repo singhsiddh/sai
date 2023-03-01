@@ -80,11 +80,24 @@ public class AppointmentBookingRest {
 		return in;
 	}
 
+	@PostMapping("/findAllSlotByDate")
+	public AppointmentMetadata findAllBySlotDate(@RequestBody AppointmentMetadata data) {
+		System.out.println("date ..."+data.getDate());
+		
+		AppointmentMetadata meta= new AppointmentMetadata();//service.findBySlotDate(appointmentMetadata.getSlotDate());
+		System.out.println("meata ..."+meta);
+		meta.setDate(data.getDate());
+		meta.setSlotData(service.findAppointmentSlotDataByDate(data.getDate()));
+			System.out.println("dataSource="+dataSource+" mongoClient="+mongoClient);
+		
+		return meta;
+	}
+	
 	@PostMapping("/findBySlotDate")
 	public AppointmentMetadata findBySlotDate(@RequestBody AppointmentMetadata appointmentMetadata) {
-		System.out.println("date ..."+appointmentMetadata.getSlotDate());
+		System.out.println("date ..."+appointmentMetadata.getDate());
 		
-		AppointmentMetadata meta= service.findBySlotDate(appointmentMetadata.getSlotDate());
+		AppointmentMetadata meta= service.findBySlotDate(appointmentMetadata.getDate());
 		System.out.println("meata ..."+meta);
 		
 			System.out.println("dataSource="+dataSource+" mongoClient="+mongoClient);

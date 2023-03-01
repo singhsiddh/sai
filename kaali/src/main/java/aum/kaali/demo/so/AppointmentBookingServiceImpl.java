@@ -61,7 +61,7 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 	@Override
 	public AppointmentMetadata findBySlotDate(Date date) {
 		// TODO Auto-generated method stub
-		return slotRepository.findBySlotDate(date);
+		return slotRepository.findByDate(date);
 	}
 
 	@Override

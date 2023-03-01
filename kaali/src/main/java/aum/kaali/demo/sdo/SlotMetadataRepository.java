@@ -10,7 +10,7 @@ import aum.kaali.demo.bo.SlotReservationData;
 //slotMetaDataAdd
 public interface SlotMetadataRepository extends MongoRepository<AppointmentMetadata, String> {
 	
-	public AppointmentMetadata findBySlotDate(Date date);
+	public AppointmentMetadata findByDate(Date date);
 
 	 // public SlotDataIn findByFirstName(String firstName);
 	 // public List<SlotDataIn> findByLastName(String lastName);

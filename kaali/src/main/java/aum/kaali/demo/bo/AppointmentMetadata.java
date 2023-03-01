@@ -16,21 +16,24 @@ public class AppointmentMetadata implements Serializable{
 	private static final long serialVersionUID = 1L;
 	@Id
 	private String rowid;
-	private Date slotDate;
+	private Date date;
 	private List<AppointmentSlotData> appointmentSlotData;
+	private int totalAvaibility=-1;
 	
-	
+	public AppointmentMetadata() {
+		
+	}
 	
 	public AppointmentMetadata(Date slotDate, List<AppointmentSlotData> appointmentSlotData) {
 		super();
-		this.slotDate = slotDate;
+		this.date = slotDate;
 		this.appointmentSlotData = appointmentSlotData;
 	}
-	public Date getSlotDate() {
-		return slotDate;
+	public Date getDate() {
+		return date;
 	}
-	public void setSlotDate(Date slotDate) {
-		this.slotDate = slotDate;
+	public void setDate(Date slotDate) {
+		this.date = slotDate;
 	}
 	public List<AppointmentSlotData> getSlotData() {
 		return appointmentSlotData;
@@ -39,5 +42,22 @@ public class AppointmentMetadata implements Serializable{
 		this.appointmentSlotData = appointmentSlotData;
 	}
 	
-	
+	public void setTotalAvailableSlots() {
+		if(this.totalAvaibility==-1) {
+			if(appointmentSlotData==null) {
+				this.totalAvaibility=0;
+			}else{
+				for( AppointmentSlotData data:appointmentSlotData ) {
+					this.totalAvaibility+=data.getAvailable();
+				}
+			}
+		}
+		
+		
+	}
+	public int getTotalAvailableSlots() {
+		this.setTotalAvailableSlots();
+		return this.totalAvaibility;
+		
+	}
 }
