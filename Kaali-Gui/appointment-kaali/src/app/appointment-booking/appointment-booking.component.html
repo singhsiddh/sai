@@ -16,7 +16,7 @@ jai Buddha babaa
         
       <span *ngFor="let dayData of   bookingMonthData[i]    ; let j = index"> 
       <!-- this also works <button class="button" >sai{{bookingMonthData[i][j]}}</button>-->
-      <button class="button" > {{dayData}}</button> 
+      <button class="button" (click)="callData()"> {{dayData}}</button> 
       </span>
-    </li>
+    </li> 
   </ul>

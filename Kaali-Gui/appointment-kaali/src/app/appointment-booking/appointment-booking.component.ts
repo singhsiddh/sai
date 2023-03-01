@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import {MatSelectModule} from '@angular/material/select';
+import { Router } from '@angular/router';
+import { ConfigServiceService } from '../config-service.service';
 @Component({
   selector: 'app-appointment-booking',
   templateUrl: './appointment-booking.component.html',
   styleUrls: ['./appointment-booking.component.css']
 })
 export class AppointmentBookingComponent {
-
+  constructor(private service: ConfigServiceService, private router: Router) { }
   bmonth = 2;
   byear = 2023;
   bookingMonthData:String[][]=[[]];
@@ -14,6 +16,22 @@ export class AppointmentBookingComponent {
   selectOption(ee: String){
 console.log(ee);
   }
+  callData() {
+
+    let blog = {      "date": "2023-02-24",  "slotDate":"2023-02-24",   "slotId":"2" };
+
+    this.service.postBlog(blog,"kaali/appointmnet/findAppointmentSlotDataByDate").subscribe({
+      next:(num) =>{
+        console.log(num);
+           },
+      error: (err) => { console.error(err) },
+      complete: () => { 
+       console.log("response in complete");
+       //.. this.router.navigate(['viewblogs'])
+       }
+    });
+  }
+
   fillData() {
     this.bookingMonthData=[];
     console.log("fill data started");

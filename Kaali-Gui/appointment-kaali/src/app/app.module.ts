@@ -9,6 +9,8 @@ import { RouterModule } from '@angular/router';
 import {MatSelectModule} from '@angular/material/select';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +21,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
+    MatSelectModule,
     RouterModule.forRoot([
       { path: 'sai', component: AppointmentBookingComponent },
       { path: 'baba/:productId', component: AppointmentBookingComponent },
