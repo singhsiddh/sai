@@ -47,6 +47,7 @@ public class AppointmentMetadata implements Serializable{
 			if(appointmentSlotData==null) {
 				this.totalAvaibility=0;
 			}else{
+				this.totalAvaibility=0;
 				for( AppointmentSlotData data:appointmentSlotData ) {
 					this.totalAvaibility+=data.getAvailable();
 				}
