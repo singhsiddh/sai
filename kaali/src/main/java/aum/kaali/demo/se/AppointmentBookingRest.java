@@ -1,8 +1,14 @@
 package aum.kaali.demo.se;
 
 import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.sql.DataSource;
 
@@ -23,6 +29,7 @@ import com.mongodb.client.MongoDatabase;
 import aum.kaali.demo.bo.Employee;
 import aum.kaali.demo.bo.SlotReservationData;
 import aum.kaali.demo.bo.AppointmentSlotData;
+import aum.kaali.demo.bo.AllSlotByMonth;
 import aum.kaali.demo.bo.AppointmentMetadata;
 import aum.kaali.demo.so.AppointmentBookingService;
 
@@ -37,10 +44,9 @@ public class AppointmentBookingRest {
 
 	@Autowired
 	MongoClient mongoClient;
-	//@Autowired
-	//MongoDatabase database ;
-		
-		
+	// @Autowired
+	// MongoDatabase database ;
+
 	@GetMapping("/employees")
 	List<Employee> all() {
 		return null;
@@ -82,26 +88,70 @@ public class AppointmentBookingRest {
 
 	@PostMapping("/findAllSlotByDate")
 	public AppointmentMetadata findAllBySlotDate(@RequestBody AppointmentMetadata data) {
-		System.out.println("date ..."+data.getDate());
-		
-		AppointmentMetadata meta= new AppointmentMetadata();//service.findBySlotDate(appointmentMetadata.getSlotDate());
-		System.out.println("meata ..."+meta);
+		System.out.println("date ..." + data.getDate());
+
+		AppointmentMetadata meta = new AppointmentMetadata();// service.findBySlotDate(appointmentMetadata.getSlotDate());
+		System.out.println("meata ..." + meta);
 		meta.setDate(data.getDate());
 		meta.setSlotData(service.findAppointmentSlotDataByDate(data.getDate()));
-			System.out.println("dataSource="+dataSource+" mongoClient="+mongoClient);
-		
+		System.out.println("dataSource=" + dataSource + " mongoClient=" + mongoClient);
+
 		return meta;
 	}
-	
+
+	@PostMapping("/findAllSlotByMonth")
+	public AllSlotByMonth findAllSlotByMonth(@RequestBody AllSlotByMonth data) {
+		int year = data.getYear();
+		int month = data.getMonth();
+		String dateStr = year + "-" + month + "-01";
+		DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		Date today = null;
+		try {
+			today = sdf.parse(dateStr);
+		} catch (ParseException e) {
+
+			e.printStackTrace();
+		}
+
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(today);
+
+		calendar.add(Calendar.MONTH, 1);
+		calendar.set(Calendar.DAY_OF_MONTH, 1);
+		calendar.add(Calendar.DATE, -1);
+
+		Date lastDayOfMonth = calendar.getTime();
+
+		Map<Integer, Integer> dataMap = new HashMap<Integer, Integer>();
+		List<AppointmentSlotData> list = service.findAppointmentSlotDataBetweenDates(today, lastDayOfMonth);
+
+		Integer day = 0;
+		Integer sumOfAvailableSlot = 0;
+		for (AppointmentSlotData data1 : list) {
+			calendar.setTime(data1.getDate());
+			day = calendar.get(Calendar.DAY_OF_MONTH);
+			if (dataMap.get(day) != null) {
+				sumOfAvailableSlot = sumOfAvailableSlot + dataMap.get(day);
+				dataMap.put(day, sumOfAvailableSlot);
+			} else {
+				dataMap.put(day, data1.getAvailable());
+			}
+		}
+		data.setSlotCountByDay(dataMap);
+		System.out.println("dataSource=" + dataSource + " mongoClient=" + mongoClient);
+
+		return data;
+	}
+
 	@PostMapping("/findBySlotDate")
 	public AppointmentMetadata findBySlotDate(@RequestBody AppointmentMetadata appointmentMetadata) {
-		System.out.println("date ..."+appointmentMetadata.getDate());
-		
-		AppointmentMetadata meta= service.findBySlotDate(appointmentMetadata.getDate());
-		System.out.println("meata ..."+meta);
-		
-			System.out.println("dataSource="+dataSource+" mongoClient="+mongoClient);
-		
+		System.out.println("date ..." + appointmentMetadata.getDate());
+
+		AppointmentMetadata meta = service.findBySlotDate(appointmentMetadata.getDate());
+		System.out.println("meata ..." + meta);
+
+		System.out.println("dataSource=" + dataSource + " mongoClient=" + mongoClient);
+
 		return meta;
 	}
 
@@ -109,21 +159,20 @@ public class AppointmentBookingRest {
 	public SlotReservationData findBySlotDateANDSlotId(@RequestBody SlotReservationData in) {
 		return service.findBySlotDateANDSlotId(in.getSlotDate(), in.getSlotId());
 	}
-	
 
 	@PostMapping("/findBySlotId")
 	public SlotReservationData findBySlotId(@RequestBody SlotReservationData in) {
-		return service.findBySlotId( in.getSlotId());
+		return service.findBySlotId(in.getSlotId());
 	}
 
 	@PostMapping("/findAllBySlotDate")
-	public List<SlotReservationData> findAllBySlotDate(@RequestBody SlotReservationData in){
+	public List<SlotReservationData> findAllBySlotDate(@RequestBody SlotReservationData in) {
 		return service.findAllBySlotDate(in.getSlotDate());
 	}
-	
+
 	@PostMapping("/addAppointmentSlotData")
 	public void addAppointmentSlotData(@RequestBody AppointmentSlotData data) {
-		
+
 		service.addAppointmentSlotData(data);
 	}
 
@@ -131,21 +180,21 @@ public class AppointmentBookingRest {
 	public List<AppointmentSlotData> findAppointmentSlotDataByDate(@RequestBody AppointmentSlotData data) {
 		return service.findAppointmentSlotDataByDate(data.getDate());
 	}
-	
+
 	@PostMapping("/findAppointmentSlotDataByDateAndSlotId")
 	public AppointmentSlotData findAppointmentSlotDataByDateAndSlotId(@RequestBody AppointmentSlotData data) {
 		return service.findAppointmentSlotDataByDateAndSlotId(data.getDate(), data.getSlotId());
 	}
-	
+
 	@PostMapping("/bookAppointment")
 	public String bookAppointment(@RequestBody SlotReservationData transactionData) {
-	Boolean	flag =service.bookAppointment(transactionData);
-	if(!flag) {
-		return "Fail";
-	}
+		Boolean flag = service.bookAppointment(transactionData);
+		if (!flag) {
+			return "Fail";
+		}
 		return "Sucess";
 	}
-	
+
 	public Boolean slotMetedataClone(@RequestBody Date date) {
 		return true;
 	}

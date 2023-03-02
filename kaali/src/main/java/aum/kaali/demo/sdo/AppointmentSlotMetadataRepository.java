@@ -11,5 +11,6 @@ import aum.kaali.demo.bo.AppointmentSlotData;
 public interface AppointmentSlotMetadataRepository extends MongoRepository<AppointmentSlotData, String> {
 	
 	public List<AppointmentSlotData> findAllByDate(Date date); 
+	public List<AppointmentSlotData> findByDateBetween(Date from, Date to);
 	public AppointmentSlotData findByDateAndSlotId(Date date,Integer id); 
 }

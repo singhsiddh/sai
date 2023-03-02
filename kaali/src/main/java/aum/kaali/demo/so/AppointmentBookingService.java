@@ -20,6 +20,7 @@ public interface AppointmentBookingService {
 	public List<SlotReservationData> findAllBySlotDate(Date date);
 	
 	public List<AppointmentSlotData> findAppointmentSlotDataByDate(Date date);
+	public List<AppointmentSlotData> findAppointmentSlotDataBetweenDates(Date dateF,Date dateT);
 	public AppointmentSlotData findAppointmentSlotDataByDateAndSlotId(Date date, Integer id);
 	public Boolean bookAppointment( SlotReservationData transactionData);
 	

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import aum.kaali.demo.bo.SlotReservationData;
 import aum.kaali.demo.bo.AppointmentMetadata;
 import aum.kaali.demo.bo.AppointmentSlotData;
-import aum.kaali.demo.sdo.AppointmentBookingTranscation;
+import aum.kaali.demo.sdo.AppointmentBookingNonJPATranscation;
 import aum.kaali.demo.sdo.AppointmentRepository;
 import aum.kaali.demo.sdo.AppointmentSlotMetadataRepository;
 import aum.kaali.demo.sdo.SlotMetadataRepository;
@@ -24,7 +24,7 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 	  @Autowired
 	  private AppointmentSlotMetadataRepository appointmentSlotRepository; 
 	  @Autowired
-	  AppointmentBookingTranscation transactionSDO;
+	  AppointmentBookingNonJPATranscation transactionSDO;
 	  @Autowired
 	  SlotTransactioRepository slotTransaction;
 
@@ -93,5 +93,10 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 			return false; // It means some other has book that slot 
 		}
 		return true;	
+	}
+
+	@Override
+	public List<AppointmentSlotData> findAppointmentSlotDataBetweenDates(Date dateF, Date dateT) {
+		return appointmentSlotRepository.findByDateBetween(dateF,dateT);
 	}
 }
