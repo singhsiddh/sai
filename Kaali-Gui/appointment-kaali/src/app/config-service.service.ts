@@ -9,6 +9,12 @@ import { catchError, retry } from 'rxjs/operators';
 export class ConfigServiceService {
 
   constructor(private http: HttpClient) { }
+  company: string = "Gautam";
+  branch: string = "OCC";
+  year: number = 0;
+  month: number = 1;
+  day: number = 1;
+  dayStr:String="";
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -16,8 +22,8 @@ export class ConfigServiceService {
     })
   };
 
-  postBlog(blog: any,operation :String) {
-    let url = "http://localhost:8080/"+operation;
+  postBlog(blog: any, operation: String) {
+    let url = "http://localhost:8080/" + operation;
     return this.http.post(url, blog, this.httpOptions);
   }
 }

@@ -18,6 +18,14 @@ export class AppointmentBookingComponent {
   selectOption(ee: String) {
     console.log(ee);
   }
+
+  callSlotComponent(ind :any){
+    this.service.month=this.bmonth;
+    this.service.year=this.byear;
+    this.service.dayStr=ind;
+    console.log("ind....."+ind);
+    this.router.navigate(['/baba/1']);
+  }
   callData() {
 
     let blog = { "date": "2023-02-24", "slotDate": "2023-02-24", "slotId": "2" };
