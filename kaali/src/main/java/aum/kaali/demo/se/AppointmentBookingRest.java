@@ -123,8 +123,9 @@ public class AppointmentBookingRest {
 		Date lastDayOfMonth = calendar.getTime();
 
 		Map<Integer, Integer> dataMap = new HashMap<Integer, Integer>();
+		/*this can also achive by mango aggragartion but not expert writing in java and all aexmplae in script way*/
 		List<AppointmentSlotData> list = service.findAppointmentSlotDataBetweenDates(today, lastDayOfMonth);
-System.out.println("MMMMMM slot list "+list);
+//System.out.println("MMMMMM slot list "+list);
 		Integer day = 0;
 		Integer sumOfAvailableSlot = 0;
 		for (AppointmentSlotData data1 : list) {
@@ -138,7 +139,7 @@ System.out.println("MMMMMM slot list "+list);
 			}
 		}
 		data.setSlotCountByDay(dataMap);
-		System.out.println("dataSource=" + dataSource + " mongoClient=" + mongoClient);
+		//System.out.println("dataSource=" + dataSource + " mongoClient=" + mongoClient);
 
 		return data;
 	}
