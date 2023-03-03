@@ -19,10 +19,10 @@ jai Buddha babaa
         
       <span *ngFor="let dayData of   data    ; let j = index"> 
       <!-- this also works <button class="button" >sai{{bookingMonthData[i][j]}}</button>-->
-      <span *ngIf="dayData.availability !== 0 ">
+      <span *ngIf="dayData.availaibilty !== 0 ">
       <button class="button" (click)="callData()"> ${{dayData.day }}</button> 
       </span>
-      <span *ngIf="dayData.availability == 0 ">
+      <span *ngIf="dayData.availaibilty == 0 ">
         <button class="button" (click)="callData()"> *{{dayData.day }}</button> 
 
 
