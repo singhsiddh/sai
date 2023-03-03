@@ -124,14 +124,14 @@ public class AppointmentBookingRest {
 
 		Map<Integer, Integer> dataMap = new HashMap<Integer, Integer>();
 		List<AppointmentSlotData> list = service.findAppointmentSlotDataBetweenDates(today, lastDayOfMonth);
-
+System.out.println("MMMMMM slot list "+list);
 		Integer day = 0;
 		Integer sumOfAvailableSlot = 0;
 		for (AppointmentSlotData data1 : list) {
 			calendar.setTime(data1.getDate());
 			day = calendar.get(Calendar.DAY_OF_MONTH);
 			if (dataMap.get(day) != null) {
-				sumOfAvailableSlot = sumOfAvailableSlot + dataMap.get(day);
+				sumOfAvailableSlot = sumOfAvailableSlot + dataMap.get(day)+data1.getAvailable();
 				dataMap.put(day, sumOfAvailableSlot);
 			} else {
 				dataMap.put(day, data1.getAvailable());
