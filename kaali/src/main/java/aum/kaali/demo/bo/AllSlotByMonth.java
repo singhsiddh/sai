@@ -2,6 +2,7 @@ package aum.kaali.demo.bo;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 public class AllSlotByMonth implements Serializable{
@@ -16,7 +17,7 @@ public class AllSlotByMonth implements Serializable{
 	private int year;
 	private int month;
 	Map<Date,Integer> slotCounts;
-	Map<Integer,Integer> slotCountByDay;
+	List<AvailaibilyByDays> slotCountByDay;
 	public String getCompnay() {
 		return compnay;
 	}
@@ -47,10 +48,10 @@ public class AllSlotByMonth implements Serializable{
 	public void setSlotCounts(Map<Date, Integer> slotCounts) {
 		this.slotCounts = slotCounts;
 	}
-	public Map<Integer, Integer> getSlotCountByDay() {
+	public List<AvailaibilyByDays> getSlotCountByDay() {
 		return slotCountByDay;
 	}
-	public void setSlotCountByDay(Map<Integer, Integer> slotCountByDay) {
+	public void setSlotCountByDay(List<AvailaibilyByDays> slotCountByDay) {
 		this.slotCountByDay = slotCountByDay;
 	}
 	

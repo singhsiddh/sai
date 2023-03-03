@@ -4,6 +4,7 @@ import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
@@ -29,6 +30,7 @@ import com.mongodb.client.MongoDatabase;
 import aum.kaali.demo.bo.Employee;
 import aum.kaali.demo.bo.SlotReservationData;
 import aum.kaali.demo.bo.AppointmentSlotData;
+import aum.kaali.demo.bo.AvailaibilyByDays;
 import aum.kaali.demo.bo.AllSlotByMonth;
 import aum.kaali.demo.bo.AppointmentMetadata;
 import aum.kaali.demo.so.AppointmentBookingService;
@@ -121,7 +123,8 @@ public class AppointmentBookingRest {
 		calendar.add(Calendar.DATE, -1);
 
 		Date lastDayOfMonth = calendar.getTime();
-
+List<AvailaibilyByDays> listAvaialbility = new ArrayList<>();
+AvailaibilyByDays availaibilyByDays = null;
 		Map<Integer, Integer> dataMap = new HashMap<Integer, Integer>();
 		/*this can also achive by mango aggragartion but not expert writing in java and all aexmplae in script way*/
 		List<AppointmentSlotData> list = service.findAppointmentSlotDataBetweenDates(today, lastDayOfMonth);
@@ -138,7 +141,14 @@ public class AppointmentBookingRest {
 				dataMap.put(day, data1.getAvailable());
 			}
 		}
-		data.setSlotCountByDay(dataMap);
+		for (Integer name : dataMap.keySet()) {
+			availaibilyByDays = new AvailaibilyByDays();
+			availaibilyByDays.setAvailaibilty(dataMap.get(name));
+			availaibilyByDays.setDay(""+name);
+			listAvaialbility.add(availaibilyByDays);
+            System.out.println("key: " + name);
+	}
+		data.setSlotCountByDay(listAvaialbility);
 		//System.out.println("dataSource=" + dataSource + " mongoClient=" + mongoClient);
 
 		return data;
