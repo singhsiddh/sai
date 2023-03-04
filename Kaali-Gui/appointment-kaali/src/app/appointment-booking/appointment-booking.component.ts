@@ -128,7 +128,7 @@ export class AppointmentBookingComponent {
          console.log()
          //iArr.push({"day":".."+dayNumber,"availability":availabilityData});
          availabilityData = this.getAvailability(dayNumber);
-          iArr.push({"day":".."+dayNumber,"availaibilty":availabilityData});
+          iArr.push({"day":""+dayNumber,"availaibilty":availabilityData});
           if(availabilityData !=0){
             console.log("non zero availabilty data");
             console.log(iArr);
