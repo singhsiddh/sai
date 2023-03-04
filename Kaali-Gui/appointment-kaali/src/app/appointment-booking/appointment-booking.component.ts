@@ -26,6 +26,10 @@ export class AppointmentBookingComponent {
     console.log("ind....."+ind);
     this.router.navigate(['/baba/1']);
   }
+
+  /**
+   * This method call service to get moth wise availability at particular date
+   */
   callData() {
 
     let blog = { "date": "2023-02-24", "slotDate": "2023-02-24", "slotId": "2" };
@@ -41,6 +45,10 @@ export class AppointmentBookingComponent {
       }
     });
   }
+
+  /**
+   * This method will tell which date in particular months has available slot for booking
+   */
   callMonthWiseAvailability() {
     let blog = { "month": this.bmonth, "year": this.byear };
 
@@ -145,6 +153,11 @@ export class AppointmentBookingComponent {
     //window.alert(this.bookingMonthData);
   }
 
+  /**
+   * This method is used to fill in particultar claender days what is avail;abilty 
+   * @param day 
+   * @returns 
+   */
  getAvailability(day:number) : number{
 //if(this.monthAvaibility && this.monthAvaibility.slotCountByDay){
  // console.log(" Inside getAvailability call sai baba.........>>>>>");

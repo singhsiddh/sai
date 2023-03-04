@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
+import { SlotData } from './appointment-booking-slot/appointment-booking-slot.component';
 
 @Injectable({
   providedIn: 'root'
@@ -26,4 +27,5 @@ export class ConfigServiceService {
     let url = "http://localhost:8080/" + operation;
     return this.http.post(url, blog, this.httpOptions);
   }
+
 }
