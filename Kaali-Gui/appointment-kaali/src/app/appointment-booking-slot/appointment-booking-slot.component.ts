@@ -30,8 +30,22 @@ this.service.postBlog(blog, "kaali/appointmnet/findAppointmentSlotDataByDate").s
 });
 }
 
-slotBooking(date:Date,slotId:number){
-console.log(" date"+date+" slotId="+slotId);
+slotBooking(slotdata :SlotData){//(date:Date,slotId:number){
+console.log(" date"+slotdata.date+" slotId="+slotdata.slotId);
+let blog = { "date": slotdata.date, "slotDate":slotdata.date, "slotId": slotdata.slotId ,"totalReservation":1};
+
+this.service.postBlog(blog, "kaali/appointmnet/bookAppointment").subscribe({
+  next: (num) => {
+    console.log("Slot Booking response.....................");
+    console.log(num);
+    
+  },
+  error: (err) => { console.error(err) },
+  complete: () => {
+    console.log("response in complete for slot reservation ");
+    //.. this.router.navigate(['viewblogs'])
+  }
+});
 }
 }
 export class SlotData{

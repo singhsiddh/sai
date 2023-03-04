@@ -1,12 +1,13 @@
 <p>appointment-booking-slot works!</p>
-
+<p>appointment-booking-slot works!</p>
+<p>appointment-booking-slot works!</p>
 <span *ngFor="let data of   slotdata   ; let i = index"> 
   <!-- <span *ngFor="let data of   data1[i]   ; let j = index"> -->
    
 av:{{data.available}}
   st:{{data.slotStartTime}}
     <span *ngIf="data.available !== 0 ">
-        <button class="button" > ${{data.slotStartTime }}</button> 
+        <button class="button" (click)="slotBooking(data)"> ${{data.slotStartTime }}</button> 
         </span>
         <span *ngIf="data.available == 0 ">
           <button class="button" > *{{data.slotStartTime }}</button> 
