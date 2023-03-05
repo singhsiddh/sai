@@ -28,8 +28,6 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 	AppointmentBookingNonJPATranscation transactionSDO;
 	@Autowired
 	private SlotTransactioRepository slotTransaction;
-	
-	
 
 	@Override
 	public void addAppoirntment(SlotReservationData in) {
@@ -88,7 +86,8 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 		AppointmentSlotData currentData = appointmentSlotRepository.findByDateAndSlotId(transactionData.getSlotDate(),
 				transactionData.getSlotId());
 		System.out.println(("Currentdata=" + currentData));
-		transactionData.setReservationTrnsactionNumber("TB"+transactionData.getSlotDate()+transactionData.getSlotId()+"-"+(new Date().getTime()));
+		transactionData.setReservationTrnsactionNumber(
+				"TB" + transactionData.getSlotDate() + transactionData.getSlotId() + "-" + (new Date().getTime()));
 		Boolean flag = transactionSDO.bookAppointment(currentData, transactionData);
 		if (flag) {
 			// insert in to transaction table : SloReservationData
@@ -125,25 +124,37 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 	}
 
 	@Override
-	public Integer cancleBookedAppoinmentByTransactionId(String  transactionId) {
+	public Integer cancleBookedAppoinmentByTransactionId(String transactionId) {
 		/**
 		 * 1: update status =deleted in Table: SlotReservationData 2: add availability
 		 * in original master table AppointmentSlotData
 		 */
-		
+
 		if (transactionId != null) {
-			SlotReservationData data=	slotTransaction.findByReservationTrnsactionNumber(transactionId);
-			if(! DELETE_STATUS.equalsIgnoreCase(data.getStatus())) {
-			data.setStatus(DELETE_STATUS);
-			if(data.getTotalReservation()<=0) {
-				data.setTotalReservation(1);
-			}
-			slotTransaction.save(data);
-			AppointmentSlotData slotData=appointmentSlotRepository.findByDateAndSlotId(data.getSlotDate(), data.getSlotId());
-			
-			slotData.setAvailable(slotData.getAvailable()+data.getTotalReservation());
-			//later use optimistic lock as if same time other are also cancelin might be wron g numebr updated 
-			appointmentSlotRepository.save(slotData);
+			SlotReservationData data = slotTransaction.findByReservationTrnsactionNumber(transactionId);
+			if (!DELETE_STATUS.equalsIgnoreCase(data.getStatus())) {
+				data.setStatus(DELETE_STATUS);
+				if (data.getTotalReservation() <= 0) {
+					data.setTotalReservation(1);
+				}
+				Boolean flag = transactionSDO.updateAppoinmentOptimisticLock(data);// in case 2 ore canclation on same
+																					// slot id then update would be
+																					// wrong for availability hence
+																					// optimistic lock is used
+				if (flag) {
+					slotTransaction.save(data);
+				} else {
+					System.out.println(" Failed to get optimistic lock in 4 attepts");
+					return 0;//Throw exception with Failed to get optimistic lock in 4 attempts
+				}
+				/*
+				 * slotData=appointmentSlotRepository.findByDateAndSlotId(data.getSlotDate(),
+				 * data.getSlotId());
+				 * 
+				 * slotData.setAvailable(slotData.getAvailable()+data.getTotalReservation());
+				 * 
+				 * appointmentSlotRepository.save(slotData);
+				 */
 			}
 		} else {
 			return 0;// throw exception Invalid transaction number

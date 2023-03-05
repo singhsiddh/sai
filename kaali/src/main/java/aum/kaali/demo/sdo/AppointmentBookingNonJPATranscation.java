@@ -28,6 +28,8 @@ import aum.kaali.demo.bo.SlotReservationData;
 public class AppointmentBookingNonJPATranscation {
 	@Autowired
 	MongoClient mongoClient;
+	@Autowired
+	private AppointmentSlotMetadataRepository appointmentSlotRepository;
 
 	// @Autowired
 	// MongoDatabase database ;
@@ -77,6 +79,55 @@ public class AppointmentBookingNonJPATranscation {
 		return 0;
 	}
 
+	public Boolean updateAppoinmentOptimisticLock(SlotReservationData data) {
+		String transactionId = "";
+		Boolean flag = false;
+		for (int i = 0; i < 4; i++) {// in case optimistic lock fail then retry 3 more times
+			AppointmentSlotData currentData = appointmentSlotRepository.findByDateAndSlotId(data.getSlotDate(),
+					data.getSlotId());
+
+			BasicDBObject searchQuery = new BasicDBObject();
+			searchQuery.append("date", data.getSlotDate());
+			searchQuery.append("slotId", data.getSlotId());
+			searchQuery.append("dateStamp", currentData.getDateStamp());// Optimistic Lock
+			transactionId = currentData.getDate() + "-" + currentData.getSlotId() + "-" + currentData.getDateStamp();
+
+			int reserved = currentData.getReserved() - data.getTotalReservation();
+			Integer newAvailability = currentData.getAvailable() + data.getTotalReservation();
+			BasicDBObject updateFields = new BasicDBObject();
+			updateFields.append("available", newAvailability);
+			updateFields.append("dateStamp", (new Date()).getTime());
+			updateFields.append("reserved", reserved);
+			updateFields.append("transactionId", transactionId);
+			updateFields.append("user", "Uoooo");
+			BasicDBObject setQuery = new BasicDBObject();
+			setQuery.append("$set", updateFields);
+			// col.update(searchQuery, setQuery);
+
+			System.out.println("newAvailability" + newAvailability);
+
+			MongoDatabase db = mongoClient.getDatabase("local");// TODO remove hardcoded value
+
+			UpdateResult result = db.getCollection("AppointmentSlotData").updateMany(searchQuery, setQuery);
+			System.out.println(" Result for update =" + result + " count" + result.getModifiedCount());
+			if (result.getModifiedCount() > 0) {
+				flag = true;
+				break;
+			}else {//retry after 1000 milisecond
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					
+					e.printStackTrace();
+				}
+			}
+
+		}
+
+		return flag;
+
+	}
+
 	public Boolean bookAppointment(AppointmentSlotData currentData, SlotReservationData transactionData) {
 		/*
 		 * private Integer totalAvailability=1; //@OneToMany(targetEntity=Student.class,
@@ -92,12 +143,12 @@ public class AppointmentBookingNonJPATranscation {
 		 * return false; }
 		 * 
 		 */
-		String transactionId="";
+		String transactionId = "";
 		BasicDBObject searchQuery = new BasicDBObject();
 		searchQuery.append("date", currentData.getDate());
 		searchQuery.append("slotId", currentData.getSlotId());
 		searchQuery.append("dateStamp", currentData.getDateStamp());// Optimistic Lock
-		transactionId=currentData.getDate()+"-"+currentData.getSlotId()+"-"+currentData.getDateStamp();
+		transactionId = currentData.getDate() + "-" + currentData.getSlotId() + "-" + currentData.getDateStamp();
 		// greater than slected number
 		System.out.println("searchQuery" + searchQuery);
 		int newAvailability = currentData.getAvailable() - transactionData.getTotalReservation();
