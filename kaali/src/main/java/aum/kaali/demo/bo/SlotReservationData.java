@@ -21,6 +21,10 @@ public class SlotReservationData  implements Serializable{
 	private String reserverId;
 	private String reserverName;
 	private String reservationTrnsactionNumber;
+	private String status="active";
+	private Date reservationDateTime;
+	private Date reservationCancellationDateTime;
+	private String reservationCancalltionId="";//user /admin
 
 	//@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
 
@@ -83,6 +87,42 @@ public class SlotReservationData  implements Serializable{
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+	public String getRowid() {
+		return rowid;
+	}
+	public void setRowid(String rowid) {
+		this.rowid = rowid;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public Date getReservationDateTime() {
+		return reservationDateTime;
+	}
+	public void setReservationDateTime(Date reservationDateTime) {
+		this.reservationDateTime = reservationDateTime;
+	}
+	public Date getReservationCancellationDateTime() {
+		return reservationCancellationDateTime;
+	}
+	public void setReservationCancellationDateTime(Date reservationCancellationDateTime) {
+		this.reservationCancellationDateTime = reservationCancellationDateTime;
+	}
+	public String getReservationCancalltionId() {
+		return reservationCancalltionId;
+	}
+	public void setReservationCancalltionId(String reservationCancalltionId) {
+		this.reservationCancalltionId = reservationCancalltionId;
+	}
+	public List<ServicExecutive> getServiceExecutives() {
+		return serviceExecutives;
+	}
+	public void setServiceExecutives(List<ServicExecutive> serviceExecutives) {
+		this.serviceExecutives = serviceExecutives;
 	}
 	
 	

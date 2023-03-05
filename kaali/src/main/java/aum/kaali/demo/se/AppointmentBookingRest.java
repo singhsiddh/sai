@@ -197,6 +197,10 @@ AvailaibilyByDays availaibilyByDays = null;
 		return service.findAppointmentSlotDataByDateAndSlotId(data.getDate(), data.getSlotId());
 	}
 
+	@PostMapping("/cancleBookedAppoinmentByTransactionId")
+	public Integer cancleBookedAppoinmentByTransactionId(@RequestBody SlotReservationData transactionData) {
+		return service.cancleBookedAppoinmentByTransactionId(transactionData.getReservationTrnsactionNumber());
+	}
 	@PostMapping("/bookAppointment")
 	public String bookAppointment(@RequestBody SlotReservationData transactionData) {
 		Boolean flag = service.bookAppointment(transactionData);

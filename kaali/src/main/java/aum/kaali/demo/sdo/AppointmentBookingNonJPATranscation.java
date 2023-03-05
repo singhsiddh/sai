@@ -90,11 +90,14 @@ public class AppointmentBookingNonJPATranscation {
 		/*
 		 * if( currentData.getAvailable() - transactionData.getTotalReservation() < 0) {
 		 * return false; }
+		 * 
 		 */
+		String transactionId="";
 		BasicDBObject searchQuery = new BasicDBObject();
 		searchQuery.append("date", currentData.getDate());
 		searchQuery.append("slotId", currentData.getSlotId());
 		searchQuery.append("dateStamp", currentData.getDateStamp());// Optimistic Lock
+		transactionId=currentData.getDate()+"-"+currentData.getSlotId()+"-"+currentData.getDateStamp();
 		// greater than slected number
 		System.out.println("searchQuery" + searchQuery);
 		int newAvailability = currentData.getAvailable() - transactionData.getTotalReservation();
@@ -107,6 +110,8 @@ public class AppointmentBookingNonJPATranscation {
 		updateFields.append("available", newAvailability);
 		updateFields.append("dateStamp", (new Date()).getTime());
 		updateFields.append("reserved", reserved);
+		updateFields.append("transactionId", transactionId);
+		updateFields.append("user", "Uoooo");
 		BasicDBObject setQuery = new BasicDBObject();
 		setQuery.append("$set", updateFields);
 		// col.update(searchQuery, setQuery);
