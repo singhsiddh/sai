@@ -37,17 +37,24 @@ public class SlotReservationData  implements Serializable{
 	private List<ServicExecutive> serviceExecutives;
 	
 	
-	public SlotReservationData(String rowid,String reserverId, String reserverName, String reservationTrnsactionNumber, Date slotDate,
-			Integer slotId, Integer totalReservation,List<ServicExecutive> serviceExecutives) {
+	
+	public SlotReservationData(String rowid, String reserverId, String reserverName, String reservationTrnsactionNumber,
+			String status, Date reservationDateTime, Date reservationCancellationDateTime,
+			String reservationCancalltionId, Date slotDate, Integer slotId, Integer totalReservation,
+			List<ServicExecutive> serviceExecutives) {
 		super();
-		this.rowid =rowid;
+		this.rowid = rowid;
 		this.reserverId = reserverId;
 		this.reserverName = reserverName;
 		this.reservationTrnsactionNumber = reservationTrnsactionNumber;
+		this.status = status;
+		this.reservationDateTime = reservationDateTime;
+		this.reservationCancellationDateTime = reservationCancellationDateTime;
+		this.reservationCancalltionId = reservationCancalltionId;
 		this.slotDate = slotDate;
 		this.slotId = slotId;
 		this.totalReservation = totalReservation;
-		this.serviceExecutives =serviceExecutives;
+		this.serviceExecutives = serviceExecutives;
 	}
 	public String getReserverId() {
 		return reserverId;
