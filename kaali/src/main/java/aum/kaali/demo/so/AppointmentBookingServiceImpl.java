@@ -86,12 +86,15 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 		AppointmentSlotData currentData = appointmentSlotRepository.findByDateAndSlotId(transactionData.getSlotDate(),
 				transactionData.getSlotId());
 		System.out.println(("Currentdata=" + currentData));
-		transactionData.setReservationTrnsactionNumber(
-				"TB" + transactionData.getSlotDate() + transactionData.getSlotId() + "-" + (new Date().getTime()));
+		String transactionRefrenceNumber="TB" + transactionData.getSlotDate() + transactionData.getSlotId() + "-" + (new Date().getTime());
+		transactionData.setReservationTrnsactionNumber(transactionRefrenceNumber
+				);
 		Boolean flag = transactionSDO.bookAppointment(currentData, transactionData);
 		if (flag) {
 			// insert in to transaction table : SloReservationData
 			slotTransaction.save(transactionData);
+			SmsController sms = new SmsController();
+			sms.sendSMS(" Your transaction number "+transactionRefrenceNumber+ " slot time "+currentData.getSlotStartTime());
 			System.out.println("Slot reserved ");
 		} else {
 			System.out.println("Warning Some has booked your slot prior your transaction completion ");
