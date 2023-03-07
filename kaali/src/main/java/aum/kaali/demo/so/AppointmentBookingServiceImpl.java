@@ -93,8 +93,8 @@ public class AppointmentBookingServiceImpl implements AppointmentBookingService 
 		if (flag) {
 			// insert in to transaction table : SloReservationData
 			slotTransaction.save(transactionData);
-			SmsController sms = new SmsController();
-			sms.sendSMS(" Your transaction number "+transactionRefrenceNumber+ " slot time "+currentData.getSlotStartTime());
+			//SmsController sms = new SmsController();
+			//sms.sendSMS(" Your transaction number "+transactionRefrenceNumber+ " slot time "+currentData.getSlotStartTime());
 			System.out.println("Slot reserved ");
 		} else {
 			System.out.println("Warning Some has booked your slot prior your transaction completion ");

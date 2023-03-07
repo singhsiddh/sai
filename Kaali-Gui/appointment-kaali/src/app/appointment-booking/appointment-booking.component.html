@@ -1,35 +1,47 @@
 <p>appointment-booking works!</p>
 Sai baba ki jai
-jai Buddha babaa 
+jai Buddha babaa
 <button class="button" (click)="fillData()">data..</button>
 <button class="button" (click)="callMonthWiseAvailability()">data.2222.</button>
 
 
 <h4>Basic mat-select</h4>
 
-<select 
-[(ngModel)]="bmonth">
-    <option *ngFor="let month of months" [value]="month">
-      {{month}}
-    </option>
-  </select>
+<select [(ngModel)]="bmonth">
+  <option *ngFor="let month of months" [value]="month">
+    {{month}}
+  </option>
+</select>
 
-<ul> 
-    <li *ngFor="let data of   bookingMonthData   ; let i = index"> 
+<ul>
+  <table>
+    <tr>
+    <td>Mon</td>
+    <td>Tus</td>
+    <td>Wed</td>
+    <td>Thr</td>
+    <td>Fri</td>
+    <td>Sat</td>
+    <td>sun</td>
+    </tr>
+    
+    <tr *ngFor="let data of   bookingMonthData   ; let i = index">
+      
+        <td *ngFor="let dayData of   data    ; let j = index">
+          <!-- this also works <button class="button" >sai{{bookingMonthData[i][j]}}</button>-->
+         
+          <span *ngIf="dayData.availaibilty !== 0 "  class=" button-avl">
+            <button class="button" (click)="callSlotComponent(dayData.day)"> ${{dayData.day }}</button>
+          </span>
+          <span *ngIf="dayData.availaibilty == 0 " class="button-dis">
+            <button class="button" (click)="callData()"> *{{dayData.day }}</button>
+          </span>
+        </td>
         
-      <span *ngFor="let dayData of   data    ; let j = index"> 
-      <!-- this also works <button class="button" >sai{{bookingMonthData[i][j]}}</button>-->
-      <span *ngIf="dayData.availaibilty !== 0 ">
-      <button class="button" (click)="callSlotComponent(dayData.day)"> ${{dayData.day }}</button> 
-      </span>
-      <span *ngIf="dayData.availaibilty == 0 ">
-        <button class="button" (click)="callData()"> *{{dayData.day }}</button> 
-
-
-        </span>
-      </span>
-    </li> 
-    <li *ngFor="let rl of   roles2    ; let i = index">
-      {{rl.name}}
-    </li>
-  </ul>
+    
+  
+  </table>
+  <li *ngFor="let rl of   roles2    ; let i = index">
+    {{rl.name}}
+  </li>
+</ul>

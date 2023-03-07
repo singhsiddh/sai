@@ -51,7 +51,7 @@ export class AppointmentBookingComponent {
    */
   callMonthWiseAvailability() {
     let blog = { "month": this.bmonth, "year": this.byear };
-
+try{
     this.service.postBlog(blog, "kaali/appointmnet/findAllSlotByMonth").subscribe({
       next: (num) => {
         console.log("monthlyAvailability=");
@@ -76,14 +76,17 @@ export class AppointmentBookingComponent {
         ;*/
         
       },
-      error: (err) => { console.error(err) },
+      error: (err) => { console.error(err) 
+        this.fillData();},
       complete: () => {
         console.log("response in complete");
         //.. this.router.navigate(['viewblogs'])
         this.fillData();
       }
     });
-
+  }catch(e){
+    console.log(e);
+  }
   }
   roles: { id: number, name: string }[] = [];
   roles2: { id: number, name: string }[] = [{"id":1,"name":"admin"},{"id":2,"name":"user"}];

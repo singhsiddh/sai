@@ -1,0 +1,21 @@
+
+  .button-avl {
+    border: 1px solid #0066cc;
+    background-color: #0099cc;
+    color: #3af50c;
+    padding: 5px 10px;
+  }
+
+  .button-dis {
+    border: 1px solid #0066cc;
+    background-color: #cc1f00;
+    color: #32797e;
+    padding: 5px 10px;
+  }
+
+  button:hover {
+    border: 1px solid #0099cc;
+    background-color: #00aacc;
+    color: #ffffff;
+    padding: 5px 10px;
+  }

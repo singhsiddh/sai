@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppointmentBookingSlotComponent } from './appointment-booking-slot/appointment-booking-slot.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
