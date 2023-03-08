@@ -1,4 +1,8 @@
 <p>appointment-booking-slot works!</p>
+<div>
+  <label>Date</label>
+  {{slotDate}}
+  </div>
 
 <span *ngFor="let data of   slotdata   ; let i = index"> 
   <!-- <span *ngFor="let data of   data1[i]   ; let j = index"> -->
@@ -6,7 +10,9 @@
 av:{{data.available}}
   st:{{data.slotStartTime}}
     <span *ngIf="data.available !== 0 " class="button-avl">
-        <button  (click)="slotBooking(data)"> ${{data.slotStartTime }}</button> 
+      
+      <button class="button-avl" (click)="reserveSlot(data,this)"> $$${{data.slotStartTime }}</button> 
+        <button class="button-avl" (click)="slotBooking(data)"> ${{data.slotStartTime }}</button> 
         </span>
         <span *ngIf="data.available == 0 " class="button-dis">
           <button  > *{{data.slotStartTime }}</button> 

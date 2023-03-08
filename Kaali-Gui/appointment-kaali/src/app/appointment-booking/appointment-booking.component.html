@@ -49,7 +49,7 @@
 </select>
 -->
 
-<button class="button" (click)="callMonthWiseAvailability()">Get Slot Data.</button>
+<button  (click)="callMonthWiseAvailability()">Get Slot Data.</button>
 </div>
 <ul>
   <table>
@@ -68,11 +68,11 @@
         <td *ngFor="let dayData of   data    ; let j = index">
           <!-- this also works <button class="button" >sai{{bookingMonthData[i][j]}}</button>-->
          
-          <span *ngIf="dayData.availaibilty !== 0 "  class="button-avl">
-            <button class="button" (click)="callSlotComponent(dayData.day)"> {{dayData.day }}</button>
+          <span *ngIf="dayData.availaibilty !== 0 "  >
+            <button class="button-avl" (click)="callSlotComponent(dayData.day)"> {{dayData.day }}</button>
           </span>
-          <span *ngIf="dayData.availaibilty == 0 " class="button-dis">
-            <button class="button" (click)="callData()"> {{dayData.day }}</button>
+          <span *ngIf="dayData.availaibilty == 0 " >
+            <button class="button-dis " (click)="callData()"> {{dayData.day }}</button>
           </span>
         </td>
         
