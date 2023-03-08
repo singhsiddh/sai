@@ -1,18 +1,56 @@
-<p>appointment-booking works!</p>
-Sai baba ki jai
-jai Buddha babaa
+<!--
 <button class="button" (click)="fillData()">data..</button>
-<button class="button" (click)="callMonthWiseAvailability()">data.2222.</button>
 
+-->
 
-<h4>Basic mat-select</h4>
+<h4>Appointment Booking</h4>
+<div>
+  <table>
+    <tr><Td>Year</Td><td>Month</td></tr>
+  <tr>
+    <td>
+<select [(ngModel)]="byear">
+  <option [value]="this.currYear">
+    {{this.currYear}}
+  </option>
 
+  <option [value]="this.nextYear">
+    {{this.nextYear}}
+  </option>
+</select>
+</td>
+<td>
+
+  <select [(ngModel)]="bmonth" *ngIf="this.byear == this.currYear">
+  
+    
+    <option *ngFor="let month of monthObjCurr" [value]="month.id">
+      {{month.name}}
+    </option>
+  
+  </select>
+  <select *ngIf="this.byear == this.nextYear">
+  
+    
+    <option *ngFor="let month of monthObj" [value]="month.id">
+      {{month.name}}
+    </option>
+  
+  </select>
+</td>
+</tr>
+</table>
+
+<!--
 <select [(ngModel)]="bmonth">
   <option *ngFor="let month of months" [value]="month">
     {{month}}
   </option>
 </select>
+-->
 
+<button class="button" (click)="callMonthWiseAvailability()">Get Slot Data.</button>
+</div>
 <ul>
   <table>
     <tr>
@@ -22,7 +60,7 @@ jai Buddha babaa
     <td>Thr</td>
     <td>Fri</td>
     <td>Sat</td>
-    <td>sun</td>
+    <td>Sun</td>
     </tr>
     
     <tr *ngFor="let data of   bookingMonthData   ; let i = index">
@@ -30,11 +68,11 @@ jai Buddha babaa
         <td *ngFor="let dayData of   data    ; let j = index">
           <!-- this also works <button class="button" >sai{{bookingMonthData[i][j]}}</button>-->
          
-          <span *ngIf="dayData.availaibilty !== 0 "  class=" button-avl">
-            <button class="button" (click)="callSlotComponent(dayData.day)"> ${{dayData.day }}</button>
+          <span *ngIf="dayData.availaibilty !== 0 "  class="button-avl">
+            <button class="button" (click)="callSlotComponent(dayData.day)"> {{dayData.day }}</button>
           </span>
           <span *ngIf="dayData.availaibilty == 0 " class="button-dis">
-            <button class="button" (click)="callData()"> *{{dayData.day }}</button>
+            <button class="button" (click)="callData()"> {{dayData.day }}</button>
           </span>
         </td>
         

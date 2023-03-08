@@ -38,7 +38,7 @@ this.service.postBlog(blog, "kaali/appointmnet/bookAppointment").subscribe({
   next: (num) => {
     console.log("Slot Booking response.....................");
     console.log(num);
-    
+     
   },
   error: (err) => { console.error(err) },
   complete: () => {
