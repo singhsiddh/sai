@@ -11,25 +11,30 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppointmentBookingSlotComponent } from './appointment-booking-slot/appointment-booking-slot.component';
-
+import { AppointmentSlotManagmentComponent } from './appointment-slot-managment/appointment-slot-managment.component';
+import { ReactiveFormsModule } from '@angular/forms';
+//import { AppointmentSlotManagmentComponent } from './appointment-slot-managment/appointment-slot-managment.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AppointmentBookingComponent,
-    AppointmentBookingSlotComponent
+    AppointmentBookingSlotComponent,
+    AppointmentSlotManagmentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     MatSelectModule,
     RouterModule.forRoot([
       { path: 'sai', component: AppointmentBookingComponent },
       { path: 'baba/:productId', component: AppointmentBookingSlotComponent },
+      { path: 'slot', component: AppointmentSlotManagmentComponent },
     ])
   ],
   providers: [],

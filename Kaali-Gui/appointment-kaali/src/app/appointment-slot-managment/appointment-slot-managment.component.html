@@ -1,0 +1,17 @@
+<p>appointment-slot-managment works!................................</p>
+<p>appointment-slot-managment works!...........................SLSLSLS.....</p>
+<form [formGroup]="slotForm">
+<label for="company">Company</label>
+<input id="company" type="text" formControlName="company">
+<label for="date">Date</label>
+<!-- datepicker use pending-->
+<input id="date" type="date" formControlName="date">
+
+</form>
+<button id="search" class="button">Search</button>
+<button [disabled]='slotForm.invalid || isNextDisabled'>Submit</button>
+{{slotForm.invalid }}
+{{slotForm.errors}}
+{{isNextDisabled}}
+<p>myForm value: {{ slotForm.value | json }}</p>
+<p>myForm status: {{ slotForm.status | json }}</p>
