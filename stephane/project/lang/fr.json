@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Nos Services",
+    "projects": "Projets",
+    "careers": "Carrières",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Façonner un avenir durable et résilient.",
+    "subtitle": "Leader en ingénierie, conseil et design, nous transformons les défis complexes en opportunités innovantes.",
+    "button": "Contact"
+  },
+
+  "about": {
+    "title": "Notre Activité",
+    "content1": "ARUP est une société mondiale indépendante spécialisée dans le conseil multidisciplinaire.",
+    "content2": "Nos valeurs fondamentales sont la qualité, l'intégrité et la créativité."
+  },
+
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Nous accompagnons les entreprises avec des solutions sur-mesure.",
+
+    "engineering": {
+      "title": "Ingénierie",
+      "desc": "Notre expertise couvre l’ingénierie structurelle, civile, mécanique et électrique."
+    },
+
+    "projectManagement": {
+      "title": "Gestion de Projet",
+      "desc": "Nous proposons une gestion complète des projets."
+    },
+
+    "audit": {
+      "title": "Audit & Conseil",
+      "desc": "Nous réalisons des audits techniques et des analyses de risques."
+    },
+
+    "communication": {
+      "title": "Communication",
+      "desc": "Nous développons des stratégies de communication adaptées."
+    },
+
+    "elearning": {
+      "title": "E-learning",
+      "desc": "Nous créons des solutions e-learning personnalisées."
+    },
+
+    "digital": {
+      "title": "Solutions Digitales",
+      "desc": "Nous développons des solutions numériques innovantes."
+    }
+  },
+
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Découvrez une sélection de nos projets.",
+
+    "project1": {
+      "title": "Rénovation durable d’un bâtiment historique",
+      "desc": "Transformation d’un patrimoine architectural en bâtiment performant."
+    },
+
+    "project2": {
+      "title": "Nouvelle ligne de transport urbain",
+      "desc": "Infrastructure moderne pour améliorer la mobilité."
+    },
+
+    "project3": {
+      "title": "Plateforme numérique de gestion d’actifs",
+      "desc": "Solution innovante pour la gestion des infrastructures."
+    }
+  },
+
+  "careers": {
+    "title": "Carrières",
+    "subtitle": "Rejoignez une équipe passionnée.",
+    "content": "Chez Ceeb, nous offrons un environnement stimulant.",
+    "button": "Carrières"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Vous avez un projet ou une question ?",
+    "content": "Contactez-nous pour discuter de vos ambitions.",
+
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Envoyer"
+    }
+  },
+
+  "footer": {
+    "description": "Leader en ingénierie, conseil et design.",
+
+    "servicesTitle": "Services",
+
+    "services": {
+      "engineering": "Ingénierie",
+      "projectManagement": "Gestion de Projet",
+      "audit": "Audit & Conseil",
+      "digital": "Solutions Digitales"
+    },
+
+    "phone": "Téléphone",
+    "rights": "Tous droits réservés."
+  }
+}

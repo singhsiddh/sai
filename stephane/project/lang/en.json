@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Our Services",
+    "projects": "Projects",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Shaping a sustainable and resilient future.",
+    "subtitle": "A leader in engineering, consulting, and design, we transform complex challenges into innovative opportunities for our clients and society.",
+    "button": "Contact"
+  },
+
+  "about": {
+    "title": "Our Business",
+    "content1": "ARUP is an independent, multidisciplinary global consulting firm dedicated to sustainable excellence in the built environment. Since our inception, we have been committed to providing creative, high-value solutions that have a positive impact on the world.",
+    "content2": "Our core values of quality, integrity, and creativity guide our every action. We believe in a holistic approach to design, where collaboration across disciplines is the key to success."
+  },
+
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We support companies with tailor-made engineering, consulting, and project management solutions.",
+
+    "engineering": {
+      "title": "Engineering",
+      "desc": "Our engineering expertise covers structural, civil, mechanical, electrical, and facade engineering."
+    },
+
+    "projectManagement": {
+      "title": "Project Management",
+      "desc": "We offer comprehensive project management services from planning to delivery."
+    },
+
+    "audit": {
+      "title": "Audit & Consulting",
+      "desc": "We conduct technical audits, performance evaluations, and risk analyses."
+    },
+
+    "communication": {
+      "title": "Communication",
+      "desc": "We develop communication strategies to engage stakeholders and promote projects."
+    },
+
+    "elearning": {
+      "title": "E-learning",
+      "desc": "We create customized e-learning solutions for organizations."
+    },
+
+    "digital": {
+      "title": "Digital Solutions",
+      "desc": "We develop innovative digital solutions including BIM, analytics, and AI."
+    }
+  },
+
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Discover a selection of our flagship projects.",
+
+    "project1": {
+      "title": "Sustainable renovation of a historic building",
+      "desc": "Transformation of an architectural heritage into a high-energy performance building."
+    },
+
+    "project2": {
+      "title": "Design of a new urban transport line",
+      "desc": "Modern transport infrastructure to improve urban mobility."
+    },
+
+    "project3": {
+      "title": "Digital platform for asset management",
+      "desc": "Innovative digital solution for infrastructure management."
+    }
+  },
+
+  "careers": {
+    "title": "Careers",
+    "subtitle": "Join a team shaping the world of tomorrow.",
+    "content": "At Ceeb, we offer a stimulating work environment where creativity and initiative are encouraged.",
+    "button": "Careers"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Do you have a project or a question?",
+    "content": "Contact us to discuss how we can help you achieve your ambitions.",
+
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
+    }
+  },
+
+  "footer": {
+    "description": "A leader in engineering, consulting, and design for a sustainable future.",
+
+    "servicesTitle": "Services",
+
+    "services": {
+      "engineering": "Engineering",
+      "projectManagement": "Project Management",
+      "audit": "Audit & Consulting",
+      "digital": "Digital Solutions"
+    },
+
+    "phone": "Phone",
+    "rights": "All rights reserved."
+  }
+}

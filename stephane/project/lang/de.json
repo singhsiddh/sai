@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "projects": "Projekte",
+    "careers": "Karriere",
+    "contact": "Kontakt"
+  },
+
+  "hero": {
+    "title": "Eine nachhaltige und resiliente Zukunft gestalten.",
+    "subtitle": "Führend in Engineering, Beratung und Design.",
+    "button": "Kontakt"
+  },
+
+  "about": {
+    "title": "Unser Unternehmen",
+    "content1": "Ceeb ist ein unabhängiges multidisziplinäres Beratungsunternehmen.",
+    "content2": "Qualität, Integrität und Kreativität leiten unser Handeln."
+  },
+
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Maßgeschneiderte Lösungen für Unternehmen.",
+
+    "engineering": {
+      "title": "Ingenieurwesen",
+      "desc": "Unsere Expertise umfasst Bau-, Elektro- und Maschinenbau."
+    },
+
+    "projectManagement": {
+      "title": "Projektmanagement",
+      "desc": "Umfassende Projektmanagement-Dienstleistungen."
+    },
+
+    "audit": {
+      "title": "Audit & Beratung",
+      "desc": "Technische Audits und Risikoanalysen."
+    },
+
+    "communication": {
+      "title": "Kommunikation",
+      "desc": "Effektive Kommunikationsstrategien."
+    },
+
+    "elearning": {
+      "title": "E-Learning",
+      "desc": "Individuelle digitale Lernlösungen."
+    },
+
+    "digital": {
+      "title": "Digitale Lösungen",
+      "desc": "Innovative digitale Technologien und BIM-Lösungen."
+    }
+  },
+
+  "projects": {
+    "title": "Projekte",
+    "subtitle": "Entdecken Sie unsere wichtigsten Projekte.",
+
+    "project1": {
+      "title": "Nachhaltige Sanierung eines historischen Gebäudes",
+      "desc": "Umwandlung eines architektonischen Erbes."
+    },
+
+    "project2": {
+      "title": "Neue urbane Verkehrslinie",
+      "desc": "Moderne Infrastruktur zur Verbesserung der Mobilität."
+    },
+
+    "project3": {
+      "title": "Digitale Plattform für Asset-Management",
+      "desc": "Innovative Lösung für Infrastrukturmanagement."
+    }
+  },
+
+  "careers": {
+    "title": "Karriere",
+    "subtitle": "Werden Sie Teil unseres Teams.",
+    "content": "ARUP bietet ein inspirierendes Arbeitsumfeld.",
+    "button": "Karriere"
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Haben Sie ein Projekt oder eine Frage?",
+    "content": "Kontaktieren Sie uns für weitere Informationen.",
+
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "submit": "Senden"
+    }
+  },
+
+  "footer": {
+    "description": "Führend in Engineering und Beratung.",
+
+    "servicesTitle": "Dienstleistungen",
+
+    "services": {
+      "engineering": "Ingenieurwesen",
+      "projectManagement": "Projektmanagement",
+      "audit": "Audit & Beratung",
+      "digital": "Digitale Lösungen"
+    },
+
+    "phone": "Telefon",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
