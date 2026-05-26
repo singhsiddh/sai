@@ -349,7 +349,12 @@
                     Contact content
                 </p>
 
-                <form class="contact-form">
+
+
+
+               
+
+                <form id="contact-form" class="contact-form">
 
                     <div class="form-group">
 
@@ -390,7 +395,7 @@
 
                     </div>
 
-                    <button type="submit"
+                    <button id="contact-form-email-submit" type="submit"
                             class="btn btn-primary btn-full"
                             data-i18n="contact.form.submit">
                         Send
@@ -715,7 +720,38 @@ function nextSlide() {
 setInterval(nextSlide, carouselDelay);
 
 </script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+   
+      emailjs.init({
+  publicKey: "8-8boZaUBzxk5e6Y7",
+});
+    
+  
+</script>
     <!-- end script-->
 
+
+<script>
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+
+      event.preventDefault();
+
+      emailjs.sendForm(
+        "service_iwwjsjm",
+        "template_0pmpvt9",
+        this
+      )
+      .then(() => {
+        alert("Email sent successfully!");
+      })
+      .catch((error) => {
+        console.log("FAILED...", error);
+      });
+    });
+</script>
 </body>
 </html>
