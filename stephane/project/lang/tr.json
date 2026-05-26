@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetlerimiz",
+    "projects": "Projeler",
+    "careers": "Kariyer",
+    "contact": "İletişim"
+  },
+
+  "hero": {
+    "title": "Sürdürülebilir ve dayanıklı bir geleceği şekillendiriyoruz.",
+    "subtitle": "Mühendislik, danışmanlık ve tasarım alanında lider olarak, karmaşık zorlukları müşterilerimiz ve toplum için yenilikçi fırsatlara dönüştürüyoruz.",
+    "button": "İletişim"
+  },
+
+  "about": {
+    "title": "İşimiz",
+    "content1": "CEEB, sürdürülebilir yapılı çevrede mükemmelliğe adanmış bağımsız ve çok disiplinli küresel bir danışmanlık firmasıdır. Kuruluşumuzdan bu yana, dünyaya olumlu etki sağlayan yaratıcı ve yüksek değerli çözümler sunmaya kararlıyız.",
+    "content2": "Kalite, dürüstlük ve yaratıcılık temel değerlerimizdir ve tüm çalışmalarımıza yön verir. Başarının anahtarının disiplinler arası iş birliği olduğuna inanıyoruz."
+  },
+
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Şirketlere özel mühendislik, danışmanlık ve proje yönetimi çözümleri sunuyoruz.",
+
+    "engineering": {
+      "title": "Mühendislik",
+      "desc": "Mühendislik uzmanlığımız; yapısal, inşaat, mekanik, elektrik ve cephe mühendisliğini kapsamaktadır."
+    },
+
+    "projectManagement": {
+      "title": "Proje Yönetimi",
+      "desc": "Planlamadan teslimata kadar kapsamlı proje yönetimi hizmetleri sunuyoruz."
+    },
+
+    "audit": {
+      "title": "Denetim ve Danışmanlık",
+      "desc": "Teknik denetimler, performans değerlendirmeleri ve risk analizleri gerçekleştiriyoruz."
+    },
+
+    "communication": {
+      "title": "İletişim",
+      "desc": "Paydaşları dahil etmek ve projeleri tanıtmak için iletişim stratejileri geliştiriyoruz."
+    },
+
+    "elearning": {
+      "title": "E-Öğrenme",
+      "desc": "Kuruluşlar için özelleştirilmiş e-öğrenme çözümleri oluşturuyoruz."
+    },
+
+    "digital": {
+      "title": "Dijital Çözümler",
+      "desc": "BIM, analiz ve yapay zeka dahil yenilikçi dijital çözümler geliştiriyoruz."
+    }
+  },
+
+  "projects": {
+    "title": "Projeler",
+    "subtitle": "Öne çıkan projelerimizden bir seçkiyi keşfedin.",
+
+    "project1": {
+      "title": "Tarihi bir binanın sürdürülebilir renovasyonu",
+      "desc": "Mimari mirasın yüksek enerji performanslı bir yapıya dönüştürülmesi."
+    },
+
+    "project2": {
+      "title": "Yeni bir kentsel ulaşım hattının tasarımı",
+      "desc": "Kentsel hareketliliği geliştirmek için modern ulaşım altyapısı."
+    },
+
+    "project3": {
+      "title": "Varlık yönetimi için dijital platform",
+      "desc": "Altyapı yönetimi için yenilikçi dijital çözüm."
+    }
+  },
+
+  "careers": {
+    "title": "Kariyer",
+    "subtitle": "Yarının dünyasını şekillendiren ekibe katılın.",
+    "content": "Ceeb’de yaratıcılığın ve inisiyatifin teşvik edildiği ilham verici bir çalışma ortamı sunuyoruz.",
+    "button": "Kariyer"
+  },
+
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Bir projeniz veya sorunuz mu var?",
+    "content": "Hedeflerinize ulaşmanıza nasıl yardımcı olabileceğimizi görüşmek için bizimle iletişime geçin.",
+
+    "form": {
+      "name": "Ad",
+      "email": "E-posta",
+      "message": "Mesaj",
+      "submit": "Gönder"
+    }
+  },
+
+  "footer": {
+    "description": "Sürdürülebilir bir gelecek için mühendislik, danışmanlık ve tasarım alanında lider.",
+
+    "servicesTitle": "Hizmetler",
+
+    "services": {
+      "engineering": "Mühendislik",
+      "projectManagement": "Proje Yönetimi",
+      "audit": "Denetim ve Danışmanlık",
+      "digital": "Dijital Çözümler"
+    },
+
+    "phone": "Telefon",
+    "rights": "Tüm hakları saklıdır."
+  }
+}
