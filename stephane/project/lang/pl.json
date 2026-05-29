@@ -1,56 +1,166 @@
+
 {
   "nav": {
-    "home": "Strona główna",
+    "home": "Strona Główna",
     "services": "Nasze Usługi",
     "projects": "Projekty",
+    "expertise": "Ekspertyza",
     "careers": "Kariera",
     "contact": "Kontakt"
   },
 
   "hero": {
-    "title": "Kształtujemy zrównoważoną i odporną przyszłość.",
-    "subtitle": "Lider w dziedzinie inżynierii, doradztwa i projektowania – przekształcamy złożone wyzwania w innowacyjne możliwości dla naszych klientów i społeczeństwa.",
+    "title": "Kształtowanie zrównoważonej i odpornej przyszłości.",
+    "heroTile": "Kształtowanie zrównoważonej i odpornej przyszłości.",
+    "heroDescription": "Lider w dziedzinie inżynierii, doradztwa i projektowania.",
+
+    "ceeb": {
+      "title": "CEEB: Inżynieria zrównoważonej infrastruktury",
+      "description": "Firma konsultingowa specjalizująca się w projektowaniu i zarządzaniu złożonymi projektami transportowymi i mobilności."
+    },
+
+    "slide1": {
+      "title": "Kształtowanie zrównoważonej przyszłości",
+      "description": "Rozwiązania inżynieryjne i konsultingowe dla nowoczesnej infrastruktury."
+    },
+
+    "slide2": {
+      "title": "Właściciel Projektu (MOA) & Kierownik Projektu (MOE)",
+      "description": "Eksperckie wsparcie na każdym etapie projektu, od pierwszego szkicu aż po końcowe przekazanie."
+    },
+
+    "slide3": {
+      "title": "Inżynieria elektryczna dla mobilności jutra",
+      "description": "Wielodyscyplinarne rozwiązania dla infrastruktury transportowej, od projektu po uruchomienie."
+    },
+
+    "slide4": {
+      "title": "Systemy telekomunikacyjne i sygnalizacja kolejowa",
+      "description": "Ekspertyza w zakresie GSM-R, oznakowania i systemów prowadzenia dla płynnej i bezpiecznej informacji pasażerskiej."
+    },
+
+    "slide5": {
+      "title": "Systemy telekomunikacyjne i sygnalizacja kolejowa",
+      "description": "Ekspertyza w zakresie GSM-R, oznakowania i systemów prowadzenia dla płynnej i bezpiecznej informacji pasażerskiej."
+    },
+
+    "slide6": {
+      "title": "<b> Ekspertyza w zakresie wysokiego napięcia, niskiego napięcia i VDI </b>",
+      "description": "Projektowanie i integracja systemów elektrycznych oraz komunikacyjnych dla inteligentnych budynków i infrastruktury."
+    },
+
+    "slide7": {
+      "title": "<b>Inżynieria infrastruktury lotniskowej</b>",
+      "description": "Projektowanie, modernizacja i optymalizacja systemów elektrycznych i komunikacyjnych dla wydajnych i zrównoważonych lotnisk."
+    },
+
+    "slide8": {
+      "title": "<b>Nowoczesne budynki i infrastruktura techniczna</b>",
+      "description": "Rozwiązania inżynieryjne dla wydajnych, połączonych i przyjaznych środowisku budynków."
+    },
+
+    "slide9": {
+      "title": "<b> Optymalizacja operacji i utrzymania</b>",
+      "description": "Wsparcie uruchomienia, optymalizacja wydajności i konserwacja predykcyjna dla maksymalnej trwałości."
+    },
+
+    "slide10": {
+      "title": "<b>Kontrola jakości i systemy kontroli</b>",
+      "description": "Inspekcje, certyfikacja i nowoczesne technologie zapewniające bezpieczeństwo, zgodność i efektywność operacyjną."
+    },
+
+    "slide11": {
+      "title": "<b>Systemy telekomunikacyjne i sygnalizacja kolejowa</b>",
+      "description": "Ekspertyza w zakresie GSM-R, oznakowania i systemów prowadzenia dla płynnej i bezpiecznej informacji pasażerskiej."
+    },
+
+    "slide12": {
+      "title": "<b>Zintegrowane i multidyscyplinarne podejście inżynieryjne</b>",
+      "description": "Ścisła współpraca ze wszystkimi interesariuszami w celu integracji kwestii zrównoważonego rozwoju i innowacji w centrum każdego projektu."
+    },
+
+    "hero_slide_1_title": "Doskonałość inżynieryjna dla zrównoważonej przyszłości",
+    "hero_slide_2_title": " Innowacyjne rozwiązania dla lepszego jutra",
+
+    "subtitle": "Jako lider w dziedzinie inżynierii, doradztwa i projektowania przekształcamy złożone wyzwania w innowacyjne możliwości dla naszych klientów i społeczeństwa.",
     "button": "Kontakt"
   },
 
   "about": {
-    "title": "Nasza Firma",
-    "content1": "CEEB to niezależna, multidyscyplinarna globalna firma konsultingowa, zaangażowana w zrównoważoną doskonałość w środowisku zabudowanym. Od początku naszej działalności dostarczamy kreatywne rozwiązania o wysokiej wartości, które mają pozytywny wpływ na świat.",
-    "content2": "Nasze podstawowe wartości – jakość, uczciwość i kreatywność – kierują każdym naszym działaniem. Wierzymy w holistyczne podejście do projektowania, gdzie współpraca między dyscyplinami jest kluczem do sukcesu."
+    "title": "<b>Nasza multidyscyplinarna ekspertyza</b>",
+
+    "content1": "<b>CEEB: zrównoważona inżynieria w służbie świata</b>",
+
+    "content2": "<li> CEEB ugruntował swoją pozycję jako kluczowy gracz w dziedzinie zrównoważonej inżynierii i infrastruktury na arenie międzynarodowej. </li><li> Od mobilności kolejowej i lotniskowej po projekty miejskie – wspieramy naszych klientów i partnerów na każdym etapie ich projektów, łącząc wiedzę techniczną i strategiczną wizję.</li>",
+
+    "content3": "<b>Rozwiązania szyte na miarę – od audytu po eksploatację</b>",
+
+    "content4": "<li>Nasze multidyscyplinarne zespoły świadczą usługi od audytu i doradztwa po zarządzanie projektami i wsparcie operacyjne. </li><li> Dzięki kompleksowemu podejściu dostarczamy niezawodne i innowacyjne rozwiązania idealnie dopasowane do specyficznych wyzwań każdego projektu.</li>",
+
+    "content5": "<b>Innowacja i wydajność dla każdego projektu</b>",
+
+    "content6": "<li> Od projektowania strategicznego po uruchomienie, CEEB wykorzystuje swoją wiedzę w zakresie analiz technicznych, BIM, telekomunikacji, doradztwa i audytu. </li><li> Każdy projekt jest okazją do przekształcenia złożonych wyzwań w konkretne i zrównoważone rozwiązania dla wydajnej i odpowiedzialnej środowiskowo infrastruktury.</li>"
   },
 
   "services": {
     "title": "Nasze Usługi",
-    "subtitle": "Wspieramy firmy dzięki rozwiązaniom szytym na miarę w zakresie inżynierii, doradztwa i zarządzania projektami.",
+    "subtitle": "Wspieramy firmy poprzez dostosowane do potrzeb rozwiązania z zakresu inżynierii, doradztwa i zarządzania projektami.",
 
-    "engineering": {
-      "title": "Inżynieria",
-      "desc": "Nasza wiedza inżynieryjna obejmuje inżynierię konstrukcyjną, cywilną, mechaniczną, elektryczną oraz fasadową."
+    "suseng": {
+      "title": "Zrównoważona inżynieria",
+      "desc": "Odporna i przyjazna środowisku infrastruktura integrująca kwestie klimatyczne już od początkowych etapów."
     },
 
-    "projectManagement": {
-      "title": "Zarządzanie Projektami",
-      "desc": "Oferujemy kompleksowe usługi zarządzania projektami – od planowania po realizację."
+    "infra": {
+      "title": "Infrastruktura",
+      "desc": "Kompleksowe projektowanie, budowa i utrzymanie infrastruktury kolejowej i lotniskowej."
     },
 
-    "audit": {
-      "title": "Audyt i Doradztwo",
-      "desc": "Przeprowadzamy audyty techniczne, oceny wydajności oraz analizy ryzyka."
+    "mobi": {
+      "title": "Mobilność",
+      "desc": "Zintegrowane i intermodalne rozwiązania transportowe – od analizy potrzeb po uruchomienie."
     },
 
-    "communication": {
-      "title": "Komunikacja",
-      "desc": "Tworzymy strategie komunikacyjne angażujące interesariuszy i promujące projekty."
+    "inter": {
+      "title": "Międzynarodowe",
+      "desc": "Ekspertyza dostosowana do kontekstów międzynarodowych dzięki obecności na 5 kontynentach."
     },
 
-    "elearning": {
-      "title": "E-learning",
-      "desc": "Tworzymy spersonalizowane rozwiązania e-learningowe dla organizacji."
+    "urban": {
+      "title": "Planowanie urbanistyczne",
+      "desc": "Zintegrowane planowanie urbanistyczne stawiające transport w centrum zrównoważonego rozwoju terytorialnego."
     },
 
-    "digital": {
-      "title": "Rozwiązania Cyfrowe",
-      "desc": "Opracowujemy innowacyjne rozwiązania cyfrowe, w tym BIM, analitykę i sztuczną inteligencję."
+    "stra": {
+      "title": "Doradztwo strategiczne",
+      "desc": "Strategiczne wsparcie w celu optymalizacji inwestycji i maksymalizacji zwrotów."
+    }
+  },
+
+  "corevalues": {
+    "title": "Nasze podstawowe wartości",
+
+    "subtitle": "Nasze podstawowe wartości kierują naszymi działaniami i definiują naszą tożsamość jako firmy. Odzwierciedlają nasze zaangażowanie w doskonałość, innowacje, partnerstwo i odpowiedzialność społeczną we wszystkich projektach i interakcjach.",
+
+    "corevalues1": {
+      "title": "Doskonałość techniczna",
+      "subtitle": "Uznana ekspertyza we wszystkich obszarach transportu. Rzetelność i jakość w każdym projekcie. Ciągła innowacja i stałe doskonalenie.",
+      "desc": "Przywództwo techniczne, realizacja oparta na jakości i ciągła innowacja w celu sprostania wyzwaniom projektowym."
+    },
+
+    "corevalues2": {
+      "title": "Innowacja i zrównoważony rozwój",
+      "desc": "Systematyczna integracja kwestii środowiskowych. Nowoczesne rozwiązania BIM i cyfrowe. Zaangażowanie w transformację ekologiczną."
+    },
+
+    "corevalues3": {
+      "title": "Partnerstwo i współpraca",
+      "desc": "Podejście multidyscyplinarne i zintegrowane. Ścisła współpraca ze wszystkimi interesariuszami projektu. Dzielenie się wiedzą i doświadczeniem."
+    },
+
+    "corevalues4": {
+      "title": "Odpowiedzialność społeczna",
+      "desc": "Zaangażowanie wobec regionów i społeczności. Poszanowanie standardów bezpieczeństwa i jakości. Wkład w lokalną gospodarkę."
     }
   },
 
@@ -77,7 +187,7 @@
   "careers": {
     "title": "Kariera",
     "subtitle": "Dołącz do zespołu kształtującego świat jutra.",
-    "content": "W Ceeb oferujemy inspirujące środowisko pracy, w którym kreatywność i inicjatywa są mile widziane.",
+    "content": "W Ceeb oferujemy inspirujące środowisko pracy, w którym kreatywność i inicjatywa są wspierane.",
     "button": "Kariera"
   },
 

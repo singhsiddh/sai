@@ -1,0 +1,222 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "services": "I Nostri Servizi",
+    "projects": "Progetti",
+    "expertise": "Competenze",
+    "careers": "Carriere",
+    "contact": "Contatto"
+  },
+
+  "hero": {
+    "title": "Plasmare un futuro sostenibile e resiliente.",
+    "heroTile": "Plasmare un futuro sostenibile e resiliente.",
+    "heroDescription": "Leader nell'ingegneria, consulenza e progettazione.",
+
+    "ceeb": {
+      "title": "CEEB: Ingegneria delle Infrastrutture Sostenibili",
+      "description": "Società di consulenza specializzata nella progettazione e gestione di progetti complessi nei trasporti e nella mobilità."
+    },
+
+    "slide1": {
+      "title": "Plasmare un futuro sostenibile",
+      "description": "Soluzioni di ingegneria e consulenza per infrastrutture moderne."
+    },
+
+    "slide2": {
+      "title": "Committente (MOA) & Direzione Lavori (MOE)",
+      "description": "Supporto esperto in ogni fase dei vostri progetti, dal concept iniziale alla consegna finale."
+    },
+
+    "slide3": {
+      "title": "Ingegneria elettrica per la mobilità del futuro",
+      "description": "Soluzioni multidisciplinari per infrastrutture di trasporto, dalla progettazione alla messa in servizio."
+    },
+
+    "slide4": {
+      "title": "Sistemi di telecomunicazione & segnalamento ferroviario",
+      "description": "Competenza in GSM-R, segnaletica e sistemi di guida per informazioni ai passeggeri fluide e sicure."
+    },
+
+    "slide5": {
+      "title": "Sistemi di telecomunicazione & segnalamento ferroviario",
+      "description": "Competenza in GSM-R, segnaletica e sistemi di guida per informazioni ai passeggeri fluide e sicure."
+    },
+
+    "slide6": {
+      "title": "<b> Competenza in Alta Tensione, Bassa Tensione & VDI </b>",
+      "description": "Progettazione e integrazione di sistemi elettrici e di comunicazione per edifici intelligenti e infrastrutture."
+    },
+
+    "slide7": {
+      "title": "<b>Ingegneria delle infrastrutture aeroportuali</b>",
+      "description": "Progettazione, modernizzazione e ottimizzazione dei sistemi elettrici e di comunicazione per aeroporti performanti e sostenibili."
+    },
+
+    "slide8": {
+      "title": "<b>Edifici moderni & infrastrutture tecniche</b>",
+      "description": "Soluzioni ingegneristiche per edifici ad alte prestazioni, connessi ed ecologici."
+    },
+
+    "slide9": {
+      "title": "<b> Ottimizzazione delle operazioni & manutenzione</b>",
+      "description": "Supporto alla messa in servizio, ottimizzazione delle prestazioni e manutenzione predittiva per la massima durabilità."
+    },
+
+    "slide10": {
+      "title": "<b>Controllo qualità & sistemi di controllo</b>",
+      "description": "Ispezione, certificazione e tecnologie avanzate per garantire sicurezza, conformità ed efficienza operativa."
+    },
+
+    "slide11": {
+      "title": "<b>Sistemi di telecomunicazione & segnalamento ferroviario</b>",
+      "description": "Competenza in GSM-R, segnaletica e sistemi di guida per informazioni ai passeggeri fluide e sicure."
+    },
+
+    "slide12": {
+      "title": "<b>Un approccio ingegneristico integrato & multidisciplinare</b>",
+      "description": "Collaborazione stretta con tutti gli stakeholder per integrare sostenibilità e innovazione al centro di ogni progetto."
+    },
+
+    "hero_slide_1_title": "Eccellenza ingegneristica per un futuro sostenibile",
+    "hero_slide_2_title": " Soluzioni innovative per un domani migliore",
+
+    "subtitle": "Leader nell'ingegneria, consulenza e progettazione, trasformiamo sfide complesse in opportunità innovative per i nostri clienti e la società.",
+    "button": "Contatto"
+  },
+
+  "about": {
+    "title": "<b>La nostra competenza multidisciplinare</b>",
+    "content1": "<b>CEEB: ingegneria sostenibile al servizio del mondo</b>",
+
+    "content2": "<li> CEEB si è affermata come attore chiave nell’ingegneria sostenibile e nelle infrastrutture a livello internazionale. </li><li> Dalla mobilità ferroviaria e aeroportuale ai progetti urbani, supportiamo clienti e partner in ogni fase dei loro progetti, combinando competenza tecnica e visione strategica.</li>",
+
+    "content3": "<b>Soluzioni su misura, dall’audit all’operatività</b>",
+
+    "content4": "<li>I nostri team multidisciplinari offrono servizi che spaziano dall’audit e consulenza alla gestione dei progetti e supporto operativo. </li><li> Attraverso un approccio globale, forniamo soluzioni affidabili e innovative, perfettamente adattate alle sfide specifiche di ogni progetto.</li>",
+
+    "content5": "<b>Innovazione e performance per ogni progetto</b>",
+
+    "content6": "<li> Dalla progettazione strategica alla messa in servizio, CEEB sfrutta la propria esperienza in studi tecnici, BIM, telecomunicazioni, consulenza e audit. </li><li> Ogni progetto rappresenta un’opportunità per trasformare sfide complesse in soluzioni concrete e sostenibili per infrastrutture performanti e rispettose dell’ambiente.</li>"
+  },
+
+  "services": {
+    "title": "I Nostri Servizi",
+    "subtitle": "Supportiamo le aziende con soluzioni su misura di ingegneria, consulenza e project management.",
+
+    "suseng": {
+      "title": "Ingegneria sostenibile",
+      "desc": "Infrastrutture resilienti ed ecologiche che integrano le problematiche climatiche fin dalle fasi iniziali."
+    },
+
+    "infra": {
+      "title": "Infrastrutture",
+      "desc": "Progettazione completa, costruzione e manutenzione di infrastrutture ferroviarie e aeroportuali."
+    },
+
+    "mobi": {
+      "title": "Mobilità",
+      "desc": "Soluzioni di trasporto integrate e intermodali, dall’analisi delle esigenze alla messa in servizio."
+    },
+
+    "inter": {
+      "title": "Internazionale",
+      "desc": "Competenza adattata ai contesti internazionali con presenza in 5 continenti."
+    },
+
+    "urban": {
+      "title": "Urbanistica",
+      "desc": "Pianificazione urbana integrata che pone il trasporto al centro dello sviluppo territoriale sostenibile."
+    },
+
+    "stra": {
+      "title": "Consulenza strategica",
+      "desc": "Supporto strategico per ottimizzare gli investimenti e massimizzare i rendimenti."
+    }
+  },
+
+  "corevalues": {
+    "title": "I Nostri Valori Fondamentali",
+
+    "subtitle": "I nostri valori fondamentali guidano le nostre azioni e definiscono la nostra identità aziendale. Riflettono il nostro impegno verso eccellenza, innovazione, collaborazione e responsabilità sociale in tutti i nostri progetti e interazioni.",
+
+    "corevalues1": {
+      "title": "Eccellenza tecnica",
+      "subtitle": "Competenza riconosciuta in tutti i settori dei trasporti. Rigore e qualità in ogni progetto. Innovazione costante e miglioramento continuo.",
+      "desc": "Leadership tecnica, qualità nell’esecuzione e innovazione continua per affrontare le sfide progettuali."
+    },
+
+    "corevalues2": {
+      "title": "Innovazione & Sostenibilità",
+      "desc": "Integrazione sistematica delle problematiche ambientali. Soluzioni BIM e digitali all’avanguardia. Impegno verso la transizione ecologica."
+    },
+
+    "corevalues3": {
+      "title": "Partnership & Collaborazione",
+      "desc": "Approccio multidisciplinare e integrato. Stretta collaborazione con tutti gli stakeholder del progetto. Condivisione di conoscenze e competenze."
+    },
+
+    "corevalues4": {
+      "title": "Responsabilità sociale",
+      "desc": "Impegno verso territori e comunità. Rispetto degli standard di sicurezza e qualità. Contributo all’economia locale."
+    }
+  },
+
+  "projects": {
+    "title": "Progetti",
+    "subtitle": "Scopri una selezione dei nostri progetti di punta.",
+
+    "project1": {
+      "title": "Ristrutturazione sostenibile di un edificio storico",
+      "desc": "Trasformazione di un patrimonio architettonico in un edificio ad alte prestazioni energetiche."
+    },
+
+    "project2": {
+      "title": "Progettazione di una nuova linea di trasporto urbano",
+      "desc": "Infrastruttura di trasporto moderna per migliorare la mobilità urbana."
+    },
+
+    "project3": {
+      "title": "Piattaforma digitale per la gestione degli asset",
+      "desc": "Soluzione digitale innovativa per la gestione delle infrastrutture."
+    }
+  },
+
+  "careers": {
+    "title": "Carriere",
+    "subtitle": "Unisciti a un team che plasma il mondo di domani.",
+    "content": "In Ceeb offriamo un ambiente di lavoro stimolante in cui creatività e iniziativa sono incoraggiate.",
+    "button": "Carriere"
+  },
+
+  "contact": {
+    "title": "Contatto",
+    "subtitle": "Hai un progetto o una domanda?",
+    "content": "Contattaci per discutere come possiamo aiutarti a raggiungere le tue ambizioni.",
+
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "message": "Messaggio",
+      "submit": "Invia"
+    }
+  },
+
+  "footer": {
+    "description": "Leader nell'ingegneria, consulenza e progettazione per un futuro sostenibile.",
+
+    "servicesTitle": "Servizi",
+
+    "services": {
+      "engineering": "Ingegneria",
+      "projectManagement": "Project Management",
+      "audit": "Audit & Consulenza",
+      "digital": "Soluzioni Digitali"
+    },
+
+    "phone": "Telefono",
+    "rights": "Tutti i diritti riservati."
+  }
+}
+

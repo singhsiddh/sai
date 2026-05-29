@@ -1,71 +1,181 @@
+
 {
   "nav": {
     "home": "Ana Sayfa",
     "services": "Hizmetlerimiz",
     "projects": "Projeler",
+    "expertise": "Uzmanlık",
     "careers": "Kariyer",
     "contact": "İletişim"
   },
 
   "hero": {
     "title": "Sürdürülebilir ve dayanıklı bir geleceği şekillendiriyoruz.",
+    "heroTile": "Sürdürülebilir ve dayanıklı bir geleceği şekillendiriyoruz.",
+    "heroDescription": "Mühendislik, danışmanlık ve tasarım alanında lider.",
+
+    "ceeb": {
+      "title": "CEEB: Sürdürülebilir Altyapı Mühendisliği",
+      "description": "Ulaşım ve mobilite alanındaki karmaşık projelerin tasarımı ve yönetiminde uzmanlaşmış danışmanlık firması."
+    },
+
+    "slide1": {
+      "title": "Sürdürülebilir bir geleceği şekillendirmek",
+      "description": "Modern altyapılar için mühendislik ve danışmanlık çözümleri."
+    },
+
+    "slide2": {
+      "title": "Proje Sahibi (MOA) & Proje Yöneticisi (MOE)",
+      "description": "İlk taslaktan nihai teslimata kadar projelerinizin her aşamasında uzman destek."
+    },
+
+    "slide3": {
+      "title": "Yarının Mobilitesi için Elektrik Mühendisliği",
+      "description": "Tasarım aşamasından devreye almaya kadar ulaşım altyapıları için multidisipliner çözümler."
+    },
+
+    "slide4": {
+      "title": "Telekomünikasyon Sistemleri & Demiryolu Sinyalizasyonu",
+      "description": "GSM-R, sinyalizasyon ve yolcu bilgilendirme sistemlerinde akıcı ve güvenli çözümler için uzmanlık."
+    },
+
+    "slide5": {
+      "title": "Telekomünikasyon Sistemleri & Demiryolu Sinyalizasyonu",
+      "description": "GSM-R, sinyalizasyon ve yolcu bilgilendirme sistemlerinde akıcı ve güvenli çözümler için uzmanlık."
+    },
+
+    "slide6": {
+      "title": "<b> Yüksek Gerilim, Düşük Gerilim & VDI Uzmanlığı </b>",
+      "description": "Akıllı binalar ve altyapılar için elektrik ve iletişim sistemlerinin tasarımı ve entegrasyonu."
+    },
+
+    "slide7": {
+      "title": "<b>Havalimanı Altyapı Mühendisliği</b>",
+      "description": "Yüksek performanslı ve sürdürülebilir havalimanları için elektrik ve iletişim sistemlerinin tasarımı, modernizasyonu ve optimizasyonu."
+    },
+
+    "slide8": {
+      "title": "<b>Modern Binalar & Teknik Altyapılar</b>",
+      "description": "Yüksek performanslı, bağlantılı ve çevre dostu binalar için mühendislik çözümleri."
+    },
+
+    "slide9": {
+      "title": "<b> Operasyon & Bakım Optimizasyonu</b>",
+      "description": "Maksimum dayanıklılık için devreye alma desteği, performans optimizasyonu ve kestirimci bakım."
+    },
+
+    "slide10": {
+      "title": "<b>Kalite Kontrol & Kontrol Sistemleri</b>",
+      "description": "Güvenlik, uygunluk ve operasyonel verimliliği sağlamak için denetim, sertifikasyon ve ileri teknolojiler."
+    },
+
+    "slide11": {
+      "title": "<b>Telekomünikasyon Sistemleri & Demiryolu Sinyalizasyonu</b>",
+      "description": "GSM-R, sinyalizasyon ve yolcu bilgilendirme sistemlerinde akıcı ve güvenli çözümler için uzmanlık."
+    },
+
+    "slide12": {
+      "title": "<b>Entegre & Multidisipliner Mühendislik Yaklaşımı</b>",
+      "description": "Sürdürülebilirlik ve inovasyonu her projenin merkezine yerleştirmek için tüm paydaşlarla yakın iş birliği."
+    },
+
+    "hero_slide_1_title": "Sürdürülebilir Bir Gelecek için Mühendislik Mükemmelliği",
+    "hero_slide_2_title": " Daha İyi Bir Yarın için Yenilikçi Çözümler",
+
     "subtitle": "Mühendislik, danışmanlık ve tasarım alanında lider olarak, karmaşık zorlukları müşterilerimiz ve toplum için yenilikçi fırsatlara dönüştürüyoruz.",
     "button": "İletişim"
   },
 
   "about": {
-    "title": "İşimiz",
-    "content1": "CEEB, sürdürülebilir yapılı çevrede mükemmelliğe adanmış bağımsız ve çok disiplinli küresel bir danışmanlık firmasıdır. Kuruluşumuzdan bu yana, dünyaya olumlu etki sağlayan yaratıcı ve yüksek değerli çözümler sunmaya kararlıyız.",
-    "content2": "Kalite, dürüstlük ve yaratıcılık temel değerlerimizdir ve tüm çalışmalarımıza yön verir. Başarının anahtarının disiplinler arası iş birliği olduğuna inanıyoruz."
+    "title": "<b>Multidisipliner Uzmanlığımız</b>",
+
+    "content1": "<b>CEEB: Dünyanın hizmetinde sürdürülebilir mühendislik</b>",
+
+    "content2": "<li> CEEB, uluslararası düzeyde sürdürülebilir mühendislik ve altyapı alanında önemli bir oyuncu olarak kendini kanıtlamıştır. </li><li> Demiryolu ve havalimanı mobilitesinden kentsel projelere kadar, müşterilerimizi ve ortaklarımızı projelerinin her aşamasında teknik uzmanlık ve stratejik vizyonu birleştirerek destekliyoruz.</li>",
+
+    "content3": "<b>Denetimden işletmeye kadar özel çözümler</b>",
+
+    "content4": "<li>Multidisipliner ekiplerimiz, denetim ve danışmanlıktan proje yönetimi ve operasyonel desteğe kadar hizmetler sunmaktadır. </li><li> Kapsamlı yaklaşımımız sayesinde, her projenin özel zorluklarına mükemmel şekilde uyarlanmış güvenilir ve yenilikçi çözümler sunuyoruz.</li>",
+
+    "content5": "<b>Her proje için inovasyon ve performans</b>",
+
+    "content6": "<li> Stratejik tasarımdan devreye almaya kadar CEEB; teknik çalışmalar, BIM, telekomünikasyon, danışmanlık ve denetim alanlarındaki uzmanlığını kullanır. </li><li> Her proje, karmaşık zorlukları yüksek performanslı ve çevreye duyarlı altyapılar için somut ve sürdürülebilir çözümlere dönüştürme fırsatıdır.</li>"
   },
 
   "services": {
     "title": "Hizmetlerimiz",
-    "subtitle": "Şirketlere özel mühendislik, danışmanlık ve proje yönetimi çözümleri sunuyoruz.",
+    "subtitle": "Şirketlere mühendislik, danışmanlık ve proje yönetimi alanlarında özel çözümler sunuyoruz.",
 
-    "engineering": {
-      "title": "Mühendislik",
-      "desc": "Mühendislik uzmanlığımız; yapısal, inşaat, mekanik, elektrik ve cephe mühendisliğini kapsamaktadır."
+    "suseng": {
+      "title": "Sürdürülebilir Mühendislik",
+      "desc": "İklim konularını ilk aşamalardan itibaren entegre eden dayanıklı ve çevre dostu altyapılar."
     },
 
-    "projectManagement": {
-      "title": "Proje Yönetimi",
-      "desc": "Planlamadan teslimata kadar kapsamlı proje yönetimi hizmetleri sunuyoruz."
+    "infra": {
+      "title": "Altyapı",
+      "desc": "Demiryolu ve havalimanı altyapılarının tam tasarımı, inşası ve bakımı."
     },
 
-    "audit": {
-      "title": "Denetim ve Danışmanlık",
-      "desc": "Teknik denetimler, performans değerlendirmeleri ve risk analizleri gerçekleştiriyoruz."
+    "mobi": {
+      "title": "Mobilite",
+      "desc": "İhtiyaç analizinden devreye almaya kadar entegre ve intermodal ulaşım çözümleri."
     },
 
-    "communication": {
-      "title": "İletişim",
-      "desc": "Paydaşları dahil etmek ve projeleri tanıtmak için iletişim stratejileri geliştiriyoruz."
+    "inter": {
+      "title": "Uluslararası",
+      "desc": "5 kıtadaki varlığıyla uluslararası bağlamlara uyarlanmış uzmanlık."
     },
 
-    "elearning": {
-      "title": "E-Öğrenme",
-      "desc": "Kuruluşlar için özelleştirilmiş e-öğrenme çözümleri oluşturuyoruz."
+    "urban": {
+      "title": "Şehir Planlama",
+      "desc": "Ulaşımı sürdürülebilir bölgesel kalkınmanın merkezine koyan entegre şehir planlaması."
     },
 
-    "digital": {
-      "title": "Dijital Çözümler",
-      "desc": "BIM, analiz ve yapay zeka dahil yenilikçi dijital çözümler geliştiriyoruz."
+    "stra": {
+      "title": "Stratejik Danışmanlık",
+      "desc": "Yatırımları optimize etmek ve getirileri en üst düzeye çıkarmak için stratejik destek."
+    }
+  },
+
+  "corevalues": {
+    "title": "Temel Değerlerimiz",
+
+    "subtitle": "Temel değerlerimiz, eylemlerimize rehberlik eder ve şirket kimliğimizi tanımlar. Tüm projelerimizde ve etkileşimlerimizde mükemmeliyet, inovasyon, iş birliği ve sosyal sorumluluğa olan bağlılığımızı yansıtır.",
+
+    "corevalues1": {
+      "title": "Teknik Mükemmellik",
+      "subtitle": "Ulaşımın tüm alanlarında tanınmış uzmanlık. Her projede titizlik ve kalite. Sürekli inovasyon ve gelişim.",
+      "desc": "Proje zorluklarını karşılamak için teknik liderlik, kalite odaklı teslimat ve sürekli inovasyon."
+    },
+
+    "corevalues2": {
+      "title": "İnovasyon & Sürdürülebilirlik",
+      "desc": "Çevresel konuların sistematik entegrasyonu. En son BIM ve dijital çözümler. Ekolojik dönüşüme bağlılık."
+    },
+
+    "corevalues3": {
+      "title": "Ortaklık & İş Birliği",
+      "desc": "Multidisipliner ve entegre yaklaşım. Tüm proje paydaşlarıyla yakın iş birliği. Bilgi ve uzmanlık paylaşımı."
+    },
+
+    "corevalues4": {
+      "title": "Sosyal Sorumluluk",
+      "desc": "Bölgelere ve topluluklara bağlılık. Güvenlik ve kalite standartlarına saygı. Yerel ekonomiye katkı."
     }
   },
 
   "projects": {
     "title": "Projeler",
-    "subtitle": "Öne çıkan projelerimizden bir seçkiyi keşfedin.",
+    "subtitle": "Amiral gemisi projelerimizden bir seçkiyi keşfedin.",
 
     "project1": {
       "title": "Tarihi bir binanın sürdürülebilir renovasyonu",
-      "desc": "Mimari mirasın yüksek enerji performanslı bir yapıya dönüştürülmesi."
+      "desc": "Mimari mirasın yüksek enerji performanslı bir binaya dönüştürülmesi."
     },
 
     "project2": {
       "title": "Yeni bir kentsel ulaşım hattının tasarımı",
-      "desc": "Kentsel hareketliliği geliştirmek için modern ulaşım altyapısı."
+      "desc": "Kentsel mobiliteyi geliştirmek için modern ulaşım altyapısı."
     },
 
     "project3": {
@@ -76,8 +186,8 @@
 
   "careers": {
     "title": "Kariyer",
-    "subtitle": "Yarının dünyasını şekillendiren ekibe katılın.",
-    "content": "Ceeb’de yaratıcılığın ve inisiyatifin teşvik edildiği ilham verici bir çalışma ortamı sunuyoruz.",
+    "subtitle": "Yarının dünyasını şekillendiren bir ekibe katılın.",
+    "content": "Ceeb’de yaratıcılığın ve girişimciliğin teşvik edildiği ilham verici bir çalışma ortamı sunuyoruz.",
     "button": "Kariyer"
   },
 
@@ -95,14 +205,14 @@
   },
 
   "footer": {
-    "description": "Sürdürülebilir bir gelecek için mühendislik, danışmanlık ve tasarım alanında lider.",
+    "description": "Sürdürülebilir bir gelecek için mühendislik, danışmanlık ve tasarımda lider.",
 
     "servicesTitle": "Hizmetler",
 
     "services": {
       "engineering": "Mühendislik",
       "projectManagement": "Proje Yönetimi",
-      "audit": "Denetim ve Danışmanlık",
+      "audit": "Denetim & Danışmanlık",
       "digital": "Dijital Çözümler"
     },
 
