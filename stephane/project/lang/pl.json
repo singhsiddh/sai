@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "services": "Nasze Usługi",
+    "projects": "Projekty",
+    "careers": "Kariera",
+    "contact": "Kontakt"
+  },
+
+  "hero": {
+    "title": "Kształtujemy zrównoważoną i odporną przyszłość.",
+    "subtitle": "Lider w dziedzinie inżynierii, doradztwa i projektowania – przekształcamy złożone wyzwania w innowacyjne możliwości dla naszych klientów i społeczeństwa.",
+    "button": "Kontakt"
+  },
+
+  "about": {
+    "title": "Nasza Firma",
+    "content1": "CEEB to niezależna, multidyscyplinarna globalna firma konsultingowa, zaangażowana w zrównoważoną doskonałość w środowisku zabudowanym. Od początku naszej działalności dostarczamy kreatywne rozwiązania o wysokiej wartości, które mają pozytywny wpływ na świat.",
+    "content2": "Nasze podstawowe wartości – jakość, uczciwość i kreatywność – kierują każdym naszym działaniem. Wierzymy w holistyczne podejście do projektowania, gdzie współpraca między dyscyplinami jest kluczem do sukcesu."
+  },
+
+  "services": {
+    "title": "Nasze Usługi",
+    "subtitle": "Wspieramy firmy dzięki rozwiązaniom szytym na miarę w zakresie inżynierii, doradztwa i zarządzania projektami.",
+
+    "engineering": {
+      "title": "Inżynieria",
+      "desc": "Nasza wiedza inżynieryjna obejmuje inżynierię konstrukcyjną, cywilną, mechaniczną, elektryczną oraz fasadową."
+    },
+
+    "projectManagement": {
+      "title": "Zarządzanie Projektami",
+      "desc": "Oferujemy kompleksowe usługi zarządzania projektami – od planowania po realizację."
+    },
+
+    "audit": {
+      "title": "Audyt i Doradztwo",
+      "desc": "Przeprowadzamy audyty techniczne, oceny wydajności oraz analizy ryzyka."
+    },
+
+    "communication": {
+      "title": "Komunikacja",
+      "desc": "Tworzymy strategie komunikacyjne angażujące interesariuszy i promujące projekty."
+    },
+
+    "elearning": {
+      "title": "E-learning",
+      "desc": "Tworzymy spersonalizowane rozwiązania e-learningowe dla organizacji."
+    },
+
+    "digital": {
+      "title": "Rozwiązania Cyfrowe",
+      "desc": "Opracowujemy innowacyjne rozwiązania cyfrowe, w tym BIM, analitykę i sztuczną inteligencję."
+    }
+  },
+
+  "projects": {
+    "title": "Projekty",
+    "subtitle": "Poznaj wybrane nasze flagowe projekty.",
+
+    "project1": {
+      "title": "Zrównoważona renowacja zabytkowego budynku",
+      "desc": "Przekształcenie dziedzictwa architektonicznego w budynek o wysokiej efektywności energetycznej."
+    },
+
+    "project2": {
+      "title": "Projekt nowej miejskiej linii transportowej",
+      "desc": "Nowoczesna infrastruktura transportowa poprawiająca mobilność miejską."
+    },
+
+    "project3": {
+      "title": "Cyfrowa platforma do zarządzania aktywami",
+      "desc": "Innowacyjne rozwiązanie cyfrowe do zarządzania infrastrukturą."
+    }
+  },
+
+  "careers": {
+    "title": "Kariera",
+    "subtitle": "Dołącz do zespołu kształtującego świat jutra.",
+    "content": "W Ceeb oferujemy inspirujące środowisko pracy, w którym kreatywność i inicjatywa są mile widziane.",
+    "button": "Kariera"
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Masz projekt lub pytanie?",
+    "content": "Skontaktuj się z nami, aby omówić, jak możemy pomóc Ci osiągnąć Twoje cele.",
+
+    "form": {
+      "name": "Imię",
+      "email": "Email",
+      "message": "Wiadomość",
+      "submit": "Wyślij"
+    }
+  },
+
+  "footer": {
+    "description": "Lider w dziedzinie inżynierii, doradztwa i projektowania dla zrównoważonej przyszłości.",
+
+    "servicesTitle": "Usługi",
+
+    "services": {
+      "engineering": "Inżynieria",
+      "projectManagement": "Zarządzanie Projektami",
+      "audit": "Audyt i Doradztwo",
+      "digital": "Rozwiązania Cyfrowe"
+    },
+
+    "phone": "Telefon",
+    "rights": "Wszelkie prawa zastrzeżone."
+  }
+}
