@@ -44,7 +44,12 @@ async function loadLanguage(lang) {
             });
 
             if (value !== null) {
-                element.textContent = value;
+                if (typeof value === "string") {
+                    value = value
+                        .replace(/\\n/g, "<br>")
+                        .replace(/\n/g, "<br>");
+                }
+                element.innerHTML = value;
             }
 
         });

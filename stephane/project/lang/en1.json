@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Our Services",
+    "projects": "Projects",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Shaping a sustainable and resilient future.",
+    "subtitle": "A leader in engineering, consulting, and design, we transform complex challenges into innovative opportunities for our clients and society.",
+    "button": "Contact"
+  },
+
+  "about": {
+    "title": "Our Business",
+
+    "content1": "Since 1989, CEEB has possessed unique expertise in the field of electrical engineering, high-voltage and low-voltage systems, and communication systems. CEEB primarily works on sensitive projects: airports, courthouses, embassies, etc.",
+
+    "content2": "Today, CEEB carries out projects across all technical trades with a constant focus on quality. Its technical and human resources, always at the forefront of innovation, guarantee a very high level of service.\n\nAnticipation and adaptability are the core values of our employees. They must reinvent themselves every day, remaining curious about best practices and new technologies.\n\nProximity, availability, and responsiveness are the cornerstones of CEEB.\n\nCEEB is a human-sized company that has the resources and ambitions of a large company."
+  },
+
+  "services": {
+    "title": "Our Services",
+
+    "subtitle": "We support companies with tailor-made engineering, consulting, and project management solutions.",
+
+    "engineering": {
+      "title": "Electricity - Systems",
+      "desc1": "Electricity and Communication Systems, TelecomDistribution",
+      "desc2": "On-site surveys, network identification\nHigh-voltage substations, main distribution boards\nEquipment definition, calculation notes, BMS, CAD/CAM\nSite layouts, distribution diagrams, routes, summary\nRenewable energy and sustainable development, HVAC, plumbing, utilities, special fluids and gases",
+      "desc3": "Low Voltage and Communication Systems\nDiagnosis of existing installations\nSite Protection Studies\nVideo surveillance, cable television, VDI, public address system\nAccess control and intrusion detection\nIntercom and video intercom\nDetection, BMS, fire alarm control\nTechnical alarms",
+      "desc4": "CAD/CAM, Information Technology\nFunctional analysis\nStudy and design of systems\nHuman-computer interface (HCI)\n3D/4D Modeling"
+    },
+
+    "projectManagement": {
+      "title": "Project Management",
+
+      "desc1": "We offer comprehensive project management services from planning to delivery.",
+
+      "desc2": "We coordinate stakeholders, schedules, budgets, and technical resources efficiently.",
+
+      "desc3": "Our teams ensure quality, compliance, risk control, and successful project execution."
+    },
+
+    "audit": {
+      "title": "Audit & Consulting",
+      "desc": "We conduct technical audits, performance evaluations, and risk analyses."
+    },
+
+    "communication": {
+      "title": "Communication",
+      "desc": "We develop communication strategies to engage stakeholders and promote projects."
+    },
+
+    "elearning": {
+      "title": "E-learning",
+      "desc": "We create customized e-learning solutions for organizations."
+    },
+
+    "digital": {
+      "title": "Digital Solutions",
+      "desc": "We develop innovative digital solutions including BIM, analytics, and AI."
+    }
+  },
+
+  "projects": {
+    "title": "Projects",
+
+    "subtitle": "Discover a selection of our flagship projects.",
+
+    "project1": {
+      "title": "Sustainable renovation of a historic building",
+      "desc": "Transformation of an architectural heritage into a high-energy performance building."
+    },
+
+    "project2": {
+      "title": "Design of a new urban transport line",
+      "desc": "Modern transport infrastructure to improve urban mobility."
+    },
+
+    "project3": {
+      "title": "Digital platform for asset management",
+      "desc": "Innovative digital solution for infrastructure management."
+    }
+  },
+
+  "careers": {
+    "title": "Careers",
+
+    "subtitle": "Join a team shaping the world of tomorrow.",
+
+    "content": "At CEEB, we offer a stimulating work environment where creativity and initiative are encouraged.",
+
+    "button": "Careers"
+  },
+
+  "contact": {
+    "title": "Contact",
+
+    "subtitle": "Do you have a project or a question?",
+
+    "content": "Contact us to discuss how we can help you achieve your ambitions.",
+
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
+    }
+  },
+
+  "footer": {
+    "description": "A leader in engineering, consulting, and design for a sustainable future.",
+
+    "servicesTitle": "Services",
+
+    "services": {
+      "engineering": "Engineering",
+      "projectManagement": "Project Management",
+      "audit": "Audit & Consulting",
+      "digital": "Digital Solutions"
+    },
+
+    "phone": "Phone",
+
+    "rights": "All rights reserved."
+  }
+}

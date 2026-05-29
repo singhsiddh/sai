@@ -3,57 +3,170 @@
     "home": "Home",
     "services": "Our Services",
     "projects": "Projects",
+    "expertise": "Expertise",
     "careers": "Careers",
     "contact": "Contact"
   },
 
   "hero": {
     "title": "Shaping a sustainable and resilient future.",
+    "heroTile": "Shaping a sustainable and resilient future.",
+    "heroDescription": "A leader in engineering, consulting, and design.",
+    "ceeb": {
+      "title": "CEEB: Sustainable Infrastructure Engineering",
+      "description": "Consulting firm specializing in the design and management of complex projects in transport and mobility."
+    },
+    "slide1": {
+      "title": "Shaping a sustainable future",
+      "description": "Engineering and consulting solutions for modern infrastructure."
+    },
+
+
+    "slide2": {
+      "title": " Project Owner (MOA) & Project Manager (MOE)",
+      "description": "Expert support at every stage of your projects, from the initial sketch to the final handover."
+    },
+
+
+    "slide3": {
+      "title": "Electrical Engineering for the Mobility of Tomorrow ",
+      "description": "Multidisciplinary solutions for transport infrastructure, from design to commissioning."
+    },
+
+
+    "slide4": {
+      "title": "Telecommunications Systems & Railway Signaling",
+      "description": "Expertise in GSM-R, signage and guidance for smooth and secure passenger information."
+    },
+
+    "slide5": {
+      "title": "Telecommunications Systems & Railway Signaling",
+      "description": "Expertise in GSM-R, signage and guidance for smooth and secure passenger information."
+    },
+
+
+    "slide6": {
+      "title": "<b> Expertise in High Voltage, Low Voltage & VDI </b>",
+      "description": "Design and integration of electrical and communication systems for smart buildings and infrastructure."
+    },
+    
+
+"slide7": {
+      "title": "<b>Airport Infrastructure Engineering</b>",
+      "description": "Design, modernization and optimization of electrical and communication systems for high-performing and sustainable airports."
+    },
+    
+
+"slide8": {
+      "title": "<b>Modern Buildings & Technical Infrastructure</b>",
+      "description": "Engineering solutions for high-performance, connected and environmentally friendly buildings."
+    },
+   
+
+"slide9": {
+      "title": "<b> Operations & Maintenance Optimization</b>",
+      "description": "Commissioning support, performance optimization and predictive maintenance for maximum durability."
+    },
+
+    
+
+"slide10": {
+      "title": "<b>Quality Control & Control Systems</b>",
+      "description": "Inspection, certification and cutting-edge technologies to ensure safety, compliance and operational efficiency."
+    },
+"slide11": {
+      "title": "<b>Telecommunications Systems & Railway Signaling</b>",
+      "description": "Expertise in GSM-R, signage and guidance for smooth and secure passenger information."
+    },
+    
+
+"slide12": {
+      "title": "<b>An Integrated & Multidisciplinary Engineering Approach</b>",
+      "description": "Close collaboration with all stakeholders to integrate sustainability and innovation issues at the heart of each project."
+    },
+
+  
+    "hero_slide_1_title": "Engineering Excellence for a Sustainable Future",
+    "hero_slide_2_title": " Innovative Solutions for a Better Tomorrow",
+
     "subtitle": "A leader in engineering, consulting, and design, we transform complex challenges into innovative opportunities for our clients and society.",
     "button": "Contact"
   },
 
   "about": {
-    "title": "Our Business",
-    "content1": "CEEB is an independent, multidisciplinary global consulting firm dedicated to sustainable excellence in the built environment. Since our inception, we have been committed to providing creative, high-value solutions that have a positive impact on the world.",
-    "content2": "Our core values of quality, integrity, and creativity guide our every action. We believe in a holistic approach to design, where collaboration across disciplines is the key to success."
+    "title": "<b>Our Multidisciplinary Expertise</b>",
+    "content1": "<b>CEEB: Sustainable engineering at the service of the world</b>",
+    "content2": "<li> CEEB has established itself as a key player in sustainable engineering and infrastructure internationally. </li><li>  From rail and airport mobility to urban projects, we support our clients and partners at every stage of their projects, combining technical expertise and strategic vision.</li> ",
+   "content3": "<b>Tailor-made solutions, from auditing to operation</b>",
+    "content4": "<li>Our multidisciplinary teams provide services ranging from auditing and consulting to project management and operational support. </li><li> Through a comprehensive approach, we deliver reliable and innovative solutions, perfectly tailored to the specific challenges of each project.</li>",
+    "content5": "<b>Innovation and performance for every project</b>",
+    "content6": "<li> From strategic design to commissioning, CEEB leverages its expertise in technical studies, BIM, telecommunications, consulting, and auditing. </li><li>  Each project is an opportunity to transform complex challenges into concrete and sustainable solutions, for high-performing and environmentally responsible infrastructure.</li> "
+
+  
+  
+  
   },
 
   "services": {
     "title": "Our Services",
     "subtitle": "We support companies with tailor-made engineering, consulting, and project management solutions.",
 
-    "engineering": {
-      "title": "Engineering",
-      "desc": "Our engineering expertise covers structural, civil, mechanical, electrical, and facade engineering."
+    "suseng": {
+      "title": "Sustainable Engineering",
+      "desc": "Resilient and environmentally friendly infrastructure, integrating climate issues from the upstream phases."
     },
 
-    "projectManagement": {
-      "title": "Project Management",
-      "desc": "We offer comprehensive project management services from planning to delivery."
+    "infra": {
+      "title": "Infrastructure",
+      "desc": "Complete design, construction and maintenance of railway and airport infrastructure."
     },
 
-    "audit": {
-      "title": "Audit & Consulting",
-      "desc": "We conduct technical audits, performance evaluations, and risk analyses."
+    "mobi": {
+      "title": "Mobility",
+      "desc": "Integrated and intermodal transport solutions, from needs analysis to commissioning."
     },
 
-    "communication": {
-      "title": "Communication",
-      "desc": "We develop communication strategies to engage stakeholders and promote projects."
+    "inter": {
+      "title": "International",
+      "desc": "Expertise adapted to international contexts with a presence on 5 continents."
     },
 
-    "elearning": {
-      "title": "E-learning",
-      "desc": "We create customized e-learning solutions for organizations."
+    "urban": {
+      "title": "Urban planning",
+      "desc": "Integrated urban planning placing transport at the heart of sustainable territorial development."
     },
 
-    "digital": {
-      "title": "Digital Solutions",
-      "desc": "We develop innovative digital solutions including BIM, analytics, and AI."
+    "stra": {
+      "title": "Strategic Advice",
+      "desc": "Strategic support to optimize investments and maximize returns."
     }
   },
 
+"corevalues": {
+    "title": "Our Core Values",
+    "subtitle": "Our core values guide our actions and define our identity as a company.  They reflect our commitment to excellence, innovation, partnership and social responsibility in all our projects and interactions.",
+    "corevalues1": {
+    "title": "Technical Excellence",
+    "subtitle": "Recognized expertise in all areas of transport. Rigor and quality in every project. Constant innovation and continuous improvement.",
+    "desc": "Technical leadership, quality-driven delivery and continuous innovation to meet project challenges."
+    },
+    "corevalues2": {
+      "title": "Innovation & Sustainability",
+      "desc": "Systematic integration of environmental issues. Cutting-edge BIM and digital solutions. Commitment to the ecological transition."
+    },
+
+    "corevalues3": {
+      "title": "Partnership & Collaboration",
+      "desc": "Multidisciplinary and integrated approach. Close collaboration with all project stakeholders. Sharing of knowledge and expertise."
+    },
+
+    "corevalues4": {
+      "title": "Social Responsibility",
+      "desc": "Commitment to territories and communities. Respect for safety and quality standards. Contribution to the local economy."
+    }
+  },
+
+  
   "projects": {
     "title": "Projects",
     "subtitle": "Discover a selection of our flagship projects.",
