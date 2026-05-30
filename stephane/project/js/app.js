@@ -108,7 +108,7 @@ function updateCarouselImages(lang) {
 
         const currentBgImage = slide.style.backgroundImage;
 
-        if (!currentBgImage || currentBgImage.includes("about-assets")) {
+        if (!currentBgImage || !currentBgImage.includes("images/carousel/")) {
             return;
         }
 

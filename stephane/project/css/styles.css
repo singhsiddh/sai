@@ -841,17 +841,190 @@ body {
 }
 
 /* =========================================================
-   RESPONSIVE
+   EXPERTISE PAGE
 ========================================================= */
 
-@media (max-width: 768px) {
+.carousel-container {
+    margin-top: 100px;
+    padding: 40px 0;
+}
 
-    #nav {
-        display: none;
-    }
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.16);
+    background: #000;
+}
 
-    .container {
-        padding: 0 1rem;
+.carousel-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.carousel-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+
+.carousel-slide-content {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    z-index: 2;
+    width: min(700px, calc(100% - 80px));
+    color: #fff;
+}
+
+.carousel-slide-content h3 {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    max-width: 780px;
+}
+
+.carousel-slide-content p {
+    max-width: 720px;
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.92);
+}
+
+.expertise-details {
+    padding: 4rem 0;
+}
+
+.expertise-detail-card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.expertise-detail-card:nth-child(even) .expertise-image {
+    order: -1;
+}
+
+.expertise-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.expertise-content h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #1e3a8a;
+}
+
+.expertise-content p {
+    margin-bottom: 1rem;
+    color: #4b5563;
+    line-height: 1.8;
+}
+
+.expertise-list {
+    list-style: disc inside;
+    color: #374151;
+}
+
+.expertise-list li {
+    margin-bottom: 0.75rem;
+}
+
+.services-section {
+    padding: 4rem 0;
+    background: #f8fafc;
+}
+
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.services-grid-with-images {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.service-card-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.service-card-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    background: linear-gradient(180deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.72) 100%);
+    color: #fff;
+}
+
+.service-overlay h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.service-overlay p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.expertise-section.bg-light {
+    padding: 4rem 0;
+    background: #fff;
+}
+
+.expertise-section.bg-light h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.expertise-section.bg-light p {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    color: #4b5563;
+}
+
+/* =========================================================
     }
 
     .hero-carousel-container {
