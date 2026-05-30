@@ -82,7 +82,12 @@
     "hero_slide_2_title": "Des solutions innovantes pour un avenir meilleur",
 
     "subtitle": "Leader en ingénierie, conseil et conception, nous transformons les défis complexes en opportunités innovantes pour nos clients et la société.",
-    "button": "Contact"
+    "button": "Contact",
+    "blue": {
+      "line1": "De la maîtrise d'ouvrage et de la gestion de projet à l'ingénierie de projet.",
+      "line2": "Imaginez, Créez, Réalisez l'avenir des transports.",
+      "paragraph": "Partenaire de confiance pour la conception, la construction et l'exploitation d'infrastructures de transport durables et innovantes en France et à l'international. Depuis plus de trois ans, CEEB accompagne des maîtres d'ouvrage publics et privés dans la transformation de leurs territoires. Nous combinons expertise technique, innovation et engagement en faveur de la durabilité pour livrer des projets ferroviaires et aéroportuaires de classe mondiale."
+    }
   },
 
   "about": {

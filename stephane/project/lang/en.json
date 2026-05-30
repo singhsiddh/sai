@@ -90,7 +90,12 @@
     "hero_slide_2_title": " Innovative Solutions for a Better Tomorrow",
 
     "subtitle": "A leader in engineering, consulting, and design, we transform complex challenges into innovative opportunities for our clients and society.",
-    "button": "Contact"
+    "button": "Contact",
+    "blue": {
+      "line1": "From project ownership and project management to project engineering.",
+      "line2": "Imagine, Create, Realize the Future of Transportation.",
+      "paragraph": "Trusted partner for the design, construction and operation of sustainable and innovative transport infrastructure in France and internationally. For over three years, CEEB has been supporting public and private project owners in the transformation of their territories. We combine technical expertise, innovation, and a commitment to sustainability to deliver world-class rail and airport projects."
+    }
   },
 
   "about": {

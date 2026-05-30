@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Nuestros Servicios",
+    "projects": "Proyectos",
+    "careers": "Carreras",
+    "contact": "Contacto"
+  },
+
+  "hero": {
+    "title": "Forjando un futuro sostenible y resiliente.",
+    "subtitle": "Líder en ingeniería, consultoría y diseño.",
+    "button": "Contacto",
+    "blue": {
+      "line1": "Desde la titularidad del proyecto y la gestión del proyecto hasta la ingeniería del proyecto.",
+      "line2": "Imagina, Crea, Realiza el Futuro del Transporte.",
+      "paragraph": "Socio de confianza para el diseño, la construcción y la operación de infraestructuras de transporte sostenibles e innovadoras en Francia y a nivel internacional. Durante más de tres años, CEEB ha apoyado a propietarios de proyectos públicos y privados en la transformación de sus territorios. Combinamos experiencia técnica, innovación y un compromiso con la sostenibilidad para entregar proyectos ferroviarios y aeroportuarios de clase mundial."
+    }
+  }
+}
