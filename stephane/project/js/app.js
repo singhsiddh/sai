@@ -1,5 +1,11 @@
  
 /* =========================
+   GLOBAL LANGUAGE VARIABLE
+========================= */
+
+let currentLanguage = "en";
+
+/* =========================
    LOAD LANGUAGE
 ========================= */
 
@@ -54,6 +60,12 @@ async function loadLanguage(lang) {
 
         });
 
+        // UPDATE CAROUSEL IMAGES
+        updateCarouselImages(lang);
+
+        // UPDATE CURRENT LANGUAGE
+        currentLanguage = lang;
+
         // SAVE LANGUAGE
         localStorage.setItem("language", lang);
 
@@ -70,6 +82,53 @@ async function loadLanguage(lang) {
         );
 
     }
+
+}
+
+/* =========================
+   UPDATE CAROUSEL IMAGES
+========================= */
+
+function updateCarouselImages(lang) {
+
+    const slides = document.querySelectorAll(".carousel-slide");
+
+    slides.forEach(slide => {
+
+        const currentBgImage = slide.style.backgroundImage;
+
+        // Extract the image number from current path (01, 02, etc.)
+        const match = currentBgImage.match(/(\d{2})/);
+
+        if (match) {
+
+            const imageNumber = match[1];
+
+            // Try language-specific path first
+            const langSpecificImage = `images/carousel/${lang}/${imageNumber}.png`;
+
+            // Default image path
+            const defaultImage = `images/carousel/${imageNumber}.png`;
+
+            // Create temporary image to check if language-specific image exists
+            const tempImg = new Image();
+
+            tempImg.onload = () => {
+                // Language-specific image exists, use it
+                slide.style.backgroundImage = `url('${langSpecificImage}')`;
+            };
+
+            tempImg.onerror = () => {
+                // Language-specific image doesn't exist, use default
+                slide.style.backgroundImage = `url('${defaultImage}')`;
+            };
+
+            // Trigger the image check
+            tempImg.src = langSpecificImage;
+
+        }
+
+    });
 
 }
 
@@ -119,10 +178,10 @@ document.addEventListener("DOMContentLoaded", () => {
        DEFAULT LANGUAGE
     ========================= */
 
-    let currentLanguage =
+    let savedLanguage =
         localStorage.getItem("language");
 
-    if (!currentLanguage) {
+    if (!savedLanguage) {
 
         const browserLanguage =
             navigator.language.slice(0, 2);
@@ -133,19 +192,19 @@ document.addEventListener("DOMContentLoaded", () => {
             )
         ) {
 
-            currentLanguage = browserLanguage;
+            savedLanguage = browserLanguage;
 
         }
         else {
 
-            currentLanguage = "en";
+            savedLanguage = "en";
 
         }
 
     }
 
     // INITIAL LOAD
-    loadLanguage(currentLanguage);
+    loadLanguage(savedLanguage);
 
     /* =========================
        LANGUAGE CLICK EVENTS
