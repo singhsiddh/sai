@@ -6,7 +6,6 @@
     "careers": "Carreras",
     "contact": "Contacto"
   },
-
   "hero": {
     "title": "Forjando un futuro sostenible y resiliente.",
     "subtitle": "Líder en ingeniería, consultoría y diseño.",
@@ -15,6 +14,59 @@
       "line1": "Desde la titularidad del proyecto y la gestión del proyecto hasta la ingeniería del proyecto.",
       "line2": "Imagina, Crea, Realiza el Futuro del Transporte.",
       "paragraph": "Socio de confianza para el diseño, la construcción y la operación de infraestructuras de transporte sostenibles e innovadoras en Francia y a nivel internacional. Durante más de tres años, CEEB ha apoyado a propietarios de proyectos públicos y privados en la transformación de sus territorios. Combinamos experiencia técnica, innovación y un compromiso con la sostenibilidad para entregar proyectos ferroviarios y aeroportuarios de clase mundial."
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "Acerca de CEEB",
+      "description": "Fundada en 1989, CEEB es un socio de confianza en importantes proyectos de infraestructura francesa, aportando excelencia técnica y estrategia de ingeniería al transporte y la movilidad."
+    },
+    "pageHeader": {
+      "title": "Acerca de CEEB",
+      "text": "Desde 1989, CEEB ha apoyado proyectos de transporte con servicios multidisciplinarios de ingeniería, asesoría y gestión de proyectos. Nuestra historia se construye sobre innovación, experiencia y un enfoque centrado en las personas."
+    },
+    "history": {
+      "title": "Nuestra historia",
+      "paragraph1": "Fundada el 1 de marzo de 1989 por Gérard SEBAG, CEEB | European Concept Building Equipment comenzó como una consultoría de ingeniería especializada. Desde el principio, la empresa se enfocó en estudios técnicos de alta calidad y soluciones prácticas en infraestructura y transporte.",
+      "paragraph2": "Durante más de 35 años, CEEB ha crecido hasta convertirse en una firma multidisciplinaria con experiencia demostrada en movilidad, planificación urbana, ingeniería de sistemas y grandes obras públicas. Nuestra historia está marcada por el compromiso con el cliente y proyectos que fortalecen territorios y mejoran la vida cotidiana."
+    },
+    "mission": {
+      "title": "Nuestra misión",
+      "paragraph1": "Nuestra misión es guiar a los clientes desde el concepto hasta la puesta en servicio, asegurando que cada proyecto se beneficie de ingeniería rigurosa, visión operativa y una fuerte orientación al servicio.",
+      "paragraph2": "Desde los primeros planos a mano y las estilográficas Rotring hasta las modernas herramientas digitales de diseño y la inteligencia artificial, seguimos evolucionando mientras mantenemos una profunda cultura técnica basada en precisión y fiabilidad."
+    },
+    "values": {
+      "title": "Nuestros valores",
+      "subtitle": "Nuestros valores guían cada paso que damos.",
+      "card1": {
+        "title": "Excelencia",
+        "desc": "Mantenemos altos estándares técnicos en cada estudio, diseño y fase de construcción, buscando soluciones sólidas, prácticas y preparadas para el futuro."
+      },
+      "card2": {
+        "title": "Innovación",
+        "desc": "Exploramos continuamente nuevos métodos y tecnologías para ofrecer infraestructuras y servicios de ingeniería más inteligentes."
+      },
+      "card3": {
+        "title": "Desarrollo sostenible",
+        "desc": "Adoptamos un enfoque responsable centrado en la durabilidad, el desempeño ambiental y el impacto social para proyectos de largo plazo."
+      },
+      "card4": {
+        "title": "Colaboración",
+        "desc": "Nuestro trabajo es una aventura humana basada en la integridad, la transparencia y una colaboración estrecha con clientes y partes interesadas."
+      },
+      "card5": {
+        "title": "Responsabilidad",
+        "desc": "Asumimos las dimensiones sociales y ambientales de la infraestructura para entregar resultados seguros, accesibles y resilientes."
+      },
+      "card6": {
+        "title": "Nuestro equipo",
+        "desc": "Nuestros expertos multidisciplinarios combinan ingeniería, gestión de proyectos y conocimiento operativo para apoyar programas complejos de transporte."
+      }
+    },
+    "cta": {
+      "title": "¿Te gustaría colaborar con nosotros?",
+      "text": "Contáctanos para discutir tus proyectos y cómo CEEB puede brindar el apoyo de ingeniería que necesitas.",
+      "button": "Contáctanos"
     }
   }
 }

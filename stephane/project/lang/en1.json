@@ -26,6 +26,60 @@
     "content2": "Today, CEEB carries out projects across all technical trades with a constant focus on quality. Its technical and human resources, always at the forefront of innovation, guarantee a very high level of service.\n\nAnticipation and adaptability are the core values of our employees. They must reinvent themselves every day, remaining curious about best practices and new technologies.\n\nProximity, availability, and responsiveness are the cornerstones of CEEB.\n\nCEEB is a human-sized company that has the resources and ambitions of a large company."
   },
 
+  "aboutPage": {
+    "hero": {
+      "title": "About CEEB",
+      "description": "Founded in 1989, CEEB has been a trusted partner in major French infrastructure projects, bringing technical excellence and strategic engineering to transport and mobility programs."
+    },
+    "pageHeader": {
+      "title": "About CEEB",
+      "text": "Since 1989, CEEB has supported transport projects with multidisciplinary engineering, advisory services, and project management. Our story is built on innovation, experience, and a human-centered approach."
+    },
+    "history": {
+      "title": "Our History",
+      "paragraph1": "Founded on March 1, 1989 by Gérard SEBAG, CEEB | European Concept Building Equipment began as a specialized engineering consultancy. From the outset, the company focused on delivering high-quality technical studies and practical solutions in infrastructure and transportation.",
+      "paragraph2": "Over more than 35 years, CEEB has grown into a multidisciplinary firm with proven expertise in mobility, urban planning, systems engineering, and major public works. Our history is shaped by commitment to clients and by projects that strengthen territories and improve everyday life."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "paragraph1": "Our mission is to guide clients from concept to commissioning, ensuring every project benefits from rigorous engineering, operational insight, and a strong sense of service.",
+      "paragraph2": "From early hand-drawn plans and Rotring pens to modern digital design tools and AI, we continue to evolve while maintaining a deep technical culture rooted in precision and reliability."
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "Our values guide every step we take.",
+      "card1": {
+        "title": "Excellence",
+        "desc": "We maintain high technical standards in every study, design, and construction phase, aiming for solutions that are robust, practical, and future-ready."
+      },
+      "card2": {
+        "title": "Innovation",
+        "desc": "We continuously explore new methods and technologies to deliver smarter infrastructure and engineering services."
+      },
+      "card3": {
+        "title": "Sustainable Development",
+        "desc": "We take a responsible approach focused on durability, environmental performance, and social impact for long-lasting projects."
+      },
+      "card4": {
+        "title": "Partnership",
+        "desc": "Our work is a human adventure built on integrity, transparency, and close collaboration with clients and stakeholders."
+      },
+      "card5": {
+        "title": "Responsibility",
+        "desc": "We embrace the social and environmental dimensions of infrastructure to deliver safe, accessible, and resilient outcomes."
+      },
+      "card6": {
+        "title": "Our Team",
+        "desc": "Our multidisciplinary experts combine engineering, project management, and operational know-how to support complex transport programs."
+      }
+    },
+    "cta": {
+      "title": "Would you like to collaborate with us?",
+      "text": "Contact us to discuss your projects and how CEEB can deliver the engineering support you need.",
+      "button": "Contact Us"
+    }
+  },
+
   "services": {
     "title": "Our Services",
 

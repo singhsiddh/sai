@@ -107,6 +107,60 @@
     "content6": "<li> Stratejik tasarımdan devreye almaya kadar CEEB; teknik çalışmalar, BIM, telekomünikasyon, danışmanlık ve denetim alanlarındaki uzmanlığını kullanır. </li><li> Her proje, karmaşık zorlukları yüksek performanslı ve çevreye duyarlı altyapılar için somut ve sürdürülebilir çözümlere dönüştürme fırsatıdır.</li>"
   },
 
+  "aboutPage": {
+    "hero": {
+      "title": "CEEB Hakkında",
+      "description": "1989'da kurulan CEEB, önemli Fransız altyapı projelerinde teknik mükemmeliyet ve stratejik mühendislik sunan güvenilir bir ortaktır. Ulaşım ve mobilite alanında yenilik getiriyoruz."
+    },
+    "pageHeader": {
+      "title": "CEEB Hakkında",
+      "text": "1989'dan beri CEEB, mühendislik, danışmanlık ve proje yönetimi hizmetleriyle ulaşım projelerini destekliyor. Hikayemiz yenilik, deneyim ve insan odaklı bir yaklaşıma dayanıyor."
+    },
+    "history": {
+      "title": "Tarihimiz",
+      "paragraph1": "1 Mart 1989'da Gérard SEBAG tarafından kurulan CEEB | European Concept Building Equipment, uzmanlaşmış bir mühendislik danışmanlığı olarak başladı. Şirket, başından itibaren altyapı ve ulaşımda yüksek kaliteli teknik çalışmalar ve pratik çözümler sunmaya odaklandı.",
+      "paragraph2": "35 yılı aşkın sürede CEEB, mobilite, kentsel planlama, sistem mühendisliği ve büyük kamu projelerinde kanıtlanmış uzmanlığa sahip çok disiplinli bir firmaya dönüştü. Hikayemiz, bölgeleri güçlendiren ve günlük yaşamı iyileştiren projelerle müşteri bağlılığı üzerine kurulu."
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "paragraph1": "Misyonumuz, müşterileri kavramdan devreye almaya kadar yönlendirmek; her projenin titiz mühendislik, operasyonel görüş ve güçlü bir hizmet anlayışı kazanmasını sağlamak."
+      ,"paragraph2": "Elle çizilen ilk planlardan ve Rotring kalemlerden modern dijital tasarım araçlarına ve yapay zekaya kadar gelişmeye devam ederken, hassasiyete ve güvenilirliğe dayanan derin bir teknik kültürü koruyoruz."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "subtitle": "Değerlerimiz attığımız her adımı yönlendirir.",
+      "card1": {
+        "title": "Mükemmellik",
+        "desc": "Her çalışmada, tasarımda ve inşaat aşamasında yüksek teknik standartları koruyor; güçlü, pratik ve geleceğe hazır çözümler arıyoruz."
+      },
+      "card2": {
+        "title": "Yenilik",
+        "desc": "Daha akıllı altyapılar ve mühendislik hizmetleri yaratmak için sürekli yeni yöntemler ve teknolojiler araştırıyoruz."
+      },
+      "card3": {
+        "title": "Sürdürülebilirlik",
+        "desc": "Uzun vadeli projeler için dayanıklılık, çevresel performans ve sosyal etkiler üzerine odaklanan sorumlu bir yaklaşım benimsiyoruz."
+      },
+      "card4": {
+        "title": "Ortaklık",
+        "desc": "Çalışmalarımız, müşteriler ve paydaşlarla sıkı işbirliği, dürüstlük ve şeffaflık üzerine kurulmuş insan odaklı bir serüvendir."
+      },
+      "card5": {
+        "title": "Sorumluluk",
+        "desc": "Altyapının sosyal ve çevresel boyutlarını sahipleniyor, güvenli, erişilebilir ve dirençli sonuçlar sunuyoruz."
+      },
+      "card6": {
+        "title": "Ekibimiz",
+        "desc": "Çok disiplinli ekiplerimiz, karmaşık ulaşım programlarını desteklemek için mühendislik, proje yönetimi ve operasyonel bilgi birikimini birleştirir."
+      }
+    },
+    "cta": {
+      "title": "Bizimle çalışmak ister misiniz?",
+      "text": "CEEB'in bir sonraki altyapı projenizi nasıl destekleyebileceğini konuşmak için bizimle iletişime geçin.",
+      "button": "Bize Ulaşın"
+    }
+  },
+
   "services": {
     "title": "Hizmetlerimiz",
     "subtitle": "Şirketlere mühendislik, danışmanlık ve proje yönetimi alanlarında özel çözümler sunuyoruz.",

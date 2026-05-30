@@ -6,6 +6,17 @@
 let currentLanguage = "en";
 
 /* =========================
+   LANGUAGE PATH HELPERS
+========================= */
+
+function getLanguageFilePath(lang) {
+    const segments = window.location.pathname.split("/");
+    const depth = segments.length - 2;
+    const prefix = "../".repeat(Math.max(0, depth));
+    return `${prefix}lang/${lang}.json`;
+}
+
+/* =========================
    LOAD LANGUAGE
 ========================= */
 
@@ -14,7 +25,7 @@ async function loadLanguage(lang) {
     try {
 
         const response =
-            await fetch(`./lang/${lang}.json`);
+            await fetch(getLanguageFilePath(lang));
 
         if (!response.ok) {
             throw new Error(
@@ -97,6 +108,10 @@ function updateCarouselImages(lang) {
 
         const currentBgImage = slide.style.backgroundImage;
 
+        if (!currentBgImage || currentBgImage.includes("about-assets")) {
+            return;
+        }
+
         // Extract the image number from current path (01, 02, etc.)
         const match = currentBgImage.match(/(\d{2})/);
 
@@ -104,26 +119,26 @@ function updateCarouselImages(lang) {
 
             const imageNumber = match[1];
 
+            const pathSegments = window.location.pathname.split("/").filter(Boolean);
+            const depth = Math.max(0, pathSegments.length - 1);
+            const relativePrefix = "../".repeat(depth);
+
             // Try language-specific path first
-            const langSpecificImage = `images/carousel/${lang}/${imageNumber}.png`;
+            const langSpecificImage = `${relativePrefix}images/carousel/${lang}/${imageNumber}.png`;
 
             // Default image path
-            const defaultImage = `images/carousel/${imageNumber}.png`;
+            const defaultImage = `${relativePrefix}images/carousel/${imageNumber}.png`;
 
-            // Create temporary image to check if language-specific image exists
             const tempImg = new Image();
 
             tempImg.onload = () => {
-                // Language-specific image exists, use it
                 slide.style.backgroundImage = `url('${langSpecificImage}')`;
             };
 
             tempImg.onerror = () => {
-                // Language-specific image doesn't exist, use default
                 slide.style.backgroundImage = `url('${defaultImage}')`;
             };
 
-            // Trigger the image check
             tempImg.src = langSpecificImage;
 
         }
@@ -143,7 +158,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "fr",
         "de",
         "es",
-        "it"
+        "it",
+        "tr"
     ];
 
     /* =========================

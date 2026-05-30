@@ -107,6 +107,60 @@
     "content6": "<li> Od projektowania strategicznego po uruchomienie, CEEB wykorzystuje swoją wiedzę w zakresie analiz technicznych, BIM, telekomunikacji, doradztwa i audytu. </li><li> Każdy projekt jest okazją do przekształcenia złożonych wyzwań w konkretne i zrównoważone rozwiązania dla wydajnej i odpowiedzialnej środowiskowo infrastruktury.</li>"
   },
 
+  "aboutPage": {
+    "hero": {
+      "title": "O CEEB",
+      "description": "Założona w 1989 roku, CEEB jest zaufanym partnerem w dużych projektach infrastrukturalnych we Francji, dostarczając doskonałość techniczną i strategiczne inżynieria w obszarze transportu i mobilności."
+    },
+    "pageHeader": {
+      "title": "O CEEB",
+      "text": "Od 1989 roku CEEB wspiera projekty transportowe usługami multidyscyplinarnymi z zakresu inżynierii, doradztwa i zarządzania projektami. Nasza historia opiera się na innowacji, doświadczeniu i ludzkim podejściu."
+    },
+    "history": {
+      "title": "Nasza historia",
+      "paragraph1": "Założona 1 marca 1989 roku przez Gérarda SEBAGA, CEEB | European Concept Building Equipment rozpoczęła działalność jako wyspecjalizowana firma doradcza w zakresie inżynierii. Od początku koncentrowała się na wysokiej jakości analizach technicznych i praktycznych rozwiązaniach dla infrastruktury i transportu.",
+      "paragraph2": "Przez ponad 35 lat CEEB rozwinęła się w multidyscyplinarną firmę z udokumentowanym doświadczeniem w mobilności, planowaniu miejskim, inżynierii systemów i dużych projektach publicznych. Nasza historia to zaangażowanie klientów i projekty, które wzmacniają regiony i poprawiają codzienne życie."
+    },
+    "mission": {
+      "title": "Nasza misja",
+      "paragraph1": "Naszą misją jest prowadzenie klientów od koncepcji do przekazania do eksploatacji, zapewniając, że każdy projekt korzysta z rygorystycznej inżynierii, wiedzy operacyjnej i silnego podejścia do obsługi."
+      ,"paragraph2": "Od pierwszych ręcznie rysowanych planów i piór Rotring po nowoczesne narzędzia cyfrowego projektowania i sztuczną inteligencję nadal się rozwijamy, zachowując głęboką kulturę techniczną opartą na precyzji i niezawodności."
+    },
+    "values": {
+      "title": "Nasze wartości",
+      "subtitle": "Nasze wartości kierują każdym etapem naszej pracy.",
+      "card1": {
+        "title": "Doskonałość",
+        "desc": "Utrzymujemy wysokie standardy techniczne przy każdym badaniu, projektowaniu i budowie, dążąc do solidnych, praktycznych i przyszłościowych rozwiązań."
+      },
+      "card2": {
+        "title": "Innowacja",
+        "desc": "Ciągle badamy nowe metody i technologie, aby tworzyć inteligentniejsze infrastruktury i usługi inżynieryjne."
+      },
+      "card3": {
+        "title": "Zrównoważony rozwój",
+        "desc": "Przyjmujemy odpowiedzialne podejście skoncentrowane na trwałości, wydajności środowiskowej i oddziaływaniu społecznym w projektach długoterminowych."
+      },
+      "card4": {
+        "title": "Współpraca",
+        "desc": "Nasza praca to ludzka przygoda oparta na uczciwości, przejrzystości i bliskiej współpracy z klientami oraz interesariuszami."
+      },
+      "card5": {
+        "title": "Odpowiedzialność",
+        "desc": "Bierzemy na siebie społeczne i środowiskowe wymiary infrastruktury, dostarczając bezpieczne, dostępne i odporne rezultaty."
+      },
+      "card6": {
+        "title": "Nasz zespół",
+        "desc": "Nasze multidyscyplinarne zespoły łączą inżynierię, zarządzanie projektami i wiedzę operacyjną, aby wspierać skomplikowane programy transportowe."
+      }
+    },
+    "cta": {
+      "title": "Chcesz z nami współpracować?",
+      "text": "Skontaktuj się z nami, aby omówić, jak CEEB może wesprzeć Twój następny projekt infrastrukturalny.",
+      "button": "Skontaktuj się"
+    }
+  },
+
   "services": {
     "title": "Nasze Usługi",
     "subtitle": "Wspieramy firmy poprzez dostosowane do potrzeb rozwiązania z zakresu inżynierii, doradztwa i zarządzania projektami.",

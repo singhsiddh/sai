@@ -23,7 +23,59 @@
     "content1": "Ceeb ist ein unabhängiges multidisziplinäres Beratungsunternehmen.",
     "content2": "Qualität, Integrität und Kreativität leiten unser Handeln."
   },
-
+  "aboutPage": {
+    "hero": {
+      "title": "Über CEEB",
+      "description": "Gegründet 1989, ist CEEB ein vertrauenswürdiger Partner für bedeutende französische Infrastrukturprojekte und bringt technische Exzellenz sowie strategische Ingenieurskunst in Verkehr und Mobilität."
+    },
+    "pageHeader": {
+      "title": "Über CEEB",
+      "text": "Seit 1989 unterstützt CEEB Verkehrsprojekte mit multidisziplinären Leistungen in den Bereichen Engineering, Beratung und Projektmanagement. Unsere Geschichte fußt auf Innovation, Erfahrung und einem menschenorientierten Ansatz."
+    },
+    "history": {
+      "title": "Unsere Geschichte",
+      "paragraph1": "Gegründet am 1. März 1989 von Gérard SEBAG, begann CEEB | European Concept Building Equipment als spezialisiertes Engineering-Beratungsunternehmen. Von Beginn an konzentrierte sich das Unternehmen auf hochwertige technische Studien und praktische Lösungen für Infrastruktur und Verkehr.",
+      "paragraph2": "Über mehr als 35 Jahre wuchs CEEB zu einem multidisziplinären Unternehmen mit ausgewiesener Expertise in Mobilität, Stadtplanung, Systemengineering und großen öffentlichen Bauprojekten. Unsere Geschichte ist geprägt von Kundenengagement und Projekten, die Regionen stärken und den Alltag verbessern."
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "paragraph1": "Unsere Mission ist es, Kunden vom Konzept bis zur Inbetriebnahme zu begleiten und sicherzustellen, dass jedes Projekt von sorgfältigem Engineering, betrieblichen Erkenntnissen und einem starken Serviceverständnis profitiert.",
+      "paragraph2": "Von den ersten von Hand gezeichneten Plänen und Rotring-Stiften bis hin zu modernen digitalen Designwerkzeugen und KI entwickeln wir uns weiter und bewahren zugleich eine tief verwurzelte technische Kultur, die auf Präzision und Zuverlässigkeit basiert."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "subtitle": "Unsere Werte leiten jeden Schritt unseres Handelns.",
+      "card1": {
+        "title": "Exzellenz",
+        "desc": "Wir halten hohe technische Standards in jeder Studie, Planung und Bauphase ein und streben nach robusten, praxisorientierten und zukunftsfähigen Lösungen."
+      },
+      "card2": {
+        "title": "Innovation",
+        "desc": "Wir erforschen kontinuierlich neue Methoden und Technologien, um intelligentere Infrastrukturen und Engineering-Dienstleistungen zu realisieren."
+      },
+      "card3": {
+        "title": "Nachhaltigkeit",
+        "desc": "Wir verfolgen einen verantwortungsvollen Ansatz mit Fokus auf Langlebigkeit, Umweltleistung und sozialer Wirkung für langfristige Projekte."
+      },
+      "card4": {
+        "title": "Partnerschaft",
+        "desc": "Unsere Arbeit ist ein menschliches Abenteuer, das auf Integrität, Transparenz und enger Zusammenarbeit mit Kunden und Stakeholdern beruht."
+      },
+      "card5": {
+        "title": "Verantwortung",
+        "desc": "Wir übernehmen die sozialen und ökologischen Dimensionen von Infrastruktur und liefern sichere, zugängliche und resiliente Ergebnisse."
+      },
+      "card6": {
+        "title": "Unser Team",
+        "desc": "Unsere multidisziplinären Teams kombinieren Engineering, Projektmanagement und operatives Know-how, um komplexe Verkehrsprogramme zu unterstützen."
+      }
+    },
+    "cta": {
+      "title": "Möchten Sie mit uns zusammenarbeiten?",
+      "text": "Kontaktieren Sie uns, um zu besprechen, wie CEEB Ihr nächstes Infrastrukturprojekt unterstützen kann.",
+      "button": "Kontaktieren Sie uns"
+    }
+  },
   "services": {
     "title": "Unsere Dienstleistungen",
     "subtitle": "Maßgeschneiderte Lösungen für Unternehmen.",

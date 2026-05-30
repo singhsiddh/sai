@@ -304,6 +304,18 @@ body {
     border-radius: 0 0 18px 18px;
 }
 
+.hero-content.dark {
+    background: #0b1220;
+}
+
+.hero-content.dark h1 {
+    color: #ff6600;
+}
+
+.hero-content.dark p {
+    color: #ffffff;
+}
+
 .hero-content h1 {
     color: white;
 
@@ -389,6 +401,112 @@ body {
     color: #374151;
 
     margin-bottom: 1.5rem;
+}
+
+.page-header {
+    padding: 4rem 0;
+    background: #f5f7fb;
+}
+
+.page-header h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.page-header p {
+    max-width: 840px;
+    margin: 0 auto;
+    color: #475569;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.content-section {
+    padding: 4rem 0;
+    background: white;
+}
+
+.content-block {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width: 900px) {
+    .content-block {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+.about-section-img {
+    width: 100%;
+    border-radius: 1rem;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.values-grid-3-columns {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin-top: 2rem;
+}
+
+.value-card-column {
+    background: white;
+    padding: 1.75rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.value-card-column h3 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    color: #0f172a;
+}
+
+.value-card-column p {
+    color: #475569;
+    line-height: 1.75;
+}
+
+.value-icon {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+
+.cta {
+    padding: 4rem 0;
+    background: #eef2ff;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.25rem;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.125rem;
+    color: #475569;
+    margin-bottom: 1.75rem;
+}
+
+.btn-secondary {
+    background: #1e4fbf;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #1b3f9f;
 }
 
 /* =========================================================
