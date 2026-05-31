@@ -159,7 +159,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "de",
         "es",
         "it",
-        "tr"
+        "tr",
+        "pl"
     ];
 
     /* =========================
@@ -252,8 +253,10 @@ document.addEventListener("DOMContentLoaded", () => {
    HERO CAROUSEL
 ========================= */
 
-const slides =
-    document.querySelectorAll(".carousel-slide");
+const slides = document.querySelectorAll(".carousel-slide");
+const prevButton = document.querySelector(".carousel-prev");
+const nextButton = document.querySelector(".carousel-next");
+const indicatorsContainer = document.querySelector(".carousel-indicators");
 
 let currentSlide = 0;
 
@@ -267,57 +270,93 @@ const carouselDelay = 5000;
 8000 = 8 seconds
 */
 
-function showSlide(index) {
+function updateIndicators(index) {
+    if (!indicatorsContainer) return;
 
-    slides.forEach(slide => {
-        slide.classList.remove("active");
+    const indicators = indicatorsContainer.querySelectorAll(".carousel-indicator");
+    indicators.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
     });
-
-    slides[index].classList.add("active");
-
 }
 
-function nextSlide() {
+function createIndicators() {
+    if (!indicatorsContainer || slides.length === 0) return;
+    if (indicatorsContainer.children.length) return;
 
-    currentSlide++;
+    slides.forEach((_, i) => {
+        const indicator = document.createElement("button");
+        indicator.type = "button";
+        indicator.className = "carousel-indicator";
+        indicator.addEventListener("click", () => {
+            showSlide(i);
+        });
+        indicatorsContainer.appendChild(indicator);
+    });
+}
 
+function showSlide(index) {
+    if (slides.length === 0) return;
+
+    currentSlide = index;
+    if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+    }
     if (currentSlide >= slides.length) {
         currentSlide = 0;
     }
 
-    showSlide(currentSlide);
+    slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === currentSlide);
+    });
 
+    updateIndicators(currentSlide);
 }
 
-/* AUTO PLAY */
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
 
-if (!document.querySelector('.carousel-controls')) {
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+if (slides.length > 0) {
+    createIndicators();
+    showSlide(currentSlide);
+
+    if (prevButton) {
+        prevButton.addEventListener("click", prevSlide);
+    }
+
+    if (nextButton) {
+        nextButton.addEventListener("click", nextSlide);
+    }
+
     setInterval(nextSlide, carouselDelay);
 }
 
 
-   
-      emailjs.init({
-  publicKey: "8-8boZaUBzxk5e6Y7",
-});
-    
-  
+const contactForm = document.getElementById("contact-form");
 
-  document
-    .getElementById("contact-form")
-    .addEventListener("submit", function (event) {
+if (contactForm && window.emailjs) {
+  emailjs.init({
+    publicKey: "8-8boZaUBzxk5e6Y7",
+  });
 
-      event.preventDefault();
+  contactForm.addEventListener("submit", function (event) {
 
-      emailjs.sendForm(
-        "service_iwwjsjm",
-        "template_0pmpvt9",
-        this
-      )
-      .then(() => {
-        alert("Email sent successfully!");
-      })
-      .catch((error) => {
-        console.log("FAILED...", error);
-      });
+    event.preventDefault();
+
+    emailjs.sendForm(
+      "service_iwwjsjm",
+      "template_0pmpvt9",
+      this
+    )
+    .then(() => {
+      alert("Email sent successfully!");
+    })
+    .catch((error) => {
+      console.log("FAILED...", error);
     });
+  });
+}

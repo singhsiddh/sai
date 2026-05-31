@@ -314,6 +314,16 @@
             "subtitle": "Bölgede önde gelen ulaşım, altyapı ve kamu sektörü müşterileriyle iş birliği yapıyoruz."
         }
     },
+    "stats": {
+        "projectCount": "100+",
+        "projectLabel": "Completed Projects",
+        "clientsCount": "50+",
+        "clientsLabel": "Satisfied Customers",
+        "continentsCount": "3",
+        "continentsLabel": "Covered Continents",
+        "portfolioCount": "€500M+",
+        "portfolioLabel": "Managed Projects"
+    },
     "footer": {
         "description": "SÃ¼rdÃ¼rÃ¼lebilir bir gelecek iÃ§in mÃ¼hendislik, danÄ±ÅŸmanlÄ±k ve tasarÄ±mda lider.",
         "servicesTitle": "Hizmetler",

@@ -234,6 +234,16 @@
             "subtitle": "Colaboramos con líderes del transporte, la infraestructura y el sector público en la región."
         }
     },
+    "stats": {
+        "projectCount": "100+",
+        "projectLabel": "Completed Projects",
+        "clientsCount": "50+",
+        "clientsLabel": "Satisfied Customers",
+        "continentsCount": "3",
+        "continentsLabel": "Covered Continents",
+        "portfolioCount": "€500M+",
+        "portfolioLabel": "Managed Projects"
+    },
     "footer": {
         "description": "Un líder en ingeniería, consultoría y diseño para un futuro sostenible.",
         "servicesTitle": "Servicios",

@@ -314,6 +314,16 @@
             "subtitle": "Współpracujemy z czołowymi podmiotami transportowymi, infrastrukturalnymi i publicznymi w regionie."
         }
     },
+    "stats": {
+        "projectCount": "100+",
+        "projectLabel": "Completed Projects",
+        "clientsCount": "50+",
+        "clientsLabel": "Satisfied Customers",
+        "continentsCount": "3",
+        "continentsLabel": "Covered Continents",
+        "portfolioCount": "€500M+",
+        "portfolioLabel": "Managed Projects"
+    },
     "footer": {
         "description": "Lider w dziedzinie inÅ¼ynierii, doradztwa i projektowania dla zrÃ³wnowaÅ¼onej przyszÅ‚oÅ›ci.",
         "servicesTitle": "UsÅ‚ugi",
