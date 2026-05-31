@@ -1,232 +1,339 @@
 {
-  "nav": {
-    "home": "Home",
-    "services": "Our Services",
-    "projects": "Projects",
-    "expertise": "Expertise",
-    "careers": "Careers",
-    "contact": "Contact"
-  },
-  "hero": {
-    "title": "Shaping a sustainable and resilient future.",
-    "heroTile": "Shaping a sustainable and resilient future.",
-    "heroDescription": "A leader in engineering, consulting, and design.",
-    "ceeb": {
-      "title": "CEEB: Sustainable Infrastructure Engineering",
-      "description": "Consulting firm specializing in the design and management of complex projects in transport and mobility."
+    "nav": {
+        "home": "Home",
+        "services": "Our Services",
+        "projects": "Projects",
+        "expertise": "Expertise",
+        "careers": "Careers",
+        "contact": "Contact"
     },
-    "slide1": {
-      "title": "Shaping a sustainable future",
-      "description": "Engineering and consulting solutions for modern infrastructure."
-    },
-    "slide2": {
-      "title": " Project Owner (MOA) & Project Manager (MOE)",
-      "description": "Expert support at every stage of your projects, from the initial sketch to the final handover."
-    },
-    "slide3": {
-      "title": "Electrical Engineering for the Mobility of Tomorrow ",
-      "description": "Multidisciplinary solutions for transport infrastructure, from design to commissioning."
-    },
-    "slide4": {
-      "title": "Telecommunications Systems & Railway Signaling",
-      "description": "Expertise in GSM-R, signage and guidance for smooth and secure passenger information."
-    },
-    "slide5": {
-      "title": "Telecommunications Systems & Railway Signaling",
-      "description": "Expertise in GSM-R, signage and guidance for smooth and secure passenger information."
-    },
-    "slide6": {
-      "title": "<b> Expertise in High Voltage, Low Voltage & VDI </b>",
-      "description": "Design and integration of electrical and communication systems for smart buildings and infrastructure."
-    },
-    "slide7": {
-      "title": "<b>Airport Infrastructure Engineering</b>",
-      "description": "Design, modernization and optimization of electrical and communication systems for high-performing and sustainable airports."
-    },
-    "slide8": {
-      "title": "<b>Modern Buildings & Technical Infrastructure</b>",
-      "description": "Engineering solutions for high-performance, connected and environmentally friendly buildings."
-    },
-    "slide9": {
-      "title": "<b> Operations & Maintenance Optimization</b>",
-      "description": "Commissioning support, performance optimization and predictive maintenance for maximum durability."
-    },
-    "slide10": {
-      "title": "<b>Quality Control & Control Systems</b>",
-      "description": "Inspection, certification and cutting-edge technologies to ensure safety, compliance and operational efficiency."
-    },
-    "slide11": {
-      "title": "<b>Telecommunications Systems & Railway Signaling</b>",
-      "description": "Expertise in GSM-R, signage and guidance for smooth and secure passenger information."
-    },
-    "slide12": {
-      "title": "<b>An Integrated & Multidisciplinary Engineering Approach</b>",
-      "description": "Close collaboration with all stakeholders to integrate sustainability and innovation issues at the heart of each project."
-    },
-    "hero_slide_1_title": "Engineering Excellence for a Sustainable Future",
-    "hero_slide_2_title": " Innovative Solutions for a Better Tomorrow",
-    "subtitle": "A leader in engineering, consulting, and design, we transform complex challenges into innovative opportunities for our clients and society.",
-    "button": "Contact",
-    "blue": {
-      "line1": "From project ownership and project management to project engineering.",
-      "line2": "Imagine, Create, Realize the Future of Transportation.",
-      "paragraph": "Trusted partner for the design, construction and operation of sustainable and innovative transport infrastructure in France and internationally. For over three years, CEEB has been supporting public and private project owners in the transformation of their territories. We combine technical expertise, innovation, and a commitment to sustainability to deliver world-class rail and airport projects."
-    }
-  },
-  "about": {
-    "title": "<b>Our Multidisciplinary Expertise</b>",
-    "content1": "<b>CEEB: Sustainable engineering at the service of the world</b>",
-    "content2": "<li> CEEB has established itself as a key player in sustainable engineering and infrastructure internationally. </li><li>  From rail and airport mobility to urban projects, we support our clients and partners at every stage of their projects, combining technical expertise and strategic vision.</li> ",
-    "content3": "<b>Tailor-made solutions, from auditing to operation</b>",
-    "content4": "<li>Our multidisciplinary teams provide services ranging from auditing and consulting to project management and operational support. </li><li> Through a comprehensive approach, we deliver reliable and innovative solutions, perfectly tailored to the specific challenges of each project.</li>",
-    "content5": "<b>Innovation and performance for every project</b>",
-    "content6": "<li> From strategic design to commissioning, CEEB leverages its expertise in technical studies, BIM, telecommunications, consulting, and auditing. </li><li>  Each project is an opportunity to transform complex challenges into concrete and sustainable solutions, for high-performing and environmentally responsible infrastructure.</li> "
-  },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "We support companies with tailor-made engineering, consulting, and project management solutions.",
-    "suseng": {
-      "title": "Sustainable Engineering",
-      "desc": "Resilient and environmentally friendly infrastructure, integrating climate issues from the upstream phases."
-    },
-    "infra": {
-      "title": "Infrastructure",
-      "desc": "Complete design, construction and maintenance of railway and airport infrastructure."
-    },
-    "mobi": {
-      "title": "Mobility",
-      "desc": "Integrated and intermodal transport solutions, from needs analysis to commissioning."
-    },
-    "inter": {
-      "title": "International",
-      "desc": "Expertise adapted to international contexts with a presence on 5 continents."
-    },
-    "urban": {
-      "title": "Urban planning",
-      "desc": "Integrated urban planning placing transport at the heart of sustainable territorial development."
-    },
-    "stra": {
-      "title": "Strategic Advice",
-      "desc": "Strategic support to optimize investments and maximize returns."
-    }
-  },
-  "corevalues": {
-    "title": "Our Core Values",
-    "subtitle": "Our core values guide our actions and define our identity as a company.  They reflect our commitment to excellence, innovation, partnership and social responsibility in all our projects and interactions.",
-    "corevalues1": {
-      "title": "Technical Excellence",
-      "subtitle": "Recognized expertise in all areas of transport. Rigor and quality in every project. Constant innovation and continuous improvement.",
-      "desc": "Technical leadership, quality-driven delivery and continuous innovation to meet project challenges."
-    },
-    "corevalues2": {
-      "title": "Innovation & Sustainability",
-      "desc": "Systematic integration of environmental issues. Cutting-edge BIM and digital solutions. Commitment to the ecological transition."
-    },
-    "corevalues3": {
-      "title": "Partnership & Collaboration",
-      "desc": "Multidisciplinary and integrated approach. Close collaboration with all project stakeholders. Sharing of knowledge and expertise."
-    },
-    "corevalues4": {
-      "title": "Social Responsibility",
-      "desc": "Commitment to territories and communities. Respect for safety and quality standards. Contribution to the local economy."
-    }
-  },
-  "projects": {
-    "title": "Projects",
-    "subtitle": "Discover a selection of our flagship projects.",
-    "project1": {
-      "title": "Sustainable renovation of a historic building",
-      "desc": "Transformation of an architectural heritage into a high-energy performance building."
-    },
-    "project2": {
-      "title": "Design of a new urban transport line",
-      "desc": "Modern transport infrastructure to improve urban mobility."
-    },
-    "project3": {
-      "title": "Digital platform for asset management",
-      "desc": "Innovative digital solution for infrastructure management."
-    }
-  },
-  "careers": {
-    "title": "Careers",
-    "subtitle": "Join a team shaping the world of tomorrow.",
-    "content": "At Ceeb, we offer a stimulating work environment where creativity and initiative are encouraged.",
-    "button": "Careers"
-  },
-  "contact": {
-    "title": "Contact",
-    "subtitle": "Do you have a project or a question?",
-    "content": "Contact us to discuss how we can help you achieve your ambitions.",
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Send"
-    }
-  },
-  "footer": {
-    "description": "A leader in engineering, consulting, and design for a sustainable future.",
-    "servicesTitle": "Services",
-    "services": {
-      "engineering": "Engineering",
-      "projectManagement": "Project Management",
-      "audit": "Audit & Consulting",
-      "digital": "Digital Solutions"
-    },
-    "phone": "Phone",
-    "rights": "All rights reserved."
-  },
-  "aboutPage": {
     "hero": {
-      "title": "About CEEB",
-      "description": "Founded in 1989, CEEB has been a trusted partner in major French infrastructure projects, bringing technical excellence and strategic engineering to transport and mobility programs."
+        "title": "Shaping a sustainable and resilient future.",
+        "heroTile": "Shaping a sustainable and resilient future.",
+        "heroDescription": "A leader in engineering, consulting, and design.",
+        "ceeb": {
+            "title": "CEEB: Sustainable Infrastructure Engineering",
+            "description": "Consulting firm specializing in the design and management of complex projects in transport and mobility."
+        },
+        "slide1": {
+            "title": "Shaping a sustainable future",
+            "description": "Engineering and consulting solutions for modern infrastructure."
+        },
+        "slide2": {
+            "title": " Project Owner (MOA) & Project Manager (MOE)",
+            "description": "Expert support at every stage of your projects, from the initial sketch to the final handover."
+        },
+        "slide3": {
+            "title": "Electrical Engineering for the Mobility of Tomorrow ",
+            "description": "Multidisciplinary solutions for transport infrastructure, from design to commissioning."
+        },
+        "slide4": {
+            "title": "Telecommunications Systems & Railway Signaling",
+            "description": "Expertise in GSM-R, signage and guidance for smooth and secure passenger information."
+        },
+        "slide5": {
+            "title": "Telecommunications Systems & Railway Signaling",
+            "description": "Expertise in GSM-R, signage and guidance for smooth and secure passenger information."
+        },
+        "slide6": {
+            "title": "<b> Expertise in High Voltage, Low Voltage & VDI </b>",
+            "description": "Design and integration of electrical and communication systems for smart buildings and infrastructure."
+        },
+        "slide7": {
+            "title": "<b>Airport Infrastructure Engineering</b>",
+            "description": "Design, modernization and optimization of electrical and communication systems for high-performing and sustainable airports."
+        },
+        "slide8": {
+            "title": "<b>Modern Buildings & Technical Infrastructure</b>",
+            "description": "Engineering solutions for high-performance, connected and environmentally friendly buildings."
+        },
+        "slide9": {
+            "title": "<b> Operations & Maintenance Optimization</b>",
+            "description": "Commissioning support, performance optimization and predictive maintenance for maximum durability."
+        },
+        "slide10": {
+            "title": "<b>Quality Control & Control Systems</b>",
+            "description": "Inspection, certification and cutting-edge technologies to ensure safety, compliance and operational efficiency."
+        },
+        "slide11": {
+            "title": "<b>Telecommunications Systems & Railway Signaling</b>",
+            "description": "Expertise in GSM-R, signage and guidance for smooth and secure passenger information."
+        },
+        "slide12": {
+            "title": "<b>An Integrated & Multidisciplinary Engineering Approach</b>",
+            "description": "Close collaboration with all stakeholders to integrate sustainability and innovation issues at the heart of each project."
+        },
+        "hero_slide_1_title": "Engineering Excellence for a Sustainable Future",
+        "hero_slide_2_title": " Innovative Solutions for a Better Tomorrow",
+        "subtitle": "A leader in engineering, consulting, and design, we transform complex challenges into innovative opportunities for our clients and society.",
+        "button": "Contact",
+        "blue": {
+            "line1": "From project ownership and project management to project engineering.",
+            "line2": "Imagine, Create, Realize the Future of Transportation.",
+            "paragraph": "Trusted partner for the design, construction and operation of sustainable and innovative transport infrastructure in France and internationally. For over three years, CEEB has been supporting public and private project owners in the transformation of their territories. We combine technical expertise, innovation, and a commitment to sustainability to deliver world-class rail and airport projects."
+        }
     },
-    "pageHeader": {
-      "title": "About CEEB",
-      "text": "Since 1989, CEEB has supported transport projects with multidisciplinary engineering, advisory services, and project management. Our story is built on innovation, experience, and a human-centered approach."
+    "about": {
+        "title": "<b>Our Multidisciplinary Expertise</b>",
+        "content1": "<b>CEEB: Sustainable engineering at the service of the world</b>",
+        "content2": "<li> CEEB has established itself as a key player in sustainable engineering and infrastructure internationally. </li><li>  From rail and airport mobility to urban projects, we support our clients and partners at every stage of their projects, combining technical expertise and strategic vision.</li> ",
+        "content3": "<b>Tailor-made solutions, from auditing to operation</b>",
+        "content4": "<li>Our multidisciplinary teams provide services ranging from auditing and consulting to project management and operational support. </li><li> Through a comprehensive approach, we deliver reliable and innovative solutions, perfectly tailored to the specific challenges of each project.</li>",
+        "content5": "<b>Innovation and performance for every project</b>",
+        "content6": "<li> From strategic design to commissioning, CEEB leverages its expertise in technical studies, BIM, telecommunications, consulting, and auditing. </li><li>  Each project is an opportunity to transform complex challenges into concrete and sustainable solutions, for high-performing and environmentally responsible infrastructure.</li> "
     },
-    "history": {
-      "title": "Our History",
-      "paragraph1": "Founded on March 1, 1989 by Gérard SEBAG, CEEB | European Concept Building Equipment began as a specialized engineering consultancy. From the outset, the company focused on delivering high-quality technical studies and practical solutions in infrastructure and transportation.",
-      "paragraph2": "Over more than 35 years, CEEB has grown into a multidisciplinary firm with proven expertise in mobility, urban planning, systems engineering, and major public works. Our history is shaped by commitment to clients and by projects that strengthen territories and improve everyday life."
+    "services": {
+        "title": "Our Services",
+        "subtitle": "We support companies with tailor-made engineering, consulting, and project management solutions.",
+        "suseng": {
+            "title": "Sustainable Engineering",
+            "desc": "Resilient and environmentally friendly infrastructure, integrating climate issues from the upstream phases."
+        },
+        "infra": {
+            "title": "Infrastructure",
+            "desc": "Complete design, construction and maintenance of railway and airport infrastructure."
+        },
+        "mobi": {
+            "title": "Mobility",
+            "desc": "Integrated and intermodal transport solutions, from needs analysis to commissioning."
+        },
+        "inter": {
+            "title": "International",
+            "desc": "Expertise adapted to international contexts with a presence on 5 continents."
+        },
+        "urban": {
+            "title": "Urban planning",
+            "desc": "Integrated urban planning placing transport at the heart of sustainable territorial development."
+        },
+        "stra": {
+            "title": "Strategic Advice",
+            "desc": "Strategic support to optimize investments and maximize returns."
+        }
     },
-    "mission": {
-      "title": "Our Mission",
-      "paragraph1": "Our mission is to guide clients from concept to commissioning, ensuring every project benefits from rigorous engineering, operational insight, and a strong sense of service.",
-      "paragraph2": "From early hand-drawn plans and Rotring pens to modern digital design tools and AI, we continue to evolve while maintaining a deep technical culture rooted in precision and reliability."
+    "corevalues": {
+        "title": "Our Core Values",
+        "subtitle": "Our core values guide our actions and define our identity as a company.  They reflect our commitment to excellence, innovation, partnership and social responsibility in all our projects and interactions.",
+        "corevalues1": {
+            "title": "Technical Excellence",
+            "subtitle": "Recognized expertise in all areas of transport. Rigor and quality in every project. Constant innovation and continuous improvement.",
+            "desc": "Technical leadership, quality-driven delivery and continuous innovation to meet project challenges."
+        },
+        "corevalues2": {
+            "title": "Innovation & Sustainability",
+            "desc": "Systematic integration of environmental issues. Cutting-edge BIM and digital solutions. Commitment to the ecological transition."
+        },
+        "corevalues3": {
+            "title": "Partnership & Collaboration",
+            "desc": "Multidisciplinary and integrated approach. Close collaboration with all project stakeholders. Sharing of knowledge and expertise."
+        },
+        "corevalues4": {
+            "title": "Social Responsibility",
+            "desc": "Commitment to territories and communities. Respect for safety and quality standards. Contribution to the local economy."
+        }
     },
-    "values": {
-      "title": "Our Values",
-      "subtitle": "Our values guide every step we take.",
-      "card1": {
-        "title": "Excellence",
-        "desc": "We maintain high technical standards in every study, design, and construction phase, aiming for solutions that are robust, practical, and future-ready."
-      },
-      "card2": {
-        "title": "Innovation",
-        "desc": "We continuously explore new methods and technologies to deliver smarter infrastructure and engineering services that answer changing mobility needs."
-      },
-      "card3": {
-        "title": "Sustainable Development",
-        "desc": "We take a responsible approach focused on durability, environmental performance, and social impact for long-lasting projects."
-      },
-      "card4": {
-        "title": "Partnership",
-        "desc": "Our work is a human adventure built on integrity, transparency, and close collaboration with clients and stakeholders."
-      },
-      "card5": {
-        "title": "Responsibility",
-        "desc": "We embrace the social and environmental dimensions of infrastructure to deliver safe, accessible, and resilient outcomes."
-      },
-      "card6": {
-        "title": "Our Team",
-        "desc": "Our multidisciplinary experts combine engineering, project management, and operational know-how to support complex transport programs."
-      }
+    "projects": {
+        "title": "Projects",
+        "subtitle": "Discover a selection of our flagship projects.",
+        "project1": {
+            "title": "Sustainable renovation of a historic building",
+            "desc": "Transformation of an architectural heritage into a high-energy performance building."
+        },
+        "project2": {
+            "title": "Design of a new urban transport line",
+            "desc": "Modern transport infrastructure to improve urban mobility."
+        },
+        "project3": {
+            "title": "Digital platform for asset management",
+            "desc": "Innovative digital solution for infrastructure management."
+        }
     },
-    "cta": {
-      "title": "Would you like to collaborate with us?",
-      "text": "Contact us to discuss your projects and how CEEB can deliver the engineering support you need.",
-      "button": "Contact Us"
+    "careers": {
+        "title": "Careers",
+        "subtitle": "Join a team shaping the world of tomorrow.",
+        "content": "At Ceeb, we offer a stimulating work environment where creativity and initiative are encouraged.",
+        "button": "Careers"
+    },
+    "contact": {
+        "pageTitle": "Contact CEEB | Bureau d'Études Paris Val-de-Fontenay",
+        "hero": {
+            "title": "Contact CEEB in Paris",
+            "subtitle": "Our Paris office is centrally located to support transport and infrastructure projects across the region."
+        },
+        "pageHeader": {
+            "title": "Contact CEEB",
+            "locationBadge": "Paris - Val-de-Fontenay"
+        },
+        "strategic": {
+            "title": "Strategic location, seamless access",
+            "lead": "Our Paris office is at the heart of the metropolitan transport network, ready to support every stage of your project.",
+            "proximity": {
+                "title": "Connected to major transport hubs",
+                "content": "Minutes from RER, metro and regional trains, our office is easy to reach from Paris and its suburbs."
+            },
+            "clients": {
+                "title": "Close to key clients",
+                "content": "Located near public transport authorities, operators and major infrastructure clients for fast collaboration."
+            },
+            "infrastructure": {
+                "title": "Infrastructure network access",
+                "content": "Access to major road, rail and airport connections simplifies travel for teams and partners."
+            }
+        },
+        "details": {
+            "title": "Contact information",
+            "address": {
+                "heading": "Address",
+                "content": "1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois"
+            },
+            "phone": {
+                "heading": "Phone",
+                "content": "+33 1 48 77 77 00"
+            },
+            "email": {
+                "heading": "Email",
+                "content": "stephane.moreau@ceeb.fr"
+            },
+            "hours": {
+                "heading": "Opening hours",
+                "content": "Monday – Friday, 9:00 – 18:00"
+            }
+        },
+        "form": {
+            "title": "Send us a message",
+            "name": "Name",
+            "email": "Email",
+            "phone": "Phone",
+            "company": "Company",
+            "subject": "Subject",
+            "subjectOptions": {
+                "placeholder": "Select a subject",
+                "project": "Project inquiry",
+                "partnership": "Partnership",
+                "recruitment": "Recruitment",
+                "information": "Information",
+                "other": "Other"
+            },
+            "message": "Message",
+            "submit": "Send message"
+        },
+        "access": {
+            "title": "How to reach us",
+            "intro": "Our offices are well connected by train, metro, tram, bus and road.",
+            "rer": {
+                "title": "RER",
+                "content": "RER A to Val-de-Fontenay station, a short walk from the office."
+            },
+            "metro": {
+                "title": "Metro",
+                "content": "Line 1 metro provides direct access to the business district."
+            },
+            "tram": {
+                "title": "Tram",
+                "content": "Tram T1 stops near the office for quick east-west travel."
+            },
+            "bus": {
+                "title": "Bus",
+                "content": "Several bus lines serve the nearby station and main avenues."
+            },
+            "car": {
+                "title": "By car",
+                "content": "Easy motorway access and nearby parking options make site visits simple."
+            },
+            "bike": {
+                "title": "By bike",
+                "content": "Bicycle paths and secure parking support active commuting."
+            },
+            "future": {
+                "title": "Future network",
+                "content": "Planned transport upgrades will further strengthen our connectivity."
+            },
+            "airports": {
+                "title": "Airports",
+                "content": "Paris airports are reachable in under one hour by train and road."
+            }
+        },
+        "map": {
+            "title": "Our location",
+            "address": "1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois, France"
+        },
+        "partners": {
+            "title": "Trusted partners",
+            "subtitle": "We collaborate with leading transport, infrastructure and public-sector clients across the region."
+        }
+    },
+    "stats": {
+        "projectCount": "100+",
+        "projectLabel": "Completed Projects",
+        "clientsCount": "50+",
+        "clientsLabel": "Satisfied Customers",
+        "continentsCount": "3",
+        "continentsLabel": "Covered Continents",
+        "portfolioCount": "€500M+",
+        "portfolioLabel": "Managed Projects"
+    },
+    "footer": {
+        "description": "A leader in engineering, consulting, and design for a sustainable future.",
+        "servicesTitle": "Services",
+        "services": {
+            "engineering": "Engineering",
+            "projectManagement": "Project Management",
+            "audit": "Audit & Consulting",
+            "digital": "Digital Solutions"
+        },
+        "phone": "Phone",
+        "rights": "All rights reserved."
+    },
+    "aboutPage": {
+        "hero": {
+            "title": "About CEEB",
+            "description": "Founded in 1989, CEEB has been a trusted partner in major French infrastructure projects, bringing technical excellence and strategic engineering to transport and mobility programs."
+        },
+        "pageHeader": {
+            "title": "About CEEB",
+            "text": "Since 1989, CEEB has supported transport projects with multidisciplinary engineering, advisory services, and project management. Our story is built on innovation, experience, and a human-centered approach."
+        },
+        "history": {
+            "title": "Our History",
+            "paragraph1": "Founded on March 1, 1989 by GÃ©rard SEBAG, CEEB | European Concept Building Equipment began as a specialized engineering consultancy. From the outset, the company focused on delivering high-quality technical studies and practical solutions in infrastructure and transportation.",
+            "paragraph2": "Over more than 35 years, CEEB has grown into a multidisciplinary firm with proven expertise in mobility, urban planning, systems engineering, and major public works. Our history is shaped by commitment to clients and by projects that strengthen territories and improve everyday life."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "paragraph1": "Our mission is to guide clients from concept to commissioning, ensuring every project benefits from rigorous engineering, operational insight, and a strong sense of service.",
+            "paragraph2": "From early hand-drawn plans and Rotring pens to modern digital design tools and AI, we continue to evolve while maintaining a deep technical culture rooted in precision and reliability."
+        },
+        "values": {
+            "title": "Our Values",
+            "subtitle": "Our values guide every step we take.",
+            "card1": {
+                "title": "Excellence",
+                "desc": "We maintain high technical standards in every study, design, and construction phase, aiming for solutions that are robust, practical, and future-ready."
+            },
+            "card2": {
+                "title": "Innovation",
+                "desc": "We continuously explore new methods and technologies to deliver smarter infrastructure and engineering services that answer changing mobility needs."
+            },
+            "card3": {
+                "title": "Sustainable Development",
+                "desc": "We take a responsible approach focused on durability, environmental performance, and social impact for long-lasting projects."
+            },
+            "card4": {
+                "title": "Partnership",
+                "desc": "Our work is a human adventure built on integrity, transparency, and close collaboration with clients and stakeholders."
+            },
+            "card5": {
+                "title": "Responsibility",
+                "desc": "We embrace the social and environmental dimensions of infrastructure to deliver safe, accessible, and resilient outcomes."
+            },
+            "card6": {
+                "title": "Our Team",
+                "desc": "Our multidisciplinary experts combine engineering, project management, and operational know-how to support complex transport programs."
+            }
+        },
+        "cta": {
+            "title": "Would you like to collaborate with us?",
+            "text": "Contact us to discuss your projects and how CEEB can deliver the engineering support you need.",
+            "button": "Contact Us"
+        }
     }
-  }
 }

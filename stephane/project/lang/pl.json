@@ -1,281 +1,329 @@
-
 {
-  "nav": {
-    "home": "Strona Główna",
-    "services": "Nasze Usługi",
-    "projects": "Projekty",
-    "expertise": "Ekspertyza",
-    "careers": "Kariera",
-    "contact": "Kontakt"
-  },
-
-  "hero": {
-    "title": "Kształtowanie zrównoważonej i odpornej przyszłości.",
-    "heroTile": "Kształtowanie zrównoważonej i odpornej przyszłości.",
-    "heroDescription": "Lider w dziedzinie inżynierii, doradztwa i projektowania.",
-
-    "ceeb": {
-      "title": "CEEB: Inżynieria zrównoważonej infrastruktury",
-      "description": "Firma konsultingowa specjalizująca się w projektowaniu i zarządzaniu złożonymi projektami transportowymi i mobilności."
+    "nav": {
+        "home": "Strona GÅ‚Ã³wna",
+        "services": "Nasze UsÅ‚ugi",
+        "projects": "Projekty",
+        "expertise": "Ekspertyza",
+        "careers": "Kariera",
+        "contact": "Kontakt"
     },
-
-    "slide1": {
-      "title": "Kształtowanie zrównoważonej przyszłości",
-      "description": "Rozwiązania inżynieryjne i konsultingowe dla nowoczesnej infrastruktury."
-    },
-
-    "slide2": {
-      "title": "Właściciel Projektu (MOA) & Kierownik Projektu (MOE)",
-      "description": "Eksperckie wsparcie na każdym etapie projektu, od pierwszego szkicu aż po końcowe przekazanie."
-    },
-
-    "slide3": {
-      "title": "Inżynieria elektryczna dla mobilności jutra",
-      "description": "Wielodyscyplinarne rozwiązania dla infrastruktury transportowej, od projektu po uruchomienie."
-    },
-
-    "slide4": {
-      "title": "Systemy telekomunikacyjne i sygnalizacja kolejowa",
-      "description": "Ekspertyza w zakresie GSM-R, oznakowania i systemów prowadzenia dla płynnej i bezpiecznej informacji pasażerskiej."
-    },
-
-    "slide5": {
-      "title": "Systemy telekomunikacyjne i sygnalizacja kolejowa",
-      "description": "Ekspertyza w zakresie GSM-R, oznakowania i systemów prowadzenia dla płynnej i bezpiecznej informacji pasażerskiej."
-    },
-
-    "slide6": {
-      "title": "<b> Ekspertyza w zakresie wysokiego napięcia, niskiego napięcia i VDI </b>",
-      "description": "Projektowanie i integracja systemów elektrycznych oraz komunikacyjnych dla inteligentnych budynków i infrastruktury."
-    },
-
-    "slide7": {
-      "title": "<b>Inżynieria infrastruktury lotniskowej</b>",
-      "description": "Projektowanie, modernizacja i optymalizacja systemów elektrycznych i komunikacyjnych dla wydajnych i zrównoważonych lotnisk."
-    },
-
-    "slide8": {
-      "title": "<b>Nowoczesne budynki i infrastruktura techniczna</b>",
-      "description": "Rozwiązania inżynieryjne dla wydajnych, połączonych i przyjaznych środowisku budynków."
-    },
-
-    "slide9": {
-      "title": "<b> Optymalizacja operacji i utrzymania</b>",
-      "description": "Wsparcie uruchomienia, optymalizacja wydajności i konserwacja predykcyjna dla maksymalnej trwałości."
-    },
-
-    "slide10": {
-      "title": "<b>Kontrola jakości i systemy kontroli</b>",
-      "description": "Inspekcje, certyfikacja i nowoczesne technologie zapewniające bezpieczeństwo, zgodność i efektywność operacyjną."
-    },
-
-    "slide11": {
-      "title": "<b>Systemy telekomunikacyjne i sygnalizacja kolejowa</b>",
-      "description": "Ekspertyza w zakresie GSM-R, oznakowania i systemów prowadzenia dla płynnej i bezpiecznej informacji pasażerskiej."
-    },
-
-    "slide12": {
-      "title": "<b>Zintegrowane i multidyscyplinarne podejście inżynieryjne</b>",
-      "description": "Ścisła współpraca ze wszystkimi interesariuszami w celu integracji kwestii zrównoważonego rozwoju i innowacji w centrum każdego projektu."
-    },
-
-    "hero_slide_1_title": "Doskonałość inżynieryjna dla zrównoważonej przyszłości",
-    "hero_slide_2_title": " Innowacyjne rozwiązania dla lepszego jutra",
-
-    "subtitle": "Jako lider w dziedzinie inżynierii, doradztwa i projektowania przekształcamy złożone wyzwania w innowacyjne możliwości dla naszych klientów i społeczeństwa.",
-    "button": "Kontakt"
-    ,"blue": {
-      "line1": "Od własności projektu i zarządzania projektem po inżynierię projektu.",
-      "line2": "Wyobraź, Stwórz, Zrealizuj Przyszłość Transportu.",
-      "paragraph": "Zaufany partner w zakresie projektowania, budowy i eksploatacji zrównoważonej i innowacyjnej infrastruktury transportowej we Francji i na świecie. Od ponad trzech lat CEEB wspiera publicznych i prywatnych inwestorów w transformacji ich terytoriów. Łączymy wiedzę techniczną, innowacje oraz zaangażowanie w zrównoważony rozwój, aby dostarczać światowej klasy projekty kolejowe i lotniskowe."
-    }
-  },
-
-  "about": {
-    "title": "<b>Nasza multidyscyplinarna ekspertyza</b>",
-
-    "content1": "<b>CEEB: zrównoważona inżynieria w służbie świata</b>",
-
-    "content2": "<li> CEEB ugruntował swoją pozycję jako kluczowy gracz w dziedzinie zrównoważonej inżynierii i infrastruktury na arenie międzynarodowej. </li><li> Od mobilności kolejowej i lotniskowej po projekty miejskie – wspieramy naszych klientów i partnerów na każdym etapie ich projektów, łącząc wiedzę techniczną i strategiczną wizję.</li>",
-
-    "content3": "<b>Rozwiązania szyte na miarę – od audytu po eksploatację</b>",
-
-    "content4": "<li>Nasze multidyscyplinarne zespoły świadczą usługi od audytu i doradztwa po zarządzanie projektami i wsparcie operacyjne. </li><li> Dzięki kompleksowemu podejściu dostarczamy niezawodne i innowacyjne rozwiązania idealnie dopasowane do specyficznych wyzwań każdego projektu.</li>",
-
-    "content5": "<b>Innowacja i wydajność dla każdego projektu</b>",
-
-    "content6": "<li> Od projektowania strategicznego po uruchomienie, CEEB wykorzystuje swoją wiedzę w zakresie analiz technicznych, BIM, telekomunikacji, doradztwa i audytu. </li><li> Każdy projekt jest okazją do przekształcenia złożonych wyzwań w konkretne i zrównoważone rozwiązania dla wydajnej i odpowiedzialnej środowiskowo infrastruktury.</li>"
-  },
-
-  "aboutPage": {
     "hero": {
-      "title": "O CEEB",
-      "description": "Założona w 1989 roku, CEEB jest zaufanym partnerem w dużych projektach infrastrukturalnych we Francji, dostarczając doskonałość techniczną i strategiczne inżynieria w obszarze transportu i mobilności."
+        "title": "KsztaÅ‚towanie zrÃ³wnowaÅ¼onej i odpornej przyszÅ‚oÅ›ci.",
+        "heroTile": "KsztaÅ‚towanie zrÃ³wnowaÅ¼onej i odpornej przyszÅ‚oÅ›ci.",
+        "heroDescription": "Lider w dziedzinie inÅ¼ynierii, doradztwa i projektowania.",
+        "ceeb": {
+            "title": "CEEB: InÅ¼ynieria zrÃ³wnowaÅ¼onej infrastruktury",
+            "description": "Firma konsultingowa specjalizujÄ…ca siÄ™ w projektowaniu i zarzÄ…dzaniu zÅ‚oÅ¼onymi projektami transportowymi i mobilnoÅ›ci."
+        },
+        "slide1": {
+            "title": "KsztaÅ‚towanie zrÃ³wnowaÅ¼onej przyszÅ‚oÅ›ci",
+            "description": "RozwiÄ…zania inÅ¼ynieryjne i konsultingowe dla nowoczesnej infrastruktury."
+        },
+        "slide2": {
+            "title": "WÅ‚aÅ›ciciel Projektu (MOA) & Kierownik Projektu (MOE)",
+            "description": "Eksperckie wsparcie na kaÅ¼dym etapie projektu, od pierwszego szkicu aÅ¼ po koÅ„cowe przekazanie."
+        },
+        "slide3": {
+            "title": "InÅ¼ynieria elektryczna dla mobilnoÅ›ci jutra",
+            "description": "Wielodyscyplinarne rozwiÄ…zania dla infrastruktury transportowej, od projektu po uruchomienie."
+        },
+        "slide4": {
+            "title": "Systemy telekomunikacyjne i sygnalizacja kolejowa",
+            "description": "Ekspertyza w zakresie GSM-R, oznakowania i systemÃ³w prowadzenia dla pÅ‚ynnej i bezpiecznej informacji pasaÅ¼erskiej."
+        },
+        "slide5": {
+            "title": "Systemy telekomunikacyjne i sygnalizacja kolejowa",
+            "description": "Ekspertyza w zakresie GSM-R, oznakowania i systemÃ³w prowadzenia dla pÅ‚ynnej i bezpiecznej informacji pasaÅ¼erskiej."
+        },
+        "slide6": {
+            "title": "<b> Ekspertyza w zakresie wysokiego napiÄ™cia, niskiego napiÄ™cia i VDI </b>",
+            "description": "Projektowanie i integracja systemÃ³w elektrycznych oraz komunikacyjnych dla inteligentnych budynkÃ³w i infrastruktury."
+        },
+        "slide7": {
+            "title": "<b>InÅ¼ynieria infrastruktury lotniskowej</b>",
+            "description": "Projektowanie, modernizacja i optymalizacja systemÃ³w elektrycznych i komunikacyjnych dla wydajnych i zrÃ³wnowaÅ¼onych lotnisk."
+        },
+        "slide8": {
+            "title": "<b>Nowoczesne budynki i infrastruktura techniczna</b>",
+            "description": "RozwiÄ…zania inÅ¼ynieryjne dla wydajnych, poÅ‚Ä…czonych i przyjaznych Å›rodowisku budynkÃ³w."
+        },
+        "slide9": {
+            "title": "<b> Optymalizacja operacji i utrzymania</b>",
+            "description": "Wsparcie uruchomienia, optymalizacja wydajnoÅ›ci i konserwacja predykcyjna dla maksymalnej trwaÅ‚oÅ›ci."
+        },
+        "slide10": {
+            "title": "<b>Kontrola jakoÅ›ci i systemy kontroli</b>",
+            "description": "Inspekcje, certyfikacja i nowoczesne technologie zapewniajÄ…ce bezpieczeÅ„stwo, zgodnoÅ›Ä‡ i efektywnoÅ›Ä‡ operacyjnÄ…."
+        },
+        "slide11": {
+            "title": "<b>Systemy telekomunikacyjne i sygnalizacja kolejowa</b>",
+            "description": "Ekspertyza w zakresie GSM-R, oznakowania i systemÃ³w prowadzenia dla pÅ‚ynnej i bezpiecznej informacji pasaÅ¼erskiej."
+        },
+        "slide12": {
+            "title": "<b>Zintegrowane i multidyscyplinarne podejÅ›cie inÅ¼ynieryjne</b>",
+            "description": "ÅšcisÅ‚a wspÃ³Å‚praca ze wszystkimi interesariuszami w celu integracji kwestii zrÃ³wnowaÅ¼onego rozwoju i innowacji w centrum kaÅ¼dego projektu."
+        },
+        "hero_slide_1_title": "DoskonaÅ‚oÅ›Ä‡ inÅ¼ynieryjna dla zrÃ³wnowaÅ¼onej przyszÅ‚oÅ›ci",
+        "hero_slide_2_title": " Innowacyjne rozwiÄ…zania dla lepszego jutra",
+        "subtitle": "Jako lider w dziedzinie inÅ¼ynierii, doradztwa i projektowania przeksztaÅ‚camy zÅ‚oÅ¼one wyzwania w innowacyjne moÅ¼liwoÅ›ci dla naszych klientÃ³w i spoÅ‚eczeÅ„stwa.",
+        "button": "Kontakt",
+        "blue": {
+            "line1": "Od wÅ‚asnoÅ›ci projektu i zarzÄ…dzania projektem po inÅ¼ynieriÄ™ projektu.",
+            "line2": "WyobraÅº, StwÃ³rz, Zrealizuj PrzyszÅ‚oÅ›Ä‡ Transportu.",
+            "paragraph": "Zaufany partner w zakresie projektowania, budowy i eksploatacji zrÃ³wnowaÅ¼onej i innowacyjnej infrastruktury transportowej we Francji i na Å›wiecie. Od ponad trzech lat CEEB wspiera publicznych i prywatnych inwestorÃ³w w transformacji ich terytoriÃ³w. ÅÄ…czymy wiedzÄ™ technicznÄ…, innowacje oraz zaangaÅ¼owanie w zrÃ³wnowaÅ¼ony rozwÃ³j, aby dostarczaÄ‡ Å›wiatowej klasy projekty kolejowe i lotniskowe."
+        }
     },
-    "pageHeader": {
-      "title": "O CEEB",
-      "text": "Od 1989 roku CEEB wspiera projekty transportowe usługami multidyscyplinarnymi z zakresu inżynierii, doradztwa i zarządzania projektami. Nasza historia opiera się na innowacji, doświadczeniu i ludzkim podejściu."
+    "about": {
+        "title": "<b>Nasza multidyscyplinarna ekspertyza</b>",
+        "content1": "<b>CEEB: zrÃ³wnowaÅ¼ona inÅ¼ynieria w sÅ‚uÅ¼bie Å›wiata</b>",
+        "content2": "<li> CEEB ugruntowaÅ‚ swojÄ… pozycjÄ™ jako kluczowy gracz w dziedzinie zrÃ³wnowaÅ¼onej inÅ¼ynierii i infrastruktury na arenie miÄ™dzynarodowej. </li><li> Od mobilnoÅ›ci kolejowej i lotniskowej po projekty miejskie â€“ wspieramy naszych klientÃ³w i partnerÃ³w na kaÅ¼dym etapie ich projektÃ³w, Å‚Ä…czÄ…c wiedzÄ™ technicznÄ… i strategicznÄ… wizjÄ™.</li>",
+        "content3": "<b>RozwiÄ…zania szyte na miarÄ™ â€“ od audytu po eksploatacjÄ™</b>",
+        "content4": "<li>Nasze multidyscyplinarne zespoÅ‚y Å›wiadczÄ… usÅ‚ugi od audytu i doradztwa po zarzÄ…dzanie projektami i wsparcie operacyjne. </li><li> DziÄ™ki kompleksowemu podejÅ›ciu dostarczamy niezawodne i innowacyjne rozwiÄ…zania idealnie dopasowane do specyficznych wyzwaÅ„ kaÅ¼dego projektu.</li>",
+        "content5": "<b>Innowacja i wydajnoÅ›Ä‡ dla kaÅ¼dego projektu</b>",
+        "content6": "<li> Od projektowania strategicznego po uruchomienie, CEEB wykorzystuje swojÄ… wiedzÄ™ w zakresie analiz technicznych, BIM, telekomunikacji, doradztwa i audytu. </li><li> KaÅ¼dy projekt jest okazjÄ… do przeksztaÅ‚cenia zÅ‚oÅ¼onych wyzwaÅ„ w konkretne i zrÃ³wnowaÅ¼one rozwiÄ…zania dla wydajnej i odpowiedzialnej Å›rodowiskowo infrastruktury.</li>"
     },
-    "history": {
-      "title": "Nasza historia",
-      "paragraph1": "Założona 1 marca 1989 roku przez Gérarda SEBAGA, CEEB | European Concept Building Equipment rozpoczęła działalność jako wyspecjalizowana firma doradcza w zakresie inżynierii. Od początku koncentrowała się na wysokiej jakości analizach technicznych i praktycznych rozwiązaniach dla infrastruktury i transportu.",
-      "paragraph2": "Przez ponad 35 lat CEEB rozwinęła się w multidyscyplinarną firmę z udokumentowanym doświadczeniem w mobilności, planowaniu miejskim, inżynierii systemów i dużych projektach publicznych. Nasza historia to zaangażowanie klientów i projekty, które wzmacniają regiony i poprawiają codzienne życie."
+    "aboutPage": {
+        "hero": {
+            "title": "O CEEB",
+            "description": "ZaÅ‚oÅ¼ona w 1989 roku, CEEB jest zaufanym partnerem w duÅ¼ych projektach infrastrukturalnych we Francji, dostarczajÄ…c doskonaÅ‚oÅ›Ä‡ technicznÄ… i strategiczne inÅ¼ynieria w obszarze transportu i mobilnoÅ›ci."
+        },
+        "pageHeader": {
+            "title": "O CEEB",
+            "text": "Od 1989 roku CEEB wspiera projekty transportowe usÅ‚ugami multidyscyplinarnymi z zakresu inÅ¼ynierii, doradztwa i zarzÄ…dzania projektami. Nasza historia opiera siÄ™ na innowacji, doÅ›wiadczeniu i ludzkim podejÅ›ciu."
+        },
+        "history": {
+            "title": "Nasza historia",
+            "paragraph1": "ZaÅ‚oÅ¼ona 1 marca 1989 roku przez GÃ©rarda SEBAGA, CEEB | European Concept Building Equipment rozpoczÄ™Å‚a dziaÅ‚alnoÅ›Ä‡ jako wyspecjalizowana firma doradcza w zakresie inÅ¼ynierii. Od poczÄ…tku koncentrowaÅ‚a siÄ™ na wysokiej jakoÅ›ci analizach technicznych i praktycznych rozwiÄ…zaniach dla infrastruktury i transportu.",
+            "paragraph2": "Przez ponad 35 lat CEEB rozwinÄ™Å‚a siÄ™ w multidyscyplinarnÄ… firmÄ™ z udokumentowanym doÅ›wiadczeniem w mobilnoÅ›ci, planowaniu miejskim, inÅ¼ynierii systemÃ³w i duÅ¼ych projektach publicznych. Nasza historia to zaangaÅ¼owanie klientÃ³w i projekty, ktÃ³re wzmacniajÄ… regiony i poprawiajÄ… codzienne Å¼ycie."
+        },
+        "mission": {
+            "title": "Nasza misja",
+            "paragraph1": "NaszÄ… misjÄ… jest prowadzenie klientÃ³w od koncepcji do przekazania do eksploatacji, zapewniajÄ…c, Å¼e kaÅ¼dy projekt korzysta z rygorystycznej inÅ¼ynierii, wiedzy operacyjnej i silnego podejÅ›cia do obsÅ‚ugi.",
+            "paragraph2": "Od pierwszych rÄ™cznie rysowanych planÃ³w i piÃ³r Rotring po nowoczesne narzÄ™dzia cyfrowego projektowania i sztucznÄ… inteligencjÄ™ nadal siÄ™ rozwijamy, zachowujÄ…c gÅ‚Ä™bokÄ… kulturÄ™ technicznÄ… opartÄ… na precyzji i niezawodnoÅ›ci."
+        },
+        "values": {
+            "title": "Nasze wartoÅ›ci",
+            "subtitle": "Nasze wartoÅ›ci kierujÄ… kaÅ¼dym etapem naszej pracy.",
+            "card1": {
+                "title": "DoskonaÅ‚oÅ›Ä‡",
+                "desc": "Utrzymujemy wysokie standardy techniczne przy kaÅ¼dym badaniu, projektowaniu i budowie, dÄ…Å¼Ä…c do solidnych, praktycznych i przyszÅ‚oÅ›ciowych rozwiÄ…zaÅ„."
+            },
+            "card2": {
+                "title": "Innowacja",
+                "desc": "CiÄ…gle badamy nowe metody i technologie, aby tworzyÄ‡ inteligentniejsze infrastruktury i usÅ‚ugi inÅ¼ynieryjne."
+            },
+            "card3": {
+                "title": "ZrÃ³wnowaÅ¼ony rozwÃ³j",
+                "desc": "Przyjmujemy odpowiedzialne podejÅ›cie skoncentrowane na trwaÅ‚oÅ›ci, wydajnoÅ›ci Å›rodowiskowej i oddziaÅ‚ywaniu spoÅ‚ecznym w projektach dÅ‚ugoterminowych."
+            },
+            "card4": {
+                "title": "WspÃ³Å‚praca",
+                "desc": "Nasza praca to ludzka przygoda oparta na uczciwoÅ›ci, przejrzystoÅ›ci i bliskiej wspÃ³Å‚pracy z klientami oraz interesariuszami."
+            },
+            "card5": {
+                "title": "OdpowiedzialnoÅ›Ä‡",
+                "desc": "Bierzemy na siebie spoÅ‚eczne i Å›rodowiskowe wymiary infrastruktury, dostarczajÄ…c bezpieczne, dostÄ™pne i odporne rezultaty."
+            },
+            "card6": {
+                "title": "Nasz zespÃ³Å‚",
+                "desc": "Nasze multidyscyplinarne zespoÅ‚y Å‚Ä…czÄ… inÅ¼ynieriÄ™, zarzÄ…dzanie projektami i wiedzÄ™ operacyjnÄ…, aby wspieraÄ‡ skomplikowane programy transportowe."
+            }
+        },
+        "cta": {
+            "title": "Chcesz z nami wspÃ³Å‚pracowaÄ‡?",
+            "text": "Skontaktuj siÄ™ z nami, aby omÃ³wiÄ‡, jak CEEB moÅ¼e wesprzeÄ‡ TwÃ³j nastÄ™pny projekt infrastrukturalny.",
+            "button": "Skontaktuj siÄ™"
+        }
     },
-    "mission": {
-      "title": "Nasza misja",
-      "paragraph1": "Naszą misją jest prowadzenie klientów od koncepcji do przekazania do eksploatacji, zapewniając, że każdy projekt korzysta z rygorystycznej inżynierii, wiedzy operacyjnej i silnego podejścia do obsługi."
-      ,"paragraph2": "Od pierwszych ręcznie rysowanych planów i piór Rotring po nowoczesne narzędzia cyfrowego projektowania i sztuczną inteligencję nadal się rozwijamy, zachowując głęboką kulturę techniczną opartą na precyzji i niezawodności."
-    },
-    "values": {
-      "title": "Nasze wartości",
-      "subtitle": "Nasze wartości kierują każdym etapem naszej pracy.",
-      "card1": {
-        "title": "Doskonałość",
-        "desc": "Utrzymujemy wysokie standardy techniczne przy każdym badaniu, projektowaniu i budowie, dążąc do solidnych, praktycznych i przyszłościowych rozwiązań."
-      },
-      "card2": {
-        "title": "Innowacja",
-        "desc": "Ciągle badamy nowe metody i technologie, aby tworzyć inteligentniejsze infrastruktury i usługi inżynieryjne."
-      },
-      "card3": {
-        "title": "Zrównoważony rozwój",
-        "desc": "Przyjmujemy odpowiedzialne podejście skoncentrowane na trwałości, wydajności środowiskowej i oddziaływaniu społecznym w projektach długoterminowych."
-      },
-      "card4": {
-        "title": "Współpraca",
-        "desc": "Nasza praca to ludzka przygoda oparta na uczciwości, przejrzystości i bliskiej współpracy z klientami oraz interesariuszami."
-      },
-      "card5": {
-        "title": "Odpowiedzialność",
-        "desc": "Bierzemy na siebie społeczne i środowiskowe wymiary infrastruktury, dostarczając bezpieczne, dostępne i odporne rezultaty."
-      },
-      "card6": {
-        "title": "Nasz zespół",
-        "desc": "Nasze multidyscyplinarne zespoły łączą inżynierię, zarządzanie projektami i wiedzę operacyjną, aby wspierać skomplikowane programy transportowe."
-      }
-    },
-    "cta": {
-      "title": "Chcesz z nami współpracować?",
-      "text": "Skontaktuj się z nami, aby omówić, jak CEEB może wesprzeć Twój następny projekt infrastrukturalny.",
-      "button": "Skontaktuj się"
-    }
-  },
-
-  "services": {
-    "title": "Nasze Usługi",
-    "subtitle": "Wspieramy firmy poprzez dostosowane do potrzeb rozwiązania z zakresu inżynierii, doradztwa i zarządzania projektami.",
-
-    "suseng": {
-      "title": "Zrównoważona inżynieria",
-      "desc": "Odporna i przyjazna środowisku infrastruktura integrująca kwestie klimatyczne już od początkowych etapów."
-    },
-
-    "infra": {
-      "title": "Infrastruktura",
-      "desc": "Kompleksowe projektowanie, budowa i utrzymanie infrastruktury kolejowej i lotniskowej."
-    },
-
-    "mobi": {
-      "title": "Mobilność",
-      "desc": "Zintegrowane i intermodalne rozwiązania transportowe – od analizy potrzeb po uruchomienie."
-    },
-
-    "inter": {
-      "title": "Międzynarodowe",
-      "desc": "Ekspertyza dostosowana do kontekstów międzynarodowych dzięki obecności na 5 kontynentach."
-    },
-
-    "urban": {
-      "title": "Planowanie urbanistyczne",
-      "desc": "Zintegrowane planowanie urbanistyczne stawiające transport w centrum zrównoważonego rozwoju terytorialnego."
-    },
-
-    "stra": {
-      "title": "Doradztwo strategiczne",
-      "desc": "Strategiczne wsparcie w celu optymalizacji inwestycji i maksymalizacji zwrotów."
-    }
-  },
-
-  "corevalues": {
-    "title": "Nasze podstawowe wartości",
-
-    "subtitle": "Nasze podstawowe wartości kierują naszymi działaniami i definiują naszą tożsamość jako firmy. Odzwierciedlają nasze zaangażowanie w doskonałość, innowacje, partnerstwo i odpowiedzialność społeczną we wszystkich projektach i interakcjach.",
-
-    "corevalues1": {
-      "title": "Doskonałość techniczna",
-      "subtitle": "Uznana ekspertyza we wszystkich obszarach transportu. Rzetelność i jakość w każdym projekcie. Ciągła innowacja i stałe doskonalenie.",
-      "desc": "Przywództwo techniczne, realizacja oparta na jakości i ciągła innowacja w celu sprostania wyzwaniom projektowym."
-    },
-
-    "corevalues2": {
-      "title": "Innowacja i zrównoważony rozwój",
-      "desc": "Systematyczna integracja kwestii środowiskowych. Nowoczesne rozwiązania BIM i cyfrowe. Zaangażowanie w transformację ekologiczną."
-    },
-
-    "corevalues3": {
-      "title": "Partnerstwo i współpraca",
-      "desc": "Podejście multidyscyplinarne i zintegrowane. Ścisła współpraca ze wszystkimi interesariuszami projektu. Dzielenie się wiedzą i doświadczeniem."
-    },
-
-    "corevalues4": {
-      "title": "Odpowiedzialność społeczna",
-      "desc": "Zaangażowanie wobec regionów i społeczności. Poszanowanie standardów bezpieczeństwa i jakości. Wkład w lokalną gospodarkę."
-    }
-  },
-
-  "projects": {
-    "title": "Projekty",
-    "subtitle": "Poznaj wybrane nasze flagowe projekty.",
-
-    "project1": {
-      "title": "Zrównoważona renowacja zabytkowego budynku",
-      "desc": "Przekształcenie dziedzictwa architektonicznego w budynek o wysokiej efektywności energetycznej."
-    },
-
-    "project2": {
-      "title": "Projekt nowej miejskiej linii transportowej",
-      "desc": "Nowoczesna infrastruktura transportowa poprawiająca mobilność miejską."
-    },
-
-    "project3": {
-      "title": "Cyfrowa platforma do zarządzania aktywami",
-      "desc": "Innowacyjne rozwiązanie cyfrowe do zarządzania infrastrukturą."
-    }
-  },
-
-  "careers": {
-    "title": "Kariera",
-    "subtitle": "Dołącz do zespołu kształtującego świat jutra.",
-    "content": "W Ceeb oferujemy inspirujące środowisko pracy, w którym kreatywność i inicjatywa są wspierane.",
-    "button": "Kariera"
-  },
-
-  "contact": {
-    "title": "Kontakt",
-    "subtitle": "Masz projekt lub pytanie?",
-    "content": "Skontaktuj się z nami, aby omówić, jak możemy pomóc Ci osiągnąć Twoje cele.",
-
-    "form": {
-      "name": "Imię",
-      "email": "Email",
-      "message": "Wiadomość",
-      "submit": "Wyślij"
-    }
-  },
-
-  "footer": {
-    "description": "Lider w dziedzinie inżynierii, doradztwa i projektowania dla zrównoważonej przyszłości.",
-
-    "servicesTitle": "Usługi",
-
     "services": {
-      "engineering": "Inżynieria",
-      "projectManagement": "Zarządzanie Projektami",
-      "audit": "Audyt i Doradztwo",
-      "digital": "Rozwiązania Cyfrowe"
+        "title": "Nasze UsÅ‚ugi",
+        "subtitle": "Wspieramy firmy poprzez dostosowane do potrzeb rozwiÄ…zania z zakresu inÅ¼ynierii, doradztwa i zarzÄ…dzania projektami.",
+        "suseng": {
+            "title": "ZrÃ³wnowaÅ¼ona inÅ¼ynieria",
+            "desc": "Odporna i przyjazna Å›rodowisku infrastruktura integrujÄ…ca kwestie klimatyczne juÅ¼ od poczÄ…tkowych etapÃ³w."
+        },
+        "infra": {
+            "title": "Infrastruktura",
+            "desc": "Kompleksowe projektowanie, budowa i utrzymanie infrastruktury kolejowej i lotniskowej."
+        },
+        "mobi": {
+            "title": "MobilnoÅ›Ä‡",
+            "desc": "Zintegrowane i intermodalne rozwiÄ…zania transportowe â€“ od analizy potrzeb po uruchomienie."
+        },
+        "inter": {
+            "title": "MiÄ™dzynarodowe",
+            "desc": "Ekspertyza dostosowana do kontekstÃ³w miÄ™dzynarodowych dziÄ™ki obecnoÅ›ci na 5 kontynentach."
+        },
+        "urban": {
+            "title": "Planowanie urbanistyczne",
+            "desc": "Zintegrowane planowanie urbanistyczne stawiajÄ…ce transport w centrum zrÃ³wnowaÅ¼onego rozwoju terytorialnego."
+        },
+        "stra": {
+            "title": "Doradztwo strategiczne",
+            "desc": "Strategiczne wsparcie w celu optymalizacji inwestycji i maksymalizacji zwrotÃ³w."
+        }
     },
-
-    "phone": "Telefon",
-    "rights": "Wszelkie prawa zastrzeżone."
-  }
+    "corevalues": {
+        "title": "Nasze podstawowe wartoÅ›ci",
+        "subtitle": "Nasze podstawowe wartoÅ›ci kierujÄ… naszymi dziaÅ‚aniami i definiujÄ… naszÄ… toÅ¼samoÅ›Ä‡ jako firmy. OdzwierciedlajÄ… nasze zaangaÅ¼owanie w doskonaÅ‚oÅ›Ä‡, innowacje, partnerstwo i odpowiedzialnoÅ›Ä‡ spoÅ‚ecznÄ… we wszystkich projektach i interakcjach.",
+        "corevalues1": {
+            "title": "DoskonaÅ‚oÅ›Ä‡ techniczna",
+            "subtitle": "Uznana ekspertyza we wszystkich obszarach transportu. RzetelnoÅ›Ä‡ i jakoÅ›Ä‡ w kaÅ¼dym projekcie. CiÄ…gÅ‚a innowacja i staÅ‚e doskonalenie.",
+            "desc": "PrzywÃ³dztwo techniczne, realizacja oparta na jakoÅ›ci i ciÄ…gÅ‚a innowacja w celu sprostania wyzwaniom projektowym."
+        },
+        "corevalues2": {
+            "title": "Innowacja i zrÃ³wnowaÅ¼ony rozwÃ³j",
+            "desc": "Systematyczna integracja kwestii Å›rodowiskowych. Nowoczesne rozwiÄ…zania BIM i cyfrowe. ZaangaÅ¼owanie w transformacjÄ™ ekologicznÄ…."
+        },
+        "corevalues3": {
+            "title": "Partnerstwo i wspÃ³Å‚praca",
+            "desc": "PodejÅ›cie multidyscyplinarne i zintegrowane. ÅšcisÅ‚a wspÃ³Å‚praca ze wszystkimi interesariuszami projektu. Dzielenie siÄ™ wiedzÄ… i doÅ›wiadczeniem."
+        },
+        "corevalues4": {
+            "title": "OdpowiedzialnoÅ›Ä‡ spoÅ‚eczna",
+            "desc": "ZaangaÅ¼owanie wobec regionÃ³w i spoÅ‚ecznoÅ›ci. Poszanowanie standardÃ³w bezpieczeÅ„stwa i jakoÅ›ci. WkÅ‚ad w lokalnÄ… gospodarkÄ™."
+        }
+    },
+    "projects": {
+        "title": "Projekty",
+        "subtitle": "Poznaj wybrane nasze flagowe projekty.",
+        "project1": {
+            "title": "ZrÃ³wnowaÅ¼ona renowacja zabytkowego budynku",
+            "desc": "PrzeksztaÅ‚cenie dziedzictwa architektonicznego w budynek o wysokiej efektywnoÅ›ci energetycznej."
+        },
+        "project2": {
+            "title": "Projekt nowej miejskiej linii transportowej",
+            "desc": "Nowoczesna infrastruktura transportowa poprawiajÄ…ca mobilnoÅ›Ä‡ miejskÄ…."
+        },
+        "project3": {
+            "title": "Cyfrowa platforma do zarzÄ…dzania aktywami",
+            "desc": "Innowacyjne rozwiÄ…zanie cyfrowe do zarzÄ…dzania infrastrukturÄ…."
+        }
+    },
+    "careers": {
+        "title": "Kariera",
+        "subtitle": "DoÅ‚Ä…cz do zespoÅ‚u ksztaÅ‚tujÄ…cego Å›wiat jutra.",
+        "content": "W Ceeb oferujemy inspirujÄ…ce Å›rodowisko pracy, w ktÃ³rym kreatywnoÅ›Ä‡ i inicjatywa sÄ… wspierane.",
+        "button": "Kariera"
+    },
+    "contact": {
+        "pageTitle": "Kontakt CEEB | Bureau d'Études Paris Val-de-Fontenay",
+        "hero": {
+            "title": "Skontaktuj się z CEEB w Paryżu",
+            "subtitle": "Nasze biuro w Paryżu jest doskonale położone, by wspierać projekty transportowe i infrastrukturalne w regionie."
+        },
+        "pageHeader": {
+            "title": "Kontakt CEEB",
+            "locationBadge": "Paryż - Val-de-Fontenay"
+        },
+        "strategic": {
+            "title": "Lokalizacja strategiczna, płynny dostęp",
+            "lead": "Nasze biuro w Paryżu znajduje się w sercu sieci transportowej, gotowe wspierać każdy etap Twojego projektu.",
+            "proximity": {
+                "title": "Połączony z głównymi węzłami transportowymi",
+                "content": "Kilka minut od RER, metra i pociągów regionalnych, nasze biuro jest łatwo dostępne z Paryża i przedmieść."
+            },
+            "clients": {
+                "title": "Blisko kluczowych klientów",
+                "content": "Położone blisko władz transportowych, operatorów i dużych klientów infrastrukturalnych dla szybkiej współpracy."
+            },
+            "infrastructure": {
+                "title": "Dostęp do sieci infrastrukturalnej",
+                "content": "Dostęp do głównych dróg, kolei i lotnisk ułatwia podróże zespołom i partnerom."
+            }
+        },
+        "details": {
+            "title": "Dane kontaktowe",
+            "address": {
+                "heading": "Adres",
+                "content": "1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois"
+            },
+            "phone": {
+                "heading": "Telefon",
+                "content": "+33 1 48 77 77 00"
+            },
+            "email": {
+                "heading": "Email",
+                "content": "stephane.moreau@ceeb.fr"
+            },
+            "hours": {
+                "heading": "Godziny otwarcia",
+                "content": "Poniedziałek – piątek, 9:00 – 18:00"
+            }
+        },
+        "form": {
+            "title": "Wyślij nam wiadomość",
+            "name": "Imię i nazwisko",
+            "email": "Email",
+            "phone": "Telefon",
+            "company": "Firma",
+            "subject": "Temat",
+            "subjectOptions": {
+                "placeholder": "Wybierz temat",
+                "project": "Zapytanie o projekt",
+                "partnership": "Współpraca",
+                "recruitment": "Rekrutacja",
+                "information": "Informacja",
+                "other": "Inne"
+            },
+            "message": "Wiadomość",
+            "submit": "Wyślij wiadomość"
+        },
+        "access": {
+            "title": "Jak do nas dotrzeć",
+            "intro": "Nasze biura są dobrze skomunikowane pociągiem, metrem, tramwajem, autobusem i samochodem.",
+            "rer": {
+                "title": "RER",
+                "content": "RER A do stacji Val-de-Fontenay, krótki spacer do biura."
+            },
+            "metro": {
+                "title": "Metro",
+                "content": "Linia 1 zapewnia bezpośredni dostęp do dzielnicy biznesowej."
+            },
+            "tram": {
+                "title": "Tramwaj",
+                "content": "Tramwaj T1 zatrzymuje się blisko biura, zapewniając szybki przejazd w osi wschód-zachód."
+            },
+            "bus": {
+                "title": "Autobus",
+                "content": "Kilka linii autobusowych obsługuje pobliską stację i główne arterie."
+            },
+            "car": {
+                "title": "Samochodem",
+                "content": "Łatwy dojazd autostradą i parkowanie w pobliżu ułatwiają wizyty."
+            },
+            "bike": {
+                "title": "Rowerem",
+                "content": "Ścieżki rowerowe i bezpieczne miejsca parkingowe wspierają aktywne dojazdy."
+            },
+            "future": {
+                "title": "Przyszła sieć",
+                "content": "Planowane modernizacje jeszcze bardziej wzmocnią naszą łączność."
+            },
+            "airports": {
+                "title": "Lotniska",
+                "content": "Porty lotnicze w Paryżu są osiągalne w mniej niż godzinę pociągiem i samochodem."
+            }
+        },
+        "map": {
+            "title": "Nasza lokalizacja",
+            "address": "1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois, France"
+        },
+        "partners": {
+            "title": "Zaufani partnerzy",
+            "subtitle": "Współpracujemy z czołowymi podmiotami transportowymi, infrastrukturalnymi i publicznymi w regionie."
+        }
+    },
+    "footer": {
+        "description": "Lider w dziedzinie inÅ¼ynierii, doradztwa i projektowania dla zrÃ³wnowaÅ¼onej przyszÅ‚oÅ›ci.",
+        "servicesTitle": "UsÅ‚ugi",
+        "services": {
+            "engineering": "InÅ¼ynieria",
+            "projectManagement": "ZarzÄ…dzanie Projektami",
+            "audit": "Audyt i Doradztwo",
+            "digital": "RozwiÄ…zania Cyfrowe"
+        },
+        "phone": "Telefon",
+        "rights": "Wszelkie prawa zastrzeÅ¼one."
+    }
 }

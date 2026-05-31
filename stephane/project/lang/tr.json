@@ -1,281 +1,329 @@
-
 {
-  "nav": {
-    "home": "Ana Sayfa",
-    "services": "Hizmetlerimiz",
-    "projects": "Projeler",
-    "expertise": "Uzmanlık",
-    "careers": "Kariyer",
-    "contact": "İletişim"
-  },
-
-  "hero": {
-    "title": "Sürdürülebilir ve dayanıklı bir geleceği şekillendiriyoruz.",
-    "heroTile": "Sürdürülebilir ve dayanıklı bir geleceği şekillendiriyoruz.",
-    "heroDescription": "Mühendislik, danışmanlık ve tasarım alanında lider.",
-
-    "ceeb": {
-      "title": "CEEB: Sürdürülebilir Altyapı Mühendisliği",
-      "description": "Ulaşım ve mobilite alanındaki karmaşık projelerin tasarımı ve yönetiminde uzmanlaşmış danışmanlık firması."
+    "nav": {
+        "home": "Ana Sayfa",
+        "services": "Hizmetlerimiz",
+        "projects": "Projeler",
+        "expertise": "UzmanlÄ±k",
+        "careers": "Kariyer",
+        "contact": "Ä°letiÅŸim"
     },
-
-    "slide1": {
-      "title": "Sürdürülebilir bir geleceği şekillendirmek",
-      "description": "Modern altyapılar için mühendislik ve danışmanlık çözümleri."
-    },
-
-    "slide2": {
-      "title": "Proje Sahibi (MOA) & Proje Yöneticisi (MOE)",
-      "description": "İlk taslaktan nihai teslimata kadar projelerinizin her aşamasında uzman destek."
-    },
-
-    "slide3": {
-      "title": "Yarının Mobilitesi için Elektrik Mühendisliği",
-      "description": "Tasarım aşamasından devreye almaya kadar ulaşım altyapıları için multidisipliner çözümler."
-    },
-
-    "slide4": {
-      "title": "Telekomünikasyon Sistemleri & Demiryolu Sinyalizasyonu",
-      "description": "GSM-R, sinyalizasyon ve yolcu bilgilendirme sistemlerinde akıcı ve güvenli çözümler için uzmanlık."
-    },
-
-    "slide5": {
-      "title": "Telekomünikasyon Sistemleri & Demiryolu Sinyalizasyonu",
-      "description": "GSM-R, sinyalizasyon ve yolcu bilgilendirme sistemlerinde akıcı ve güvenli çözümler için uzmanlık."
-    },
-
-    "slide6": {
-      "title": "<b> Yüksek Gerilim, Düşük Gerilim & VDI Uzmanlığı </b>",
-      "description": "Akıllı binalar ve altyapılar için elektrik ve iletişim sistemlerinin tasarımı ve entegrasyonu."
-    },
-
-    "slide7": {
-      "title": "<b>Havalimanı Altyapı Mühendisliği</b>",
-      "description": "Yüksek performanslı ve sürdürülebilir havalimanları için elektrik ve iletişim sistemlerinin tasarımı, modernizasyonu ve optimizasyonu."
-    },
-
-    "slide8": {
-      "title": "<b>Modern Binalar & Teknik Altyapılar</b>",
-      "description": "Yüksek performanslı, bağlantılı ve çevre dostu binalar için mühendislik çözümleri."
-    },
-
-    "slide9": {
-      "title": "<b> Operasyon & Bakım Optimizasyonu</b>",
-      "description": "Maksimum dayanıklılık için devreye alma desteği, performans optimizasyonu ve kestirimci bakım."
-    },
-
-    "slide10": {
-      "title": "<b>Kalite Kontrol & Kontrol Sistemleri</b>",
-      "description": "Güvenlik, uygunluk ve operasyonel verimliliği sağlamak için denetim, sertifikasyon ve ileri teknolojiler."
-    },
-
-    "slide11": {
-      "title": "<b>Telekomünikasyon Sistemleri & Demiryolu Sinyalizasyonu</b>",
-      "description": "GSM-R, sinyalizasyon ve yolcu bilgilendirme sistemlerinde akıcı ve güvenli çözümler için uzmanlık."
-    },
-
-    "slide12": {
-      "title": "<b>Entegre & Multidisipliner Mühendislik Yaklaşımı</b>",
-      "description": "Sürdürülebilirlik ve inovasyonu her projenin merkezine yerleştirmek için tüm paydaşlarla yakın iş birliği."
-    },
-
-    "hero_slide_1_title": "Sürdürülebilir Bir Gelecek için Mühendislik Mükemmelliği",
-    "hero_slide_2_title": " Daha İyi Bir Yarın için Yenilikçi Çözümler",
-
-    "subtitle": "Mühendislik, danışmanlık ve tasarım alanında lider olarak, karmaşık zorlukları müşterilerimiz ve toplum için yenilikçi fırsatlara dönüştürüyoruz.",
-    "button": "İletişim"
-    ,"blue": {
-      "line1": "Proje sahipliğinden ve proje yönetiminden proje mühendisliğine.",
-      "line2": "Hayal Et, Yarat, Ulaşımın Geleceğini Gerçekleştir.",
-      "paragraph": "Fransa'da ve uluslararası alanda sürdürülebilir ve yenilikçi ulaşım altyapılarının tasarımı, inşası ve işletilmesi için güvenilir ortak. Üç yılı aşkın süredir CEEB, bölgelerinin dönüşümünde kamu ve özel proje sahiplerine destek veriyor. Dünyaca sınıf demiryolu ve havalimanı projeleri teslim etmek için teknik uzmanlık, yenilik ve sürdürülebilirliğe bağlılık sunuyoruz."
-    }
-  },
-
-  "about": {
-    "title": "<b>Multidisipliner Uzmanlığımız</b>",
-
-    "content1": "<b>CEEB: Dünyanın hizmetinde sürdürülebilir mühendislik</b>",
-
-    "content2": "<li> CEEB, uluslararası düzeyde sürdürülebilir mühendislik ve altyapı alanında önemli bir oyuncu olarak kendini kanıtlamıştır. </li><li> Demiryolu ve havalimanı mobilitesinden kentsel projelere kadar, müşterilerimizi ve ortaklarımızı projelerinin her aşamasında teknik uzmanlık ve stratejik vizyonu birleştirerek destekliyoruz.</li>",
-
-    "content3": "<b>Denetimden işletmeye kadar özel çözümler</b>",
-
-    "content4": "<li>Multidisipliner ekiplerimiz, denetim ve danışmanlıktan proje yönetimi ve operasyonel desteğe kadar hizmetler sunmaktadır. </li><li> Kapsamlı yaklaşımımız sayesinde, her projenin özel zorluklarına mükemmel şekilde uyarlanmış güvenilir ve yenilikçi çözümler sunuyoruz.</li>",
-
-    "content5": "<b>Her proje için inovasyon ve performans</b>",
-
-    "content6": "<li> Stratejik tasarımdan devreye almaya kadar CEEB; teknik çalışmalar, BIM, telekomünikasyon, danışmanlık ve denetim alanlarındaki uzmanlığını kullanır. </li><li> Her proje, karmaşık zorlukları yüksek performanslı ve çevreye duyarlı altyapılar için somut ve sürdürülebilir çözümlere dönüştürme fırsatıdır.</li>"
-  },
-
-  "aboutPage": {
     "hero": {
-      "title": "CEEB Hakkında",
-      "description": "1989'da kurulan CEEB, önemli Fransız altyapı projelerinde teknik mükemmeliyet ve stratejik mühendislik sunan güvenilir bir ortaktır. Ulaşım ve mobilite alanında yenilik getiriyoruz."
+        "title": "SÃ¼rdÃ¼rÃ¼lebilir ve dayanÄ±klÄ± bir geleceÄŸi ÅŸekillendiriyoruz.",
+        "heroTile": "SÃ¼rdÃ¼rÃ¼lebilir ve dayanÄ±klÄ± bir geleceÄŸi ÅŸekillendiriyoruz.",
+        "heroDescription": "MÃ¼hendislik, danÄ±ÅŸmanlÄ±k ve tasarÄ±m alanÄ±nda lider.",
+        "ceeb": {
+            "title": "CEEB: SÃ¼rdÃ¼rÃ¼lebilir AltyapÄ± MÃ¼hendisliÄŸi",
+            "description": "UlaÅŸÄ±m ve mobilite alanÄ±ndaki karmaÅŸÄ±k projelerin tasarÄ±mÄ± ve yÃ¶netiminde uzmanlaÅŸmÄ±ÅŸ danÄ±ÅŸmanlÄ±k firmasÄ±."
+        },
+        "slide1": {
+            "title": "SÃ¼rdÃ¼rÃ¼lebilir bir geleceÄŸi ÅŸekillendirmek",
+            "description": "Modern altyapÄ±lar iÃ§in mÃ¼hendislik ve danÄ±ÅŸmanlÄ±k Ã§Ã¶zÃ¼mleri."
+        },
+        "slide2": {
+            "title": "Proje Sahibi (MOA) & Proje YÃ¶neticisi (MOE)",
+            "description": "Ä°lk taslaktan nihai teslimata kadar projelerinizin her aÅŸamasÄ±nda uzman destek."
+        },
+        "slide3": {
+            "title": "YarÄ±nÄ±n Mobilitesi iÃ§in Elektrik MÃ¼hendisliÄŸi",
+            "description": "TasarÄ±m aÅŸamasÄ±ndan devreye almaya kadar ulaÅŸÄ±m altyapÄ±larÄ± iÃ§in multidisipliner Ã§Ã¶zÃ¼mler."
+        },
+        "slide4": {
+            "title": "TelekomÃ¼nikasyon Sistemleri & Demiryolu Sinyalizasyonu",
+            "description": "GSM-R, sinyalizasyon ve yolcu bilgilendirme sistemlerinde akÄ±cÄ± ve gÃ¼venli Ã§Ã¶zÃ¼mler iÃ§in uzmanlÄ±k."
+        },
+        "slide5": {
+            "title": "TelekomÃ¼nikasyon Sistemleri & Demiryolu Sinyalizasyonu",
+            "description": "GSM-R, sinyalizasyon ve yolcu bilgilendirme sistemlerinde akÄ±cÄ± ve gÃ¼venli Ã§Ã¶zÃ¼mler iÃ§in uzmanlÄ±k."
+        },
+        "slide6": {
+            "title": "<b> YÃ¼ksek Gerilim, DÃ¼ÅŸÃ¼k Gerilim & VDI UzmanlÄ±ÄŸÄ± </b>",
+            "description": "AkÄ±llÄ± binalar ve altyapÄ±lar iÃ§in elektrik ve iletiÅŸim sistemlerinin tasarÄ±mÄ± ve entegrasyonu."
+        },
+        "slide7": {
+            "title": "<b>HavalimanÄ± AltyapÄ± MÃ¼hendisliÄŸi</b>",
+            "description": "YÃ¼ksek performanslÄ± ve sÃ¼rdÃ¼rÃ¼lebilir havalimanlarÄ± iÃ§in elektrik ve iletiÅŸim sistemlerinin tasarÄ±mÄ±, modernizasyonu ve optimizasyonu."
+        },
+        "slide8": {
+            "title": "<b>Modern Binalar & Teknik AltyapÄ±lar</b>",
+            "description": "YÃ¼ksek performanslÄ±, baÄŸlantÄ±lÄ± ve Ã§evre dostu binalar iÃ§in mÃ¼hendislik Ã§Ã¶zÃ¼mleri."
+        },
+        "slide9": {
+            "title": "<b> Operasyon & BakÄ±m Optimizasyonu</b>",
+            "description": "Maksimum dayanÄ±klÄ±lÄ±k iÃ§in devreye alma desteÄŸi, performans optimizasyonu ve kestirimci bakÄ±m."
+        },
+        "slide10": {
+            "title": "<b>Kalite Kontrol & Kontrol Sistemleri</b>",
+            "description": "GÃ¼venlik, uygunluk ve operasyonel verimliliÄŸi saÄŸlamak iÃ§in denetim, sertifikasyon ve ileri teknolojiler."
+        },
+        "slide11": {
+            "title": "<b>TelekomÃ¼nikasyon Sistemleri & Demiryolu Sinyalizasyonu</b>",
+            "description": "GSM-R, sinyalizasyon ve yolcu bilgilendirme sistemlerinde akÄ±cÄ± ve gÃ¼venli Ã§Ã¶zÃ¼mler iÃ§in uzmanlÄ±k."
+        },
+        "slide12": {
+            "title": "<b>Entegre & Multidisipliner MÃ¼hendislik YaklaÅŸÄ±mÄ±</b>",
+            "description": "SÃ¼rdÃ¼rÃ¼lebilirlik ve inovasyonu her projenin merkezine yerleÅŸtirmek iÃ§in tÃ¼m paydaÅŸlarla yakÄ±n iÅŸ birliÄŸi."
+        },
+        "hero_slide_1_title": "SÃ¼rdÃ¼rÃ¼lebilir Bir Gelecek iÃ§in MÃ¼hendislik MÃ¼kemmelliÄŸi",
+        "hero_slide_2_title": " Daha Ä°yi Bir YarÄ±n iÃ§in YenilikÃ§i Ã‡Ã¶zÃ¼mler",
+        "subtitle": "MÃ¼hendislik, danÄ±ÅŸmanlÄ±k ve tasarÄ±m alanÄ±nda lider olarak, karmaÅŸÄ±k zorluklarÄ± mÃ¼ÅŸterilerimiz ve toplum iÃ§in yenilikÃ§i fÄ±rsatlara dÃ¶nÃ¼ÅŸtÃ¼rÃ¼yoruz.",
+        "button": "Ä°letiÅŸim",
+        "blue": {
+            "line1": "Proje sahipliÄŸinden ve proje yÃ¶netiminden proje mÃ¼hendisliÄŸine.",
+            "line2": "Hayal Et, Yarat, UlaÅŸÄ±mÄ±n GeleceÄŸini GerÃ§ekleÅŸtir.",
+            "paragraph": "Fransa'da ve uluslararasÄ± alanda sÃ¼rdÃ¼rÃ¼lebilir ve yenilikÃ§i ulaÅŸÄ±m altyapÄ±larÄ±nÄ±n tasarÄ±mÄ±, inÅŸasÄ± ve iÅŸletilmesi iÃ§in gÃ¼venilir ortak. ÃœÃ§ yÄ±lÄ± aÅŸkÄ±n sÃ¼redir CEEB, bÃ¶lgelerinin dÃ¶nÃ¼ÅŸÃ¼mÃ¼nde kamu ve Ã¶zel proje sahiplerine destek veriyor. DÃ¼nyaca sÄ±nÄ±f demiryolu ve havalimanÄ± projeleri teslim etmek iÃ§in teknik uzmanlÄ±k, yenilik ve sÃ¼rdÃ¼rÃ¼lebilirliÄŸe baÄŸlÄ±lÄ±k sunuyoruz."
+        }
     },
-    "pageHeader": {
-      "title": "CEEB Hakkında",
-      "text": "1989'dan beri CEEB, mühendislik, danışmanlık ve proje yönetimi hizmetleriyle ulaşım projelerini destekliyor. Hikayemiz yenilik, deneyim ve insan odaklı bir yaklaşıma dayanıyor."
+    "about": {
+        "title": "<b>Multidisipliner UzmanlÄ±ÄŸÄ±mÄ±z</b>",
+        "content1": "<b>CEEB: DÃ¼nyanÄ±n hizmetinde sÃ¼rdÃ¼rÃ¼lebilir mÃ¼hendislik</b>",
+        "content2": "<li> CEEB, uluslararasÄ± dÃ¼zeyde sÃ¼rdÃ¼rÃ¼lebilir mÃ¼hendislik ve altyapÄ± alanÄ±nda Ã¶nemli bir oyuncu olarak kendini kanÄ±tlamÄ±ÅŸtÄ±r. </li><li> Demiryolu ve havalimanÄ± mobilitesinden kentsel projelere kadar, mÃ¼ÅŸterilerimizi ve ortaklarÄ±mÄ±zÄ± projelerinin her aÅŸamasÄ±nda teknik uzmanlÄ±k ve stratejik vizyonu birleÅŸtirerek destekliyoruz.</li>",
+        "content3": "<b>Denetimden iÅŸletmeye kadar Ã¶zel Ã§Ã¶zÃ¼mler</b>",
+        "content4": "<li>Multidisipliner ekiplerimiz, denetim ve danÄ±ÅŸmanlÄ±ktan proje yÃ¶netimi ve operasyonel desteÄŸe kadar hizmetler sunmaktadÄ±r. </li><li> KapsamlÄ± yaklaÅŸÄ±mÄ±mÄ±z sayesinde, her projenin Ã¶zel zorluklarÄ±na mÃ¼kemmel ÅŸekilde uyarlanmÄ±ÅŸ gÃ¼venilir ve yenilikÃ§i Ã§Ã¶zÃ¼mler sunuyoruz.</li>",
+        "content5": "<b>Her proje iÃ§in inovasyon ve performans</b>",
+        "content6": "<li> Stratejik tasarÄ±mdan devreye almaya kadar CEEB; teknik Ã§alÄ±ÅŸmalar, BIM, telekomÃ¼nikasyon, danÄ±ÅŸmanlÄ±k ve denetim alanlarÄ±ndaki uzmanlÄ±ÄŸÄ±nÄ± kullanÄ±r. </li><li> Her proje, karmaÅŸÄ±k zorluklarÄ± yÃ¼ksek performanslÄ± ve Ã§evreye duyarlÄ± altyapÄ±lar iÃ§in somut ve sÃ¼rdÃ¼rÃ¼lebilir Ã§Ã¶zÃ¼mlere dÃ¶nÃ¼ÅŸtÃ¼rme fÄ±rsatÄ±dÄ±r.</li>"
     },
-    "history": {
-      "title": "Tarihimiz",
-      "paragraph1": "1 Mart 1989'da Gérard SEBAG tarafından kurulan CEEB | European Concept Building Equipment, uzmanlaşmış bir mühendislik danışmanlığı olarak başladı. Şirket, başından itibaren altyapı ve ulaşımda yüksek kaliteli teknik çalışmalar ve pratik çözümler sunmaya odaklandı.",
-      "paragraph2": "35 yılı aşkın sürede CEEB, mobilite, kentsel planlama, sistem mühendisliği ve büyük kamu projelerinde kanıtlanmış uzmanlığa sahip çok disiplinli bir firmaya dönüştü. Hikayemiz, bölgeleri güçlendiren ve günlük yaşamı iyileştiren projelerle müşteri bağlılığı üzerine kurulu."
+    "aboutPage": {
+        "hero": {
+            "title": "CEEB HakkÄ±nda",
+            "description": "1989'da kurulan CEEB, Ã¶nemli FransÄ±z altyapÄ± projelerinde teknik mÃ¼kemmeliyet ve stratejik mÃ¼hendislik sunan gÃ¼venilir bir ortaktÄ±r. UlaÅŸÄ±m ve mobilite alanÄ±nda yenilik getiriyoruz."
+        },
+        "pageHeader": {
+            "title": "CEEB HakkÄ±nda",
+            "text": "1989'dan beri CEEB, mÃ¼hendislik, danÄ±ÅŸmanlÄ±k ve proje yÃ¶netimi hizmetleriyle ulaÅŸÄ±m projelerini destekliyor. Hikayemiz yenilik, deneyim ve insan odaklÄ± bir yaklaÅŸÄ±ma dayanÄ±yor."
+        },
+        "history": {
+            "title": "Tarihimiz",
+            "paragraph1": "1 Mart 1989'da GÃ©rard SEBAG tarafÄ±ndan kurulan CEEB | European Concept Building Equipment, uzmanlaÅŸmÄ±ÅŸ bir mÃ¼hendislik danÄ±ÅŸmanlÄ±ÄŸÄ± olarak baÅŸladÄ±. Åžirket, baÅŸÄ±ndan itibaren altyapÄ± ve ulaÅŸÄ±mda yÃ¼ksek kaliteli teknik Ã§alÄ±ÅŸmalar ve pratik Ã§Ã¶zÃ¼mler sunmaya odaklandÄ±.",
+            "paragraph2": "35 yÄ±lÄ± aÅŸkÄ±n sÃ¼rede CEEB, mobilite, kentsel planlama, sistem mÃ¼hendisliÄŸi ve bÃ¼yÃ¼k kamu projelerinde kanÄ±tlanmÄ±ÅŸ uzmanlÄ±ÄŸa sahip Ã§ok disiplinli bir firmaya dÃ¶nÃ¼ÅŸtÃ¼. Hikayemiz, bÃ¶lgeleri gÃ¼Ã§lendiren ve gÃ¼nlÃ¼k yaÅŸamÄ± iyileÅŸtiren projelerle mÃ¼ÅŸteri baÄŸlÄ±lÄ±ÄŸÄ± Ã¼zerine kurulu."
+        },
+        "mission": {
+            "title": "Misyonumuz",
+            "paragraph1": "Misyonumuz, mÃ¼ÅŸterileri kavramdan devreye almaya kadar yÃ¶nlendirmek; her projenin titiz mÃ¼hendislik, operasyonel gÃ¶rÃ¼ÅŸ ve gÃ¼Ã§lÃ¼ bir hizmet anlayÄ±ÅŸÄ± kazanmasÄ±nÄ± saÄŸlamak.",
+            "paragraph2": "Elle Ã§izilen ilk planlardan ve Rotring kalemlerden modern dijital tasarÄ±m araÃ§larÄ±na ve yapay zekaya kadar geliÅŸmeye devam ederken, hassasiyete ve gÃ¼venilirliÄŸe dayanan derin bir teknik kÃ¼ltÃ¼rÃ¼ koruyoruz."
+        },
+        "values": {
+            "title": "DeÄŸerlerimiz",
+            "subtitle": "DeÄŸerlerimiz attÄ±ÄŸÄ±mÄ±z her adÄ±mÄ± yÃ¶nlendirir.",
+            "card1": {
+                "title": "MÃ¼kemmellik",
+                "desc": "Her Ã§alÄ±ÅŸmada, tasarÄ±mda ve inÅŸaat aÅŸamasÄ±nda yÃ¼ksek teknik standartlarÄ± koruyor; gÃ¼Ã§lÃ¼, pratik ve geleceÄŸe hazÄ±r Ã§Ã¶zÃ¼mler arÄ±yoruz."
+            },
+            "card2": {
+                "title": "Yenilik",
+                "desc": "Daha akÄ±llÄ± altyapÄ±lar ve mÃ¼hendislik hizmetleri yaratmak iÃ§in sÃ¼rekli yeni yÃ¶ntemler ve teknolojiler araÅŸtÄ±rÄ±yoruz."
+            },
+            "card3": {
+                "title": "SÃ¼rdÃ¼rÃ¼lebilirlik",
+                "desc": "Uzun vadeli projeler iÃ§in dayanÄ±klÄ±lÄ±k, Ã§evresel performans ve sosyal etkiler Ã¼zerine odaklanan sorumlu bir yaklaÅŸÄ±m benimsiyoruz."
+            },
+            "card4": {
+                "title": "OrtaklÄ±k",
+                "desc": "Ã‡alÄ±ÅŸmalarÄ±mÄ±z, mÃ¼ÅŸteriler ve paydaÅŸlarla sÄ±kÄ± iÅŸbirliÄŸi, dÃ¼rÃ¼stlÃ¼k ve ÅŸeffaflÄ±k Ã¼zerine kurulmuÅŸ insan odaklÄ± bir serÃ¼vendir."
+            },
+            "card5": {
+                "title": "Sorumluluk",
+                "desc": "AltyapÄ±nÄ±n sosyal ve Ã§evresel boyutlarÄ±nÄ± sahipleniyor, gÃ¼venli, eriÅŸilebilir ve direnÃ§li sonuÃ§lar sunuyoruz."
+            },
+            "card6": {
+                "title": "Ekibimiz",
+                "desc": "Ã‡ok disiplinli ekiplerimiz, karmaÅŸÄ±k ulaÅŸÄ±m programlarÄ±nÄ± desteklemek iÃ§in mÃ¼hendislik, proje yÃ¶netimi ve operasyonel bilgi birikimini birleÅŸtirir."
+            }
+        },
+        "cta": {
+            "title": "Bizimle Ã§alÄ±ÅŸmak ister misiniz?",
+            "text": "CEEB'in bir sonraki altyapÄ± projenizi nasÄ±l destekleyebileceÄŸini konuÅŸmak iÃ§in bizimle iletiÅŸime geÃ§in.",
+            "button": "Bize UlaÅŸÄ±n"
+        }
     },
-    "mission": {
-      "title": "Misyonumuz",
-      "paragraph1": "Misyonumuz, müşterileri kavramdan devreye almaya kadar yönlendirmek; her projenin titiz mühendislik, operasyonel görüş ve güçlü bir hizmet anlayışı kazanmasını sağlamak."
-      ,"paragraph2": "Elle çizilen ilk planlardan ve Rotring kalemlerden modern dijital tasarım araçlarına ve yapay zekaya kadar gelişmeye devam ederken, hassasiyete ve güvenilirliğe dayanan derin bir teknik kültürü koruyoruz."
-    },
-    "values": {
-      "title": "Değerlerimiz",
-      "subtitle": "Değerlerimiz attığımız her adımı yönlendirir.",
-      "card1": {
-        "title": "Mükemmellik",
-        "desc": "Her çalışmada, tasarımda ve inşaat aşamasında yüksek teknik standartları koruyor; güçlü, pratik ve geleceğe hazır çözümler arıyoruz."
-      },
-      "card2": {
-        "title": "Yenilik",
-        "desc": "Daha akıllı altyapılar ve mühendislik hizmetleri yaratmak için sürekli yeni yöntemler ve teknolojiler araştırıyoruz."
-      },
-      "card3": {
-        "title": "Sürdürülebilirlik",
-        "desc": "Uzun vadeli projeler için dayanıklılık, çevresel performans ve sosyal etkiler üzerine odaklanan sorumlu bir yaklaşım benimsiyoruz."
-      },
-      "card4": {
-        "title": "Ortaklık",
-        "desc": "Çalışmalarımız, müşteriler ve paydaşlarla sıkı işbirliği, dürüstlük ve şeffaflık üzerine kurulmuş insan odaklı bir serüvendir."
-      },
-      "card5": {
-        "title": "Sorumluluk",
-        "desc": "Altyapının sosyal ve çevresel boyutlarını sahipleniyor, güvenli, erişilebilir ve dirençli sonuçlar sunuyoruz."
-      },
-      "card6": {
-        "title": "Ekibimiz",
-        "desc": "Çok disiplinli ekiplerimiz, karmaşık ulaşım programlarını desteklemek için mühendislik, proje yönetimi ve operasyonel bilgi birikimini birleştirir."
-      }
-    },
-    "cta": {
-      "title": "Bizimle çalışmak ister misiniz?",
-      "text": "CEEB'in bir sonraki altyapı projenizi nasıl destekleyebileceğini konuşmak için bizimle iletişime geçin.",
-      "button": "Bize Ulaşın"
-    }
-  },
-
-  "services": {
-    "title": "Hizmetlerimiz",
-    "subtitle": "Şirketlere mühendislik, danışmanlık ve proje yönetimi alanlarında özel çözümler sunuyoruz.",
-
-    "suseng": {
-      "title": "Sürdürülebilir Mühendislik",
-      "desc": "İklim konularını ilk aşamalardan itibaren entegre eden dayanıklı ve çevre dostu altyapılar."
-    },
-
-    "infra": {
-      "title": "Altyapı",
-      "desc": "Demiryolu ve havalimanı altyapılarının tam tasarımı, inşası ve bakımı."
-    },
-
-    "mobi": {
-      "title": "Mobilite",
-      "desc": "İhtiyaç analizinden devreye almaya kadar entegre ve intermodal ulaşım çözümleri."
-    },
-
-    "inter": {
-      "title": "Uluslararası",
-      "desc": "5 kıtadaki varlığıyla uluslararası bağlamlara uyarlanmış uzmanlık."
-    },
-
-    "urban": {
-      "title": "Şehir Planlama",
-      "desc": "Ulaşımı sürdürülebilir bölgesel kalkınmanın merkezine koyan entegre şehir planlaması."
-    },
-
-    "stra": {
-      "title": "Stratejik Danışmanlık",
-      "desc": "Yatırımları optimize etmek ve getirileri en üst düzeye çıkarmak için stratejik destek."
-    }
-  },
-
-  "corevalues": {
-    "title": "Temel Değerlerimiz",
-
-    "subtitle": "Temel değerlerimiz, eylemlerimize rehberlik eder ve şirket kimliğimizi tanımlar. Tüm projelerimizde ve etkileşimlerimizde mükemmeliyet, inovasyon, iş birliği ve sosyal sorumluluğa olan bağlılığımızı yansıtır.",
-
-    "corevalues1": {
-      "title": "Teknik Mükemmellik",
-      "subtitle": "Ulaşımın tüm alanlarında tanınmış uzmanlık. Her projede titizlik ve kalite. Sürekli inovasyon ve gelişim.",
-      "desc": "Proje zorluklarını karşılamak için teknik liderlik, kalite odaklı teslimat ve sürekli inovasyon."
-    },
-
-    "corevalues2": {
-      "title": "İnovasyon & Sürdürülebilirlik",
-      "desc": "Çevresel konuların sistematik entegrasyonu. En son BIM ve dijital çözümler. Ekolojik dönüşüme bağlılık."
-    },
-
-    "corevalues3": {
-      "title": "Ortaklık & İş Birliği",
-      "desc": "Multidisipliner ve entegre yaklaşım. Tüm proje paydaşlarıyla yakın iş birliği. Bilgi ve uzmanlık paylaşımı."
-    },
-
-    "corevalues4": {
-      "title": "Sosyal Sorumluluk",
-      "desc": "Bölgelere ve topluluklara bağlılık. Güvenlik ve kalite standartlarına saygı. Yerel ekonomiye katkı."
-    }
-  },
-
-  "projects": {
-    "title": "Projeler",
-    "subtitle": "Amiral gemisi projelerimizden bir seçkiyi keşfedin.",
-
-    "project1": {
-      "title": "Tarihi bir binanın sürdürülebilir renovasyonu",
-      "desc": "Mimari mirasın yüksek enerji performanslı bir binaya dönüştürülmesi."
-    },
-
-    "project2": {
-      "title": "Yeni bir kentsel ulaşım hattının tasarımı",
-      "desc": "Kentsel mobiliteyi geliştirmek için modern ulaşım altyapısı."
-    },
-
-    "project3": {
-      "title": "Varlık yönetimi için dijital platform",
-      "desc": "Altyapı yönetimi için yenilikçi dijital çözüm."
-    }
-  },
-
-  "careers": {
-    "title": "Kariyer",
-    "subtitle": "Yarının dünyasını şekillendiren bir ekibe katılın.",
-    "content": "Ceeb’de yaratıcılığın ve girişimciliğin teşvik edildiği ilham verici bir çalışma ortamı sunuyoruz.",
-    "button": "Kariyer"
-  },
-
-  "contact": {
-    "title": "İletişim",
-    "subtitle": "Bir projeniz veya sorunuz mu var?",
-    "content": "Hedeflerinize ulaşmanıza nasıl yardımcı olabileceğimizi görüşmek için bizimle iletişime geçin.",
-
-    "form": {
-      "name": "Ad",
-      "email": "E-posta",
-      "message": "Mesaj",
-      "submit": "Gönder"
-    }
-  },
-
-  "footer": {
-    "description": "Sürdürülebilir bir gelecek için mühendislik, danışmanlık ve tasarımda lider.",
-
-    "servicesTitle": "Hizmetler",
-
     "services": {
-      "engineering": "Mühendislik",
-      "projectManagement": "Proje Yönetimi",
-      "audit": "Denetim & Danışmanlık",
-      "digital": "Dijital Çözümler"
+        "title": "Hizmetlerimiz",
+        "subtitle": "Åžirketlere mÃ¼hendislik, danÄ±ÅŸmanlÄ±k ve proje yÃ¶netimi alanlarÄ±nda Ã¶zel Ã§Ã¶zÃ¼mler sunuyoruz.",
+        "suseng": {
+            "title": "SÃ¼rdÃ¼rÃ¼lebilir MÃ¼hendislik",
+            "desc": "Ä°klim konularÄ±nÄ± ilk aÅŸamalardan itibaren entegre eden dayanÄ±klÄ± ve Ã§evre dostu altyapÄ±lar."
+        },
+        "infra": {
+            "title": "AltyapÄ±",
+            "desc": "Demiryolu ve havalimanÄ± altyapÄ±larÄ±nÄ±n tam tasarÄ±mÄ±, inÅŸasÄ± ve bakÄ±mÄ±."
+        },
+        "mobi": {
+            "title": "Mobilite",
+            "desc": "Ä°htiyaÃ§ analizinden devreye almaya kadar entegre ve intermodal ulaÅŸÄ±m Ã§Ã¶zÃ¼mleri."
+        },
+        "inter": {
+            "title": "UluslararasÄ±",
+            "desc": "5 kÄ±tadaki varlÄ±ÄŸÄ±yla uluslararasÄ± baÄŸlamlara uyarlanmÄ±ÅŸ uzmanlÄ±k."
+        },
+        "urban": {
+            "title": "Åžehir Planlama",
+            "desc": "UlaÅŸÄ±mÄ± sÃ¼rdÃ¼rÃ¼lebilir bÃ¶lgesel kalkÄ±nmanÄ±n merkezine koyan entegre ÅŸehir planlamasÄ±."
+        },
+        "stra": {
+            "title": "Stratejik DanÄ±ÅŸmanlÄ±k",
+            "desc": "YatÄ±rÄ±mlarÄ± optimize etmek ve getirileri en Ã¼st dÃ¼zeye Ã§Ä±karmak iÃ§in stratejik destek."
+        }
     },
-
-    "phone": "Telefon",
-    "rights": "Tüm hakları saklıdır."
-  }
+    "corevalues": {
+        "title": "Temel DeÄŸerlerimiz",
+        "subtitle": "Temel deÄŸerlerimiz, eylemlerimize rehberlik eder ve ÅŸirket kimliÄŸimizi tanÄ±mlar. TÃ¼m projelerimizde ve etkileÅŸimlerimizde mÃ¼kemmeliyet, inovasyon, iÅŸ birliÄŸi ve sosyal sorumluluÄŸa olan baÄŸlÄ±lÄ±ÄŸÄ±mÄ±zÄ± yansÄ±tÄ±r.",
+        "corevalues1": {
+            "title": "Teknik MÃ¼kemmellik",
+            "subtitle": "UlaÅŸÄ±mÄ±n tÃ¼m alanlarÄ±nda tanÄ±nmÄ±ÅŸ uzmanlÄ±k. Her projede titizlik ve kalite. SÃ¼rekli inovasyon ve geliÅŸim.",
+            "desc": "Proje zorluklarÄ±nÄ± karÅŸÄ±lamak iÃ§in teknik liderlik, kalite odaklÄ± teslimat ve sÃ¼rekli inovasyon."
+        },
+        "corevalues2": {
+            "title": "Ä°novasyon & SÃ¼rdÃ¼rÃ¼lebilirlik",
+            "desc": "Ã‡evresel konularÄ±n sistematik entegrasyonu. En son BIM ve dijital Ã§Ã¶zÃ¼mler. Ekolojik dÃ¶nÃ¼ÅŸÃ¼me baÄŸlÄ±lÄ±k."
+        },
+        "corevalues3": {
+            "title": "OrtaklÄ±k & Ä°ÅŸ BirliÄŸi",
+            "desc": "Multidisipliner ve entegre yaklaÅŸÄ±m. TÃ¼m proje paydaÅŸlarÄ±yla yakÄ±n iÅŸ birliÄŸi. Bilgi ve uzmanlÄ±k paylaÅŸÄ±mÄ±."
+        },
+        "corevalues4": {
+            "title": "Sosyal Sorumluluk",
+            "desc": "BÃ¶lgelere ve topluluklara baÄŸlÄ±lÄ±k. GÃ¼venlik ve kalite standartlarÄ±na saygÄ±. Yerel ekonomiye katkÄ±."
+        }
+    },
+    "projects": {
+        "title": "Projeler",
+        "subtitle": "Amiral gemisi projelerimizden bir seÃ§kiyi keÅŸfedin.",
+        "project1": {
+            "title": "Tarihi bir binanÄ±n sÃ¼rdÃ¼rÃ¼lebilir renovasyonu",
+            "desc": "Mimari mirasÄ±n yÃ¼ksek enerji performanslÄ± bir binaya dÃ¶nÃ¼ÅŸtÃ¼rÃ¼lmesi."
+        },
+        "project2": {
+            "title": "Yeni bir kentsel ulaÅŸÄ±m hattÄ±nÄ±n tasarÄ±mÄ±",
+            "desc": "Kentsel mobiliteyi geliÅŸtirmek iÃ§in modern ulaÅŸÄ±m altyapÄ±sÄ±."
+        },
+        "project3": {
+            "title": "VarlÄ±k yÃ¶netimi iÃ§in dijital platform",
+            "desc": "AltyapÄ± yÃ¶netimi iÃ§in yenilikÃ§i dijital Ã§Ã¶zÃ¼m."
+        }
+    },
+    "careers": {
+        "title": "Kariyer",
+        "subtitle": "YarÄ±nÄ±n dÃ¼nyasÄ±nÄ± ÅŸekillendiren bir ekibe katÄ±lÄ±n.",
+        "content": "Ceebâ€™de yaratÄ±cÄ±lÄ±ÄŸÄ±n ve giriÅŸimciliÄŸin teÅŸvik edildiÄŸi ilham verici bir Ã§alÄ±ÅŸma ortamÄ± sunuyoruz.",
+        "button": "Kariyer"
+    },
+    "contact": {
+        "pageTitle": "İletişim CEEB | Bureau d'Études Paris Val-de-Fontenay",
+        "hero": {
+            "title": "Paris'te CEEB ile iletişime geçin",
+            "subtitle": "Paris ofisimiz, bölgedeki ulaşım ve altyapı projelerini desteklemek için stratejik olarak konumlandırılmıştır."
+        },
+        "pageHeader": {
+            "title": "CEEB ile iletişim",
+            "locationBadge": "Paris - Val-de-Fontenay"
+        },
+        "strategic": {
+            "title": "Stratejik konum, sorunsuz erişim",
+            "lead": "Paris ofisimiz, metro polisi ağının kalbinde yer alıyor ve projenizin her aşamasında destek vermeye hazır.",
+            "proximity": {
+                "title": "Ana ulaşım merkezlerine bağlı",
+                "content": "RER, metro ve bölgesel trenlere birkaç dakika uzaklıktaki ofisimiz, Paris ve banliyölerinden kolay ulaşım sağlar."
+            },
+            "clients": {
+                "title": "Önemli müşterilere yakın",
+                "content": "Ulaşım otoritelerine, işletmecilere ve büyük altyapı müşterilerine hızlı iş birliği için yakın konumdadır."
+            },
+            "infrastructure": {
+                "title": "Altyapı ağına erişim",
+                "content": "Ana yol, demiryolu ve havaalanı bağlantılarına erişim, ekipler ve ortaklar için seyahatleri kolaylaştırır."
+            }
+        },
+        "details": {
+            "title": "İletişim bilgileri",
+            "address": {
+                "heading": "Adres",
+                "content": "1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois"
+            },
+            "phone": {
+                "heading": "Telefon",
+                "content": "+33 1 48 77 77 00"
+            },
+            "email": {
+                "heading": "E-posta",
+                "content": "stephane.moreau@ceeb.fr"
+            },
+            "hours": {
+                "heading": "Çalışma saatleri",
+                "content": "Pazartesi - Cuma, 09:00 - 18:00"
+            }
+        },
+        "form": {
+            "title": "Bize bir mesaj gönderin",
+            "name": "İsim",
+            "email": "E-posta",
+            "phone": "Telefon",
+            "company": "Firma",
+            "subject": "Konu",
+            "subjectOptions": {
+                "placeholder": "Bir konu seçin",
+                "project": "Proje talebi",
+                "partnership": "Ortaklık",
+                "recruitment": "İşe alım",
+                "information": "Bilgi",
+                "other": "Diğer"
+            },
+            "message": "Mesaj",
+            "submit": "Mesaj gönder"
+        },
+        "access": {
+            "title": "Bize nasıl ulaşılır",
+            "intro": "Ofislerimiz tren, metro, tramvay, otobüs ve yol ile iyi bir şekilde bağlantılıdır.",
+            "rer": {
+                "title": "RER",
+                "content": "Val-de-Fontenay istasyonuna RER A, ofise kısa bir yürüyüş mesafesindedir."
+            },
+            "metro": {
+                "title": "Metro",
+                "content": "1 numaralı metro hattı iş bölgesine doğrudan erişim sağlar."
+            },
+            "tram": {
+                "title": "Tramvay",
+                "content": "T1 tramvayı ofisin yakınında durur ve hızlı doğu-batı yolculuğu sağlar."
+            },
+            "bus": {
+                "title": "Otobüs",
+                "content": "Birden fazla otobüs hattı yakın istasyonu ve ana yolları hizmet vermektedir."
+            },
+            "car": {
+                "title": "Arabayla",
+                "content": "Kolay otoyol erişimi ve yakın park seçenekleri ziyaretleri basitleştirir."
+            },
+            "bike": {
+                "title": "Bisikletle",
+                "content": "Bisiklet yolları ve güvenli park yerleri aktif yolculukları destekler."
+            },
+            "future": {
+                "title": "Gelecek ağ",
+                "content": "Planlanan iyileştirmeler bağlantımızı daha da güçlendirecektir."
+            },
+            "airports": {
+                "title": "Havaalanları",
+                "content": "Paris havaalanlarına tren ve karayolu ile bir saatten kısa sürede ulaşılabilir."
+            }
+        },
+        "map": {
+            "title": "Konumumuz",
+            "address": "1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois, France"
+        },
+        "partners": {
+            "title": "Güvenilir ortaklar",
+            "subtitle": "Bölgede önde gelen ulaşım, altyapı ve kamu sektörü müşterileriyle iş birliği yapıyoruz."
+        }
+    },
+    "footer": {
+        "description": "SÃ¼rdÃ¼rÃ¼lebilir bir gelecek iÃ§in mÃ¼hendislik, danÄ±ÅŸmanlÄ±k ve tasarÄ±mda lider.",
+        "servicesTitle": "Hizmetler",
+        "services": {
+            "engineering": "MÃ¼hendislik",
+            "projectManagement": "Proje YÃ¶netimi",
+            "audit": "Denetim & DanÄ±ÅŸmanlÄ±k",
+            "digital": "Dijital Ã‡Ã¶zÃ¼mler"
+        },
+        "phone": "Telefon",
+        "rights": "TÃ¼m haklarÄ± saklÄ±dÄ±r."
+    }
 }

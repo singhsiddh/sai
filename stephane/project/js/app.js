@@ -291,7 +291,9 @@ function nextSlide() {
 
 /* AUTO PLAY */
 
-setInterval(nextSlide, carouselDelay);
+if (!document.querySelector('.carousel-controls')) {
+    setInterval(nextSlide, carouselDelay);
+}
 
 
    
