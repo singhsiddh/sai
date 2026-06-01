@@ -1,31 +1,40 @@
- 
-/* =========================
+/* =========================================
    GLOBAL LANGUAGE VARIABLE
-========================= */
+========================================= */
 
 let currentLanguage = "en";
 
-/* =========================
-   LANGUAGE PATH HELPERS
-========================= */
+/* =========================================
+   PATH HELPERS
+   Uses ABSOLUTE paths for better compatibility
+========================================= */
 
 function getLanguageFilePath(lang) {
-    const segments = window.location.pathname.split("/");
-    const depth = segments.length - 2;
-    const prefix = "../".repeat(Math.max(0, depth));
-    return `${prefix}lang/${lang}.json`;
+    return `/lang/${lang}.json`;
 }
 
-/* =========================
+function getCarouselImagePath(lang, imageNumber) {
+    return `/images/carousel/${lang}/${imageNumber}.png`;
+}
+
+function getDefaultCarouselImagePath(imageNumber) {
+    return `/images/carousel/${imageNumber}.png`;
+}
+
+/* =========================================
    LOAD LANGUAGE
-========================= */
+========================================= */
 
 async function loadLanguage(lang) {
 
     try {
 
-        const response =
-            await fetch(getLanguageFilePath(lang));
+        const response = await fetch(
+            getLanguageFilePath(lang),
+            {
+                cache: "no-cache"
+            }
+        );
 
         if (!response.ok) {
             throw new Error(
@@ -33,13 +42,12 @@ async function loadLanguage(lang) {
             );
         }
 
-        const translations =
-            await response.json();
+        const translations = await response.json();
 
         // SET HTML LANG
         document.documentElement.lang = lang;
 
-        // UPDATE TEXT CONTENT
+        // UPDATE TRANSLATIONS
         document.querySelectorAll("[data-i18n]")
         .forEach(element => {
 
@@ -52,7 +60,10 @@ async function loadLanguage(lang) {
 
             keys.forEach(k => {
 
-                if (value && value[k] !== undefined) {
+                if (
+                    value &&
+                    value[k] !== undefined
+                ) {
                     value = value[k];
                 } else {
                     value = null;
@@ -61,12 +72,17 @@ async function loadLanguage(lang) {
             });
 
             if (value !== null) {
+
                 if (typeof value === "string") {
+
                     value = value
                         .replace(/\\n/g, "<br>")
                         .replace(/\n/g, "<br>");
+
                 }
+
                 element.innerHTML = value;
+
             }
 
         });
@@ -74,15 +90,23 @@ async function loadLanguage(lang) {
         // UPDATE CAROUSEL IMAGES
         updateCarouselImages(lang);
 
-        // UPDATE CURRENT LANGUAGE
+        // SAVE CURRENT LANGUAGE
         currentLanguage = lang;
 
-        // SAVE LANGUAGE
-        localStorage.setItem("language", lang);
+        // SAVE TO LOCAL STORAGE
+        localStorage.setItem(
+            "language",
+            lang
+        );
 
         // UPDATE BUTTON LABEL
-        document.getElementById("langToggle")
-            .textContent = lang.toUpperCase();
+        const langToggle =
+            document.getElementById("langToggle");
+
+        if (langToggle) {
+            langToggle.textContent =
+                lang.toUpperCase();
+        }
 
     }
     catch(error) {
@@ -96,62 +120,81 @@ async function loadLanguage(lang) {
 
 }
 
-/* =========================
+/* =========================================
    UPDATE CAROUSEL IMAGES
-========================= */
+========================================= */
 
 function updateCarouselImages(lang) {
 
-    const slides = document.querySelectorAll(".carousel-slide");
+    const slides =
+        document.querySelectorAll(".carousel-slide");
 
     slides.forEach(slide => {
 
-        const currentBgImage = slide.style.backgroundImage;
+        const currentBgImage =
+            slide.style.backgroundImage;
 
-        if (!currentBgImage || !currentBgImage.includes("images/carousel/")) {
+        if (
+            !currentBgImage ||
+            !currentBgImage.includes("carousel")
+        ) {
             return;
         }
 
-        // Extract the image number from current path (01, 02, etc.)
-        const match = currentBgImage.match(/(\d{2})/);
+        // EXTRACT IMAGE NUMBER
+        const match =
+            currentBgImage.match(/(\d{2})\.png/);
 
-        if (match) {
-
-            const imageNumber = match[1];
-
-            const pathSegments = window.location.pathname.split("/").filter(Boolean);
-            const depth = Math.max(0, pathSegments.length - 1);
-            const relativePrefix = "../".repeat(depth);
-
-            // Try language-specific path first
-            const langSpecificImage = `${relativePrefix}images/carousel/${lang}/${imageNumber}.png`;
-
-            // Default image path
-            const defaultImage = `${relativePrefix}images/carousel/${imageNumber}.png`;
-
-            const tempImg = new Image();
-
-            tempImg.onload = () => {
-                slide.style.backgroundImage = `url('${langSpecificImage}')`;
-            };
-
-            tempImg.onerror = () => {
-                slide.style.backgroundImage = `url('${defaultImage}')`;
-            };
-
-            tempImg.src = langSpecificImage;
-
+        if (!match) {
+            return;
         }
+
+        const imageNumber = match[1];
+
+        const langSpecificImage =
+            getCarouselImagePath(
+                lang,
+                imageNumber
+            );
+
+        const defaultImage =
+            getDefaultCarouselImagePath(
+                imageNumber
+            );
+
+        const tempImg = new Image();
+
+        tempImg.onload = () => {
+
+            slide.style.backgroundImage =
+                `url('${langSpecificImage}')`;
+
+        };
+
+        tempImg.onerror = () => {
+
+            slide.style.backgroundImage =
+                `url('${defaultImage}')`;
+
+        };
+
+        tempImg.src = langSpecificImage;
 
     });
 
 }
 
-/* =========================
+/* =========================================
    PAGE READY
-========================= */
+========================================= */
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+    /* =========================================
+       SUPPORTED LANGUAGES
+    ========================================= */
 
     const supportedLanguages = [
         "en",
@@ -163,37 +206,57 @@ document.addEventListener("DOMContentLoaded", () => {
         "pl"
     ];
 
-    /* =========================
+    /* =========================================
        LANGUAGE SELECTOR
-    ========================= */
+    ========================================= */
 
     const langSelector =
-        document.getElementById("langSelector");
+        document.getElementById(
+            "langSelector"
+        );
 
     const langToggle =
-        document.getElementById("langToggle");
+        document.getElementById(
+            "langToggle"
+        );
 
-    // OPEN DROPDOWN
-    langToggle.addEventListener("click", () => {
+    // OPEN / CLOSE DROPDOWN
+    if (langToggle && langSelector) {
 
-        langSelector.classList.toggle("active");
+        langToggle.addEventListener(
+            "click",
+            (e) => {
 
-    });
+            e.stopPropagation();
 
-    // CLOSE DROPDOWN
-    document.addEventListener("click", (e) => {
+            langSelector.classList.toggle(
+                "active"
+            );
 
-        if (!langSelector.contains(e.target)) {
+        });
 
-            langSelector.classList.remove("active");
+        // CLOSE WHEN CLICKING OUTSIDE
+        document.addEventListener(
+            "click",
+            (e) => {
 
-        }
+            if (
+                !langSelector.contains(e.target)
+            ) {
 
-    });
+                langSelector.classList.remove(
+                    "active"
+                );
 
-    /* =========================
+            }
+
+        });
+
+    }
+
+    /* =========================================
        DEFAULT LANGUAGE
-    ========================= */
+    ========================================= */
 
     let savedLanguage =
         localStorage.getItem("language");
@@ -201,7 +264,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!savedLanguage) {
 
         const browserLanguage =
-            navigator.language.slice(0, 2);
+            navigator.language
+            .slice(0, 2)
+            .toLowerCase();
 
         if (
             supportedLanguages.includes(
@@ -209,7 +274,8 @@ document.addEventListener("DOMContentLoaded", () => {
             )
         ) {
 
-            savedLanguage = browserLanguage;
+            savedLanguage =
+                browserLanguage;
 
         }
         else {
@@ -223,140 +289,266 @@ document.addEventListener("DOMContentLoaded", () => {
     // INITIAL LOAD
     loadLanguage(savedLanguage);
 
-    /* =========================
+    /* =========================================
        LANGUAGE CLICK EVENTS
-    ========================= */
+    ========================================= */
 
     document.querySelectorAll("[data-lang]")
     .forEach(link => {
 
-        link.addEventListener("click", async function(e) {
+        link.addEventListener(
+            "click",
+            async function(e) {
 
             e.preventDefault();
 
             const selectedLanguage =
-                this.getAttribute("data-lang");
+                this.getAttribute(
+                    "data-lang"
+                );
 
-            await loadLanguage(selectedLanguage);
+            await loadLanguage(
+                selectedLanguage
+            );
 
-            langSelector.classList.remove("active");
+            if (langSelector) {
+
+                langSelector.classList.remove(
+                    "active"
+                );
+
+            }
 
         });
 
     });
+
+    /* =========================================
+       HERO CAROUSEL
+    ========================================= */
+
+    const slides =
+        document.querySelectorAll(
+            ".carousel-slide"
+        );
+
+    const prevButton =
+        document.querySelector(
+            ".carousel-prev"
+        );
+
+    const nextButton =
+        document.querySelector(
+            ".carousel-next"
+        );
+
+    const indicatorsContainer =
+        document.querySelector(
+            ".carousel-indicators"
+        );
+
+    let currentSlide = 0;
+
+    // CHANGE DELAY HERE
+    const carouselDelay = 5000;
+
+    function updateIndicators(index) {
+
+        if (!indicatorsContainer) {
+            return;
+        }
+
+        const indicators =
+            indicatorsContainer.querySelectorAll(
+                ".carousel-indicator"
+            );
+
+        indicators.forEach((dot, i) => {
+
+            dot.classList.toggle(
+                "active",
+                i === index
+            );
+
+        });
+
+    }
+
+    function createIndicators() {
+
+        if (
+            !indicatorsContainer ||
+            slides.length === 0
+        ) {
+            return;
+        }
+
+        if (
+            indicatorsContainer.children.length
+        ) {
+            return;
+        }
+
+        slides.forEach((_, i) => {
+
+            const indicator =
+                document.createElement(
+                    "button"
+                );
+
+            indicator.type = "button";
+
+            indicator.className =
+                "carousel-indicator";
+
+            indicator.addEventListener(
+                "click",
+                () => {
+
+                showSlide(i);
+
+            });
+
+            indicatorsContainer.appendChild(
+                indicator
+            );
+
+        });
+
+    }
+
+    function showSlide(index) {
+
+        if (slides.length === 0) {
+            return;
+        }
+
+        currentSlide = index;
+
+        if (currentSlide < 0) {
+            currentSlide =
+                slides.length - 1;
+        }
+
+        if (
+            currentSlide >= slides.length
+        ) {
+            currentSlide = 0;
+        }
+
+        slides.forEach((slide, i) => {
+
+            slide.classList.toggle(
+                "active",
+                i === currentSlide
+            );
+
+        });
+
+        updateIndicators(currentSlide);
+
+    }
+
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    if (slides.length > 0) {
+
+        createIndicators();
+
+        showSlide(currentSlide);
+
+        if (prevButton) {
+
+            prevButton.addEventListener(
+                "click",
+                prevSlide
+            );
+
+        }
+
+        if (nextButton) {
+
+            nextButton.addEventListener(
+                "click",
+                nextSlide
+            );
+
+        }
+
+        setInterval(
+            nextSlide,
+            carouselDelay
+        );
+
+    }
+
+    /* =========================================
+       EMAILJS CONTACT FORM
+    ========================================= */
+
+    const contactForm =
+        document.getElementById(
+            "contact-form"
+        );
+
+    if (
+        contactForm &&
+        typeof emailjs !== "undefined"
+    ) {
+
+        emailjs.init({
+            publicKey:
+                "8-8boZaUBzxk5e6Y7"
+        });
+
+        contactForm.addEventListener(
+            "submit",
+            function(event) {
+
+            event.preventDefault();
+
+            emailjs.sendForm(
+                "service_iwwjsjm",
+                "template_0pmpvt9",
+                this
+            )
+            .then(() => {
+
+                alert(
+                    "Email sent successfully!"
+                );
+
+                contactForm.reset();
+
+            })
+            .catch((error) => {
+
+                console.error(
+                    "FAILED...",
+                    error
+                );
+
+                alert(
+                    "Failed to send email."
+                );
+
+            });
+
+        });
+
+    }
+    else {
+
+        console.warn(
+            "EmailJS or contact form not found."
+        );
+
+    }
 
 });
-
-
-
-/* =========================
-   HERO CAROUSEL
-========================= */
-
-const slides = document.querySelectorAll(".carousel-slide");
-const prevButton = document.querySelector(".carousel-prev");
-const nextButton = document.querySelector(".carousel-next");
-const indicatorsContainer = document.querySelector(".carousel-indicators");
-
-let currentSlide = 0;
-
-/* CHANGE DELAY HERE */
-
-const carouselDelay = 5000;
-
-/*
-5000 = 5 seconds
-3000 = 3 seconds
-8000 = 8 seconds
-*/
-
-function updateIndicators(index) {
-    if (!indicatorsContainer) return;
-
-    const indicators = indicatorsContainer.querySelectorAll(".carousel-indicator");
-    indicators.forEach((dot, i) => {
-        dot.classList.toggle("active", i === index);
-    });
-}
-
-function createIndicators() {
-    if (!indicatorsContainer || slides.length === 0) return;
-    if (indicatorsContainer.children.length) return;
-
-    slides.forEach((_, i) => {
-        const indicator = document.createElement("button");
-        indicator.type = "button";
-        indicator.className = "carousel-indicator";
-        indicator.addEventListener("click", () => {
-            showSlide(i);
-        });
-        indicatorsContainer.appendChild(indicator);
-    });
-}
-
-function showSlide(index) {
-    if (slides.length === 0) return;
-
-    currentSlide = index;
-    if (currentSlide < 0) {
-        currentSlide = slides.length - 1;
-    }
-    if (currentSlide >= slides.length) {
-        currentSlide = 0;
-    }
-
-    slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === currentSlide);
-    });
-
-    updateIndicators(currentSlide);
-}
-
-function prevSlide() {
-    showSlide(currentSlide - 1);
-}
-
-function nextSlide() {
-    showSlide(currentSlide + 1);
-}
-
-if (slides.length > 0) {
-    createIndicators();
-    showSlide(currentSlide);
-
-    if (prevButton) {
-        prevButton.addEventListener("click", prevSlide);
-    }
-
-    if (nextButton) {
-        nextButton.addEventListener("click", nextSlide);
-    }
-
-    setInterval(nextSlide, carouselDelay);
-}
-
-
-const contactForm = document.getElementById("contact-form");
-
-if (contactForm && window.emailjs) {
-  emailjs.init({
-    publicKey: "8-8boZaUBzxk5e6Y7",
-  });
-
-  contactForm.addEventListener("submit", function (event) {
-
-    event.preventDefault();
-
-    emailjs.sendForm(
-      "service_iwwjsjm",
-      "template_0pmpvt9",
-      this
-    )
-    .then(() => {
-      alert("Email sent successfully!");
-    })
-    .catch((error) => {
-      console.log("FAILED...", error);
-    });
-  });
-}
