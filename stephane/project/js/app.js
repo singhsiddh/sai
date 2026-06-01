@@ -6,19 +6,44 @@ let currentLanguage = "en";
 
 /* =========================================
    PATH HELPERS
-   Uses ABSOLUTE paths for better compatibility
+   Uses a script-based base path for compatibility
 ========================================= */
 
+const appBasePath = (() => {
+    let script = document.currentScript;
+
+    if (!script) {
+        const scripts = document.getElementsByTagName("script");
+        script = scripts[scripts.length - 1];
+    }
+
+    if (!script || !script.src) {
+        return "./";
+    }
+
+    try {
+        const scriptUrl = new URL(script.src, window.location.href);
+        return scriptUrl.href.replace(/\/js\/app\.js$/, "/");
+    }
+    catch (error) {
+        return "./";
+    }
+})();
+
+function getAppBasePath() {
+    return appBasePath;
+}
+
 function getLanguageFilePath(lang) {
-    return `/lang/${lang}.json`;
+    return `${getAppBasePath()}lang/${lang}.json`;
 }
 
 function getCarouselImagePath(lang, imageNumber) {
-    return `/images/carousel/${lang}/${imageNumber}.png`;
+    return `${getAppBasePath()}images/carousel/${lang}/${imageNumber}.png`;
 }
 
 function getDefaultCarouselImagePath(imageNumber) {
-    return `/images/carousel/${imageNumber}.png`;
+    return `${getAppBasePath()}images/carousel/${imageNumber}.png`;
 }
 
 /* =========================================
