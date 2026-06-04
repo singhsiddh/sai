@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.ceeb.fr/sid/sitemap.xml
+
+# Désactiver l'indexation des fichiers de langue JSON
+Disallow: /lang/
+
+# Désactiver l'indexation des assets JS/CSS
+Disallow: /js/
+Disallow: /css/

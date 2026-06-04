@@ -1,0 +1,847 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "expertise": "Expertises",
+    "careers": "Recrutement",
+    "contact": "Contact",
+    "logoTagline": "Concept Européen Équipement Bâtiment<br>Bureau d'Études d'ingénierie Second Œuvre",
+    "recruitment": "Carrières"
+  },
+  "hero": {
+    "ceeb": {
+      "title": "CEEB : L'Ingénierie des Infrastructures Durables",
+      "description": "Bureau d'études spécialisé en conception et pilotage de projets complexes dans les transports et la mobilité."
+    },
+    "slide2": {
+      "title": "Expertise Aéroportuaire",
+      "description": "Balisage, bagages, systèmes de sécurité pour ADP et les aéroports internationaux.",
+      "badge": "Aérien"
+    },
+    "slide3": {
+      "title": "Innovation BIM & Jumeaux Numériques",
+      "description": "Modélisation 3D/4D et jumeaux numériques pour optimiser vos projets d'infrastructure.",
+      "badge": "BIM & Innovation"
+    },
+    "slide4": {
+      "title": "Ingénierie Électrique Complète",
+      "description": "Courants forts, courants faibles, GTB, SSI et VDI pour tous types de bâtiments.",
+      "badge": "Électricité"
+    },
+    "slide5": {
+      "title": "Audit & Conseil Technique",
+      "description": "Diagnostics techniques, aide à la décision et accompagnement stratégique.",
+      "badge": "Audit & Conseil"
+    },
+    "slide6": {
+      "title": "Maîtrise d'Œuvre & d'Ouvrage",
+      "description": "Pilotage de projet de l'esquisse à la réception, en MOE et en AMO.",
+      "badge": "MOE / MOA"
+    },
+    "slide7": {
+      "title": "Contrôle Qualité & Sûreté",
+      "description": "Inspection, conformité et sécurité pour garantir l'excellence de vos installations.",
+      "badge": "Qualité & Sûreté"
+    },
+    "slide8": {
+      "title": "Diagnostic & Relevés Techniques",
+      "description": "Relevés 2D/3D et diagnostics précis pour une ingénierie fiable et documentée.",
+      "badge": "Diagnostic"
+    },
+    "slide9": {
+      "title": "Projets Internationaux",
+      "description": "MOE et AMO pour des projets d'infrastructure en France et à l'international.",
+      "badge": "Export International"
+    },
+    "slide10": {
+      "title": "Infrastructures Durables",
+      "description": "Bureau d'études pour des infrastructures de transport durables et performantes.",
+      "badge": "Infrastructures"
+    },
+    "slide11": {
+      "title": "Systèmes Intelligents & GTB",
+      "description": "Connectivité, sécurité et gestion technique des bâtiments intelligents.",
+      "badge": "Smart Building"
+    },
+    "slide12": {
+      "title": "Ingénierie Tertiaire",
+      "description": "Bâtiments fonctionnels et performants pour le secteur tertiaire et institutionnel.",
+      "badge": "Tertiaire"
+    },
+    "blue": {
+      "line1": "De la maîtrise d'ouvrage à la maîtrise d'œuvre, jusqu'à l'ingénierie de projet.",
+      "line2": "Imaginez, Créez, Réalisez le Futur des Transports.",
+      "paragraph": "Partenaire de confiance pour la conception, la construction et l'exploitation d'infrastructures de transport durables et innovantes en France et à l'international. Depuis plus de 35 ans, CEEB accompagne les maîtres d'ouvrage publics et privés dans la transformation de leurs territoires. Nous combinons expertise technique, innovation et engagement pour la durabilité afin de livrer des projets ferroviaires et aéroportuaires de classe mondiale."
+    },
+    "slide1": {
+      "badge": "Ferroviaire",
+      "title": "Ingénierie Ferroviaire d'Excellence",
+      "description": "Solutions durables pour RATP, SNCF et les grands réseaux de transport urbain."
+    }
+  },
+  "about": {
+    "title": "Notre expertise multidisciplinaire",
+    "content1": "CEEB : une ingénierie durable au service du monde",
+    "content2": "CEEB s'est imposée comme un acteur clé de l'ingénierie durable et des infrastructures à l'échelle internationale. De la mobilité ferroviaire et aéroportuaire aux projets urbains, nous accompagnons nos clients et partenaires à chaque étape de leurs projets, en alliant expertise technique et vision stratégique.",
+    "content3": "Des solutions sur mesure, de l'audit à l'exploitation",
+    "content4": "Nos équipes multidisciplinaires proposent des prestations allant de l'audit et du conseil à la gestion de projet et au support opérationnel. Grâce à une approche globale, nous fournissons des solutions fiables et innovantes, parfaitement adaptées aux enjeux spécifiques de chaque projet.",
+    "content5": "Innovation et performance pour chaque projet",
+    "content6": "De la conception stratégique à la mise en service, CEEB s'appuie sur son savoir-faire en études techniques, BIM, télécommunications, conseil et audit. Chaque projet est l'occasion de transformer des défis complexes en solutions concrètes et durables."
+  },
+  "services": {
+    "title": "Expertise Multisectorielle",
+    "subtitle": "CEEB intervient sur l'ensemble des phases de vos projets d'ingénierie, du diagnostic initial à la réception des travaux.",
+    "suseng": {
+      "title": "Ingénierie durable",
+      "desc": "Infrastructures résilientes et écologiques, intégrant les enjeux climatiques dès les phases amont."
+    },
+    "infra": {
+      "title": "Infrastructures",
+      "desc": "Conception complète, construction et maintenance des infrastructures ferroviaires et aéroportuaires."
+    },
+    "mobi": {
+      "title": "Mobilité",
+      "desc": "Solutions de transport intégrées et intermodales, de l'analyse des besoins à la mise en service."
+    },
+    "inter": {
+      "title": "International",
+      "desc": "Expertise adaptée aux contextes internationaux avec une présence sur 5 continents."
+    },
+    "urban": {
+      "title": "Urbanisme",
+      "desc": "Planification urbaine intégrée plaçant le transport au cœur du développement territorial durable."
+    },
+    "stra": {
+      "title": "Conseil stratégique",
+      "desc": "Accompagnement stratégique pour optimiser les investissements et maximiser les rendements."
+    },
+    "badge": "Nos Domaines",
+    "card1": {
+      "title": "Ingénierie Ferroviaire",
+      "desc": "Systèmes de signalisation, télécommunications GSM-R, caténaires et infrastructures pour RATP, SNCF et réseaux urbains."
+    },
+    "card2": {
+      "title": "Ingénierie Aéroportuaire",
+      "desc": "Balisage lumineux, systèmes bagages, sécurité incendie et électricité pour ADP et aéroports régionaux."
+    },
+    "card3": {
+      "title": "MOE / MOA",
+      "desc": "Maîtrise d'œuvre et assistance à maîtrise d'ouvrage de l'esquisse à la réception, tous corps d'état."
+    },
+    "card4": {
+      "title": "BIM & Modélisation 3D",
+      "desc": "Maquettes numériques BIM, jumeaux digitaux et coordination multi-disciplines pour vos projets complexes."
+    },
+    "card5": {
+      "title": "Audit & Diagnostic",
+      "desc": "Diagnostics techniques, audits de conformité et relevés 2D/3D pour une aide à la décision fiable."
+    },
+    "card6": {
+      "title": "Projets Internationaux",
+      "desc": "Ingénierie export en Europe, Afrique et Moyen-Orient. Expertise reconnue sur les marchés internationaux."
+    }
+  },
+  "corevalues": {
+    "title": "Nos Valeurs Fondamentales",
+    "subtitle": "Nos valeurs fondamentales guident nos actions et définissent notre identité d'entreprise.",
+    "corevalues1": {
+      "title": "Excellence technique",
+      "desc": "Leadership technique, qualité d'exécution et innovation continue pour relever les défis de chaque projet."
+    },
+    "corevalues2": {
+      "title": "Innovation & Durabilité",
+      "desc": "Intégration systématique des enjeux environnementaux. Solutions BIM et numériques de pointe. Engagement pour la transition écologique."
+    },
+    "corevalues3": {
+      "title": "Partenariat & Collaboration",
+      "desc": "Approche multidisciplinaire et intégrée. Collaboration étroite avec toutes les parties prenantes du projet."
+    },
+    "corevalues4": {
+      "title": "Responsabilité sociale",
+      "desc": "Engagement envers les territoires et les communautés. Respect des normes de sécurité et de qualité."
+    }
+  },
+  "stats": {
+    "projectCount": "100+",
+    "projectLabel": "Projets réalisés",
+    "clientsCount": "50+",
+    "clientsLabel": "Clients satisfaits",
+    "continentsCount": "3",
+    "continentsLabel": "Continents couverts",
+    "portfolioCount": "500 M€+",
+    "portfolioLabel": "Projets gérés",
+    "years": "Années d'expertise",
+    "projects": "Projets réalisés",
+    "countries": "Pays d'intervention",
+    "experts": "Experts & Ingénieurs"
+  },
+  "footer": {
+    "description": "Leader en ingénierie, conseil et conception pour un avenir durable.",
+    "servicesTitle": "Services",
+    "services": {
+      "engineering": "Ingénierie",
+      "projectManagement": "Gestion de projet",
+      "audit": "Audit & Conseil",
+      "digital": "Solutions numériques"
+    },
+    "phone": "Téléphone",
+    "rights": "Tous droits réservés.",
+    "tagline": "Concept Européen Équipement Bâtiment — Bureau d'études d'ingénierie Second Œuvre spécialisé dans les projets ferroviaires et aéroportuaires depuis 1994.",
+    "navTitle": "Navigation",
+    "expertiseTitle": "Expertises",
+    "contactTitle": "Contact",
+    "address": "Val de Fontenay, Fontenay-sous-Bois, France",
+    "exp1": "Ingénierie Ferroviaire",
+    "exp2": "Ingénierie Aéroportuaire",
+    "exp3": "BIM & Modélisation",
+    "exp4": "Audit & Diagnostic",
+    "exp5": "MOE / MOA",
+    "copyright": "© 2026 CEEB — Concept Européen Équipement Bâtiment. Tous droits réservés.",
+    "legal": "Mentions légales | Politique de confidentialité"
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "35 ans d'Excellence en Ingénierie",
+      "description": "Fondée en 1989, CEEB est un partenaire de confiance dans les grands projets d'infrastructure français.",
+      "badge": "À Propos",
+      "subtitle": "Fondée en 1989, CEEB est un partenaire de confiance dans les grands projets d'infrastructure français et internationaux.",
+      "badge2": "Notre Mission",
+      "title2": "Une Vision Globale de l'Ingénierie",
+      "subtitle2": "De la conception à la mise en service, nous accompagnons chaque étape de vos projets.",
+      "badge3": "Notre Équipe",
+      "title3": "Des Experts Passionnés",
+      "subtitle3": "Plus de 40 ingénieurs et experts au service de vos projets d'infrastructure."
+    },
+    "pageHeader": {
+      "title": "À propos de CEEB",
+      "text": "Depuis 1989, CEEB accompagne les projets de transport avec des services multidisciplinaires d'ingénierie, de conseil et de gestion de projet."
+    },
+    "history": {
+      "title": "35 Ans d'Expertise",
+      "paragraph1": "Fondée le 1er mars 1989 par Gérard SEBAG, CEEB | Concept Européen Équipement Bâtiment est née comme un bureau d'études ingénierie spécialisé. Dès ses débuts, la société s'est concentrée sur des études techniques de haute qualité et des solutions pratiques pour les infrastructures et les transports.",
+      "paragraph2": "En plus de 35 ans, CEEB est devenue une société multidisciplinaire avec des compétences éprouvées en mobilité, urbanisme, ingénierie des systèmes et grands travaux publics. Notre histoire est marquée par l'engagement envers nos clients et par des projets qui renforcent les territoires et améliorent la vie quotidienne.",
+      "badge": "Notre Histoire",
+      "event1": {
+        "year": "1989",
+        "title": "Fondation de CEEB",
+        "desc": "Gérard SEBAG fonde CEEB à Fontenay-sous-Bois. Premiers projets d'ingénierie ferroviaire pour la RATP."
+      },
+      "event2": {
+        "year": "1995",
+        "title": "Expansion Aéroportuaire",
+        "desc": "CEEB développe son expertise aéroportuaire avec les premiers contrats pour Aéroports de Paris (ADP)."
+      },
+      "event3": {
+        "year": "2000",
+        "title": "Certification ISO",
+        "desc": "Obtention de la certification ISO 9001. Renforcement des processus qualité et des méthodes de travail."
+      },
+      "event4": {
+        "year": "2008",
+        "title": "Développement International",
+        "desc": "Premiers projets à l'international en Afrique et au Moyen-Orient. Ouverture vers de nouveaux marchés."
+      },
+      "event5": {
+        "year": "2015",
+        "title": "Transition BIM",
+        "desc": "Adoption complète des outils BIM et modélisation 3D. CEEB devient un acteur de référence en ingénierie numérique."
+      },
+      "event6": {
+        "year": "2024",
+        "title": "Grand Paris Express",
+        "desc": "Contribution majeure aux projets du Grand Paris Express. 35 ans d'expertise au service des infrastructures de demain."
+      }
+    },
+    "mission": {
+      "title": "Accompagner Chaque Projet",
+      "paragraph1": "Notre mission est d'accompagner nos clients du concept à la mise en service, en veillant à ce que chaque projet bénéficie d'une ingénierie rigoureuse, d'un savoir-faire opérationnel et d'une forte culture du service.",
+      "paragraph2": "Des premiers projets dessinés à la main avec des stylos Rotring aux outils numériques modernes et à l'IA, nous continuons d'évoluer tout en maintenant une profonde culture technique fondée sur la précision et la fiabilité.",
+      "badge": "Notre Mission",
+      "text1": "Notre mission est d'accompagner nos clients du concept à la mise en service, en veillant à ce que chaque projet bénéficie d'une ingénierie rigoureuse, d'un savoir-faire opérationnel et d'une forte culture du service.",
+      "text2": "Des premiers projets dessinés à la main avec des stylos Rotring aux outils numériques modernes et à l'IA, nous continuons d'évoluer tout en maintenant une profonde culture technique fondée sur la précision et la fiabilité."
+    },
+    "values": {
+      "title": "Ce Qui Nous Guide",
+      "subtitle": "Nos valeurs guident chaque étape de notre travail.",
+      "card1": {
+        "title": "Excellence",
+        "desc": "Nous maintenons des standards techniques élevés dans chaque étude, projet et phase de construction."
+      },
+      "card2": {
+        "title": "Innovation",
+        "desc": "Nous explorons continuellement de nouvelles méthodes et technologies pour offrir des infrastructures plus intelligentes."
+      },
+      "card3": {
+        "title": "Durabilité",
+        "desc": "Nous adoptons une approche responsable axée sur la durabilité, la performance environnementale et l'impact social."
+      },
+      "card4": {
+        "title": "Collaboration",
+        "desc": "Notre travail est une aventure humaine fondée sur l'intégrité, la transparence et la collaboration étroite avec les clients."
+      },
+      "card5": {
+        "title": "Responsabilité",
+        "desc": "Nous prenons en compte les dimensions sociales et environnementales de l'infrastructure."
+      },
+      "card6": {
+        "title": "Notre Équipe",
+        "desc": "Nos experts multidisciplinaires allient ingénierie, gestion de projet et savoir-faire opérationnel."
+      },
+      "badge": "Nos Valeurs"
+    },
+    "cta": {
+      "title": "Vous souhaitez collaborer avec nous ?",
+      "text": "Contactez-nous pour discuter de vos projets et de la manière dont CEEB peut soutenir votre prochain projet d'infrastructure.",
+      "button": "Nous contacter"
+    },
+    "who": {
+      "badge": "Qui Sommes-Nous",
+      "title": "CEEB : L'Ingénierie au Service des Infrastructures",
+      "text1": "Fondée le 1er mars 1989 par Gérard SEBAG, CEEB — Concept Européen Équipement Bâtiment est un bureau d'études d'ingénierie Second Œuvre spécialisé dans les projets ferroviaires et aéroportuaires.",
+      "text2": "En plus de 35 ans, CEEB est devenue une société multidisciplinaire avec des compétences éprouvées en mobilité, urbanisme, ingénierie des systèmes et grands travaux publics.",
+      "text3": "Notre histoire est marquée par l'engagement envers nos clients et par des projets qui renforcent les territoires et améliorent la vie quotidienne."
+    }
+  },
+  "expertisePage": {
+    "hero": {
+      "title": "35 Ans d'Expertise Technique",
+      "description": "Plus de 35 ans d'expertise en ingénierie ferroviaire, aéroportuaire et d'infrastructure.",
+      "badge": "Nos Expertises",
+      "subtitle": "Des solutions d'ingénierie complètes pour les infrastructures ferroviaires et aéroportuaires.",
+      "badge2": "Ferroviaire",
+      "title2": "Ingénierie Ferroviaire",
+      "subtitle2": "RATP, SNCF, Grand Paris Express — conception et maîtrise d'œuvre.",
+      "badge3": "Aéroportuaire",
+      "title3": "Ingénierie Aéroportuaire",
+      "subtitle3": "ADP, aéroports régionaux — systèmes électriques et télécommunications."
+    },
+    "pageHeader": {
+      "title": "Notre Expertise Technique",
+      "text": "Des solutions d'ingénierie complètes pour les infrastructures ferroviaires et aéroportuaires, de la conception à la mise en service."
+    },
+    "domains": {
+      "title": "Domaines d'expertise",
+      "moa": {
+        "title": "Maîtrise d'Ouvrage (MOA)",
+        "desc": "Assistance à maîtrise d'ouvrage, pilotage de projets complexes, coordination des parties prenantes.",
+        "items": [
+          "Assistance MOA",
+          "Pilotage de projet",
+          "Coordination multi-acteurs",
+          "Reporting et suivi"
+        ]
+      },
+      "moe": {
+        "title": "Maîtrise d'Œuvre (MOE)",
+        "desc": "Direction de l'exécution des travaux, supervision technique, contrôle qualité et réception des ouvrages.",
+        "items": [
+          "Direction des travaux",
+          "Supervision technique",
+          "Contrôle qualité",
+          "Réception des ouvrages"
+        ]
+      },
+      "elec": {
+        "title": "Ingénierie Électrique",
+        "desc": "Études HT/BT/VDI, alimentation des infrastructures ferroviaires et aéroportuaires.",
+        "items": [
+          "Haute Tension (HT)",
+          "Basse Tension (BT)",
+          "VDI & réseaux",
+          "Éclairage & sécurité"
+        ]
+      },
+      "telecom": {
+        "title": "Télécommunications",
+        "desc": "Ingénierie des systèmes de communication pour les réseaux de transport : radio, fibre optique, réseaux IP et systèmes d'information voyageurs.",
+        "items": [
+          "GSM-R / TETRA",
+          "Signalisation ferroviaire",
+          "Information voyageurs",
+          "Vidéosurveillance"
+        ],
+        "item1": "Réseaux radio TETRA / GSM-R",
+        "item2": "Infrastructures fibre optique",
+        "item3": "Systèmes d'information voyageurs (SIV)",
+        "item4": "Réseaux IP et LAN/WAN"
+      },
+      "bim": {
+        "title": "BIM & Numérique",
+        "desc": "Modélisation BIM des installations électriques et télécom, coordination numérique et gestion des maquettes pour une meilleure collaboration entre les intervenants.",
+        "items": [
+          "Modélisation BIM",
+          "Maquette numérique",
+          "Coordination 3D",
+          "Gestion des données"
+        ],
+        "item1": "Modélisation Revit MEP",
+        "item2": "Coordination BIM et détection de conflits",
+        "item3": "Maquette numérique (BIM niveau 2/3)",
+        "item4": "Plans d'exécution AutoCAD"
+      },
+      "audit": {
+        "title": "Audit & Conseil",
+        "desc": "Audits techniques, diagnostics d'infrastructure, études de faisabilité et conseil stratégique.",
+        "items": [
+          "Audits techniques",
+          "Diagnostics",
+          "Études de faisabilité",
+          "Conseil stratégique"
+        ]
+      },
+      "subtitle": "CEEB intervient sur l'ensemble du cycle de vie des projets d'infrastructure de transport.",
+      "railway": {
+        "title": "Ingénierie Ferroviaire",
+        "desc": "Études de conception, maîtrise d'œuvre et assistance à maîtrise d'ouvrage pour les projets de métro, tramway, RER et lignes grandes vitesses.",
+        "item1": "Études électriques courant fort (HTA/HTB/BT)",
+        "item2": "Systèmes de signalisation et sécurité",
+        "item3": "Alimentation en énergie de traction",
+        "item4": "Systèmes de télécommunications ferroviaires"
+      },
+      "airport": {
+        "title": "Ingénierie Aéroportuaire",
+        "desc": "Expertise complète pour les aéroports et plateformes aéronautiques : terminaux, pistes, systèmes de navigation et infrastructures techniques.",
+        "item1": "Systèmes électriques aéroportuaires",
+        "item2": "Télécommunications et systèmes de sûreté",
+        "item3": "Gestion technique des bâtiments (GTB)",
+        "item4": "Systèmes de guidage et balisage"
+      },
+      "electric": {
+        "title": "Électricité Courant Fort",
+        "desc": "Études et maîtrise d'œuvre des installations électriques haute et basse tension pour tous types d'ouvrages de transport.",
+        "item1": "Postes de transformation HTA/BT",
+        "item2": "Tableaux généraux basse tension (TGBT)",
+        "item3": "Éclairage public et voies",
+        "item4": "Groupes électrogènes et onduleurs"
+      },
+      "lowvoltage": {
+        "title": "Courant Faible & Sûreté",
+        "desc": "Conception et suivi des systèmes de sécurité incendie, contrôle d'accès, vidéosurveillance et détection intrusion.",
+        "item1": "Systèmes de sécurité incendie (SSI/SSA)",
+        "item2": "Contrôle d'accès et interphonie",
+        "item3": "Vidéosurveillance (CCTV/VSST)",
+        "item4": "Détection intrusion et périmétrique"
+      }
+    },
+    "sectors": {
+      "title": "Secteurs d'Intervention",
+      "railway": {
+        "title": "Ferroviaire",
+        "desc": "SNCF, RATP, Grand Paris Express — conception, rénovation et mise en service d'infrastructures ferroviaires."
+      },
+      "airport": {
+        "title": "Aéroportuaire",
+        "desc": "ADP, aéroports régionaux — systèmes électriques, télécommunications et sûreté aéroportuaire."
+      },
+      "urban": {
+        "title": "Urbain & Bâtiment",
+        "desc": "Collectivités, promoteurs — ingénierie des bâtiments techniques, smart building et développement durable."
+      },
+      "international": {
+        "title": "International",
+        "desc": "Projets en Afrique, Moyen-Orient, Europe — transfert de compétences et ingénierie locale."
+      }
+    },
+    "cta": {
+      "title": "Un projet d'ingénierie ?",
+      "text": "Notre équipe est disponible pour étudier vos besoins et vous proposer une solution adaptée.",
+      "button": "Nous contacter"
+    },
+    "approach": {
+      "title": "Notre approche MOA / MOE",
+      "paragraph1": "CEEB intervient aussi bien en qualité de maître d'ouvrage délégué (MOA) qu'en maître d'œuvre (MOE), offrant une vision globale et intégrée des projets d'infrastructure.",
+      "paragraph2": "Notre équipe pluridisciplinaire regroupe des ingénieurs spécialisés en génie électrique, télécommunications, génie civil et gestion de projet, capables d'intervenir à toutes les phases."
+    },
+    "references": {
+      "title": "Références de projets",
+      "subtitle": "Quelques projets emblématiques réalisés par CEEB en France et à l'international."
+    },
+    "card1": {
+      "icon": "🚆",
+      "title": "Ingénierie Ferroviaire",
+      "desc": "Études de conception, maîtrise d'œuvre et assistance à maîtrise d'ouvrage pour les projets de métro, tramway, RER et lignes à grande vitesse. Systèmes de signalisation, alimentation en énergie de traction et télécommunications ferroviaires."
+    },
+    "card2": {
+      "icon": "✈️",
+      "title": "Ingénierie Aéroportuaire",
+      "desc": "Expertise complète pour les aéroports et plateformes aéronautiques : terminaux, pistes, systèmes de navigation et infrastructures techniques. Balisage lumineux, systèmes bagages et sécurité incendie."
+    },
+    "card3": {
+      "icon": "⚡",
+      "title": "Électricité Courant Fort",
+      "desc": "Études et maîtrise d'œuvre des installations électriques haute et basse tension. Postes de transformation HTA/BT, tableaux généraux basse tension (TGBT), éclairage et groupes électrogènes."
+    },
+    "card4": {
+      "icon": "📡",
+      "title": "Courant Faible & Sûreté",
+      "desc": "Conception et suivi des systèmes de sécurité incendie, contrôle d'accès, vidéosurveillance et détection intrusion. SSI/SSA, CCTV, interphonie et périmétrique."
+    },
+    "card5": {
+      "icon": "📐",
+      "title": "BIM & Modélisation Numérique",
+      "desc": "Modélisation BIM des installations électriques et télécom, coordination numérique et gestion des maquettes. Revit MEP, AutoCAD, coordination 3D et détection de conflits."
+    },
+    "card6": {
+      "icon": "🔍",
+      "title": "Audit & Conseil",
+      "desc": "Audits techniques, diagnostics d'infrastructure, études de faisabilité et conseil stratégique. Accompagnement de la phase amont jusqu'à la réception des ouvrages."
+    },
+    "projects": {
+      "badge": "Références",
+      "title": "Projets de Référence",
+      "subtitle": "Quelques projets emblématiques réalisés par CEEB en France et à l'international."
+    },
+    "project1": {
+      "title": "Grand Paris Express — Ligne 15",
+      "desc": "Études électriques et télécommunications pour les nouvelles gares du Grand Paris Express. Coordination BIM et maîtrise d'œuvre."
+    },
+    "project2": {
+      "title": "Aéroport Charles de Gaulle — Terminal 2",
+      "desc": "Rénovation des systèmes électriques et de sécurité incendie du terminal 2. Balisage et systèmes bagages."
+    },
+    "project3": {
+      "title": "RATP — Rénovation Ligne 13",
+      "desc": "Modernisation des systèmes de signalisation et télécommunications de la ligne 13 du métro parisien."
+    },
+    "project4": {
+      "title": "SNCF — LGV Sud-Est",
+      "desc": "Études d'ingénierie électrique et télécommunications pour la maintenance et la modernisation de la LGV."
+    },
+    "project5": {
+      "title": "Aéroport d'Alger — Houari Boumediene",
+      "desc": "Maîtrise d'œuvre pour la modernisation des systèmes électriques et de sécurité de l'aéroport international."
+    }
+  },
+  "recruitmentPage": {
+    "hero": {
+      "title": "Construisez Votre Carrière chez CEEB",
+      "description": "Construisez votre carrière dans l'ingénierie des transports. Rejoignez une équipe passionnée qui façonne les infrastructures de demain.",
+      "badge": "Rejoignez-Nous",
+      "subtitle": "Rejoignez une équipe passionnée qui façonne les infrastructures de transport de demain.",
+      "badge2": "Nos Valeurs RH",
+      "title2": "Un Environnement de Travail Stimulant",
+      "subtitle2": "Formation continue, projets d'envergure et dimension internationale."
+    },
+    "pageHeader": {
+      "title": "Rejoignez CEEB",
+      "text": "Construisez votre carrière dans l'ingénierie des infrastructures de transport avec une équipe passionnée et expérimentée."
+    },
+    "badge": "⭐ Partenaire recrutement et bureau d'études pour <strong>RATP</strong> et <strong>ADP</strong> depuis plus de <strong>30 ans</strong> dans les secteurs ferroviaire et aéroportuaire",
+    "intro": {
+      "badge": "Nos Offres",
+      "title": "Rejoignez l'Équipe CEEB",
+      "text": "Nous recherchons des talents passionnés pour rejoindre notre équipe dans les secteurs ferroviaire et aéronautique. Découvrez nos offres d'emploi et postulez dès maintenant."
+    },
+    "search": {
+      "placeholder": "Rechercher par titre, lieu ou compétence...",
+      "categoryLabel": "Catégorie",
+      "categoryAll": "Toutes les catégories",
+      "categoryEngineering": "Ingénierie",
+      "categoryManagement": "Management",
+      "categoryDesign": "Dessin & CAO",
+      "categoryTelecom": "Télécommunications",
+      "sectorLabel": "Secteur",
+      "sectorAll": "Tous les secteurs",
+      "sectorRailway": "Ferroviaire",
+      "sectorAirport": "Aéronautique",
+      "sectorBoth": "Ferroviaire & Aéronautique",
+      "levelLabel": "Niveau d'expérience",
+      "levelAll": "Tous les niveaux",
+      "levelJunior": "Junior (0-2 ans)",
+      "levelConfirmed": "Confirmé (2-5 ans)",
+      "levelSenior": "Senior (5+ ans)",
+      "resetBtn": "Réinitialiser",
+      "showing": "Affichage de",
+      "offers": "offres d'emploi",
+      "title": "Nos offres d'emploi"
+    },
+    "benefits": {
+      "title": "Pourquoi rejoindre CEEB ?",
+      "item1": {
+        "title": "🚀 Projets innovants",
+        "desc": "Travaillez sur des projets d'envergure qui transforment les infrastructures de transport"
+      },
+      "item2": {
+        "title": "🌍 Dimension internationale",
+        "desc": "Opportunités de missions en France et à l'international"
+      },
+      "item3": {
+        "title": "📈 Développement professionnel",
+        "desc": "Formation continue et évolution de carrière garanties"
+      },
+      "item4": {
+        "title": "👥 Équipe talentueuse",
+        "desc": "Collaborez avec des experts reconnus dans votre domaine"
+      },
+      "item5": {
+        "title": "💼 Avantages sociaux",
+        "desc": "Rémunération compétitive et avantages sociaux attractifs"
+      },
+      "item6": {
+        "title": "🎯 Responsabilité sociale",
+        "desc": "Contribuez à des projets durables et responsables"
+      }
+    },
+    "cta": {
+      "title": "Prêt pour le Défi ?",
+      "text": "Consultez nos offres et postulez dès maintenant. Rejoignez une équipe d'ingénieurs passionnés.",
+      "button": "Voir les Offres"
+    },
+    "why": {
+      "title": "Pourquoi Rejoindre CEEB ?",
+      "subtitle": "Intégrez une structure à taille humaine avec des projets d'envergure nationale et internationale.",
+      "card1": {
+        "title": "Projets d'Envergure",
+        "desc": "Travaillez sur des projets emblématiques : Grand Paris Express, aéroports internationaux, lignes à grande vitesse."
+      },
+      "card2": {
+        "title": "Formation Continue",
+        "desc": "Plan de formation personnalisé, accès aux certifications professionnelles et montée en compétences garantie."
+      },
+      "card3": {
+        "title": "Dimension Internationale",
+        "desc": "Opportunités de missions à l'international dans des pays d'Afrique, du Moyen-Orient et d'Europe."
+      },
+      "card4": {
+        "title": "Esprit d'Équipe",
+        "desc": "Une culture d'entreprise fondée sur la collaboration, le respect et l'entraide entre collègues."
+      },
+      "badge": "Pourquoi CEEB"
+    },
+    "spontaneous": {
+      "title": "Candidature Spontanée",
+      "text": "Vous ne trouvez pas le poste qui vous correspond ? Envoyez-nous votre candidature spontanée. Nous sommes toujours à la recherche de talents passionnés par l'ingénierie des transports.",
+      "cta": "Envoyer ma Candidature"
+    },
+    "jobDetailBtn": "Voir Détails",
+    "jobApplyBtn": "Candidater"
+  },
+  "contact": {
+    "pageTitle": "Contactez-nous",
+    "hero": {
+      "title": "Contactez CEEB à Paris",
+      "subtitle": "Notre bureau parisien est idéalement situé pour accompagner les projets de transport et d'infrastructure de la région."
+    },
+    "pageHeader": {
+      "title": "Contact CEEB",
+      "locationBadge": "Paris - Val-de-Fontenay"
+    },
+    "strategic": {
+      "title": "Emplacement stratégique, accès fluide",
+      "lead": "Notre bureau parisien se trouve au cœur du réseau de transport métropolitain.",
+      "proximity": {
+        "title": "Connecté aux principaux pôles de transport",
+        "content": "À quelques minutes du RER, du métro et des trains régionaux."
+      },
+      "clients": {
+        "title": "Proche des clients clés",
+        "content": "Situé à proximité des autorités de transport, des opérateurs et des grands clients d'infrastructure."
+      },
+      "infrastructure": {
+        "title": "Accès au réseau d'infrastructures",
+        "content": "L'accès aux axes routiers, ferroviaires et aéroportuaires majeurs facilite les déplacements."
+      }
+    },
+    "details": {
+      "title": "Informations de contact",
+      "address": {
+        "heading": "Adresse",
+        "content": "1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois"
+      },
+      "phone": {
+        "heading": "Téléphone",
+        "content": "+33 1 48 77 77 00"
+      },
+      "email": {
+        "heading": "Email",
+        "content": "stephane.moreau@ceeb.fr"
+      },
+      "hours": {
+        "heading": "Horaires d'ouverture",
+        "content": "Lundi – Vendredi, 9h00 – 18h00"
+      }
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "company": "Société",
+      "subject": "Objet",
+      "subjectOptions": {
+        "placeholder": "Sélectionner un objet",
+        "project": "Demande de projet",
+        "partnership": "Partenariat",
+        "recruitment": "Recrutement / Candidature",
+        "information": "Demande d'information",
+        "other": "Autre"
+      },
+      "message": "Message",
+      "submit": "Envoyer le message",
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Votre prénom",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Votre nom",
+      "emailPlaceholder": "votre@email.com",
+      "phonePlaceholder": "+33 1 23 45 67 89",
+      "companyPlaceholder": "Votre société",
+      "messagePlaceholder": "Décrivez votre projet ou votre demande...",
+      "consent": "J'accepte que mes données soient traitées par CEEB dans le cadre de ma demande."
+    },
+    "access": {
+      "title": "Comment nous rejoindre",
+      "intro": "Nos bureaux sont bien desservis par le train, le métro, le tramway, le bus et la route.",
+      "rer": {
+        "title": "RER",
+        "content": "RER A jusqu'à la station Val-de-Fontenay, à quelques minutes à pied du bureau."
+      },
+      "metro": {
+        "title": "Métro",
+        "content": "La ligne 1 du métro offre un accès direct au quartier d'affaires."
+      },
+      "tram": {
+        "title": "Tramway",
+        "content": "Le tramway T1 s'arrête près du bureau pour des déplacements rapides est-ouest."
+      },
+      "bus": {
+        "title": "Bus",
+        "content": "Plusieurs lignes de bus desservent la gare voisine et les avenues principales."
+      },
+      "car": {
+        "title": "En voiture",
+        "content": "Accès facile aux autoroutes et parkings à proximité."
+      },
+      "bike": {
+        "title": "À vélo",
+        "content": "Pistes cyclables et stationnement sécurisé pour les déplacements actifs."
+      },
+      "future": {
+        "title": "Réseau futur",
+        "content": "Les améliorations de transport prévues renforceront encore notre connectivité."
+      },
+      "airports": {
+        "title": "Aéroports",
+        "content": "Les aéroports parisiens sont accessibles en moins d'une heure par train et par route."
+      }
+    },
+    "map": {
+      "title": "Notre localisation",
+      "address": "1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois, France"
+    },
+    "partners": {
+      "title": "Clients & Partenaires de confiance",
+      "subtitle": "Ils nous font confiance depuis plus de 30 ans dans les secteurs des transports, des infrastructures et du secteur public."
+    },
+    "pageSubtitle": "Notre équipe est disponible pour répondre à toutes vos questions et vous accompagner dans vos projets.",
+    "info": {
+      "title": "Nos coordonnées",
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email",
+      "hours": "Horaires",
+      "hoursText": "Lundi — Vendredi : 9h00 — 18h00"
+    }
+  },
+  "values": {
+    "badge": "Nos Valeurs",
+    "title": "Pourquoi Choisir CEEB ?",
+    "subtitle": "Notre engagement : excellence technique, respect des délais et satisfaction client à chaque projet.",
+    "card1": {
+      "title": "Excellence Technique",
+      "desc": "30 ans d'expertise dans les projets d'ingénierie les plus complexes."
+    },
+    "card2": {
+      "title": "Partenariat Durable",
+      "desc": "Relations de confiance avec nos clients, fondées sur la transparence et la performance."
+    },
+    "card3": {
+      "title": "Réactivité",
+      "desc": "Équipes mobilisables rapidement pour répondre aux urgences et aux délais contraints."
+    },
+    "card4": {
+      "title": "Innovation Durable",
+      "desc": "Solutions innovantes intégrant les enjeux environnementaux et la transition énergétique."
+    }
+  },
+  "partners": {
+    "title": "Ils nous font confiance"
+  },
+  "contactPage": {
+    "hero": {
+      "badge": "Contactez-Nous",
+      "title": "Parlons de Votre Projet",
+      "subtitle": "Notre équipe est disponible pour répondre à toutes vos questions et étudier vos besoins.",
+      "badge2": "Val de Fontenay",
+      "title2": "Notre Bureau",
+      "subtitle2": "Situé à Val de Fontenay, au cœur de l'Île-de-France, à 10 min de Paris."
+    },
+    "info": {
+      "badge": "Nos Coordonnées",
+      "title": "Où Nous Trouver",
+      "intro": "CEEB est basé à Val de Fontenay, à proximité immédiate de Paris. Nous sommes disponibles du lundi au vendredi de 9h à 18h.",
+      "addressLabel": "Adresse",
+      "address": "Val de Fontenay\nFontenay-sous-Bois, 94120\nÎle-de-France, France",
+      "emailLabel": "Email",
+      "accessLabel": "Accès Transport",
+      "access": "RER A — Station Val de Fontenay\nLigne 1 du Métro (correspondance)\nParking disponible sur place",
+      "hoursLabel": "Horaires",
+      "hours": "Lundi — Vendredi : 9h00 — 18h00\nSamedi — Dimanche : Fermé"
+    },
+    "form": {
+      "badge": "Écrivez-Nous",
+      "title": "Envoyez-Nous un Message",
+      "subjectLabel": "Objet *",
+      "subjectDefault": "Sélectionnez un objet",
+      "subject1": "Demande de devis",
+      "subject2": "Partenariat",
+      "subject3": "Candidature / Recrutement",
+      "subject4": "Candidature spontanée",
+      "subject5": "Renseignements",
+      "subject6": "Autre",
+      "firstNameLabel": "Prénom *",
+      "lastNameLabel": "Nom *",
+      "emailLabel": "Email *",
+      "phoneLabel": "Téléphone",
+      "companyLabel": "Entreprise / Organisation",
+      "messageLabel": "Message *",
+      "messagePlaceholder": "Décrivez votre projet ou votre demande...",
+      "rgpd": "J'accepte que mes données soient utilisées pour traiter ma demande conformément à la politique de confidentialité de CEEB.",
+      "submitBtn": "Envoyer le Message",
+      "successMsg": "Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.",
+      "errorMsg": "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement par email."
+    }
+  },
+  "adp": {
+    "subtitle": "Partenariat Stratégique & Innovation",
+    "title": "Synergies Multi-Techniques & Projets ADP",
+    "desc": "En partenariat étroit avec SOFRE-IN et Crites, C.E.E.B. apporte une réponse globale, intégrée et hautement qualifiée aux grands défis d'infrastructure du Groupe ADP (Roissy CDG & Paris-Orly) pour aujourd'hui et demain.",
+    "ceeb": {
+      "title": "Génie Civil & VRD",
+      "desc": "Bureau d'études spécialisé dans le génie civil, les structures, les réseaux d'infrastructures, les études VRD, les diagnostics techniques et la modélisation géotechnique."
+    },
+    "sofre": {
+      "title": "Génie Électrique & Énergie",
+      "desc": "Expertise de pointe en Courants Forts (CFO) / Courants Faibles (CFA), réseaux de télécommunications, sûreté aéroportuaire et gestion intelligente des réseaux d'énergie."
+    },
+    "crites": {
+      "title": "Synthèse BIM & CAO/DAO",
+      "desc": "Gestion de projets complexes, support CAO/DAO (AutoCAD/Revit), coordination technique, synthèse de réseaux 3D/4D et management global en BIM infrastructure."
+    },
+    "projects": {
+      "title": "Nos Domaines d'Intervention & Transition Écologique",
+      "desc": "En tant que groupement de confiance, nous sommes idéalement positionnés pour intervenir sur les grands marchés de réorganisation et de modernisation d'ADP :"
+    },
+    "lot1": {
+      "title": "⚡ Transition Écologique & Électrification",
+      "desc": "Études d'ingénierie électrique pour l'électrification des postes d'avions au contact afin de supprimer l'usage des APU polluants et d'intégrer des GPU électriques d'avenir."
+    },
+    "lot2": {
+      "title": "✈️ Réorganisation des Terminaux 2027",
+      "desc": "Accompagnement d'ADP dans sa restructuration majeure des terminaux de Roissy CDG (renommage et reconfiguration des Terminaux 1 à 7, accès, parkings, flux passagers)."
+    },
+    "lot3": {
+      "title": "🛠️ Réhabilitation de Pistes & Balisage",
+      "desc": "Maîtrise d'œuvre et assistance technique pour la réfection complète des pistes (ex. Piste 4 d'Orly), boucles de balisage, câblage, et alimentation électrique sécurisée."
+    }
+  }
+}

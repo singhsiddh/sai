@@ -1,0 +1,847 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "expertise": "Uzmanlık",
+    "careers": "Kariyer",
+    "contact": "İletişim",
+    "logoTagline": "Avrupa Bina Ekipman Konsepti<br>İkincil Yapı İşleri Mühendislik Bürosu",
+    "recruitment": "Kariyer"
+  },
+  "hero": {
+    "ceeb": {
+      "title": "CEEB: Sürdürülebilir Altyapı Mühendisliği",
+      "description": "Ulaşım ve mobilite alanındaki karmaşık projelerin tasarımı ve yönetiminde uzmanlaşmış mühendislik danışmanlık firması."
+    },
+    "slide2": {
+      "title": "Havalimanı Uzmanlığı",
+      "description": "ADP ve uluslararası havalimanları için işaret sistemleri, bagaj ve güvenlik.",
+      "badge": "Havacılık"
+    },
+    "slide3": {
+      "title": "BIM İnovasyonu & Dijital İkizler",
+      "description": "Altyapı projelerinizi optimize etmek için 3D/4D modelleme ve dijital ikizler.",
+      "badge": "BIM & İnovasyon"
+    },
+    "slide4": {
+      "title": "Kapsamlı Elektrik Mühendisliği",
+      "description": "Tüm bina türleri için güç, zayıf akım, BMS, yangın güvenliği ve veri ağları.",
+      "badge": "Elektrik"
+    },
+    "slide5": {
+      "title": "Teknik Denetim & Danışmanlık",
+      "description": "Teknik teşhis, karar desteği ve stratejik proje rehberliği.",
+      "badge": "Denetim & Danışmanlık"
+    },
+    "slide6": {
+      "title": "Proje Yönetimi & Denetim",
+      "description": "Tasarımdan teslime kadar proje yönetimi, MOE ve AMO olarak.",
+      "badge": "MOE / MOA"
+    },
+    "slide7": {
+      "title": "Kalite Kontrolü & Güvenlik",
+      "description": "Tesisatlarınızın mükemmelliğini garanti etmek için denetim, uyumluluk ve güvenlik.",
+      "badge": "Kalite & Güvenlik"
+    },
+    "slide8": {
+      "title": "Teknik Teşhis & Ölçümler",
+      "description": "Güvenilir ve belgelenmiş mühendislik için 2D/3D ölçümler ve hassas teşhisler.",
+      "badge": "Teşhis"
+    },
+    "slide9": {
+      "title": "Uluslararası Projeler",
+      "description": "Fransa ve uluslararası altyapı projeleri için MOE ve AMO.",
+      "badge": "Uluslararası"
+    },
+    "slide10": {
+      "title": "Sürdürülebilir Altyapı",
+      "description": "Sürdürülebilir ve yüksek performanslı ulaşım altyapısı için mühendislik bürosu.",
+      "badge": "Altyapı"
+    },
+    "slide11": {
+      "title": "Akıllı Sistemler & BMS",
+      "description": "Akıllı binalar için bağlantı, güvenlik ve teknik bina yönetimi.",
+      "badge": "Akıllı Bina"
+    },
+    "slide12": {
+      "title": "Hizmet Sektörü Bina Mühendisliği",
+      "description": "Hizmet ve kurumsal sektör için işlevsel ve yüksek performanslı binalar.",
+      "badge": "Hizmet Sektörü"
+    },
+    "blue": {
+      "line1": "Proje sahipliğinden proje yönetimine, proje mühendisliğine kadar.",
+      "line2": "Ulaşımın Geleceğini Hayal Et, Yarat, Gerçekleştir.",
+      "paragraph": "Fransa'da ve uluslararası alanda sürdürülebilir ve yenilikçi ulaşım altyapılarının tasarımı, inşası ve işletilmesi için güvenilir ortak. 35 yılı aşkın süredir CEEB, kamu ve özel proje sahiplerini bölgelerinin dönüşümünde desteklemektedir. Dünya standartlarında demiryolu ve havalimanı projeleri sunmak için teknik uzmanlığı, inovasyonu ve sürdürülebilirliğe bağlılığı bir araya getiriyoruz."
+    },
+    "slide1": {
+      "badge": "Demiryolu",
+      "title": "Demiryolu Mühendisliğinde Mükemmellik",
+      "description": "RATP, SNCF ve büyük kentsel ulaşım ağları için sürdürülebilir çözümler."
+    }
+  },
+  "about": {
+    "title": "Çok Disiplinli Uzmanlığımız",
+    "content1": "CEEB: Dünyaya Hizmet Eden Sürdürülebilir Mühendislik",
+    "content2": "CEEB, uluslararası ölçekte sürdürülebilir mühendislik ve altyapı alanında kilit bir oyuncu olarak kendini kanıtlamıştır. Demiryolu ve havalimanı mobilitesinden kentsel projelere kadar, teknik uzmanlık ve stratejik vizyonu birleştirerek müşterilerimize ve ortaklarımıza projelerinin her aşamasında eşlik ediyoruz.",
+    "content3": "Denetimden İşletmeye Özel Çözümler",
+    "content4": "Çok disiplinli ekiplerimiz, denetim ve danışmanlıktan proje yönetimine ve operasyonel desteğe kadar uzanan hizmetler sunmaktadır. Global bir yaklaşımla, her projenin özel zorluklarına mükemmel şekilde uyarlanmış güvenilir ve yenilikçi çözümler sağlıyoruz.",
+    "content5": "Her Proje için İnovasyon ve Performans",
+    "content6": "Stratejik tasarımdan devreye almaya kadar CEEB, teknik çalışmalar, BIM, telekomünikasyon, danışmanlık ve denetim alanındaki uzmanlığını kullanmaktadır. Her proje, karmaşık zorlukları somut ve sürdürülebilir çözümlere dönüştürme fırsatıdır."
+  },
+  "services": {
+    "title": "Çok Sektörlü Uzmanlık",
+    "subtitle": "CEEB, mühendislik projelerinizin tüm aşamalarını kapsar; ilk teşhisten teslimata kadar.",
+    "suseng": {
+      "title": "Sürdürülebilir Mühendislik",
+      "desc": "İklim zorluklarını erken aşamalardan itibaren entegre eden dayanıklı ve ekolojik altyapılar."
+    },
+    "infra": {
+      "title": "Altyapılar",
+      "desc": "Demiryolu ve havalimanı altyapılarının eksiksiz tasarımı, inşası ve bakımı."
+    },
+    "mobi": {
+      "title": "Mobilite",
+      "desc": "İhtiyaç analizinden devreye almaya kadar entegre ve çok modlu ulaşım çözümleri."
+    },
+    "inter": {
+      "title": "Uluslararası",
+      "desc": "5 kıtada varlıkla uluslararası bağlamlara uyarlanmış uzmanlık."
+    },
+    "urban": {
+      "title": "Kentsel Planlama",
+      "desc": "Ulaşımı sürdürülebilir bölgesel kalkınmanın merkezine koyan entegre kentsel planlama."
+    },
+    "stra": {
+      "title": "Stratejik Danışmanlık",
+      "desc": "Yatırımları optimize etmek ve getirileri maksimize etmek için stratejik destek."
+    },
+    "badge": "Alanlarımız",
+    "card1": {
+      "title": "Demiryolu Mühendisliği",
+      "desc": "RATP, SNCF ve kentsel ağlar için sinyalizasyon sistemleri, GSM-R telekomünikasyon, katener ve altyapı."
+    },
+    "card2": {
+      "title": "Havalimanı Mühendisliği",
+      "desc": "ADP ve bölgesel havalimanları için saha aydınlatması, bagaj sistemleri, yangın güvenliği ve elektrik."
+    },
+    "card3": {
+      "title": "MOE / MOA",
+      "desc": "Tasarımdan teslime kadar proje yönetimi ve yatırımcı yardımı, tüm disiplinler."
+    },
+    "card4": {
+      "title": "BIM & 3D Modelleme",
+      "desc": "Karmaşık projeler için BIM dijital modeller, dijital ikizler ve çok disiplinli koordinasyon."
+    },
+    "card5": {
+      "title": "Denetim & Teşhis",
+      "desc": "Güvenilir karar desteği için teknik teşhisler, uyumluluk denetimleri ve 2D/3D ölçümler."
+    },
+    "card6": {
+      "title": "Uluslararası Projeler",
+      "desc": "Avrupa, Afrika ve Orta Doğu'da ihracat mühendisliği. Uluslararası pazarlarda tanınan uzmanlık."
+    }
+  },
+  "corevalues": {
+    "title": "Temel Değerlerimiz",
+    "subtitle": "Temel değerlerimiz eylemlerimize rehberlik eder ve kurumsal kimliğimizi tanımlar.",
+    "corevalues1": {
+      "title": "Teknik Mükemmellik",
+      "desc": "Her projenin zorluklarını karşılamak için teknik liderlik, yürütme kalitesi ve sürekli inovasyon."
+    },
+    "corevalues2": {
+      "title": "İnovasyon & Sürdürülebilirlik",
+      "desc": "Çevresel zorlukların sistematik entegrasyonu. Son teknoloji BIM ve dijital çözümler. Ekolojik dönüşüme bağlılık."
+    },
+    "corevalues3": {
+      "title": "Ortaklık & İşbirliği",
+      "desc": "Çok disiplinli ve entegre yaklaşım. Tüm proje paydaşlarıyla yakın işbirliği."
+    },
+    "corevalues4": {
+      "title": "Sosyal Sorumluluk",
+      "desc": "Bölgelere ve topluluklara bağlılık. Güvenlik ve kalite standartlarına uyum."
+    }
+  },
+  "stats": {
+    "projectCount": "100+",
+    "projectLabel": "Tamamlanan proje",
+    "clientsCount": "50+",
+    "clientsLabel": "Memnun müşteri",
+    "continentsCount": "3",
+    "continentsLabel": "Kapsanan kıta",
+    "portfolioCount": "500 M€+",
+    "portfolioLabel": "Yönetilen proje",
+    "years": "Yıllık deneyim",
+    "projects": "Tamamlanan proje",
+    "countries": "Faaliyet ülkesi",
+    "experts": "Uzman & Mühendis"
+  },
+  "footer": {
+    "description": "Sürdürülebilir bir gelecek için mühendislik, danışmanlık ve tasarımda lider.",
+    "servicesTitle": "Hizmetler",
+    "services": {
+      "engineering": "Mühendislik",
+      "projectManagement": "Proje Yönetimi",
+      "audit": "Denetim & Danışmanlık",
+      "digital": "Dijital Çözümler"
+    },
+    "phone": "Telefon",
+    "rights": "Tüm hakları saklıdır.",
+    "tagline": "Avrupa Bina Ekipman Konsepti — 1994'ten bu yana demiryolu ve havalimanı projelerinde uzmanlaşmış mühendislik bürosu.",
+    "navTitle": "Gezinme",
+    "expertiseTitle": "Uzmanlıklar",
+    "contactTitle": "İletişim",
+    "address": "Val de Fontenay, Fontenay-sous-Bois, Fransa",
+    "exp1": "Demiryolu Mühendisliği",
+    "exp2": "Havalimanı Mühendisliği",
+    "exp3": "BIM & Modelleme",
+    "exp4": "Denetim & Teşhis",
+    "exp5": "MOE / MOA",
+    "copyright": "© 2026 CEEB — Avrupa Bina Ekipman Konsepti. Tüm hakları saklıdır.",
+    "legal": "Yasal Uyarı | Gizlilik Politikası"
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "Mühendislikte 35 Yıllık Mükemmellik",
+      "description": "1989'da kurulan CEEB, büyük Fransız altyapı projelerinde güvenilir bir ortaktır.",
+      "badge": "Hakkımızda",
+      "subtitle": "1989'da kurulan CEEB, büyük Fransız ve uluslararası altyapı projelerinde güvenilir bir ortaktır.",
+      "badge2": "Misyonumuz",
+      "title2": "Mühendisliğin Küresel Vizyonu",
+      "subtitle2": "Tasarımdan devreye almaya kadar projelerinizin her aşamasını destekliyoruz.",
+      "badge3": "Ekibimiz",
+      "title3": "Tutkulu Uzmanlar",
+      "subtitle3": "Altyapı projelerinizin hizmetinde 40'tan fazla mühendis ve uzman."
+    },
+    "pageHeader": {
+      "title": "CEEB Hakkında",
+      "text": "1989'dan bu yana CEEB, çok disiplinli mühendislik, danışmanlık ve proje yönetimi hizmetleriyle ulaşım projelerini desteklemektedir."
+    },
+    "history": {
+      "title": "35 Yıllık Uzmanlık",
+      "paragraph1": "1 Mart 1989'da Gérard SEBAG tarafından kurulan CEEB | Concept Européen Équipement Bâtiment, uzmanlaşmış bir mühendislik danışmanlık firması olarak doğdu. Başlangıçtan itibaren şirket, altyapı ve ulaşım için yüksek kaliteli teknik çalışmalara ve pratik çözümlere odaklandı.",
+      "paragraph2": "35 yılı aşkın bir süre içinde CEEB, mobilite, kentsel planlama, sistem mühendisliği ve büyük kamu işleri alanlarında kanıtlanmış uzmanlığa sahip çok disiplinli bir şirkete dönüştü.",
+      "badge": "Tarihimiz",
+      "event1": {
+        "year": "1989",
+        "title": "CEEB'in Kuruluşu",
+        "desc": "Gérard SEBAG, CEEB'i Fontenay-sous-Bois'da kuruyor. RATP için ilk demiryolu mühendisliği projeleri."
+      },
+      "event2": {
+        "year": "1995",
+        "title": "Havalimanı Genişlemesi",
+        "desc": "CEEB, Aéroports de Paris (ADP) için ilk sözleşmelerle havalimanı uzmanlığını geliştiriyor."
+      },
+      "event3": {
+        "year": "2000",
+        "title": "ISO Sertifikasyonu",
+        "desc": "ISO 9001 sertifikası alındı. Kalite süreçleri ve çalışma yöntemlerinin güçlendirilmesi."
+      },
+      "event4": {
+        "year": "2008",
+        "title": "Uluslararası Gelişme",
+        "desc": "Afrika ve Orta Doğu'da ilk uluslararası projeler. Yeni pazarlara açılma."
+      },
+      "event5": {
+        "year": "2015",
+        "title": "BIM Dönüşümü",
+        "desc": "BIM araçları ve 3D modellemenin tam benimsenmesi. CEEB, dijital mühendislikte referans oyuncu haline geliyor."
+      },
+      "event6": {
+        "year": "2024",
+        "title": "Grand Paris Express",
+        "desc": "Grand Paris Express projelerine önemli katkı. Geleceğin altyapısının hizmetinde 35 yıllık uzmanlık."
+      }
+    },
+    "mission": {
+      "title": "Her Projeyi Desteklemek",
+      "paragraph1": "Misyonumuz, her projenin titiz mühendislik, operasyonel know-how ve güçlü bir hizmet kültüründen yararlanmasını sağlayarak müşterilerimize konseptten devreye almaya kadar eşlik etmektir.",
+      "paragraph2": "Rotring kalemleriyle elle çizilen ilk projelerden modern dijital araçlara ve yapay zekaya kadar, hassasiyet ve güvenilirliğe dayalı derin bir teknik kültürü korurken gelişmeye devam ediyoruz.",
+      "badge": "Misyonumuz",
+      "text1": "Misyonumuz, müşterilerimize kavramdan devreye almaya kadar eşlik etmek, her projenin titiz mühendislik, operasyonel know-how ve güçlü hizmet kültüründen yararlanmasını sağlamaktır.",
+      "text2": "Rotring kalemleriyle elle çizilen ilk projelerden modern dijital araçlara ve yapay zekaya kadar, hassasiyet ve güvenilirliğe dayalı derin teknik kültürü korurken gelişmeye devam ediyoruz."
+    },
+    "values": {
+      "title": "Bizi Yönlendiren",
+      "subtitle": "Değerlerimiz çalışmamızın her adımını yönlendirir.",
+      "card1": {
+        "title": "Mükemmellik",
+        "desc": "Her çalışma, proje ve inşaat aşamasında yüksek teknik standartları koruyoruz."
+      },
+      "card2": {
+        "title": "İnovasyon",
+        "desc": "Daha akıllı altyapı sunmak için sürekli yeni yöntemler ve teknolojiler araştırıyoruz."
+      },
+      "card3": {
+        "title": "Sürdürülebilirlik",
+        "desc": "Sürdürülebilirlik, çevresel performans ve sosyal etkiye odaklanan sorumlu bir yaklaşım benimsiyoruz."
+      },
+      "card4": {
+        "title": "İşbirliği",
+        "desc": "Çalışmamız, bütünlük, şeffaflık ve müşterilerle yakın işbirliğine dayalı insani bir macera."
+      },
+      "card5": {
+        "title": "Sorumluluk",
+        "desc": "Altyapının sosyal ve çevresel boyutlarını dikkate alıyoruz."
+      },
+      "card6": {
+        "title": "Ekibimiz",
+        "desc": "Çok disiplinli uzmanlarımız mühendislik, proje yönetimi ve operasyonel know-how'ı birleştiriyor."
+      },
+      "badge": "Değerlerimiz"
+    },
+    "cta": {
+      "title": "Bizimle çalışmak ister misiniz?",
+      "text": "Projelerinizi ve CEEB'in bir sonraki altyapı projenizi nasıl destekleyebileceğini görüşmek için bizimle iletişime geçin.",
+      "button": "Bizimle İletişime Geçin"
+    },
+    "who": {
+      "badge": "Biz Kimiz",
+      "title": "CEEB: Altyapının Hizmetinde Mühendislik",
+      "text1": "1 Mart 1989'da Gérard SEBAG tarafından kurulan CEEB, demiryolu ve havalimanı ikincil yapı işlerinde uzmanlaşmış bir mühendislik bürosudur.",
+      "text2": "35 yılı aşkın sürede CEEB, mobilite, kentsel planlama, sistem mühendisliği ve büyük kamu işlerinde kanıtlanmış uzmanlığa sahip çok disiplinli bir şirket haline gelmiştir.",
+      "text3": "Tarihimiz, müşterilere olan bağlılık ve günlük yaşamı iyileştiren projelerle şekillenmiştir."
+    }
+  },
+  "expertisePage": {
+    "hero": {
+      "title": "35 Yıllık Teknik Uzmanlık",
+      "description": "Over 35 years of expertise in railway, airport and infrastructure engineering.",
+      "badge": "Uzmanlıklarımız",
+      "subtitle": "Demiryolu ve havalimanı altyapısı için kapsamlı mühendislik çözümleri.",
+      "badge2": "Demiryolu",
+      "title2": "Demiryolu Mühendisliği",
+      "subtitle2": "RATP, SNCF, Grand Paris Express — tasarım ve proje yönetimi.",
+      "badge3": "Havalimanı",
+      "title3": "Havalimanı Mühendisliği",
+      "subtitle3": "ADP, bölgesel havalimanları — elektrik sistemleri ve telekomünikasyon."
+    },
+    "pageHeader": {
+      "title": "Teknik Uzmanlığımız",
+      "text": "Demiryolu ve havalimanı altyapıları için tasarımdan devreye almaya kadar eksiksiz mühendislik çözümleri."
+    },
+    "domains": {
+      "title": "Areas of expertise",
+      "moa": {
+        "title": "Project Ownership (MOA)",
+        "desc": "Project owner assistance, management of complex projects, stakeholder coordination.",
+        "items": [
+          "MOA Assistance",
+          "Project management",
+          "Multi-stakeholder coordination",
+          "Reporting and monitoring"
+        ]
+      },
+      "moe": {
+        "title": "Project Management (MOE)",
+        "desc": "Works execution management, technical supervision, quality control and project handover.",
+        "items": [
+          "Works management",
+          "Technical supervision",
+          "Quality control",
+          "Project handover"
+        ]
+      },
+      "elec": {
+        "title": "Electrical Engineering",
+        "desc": "HV/LV/ICT studies, power supply for railway and airport infrastructures.",
+        "items": [
+          "High Voltage (HV)",
+          "Low Voltage (LV)",
+          "ICT & networks",
+          "Lighting & safety"
+        ]
+      },
+      "telecom": {
+        "title": "Telecommunications",
+        "desc": "Engineering of communication systems for transport networks: radio, fibre optic, IP networks and passenger information systems.",
+        "items": [
+          "GSM-R / TETRA",
+          "Railway signalling",
+          "Passenger information",
+          "Video surveillance"
+        ],
+        "item1": "TETRA / GSM-R radio networks",
+        "item2": "Fibre optic infrastructure",
+        "item3": "Passenger information systems (PIS)",
+        "item4": "IP and LAN/WAN networks"
+      },
+      "bim": {
+        "title": "BIM & Digital",
+        "desc": "BIM modelling of electrical and telecom installations, digital coordination and model management for better collaboration.",
+        "items": [
+          "BIM modelling",
+          "Digital model",
+          "3D coordination",
+          "Data management"
+        ],
+        "item1": "Revit MEP modelling",
+        "item2": "BIM coordination and clash detection",
+        "item3": "Digital model (BIM level 2/3)",
+        "item4": "AutoCAD execution plans"
+      },
+      "audit": {
+        "title": "Audit & Consulting",
+        "desc": "Technical audits, infrastructure diagnostics, feasibility studies and strategic consulting.",
+        "items": [
+          "Technical audits",
+          "Diagnostics",
+          "Feasibility studies",
+          "Strategic consulting"
+        ]
+      },
+      "subtitle": "CEEB is involved throughout the entire lifecycle of transport infrastructure projects.",
+      "railway": {
+        "title": "Railway Engineering",
+        "desc": "Design studies, project management and owner's representative services for metro, tram, RER and high-speed rail projects.",
+        "item1": "High voltage electrical studies (HTA/HTB/BT)",
+        "item2": "Signalling and safety systems",
+        "item3": "Traction power supply",
+        "item4": "Railway telecommunications systems"
+      },
+      "airport": {
+        "title": "Airport Engineering",
+        "desc": "Complete expertise for airports and aeronautical platforms: terminals, runways, navigation systems and technical infrastructure.",
+        "item1": "Airport electrical systems",
+        "item2": "Telecommunications and security systems",
+        "item3": "Building management systems (BMS)",
+        "item4": "Guidance and marking systems"
+      },
+      "electric": {
+        "title": "High Voltage Electricity",
+        "desc": "Studies and project management of high and low voltage electrical installations for all types of transport structures.",
+        "item1": "HTA/BT transformation substations",
+        "item2": "Main low voltage switchboards (MLVS)",
+        "item3": "Public and track lighting",
+        "item4": "Generators and UPS"
+      },
+      "lowvoltage": {
+        "title": "Low Voltage & Security",
+        "desc": "Design and monitoring of fire safety systems, access control, video surveillance and intrusion detection.",
+        "item1": "Fire safety systems (SSI/SSA)",
+        "item2": "Access control and intercom",
+        "item3": "Video surveillance (CCTV)",
+        "item4": "Intrusion and perimeter detection"
+      }
+    },
+    "sectors": {
+      "title": "Sectors of Activity",
+      "railway": {
+        "title": "Railway",
+        "desc": "SNCF, RATP, Grand Paris Express — design, renovation and commissioning of railway infrastructures."
+      },
+      "airport": {
+        "title": "Airport",
+        "desc": "ADP, regional airports — electrical systems, telecommunications and airport security."
+      },
+      "urban": {
+        "title": "Urban & Building",
+        "desc": "Local authorities, developers — technical building engineering, smart building and sustainable development."
+      },
+      "international": {
+        "title": "International",
+        "desc": "Projects in Africa, Middle East, Europe — skills transfer and local engineering."
+      }
+    },
+    "cta": {
+      "title": "Bir mühendislik projesi mi?",
+      "text": "Ekibimiz ihtiyaçlarınızı incelemeye ve uygun bir çözüm önermeye hazır.",
+      "button": "Bizimle İletişime Geçin"
+    },
+    "approach": {
+      "title": "Our MOA / MOE approach",
+      "paragraph1": "CEEB acts both as delegated project owner (MOA) and as project manager (MOE), offering a global and integrated vision of infrastructure projects.",
+      "paragraph2": "Our multidisciplinary team brings together engineers specialised in electrical engineering, telecommunications, civil engineering and project management."
+    },
+    "references": {
+      "title": "Project references",
+      "subtitle": "Some flagship projects carried out by CEEB in France and internationally."
+    },
+    "card1": {
+      "icon": "🚆",
+      "title": "Demiryolu Mühendisliği",
+      "desc": "Metro, tramvay, RER ve yüksek hızlı demiryolu projeleri için tasarım çalışmaları, proje yönetimi ve yatırımcı yardımı."
+    },
+    "card2": {
+      "icon": "✈️",
+      "title": "Havalimanı Mühendisliği",
+      "desc": "Havalimanları ve havacılık platformları için kapsamlı uzmanlık: terminaller, pistler, navigasyon sistemleri ve teknik altyapı."
+    },
+    "card3": {
+      "icon": "⚡",
+      "title": "Yüksek Gerilim Elektriği",
+      "desc": "Yüksek ve alçak gerilim elektrik tesisatları için çalışmalar ve proje yönetimi."
+    },
+    "card4": {
+      "icon": "📡",
+      "title": "Zayıf Akım & Güvenlik",
+      "desc": "Yangın güvenlik sistemleri, erişim kontrolü, CCTV ve izinsiz giriş tespiti tasarımı ve denetimi."
+    },
+    "card5": {
+      "icon": "📐",
+      "title": "BIM & Dijital Modelleme",
+      "desc": "Elektrik ve telekomünikasyon tesisatlarının BIM modellemesi, dijital koordinasyon ve model yönetimi."
+    },
+    "card6": {
+      "icon": "🔍",
+      "title": "Denetim & Danışmanlık",
+      "desc": "Teknik denetimler, altyapı teşhisleri, fizibilite çalışmaları ve stratejik danışmanlık."
+    },
+    "projects": {
+      "badge": "Referanslar",
+      "title": "Referans Projeler",
+      "subtitle": "CEEB'in Fransa ve yurt dışında gerçekleştirdiği bazı önemli projeler."
+    },
+    "project1": {
+      "title": "Grand Paris Express — Hat 15",
+      "desc": "Grand Paris Express'in yeni istasyonları için elektrik ve telekomünikasyon çalışmaları."
+    },
+    "project2": {
+      "title": "Charles de Gaulle Havalimanı — Terminal 2",
+      "desc": "Terminal 2'nin elektrik sistemleri ve yangın güvenliğinin yenilenmesi."
+    },
+    "project3": {
+      "title": "RATP — Hat 13 Yenileme",
+      "desc": "Paris metrosunun 13. hattının sinyalizasyon ve telekomünikasyon sistemlerinin modernizasyonu."
+    },
+    "project4": {
+      "title": "SNCF — Güneydoğu YHT",
+      "desc": "YHT'nin bakımı ve modernizasyonu için elektrik ve telekomünikasyon mühendisliği çalışmaları."
+    },
+    "project5": {
+      "title": "Cezayir Havalimanı — Houari Boumediene",
+      "desc": "Uluslararası havalimanının elektrik ve güvenlik sistemlerinin modernizasyonu için proje yönetimi."
+    }
+  },
+  "recruitmentPage": {
+    "hero": {
+      "title": "CEEB'de Kariyerinizi İnşa Edin",
+      "description": "Build your career in transport engineering. Join a passionate team shaping the infrastructures of tomorrow.",
+      "badge": "Bize Katılın",
+      "subtitle": "Yarının ulaşım altyapısını şekillendiren tutkulu bir ekibe katılın.",
+      "badge2": "İK Değerlerimiz",
+      "title2": "Teşvik Edici Çalışma Ortamı",
+      "subtitle2": "Sürekli eğitim, büyük projeler ve uluslararası boyut."
+    },
+    "pageHeader": {
+      "title": "CEEB'e Katılın",
+      "text": "Tutkulu ve deneyimli bir ekiple ulaşım altyapısı mühendisliğinde kariyerinizi inşa edin."
+    },
+    "badge": "⭐ Recruitment and engineering partner for <strong>RATP</strong> and <strong>ADP</strong> for over <strong>30 years</strong> in the railway and airport sectors",
+    "intro": {
+      "badge": "İlanlarımız",
+      "title": "CEEB Ekibine Katılın",
+      "text": "Demiryolu ve havacılık sektörlerinde ekibimize katılmak için tutkulu yetenekler arıyoruz."
+    },
+    "search": {
+      "placeholder": "Başlık, konum veya beceriye göre ara...",
+      "categoryLabel": "Kategori",
+      "categoryAll": "Tüm kategoriler",
+      "categoryEngineering": "Mühendislik",
+      "categoryManagement": "Yönetim",
+      "categoryDesign": "Çizim & CAD",
+      "categoryTelecom": "Telekomünikasyon",
+      "sectorLabel": "Sektör",
+      "sectorAll": "Tüm sektörler",
+      "sectorRailway": "Demiryolu",
+      "sectorAirport": "Havacılık",
+      "sectorBoth": "Demiryolu & Havacılık",
+      "levelLabel": "Deneyim seviyesi",
+      "levelAll": "Tüm seviyeler",
+      "levelJunior": "Junior (0-2 yıl)",
+      "levelConfirmed": "Deneyimli (2-5 yıl)",
+      "levelSenior": "Kıdemli (5+ yıl)",
+      "resetBtn": "Sıfırla",
+      "showing": "Gösteriliyor",
+      "offers": "iş ilanı",
+      "title": "İş İlanlarımız"
+    },
+    "benefits": {
+      "title": "Why join CEEB?",
+      "item1": {
+        "title": "🚀 Innovative projects",
+        "desc": "Work on large-scale projects that transform transport infrastructures"
+      },
+      "item2": {
+        "title": "🌍 International dimension",
+        "desc": "Opportunities for assignments in France and internationally"
+      },
+      "item3": {
+        "title": "📈 Professional development",
+        "desc": "Continuous training and guaranteed career progression"
+      },
+      "item4": {
+        "title": "👥 Talented team",
+        "desc": "Collaborate with recognised experts in your field"
+      },
+      "item5": {
+        "title": "💼 Social benefits",
+        "desc": "Competitive remuneration and attractive social benefits"
+      },
+      "item6": {
+        "title": "🎯 Social responsibility",
+        "desc": "Contribute to sustainable and responsible projects"
+      }
+    },
+    "cta": {
+      "title": "Zorluğa Hazır mısınız?",
+      "text": "İlanlarımıza göz atın ve hemen başvurun. Tutkulu mühendislerden oluşan bir ekibe katılın.",
+      "button": "İlanları Gör"
+    },
+    "why": {
+      "title": "Neden CEEB'e Katılmalısınız?",
+      "subtitle": "Ulusal ve uluslararası kapsamlı projelerle insan ölçeğinde bir yapıya katılın.",
+      "card1": {
+        "title": "Büyük Projeler",
+        "desc": "Grand Paris Express, uluslararası havalimanları, yüksek hızlı hatlar gibi önemli projelerde çalışın."
+      },
+      "card2": {
+        "title": "Sürekli Eğitim",
+        "desc": "Kişiselleştirilmiş eğitim planı, mesleki sertifikalara erişim ve garantili yetkinlik gelişimi."
+      },
+      "card3": {
+        "title": "Uluslararası Boyut",
+        "desc": "Afrika, Orta Doğu ve Avrupa'da uluslararası görev fırsatları."
+      },
+      "card4": {
+        "title": "Takım Ruhu",
+        "desc": "İşbirliği, saygı ve meslektaşlar arasında dayanışmaya dayalı şirket kültürü."
+      },
+      "badge": "Neden CEEB"
+    },
+    "spontaneous": {
+      "title": "Spontane Başvuru",
+      "text": "Doğru pozisyonu bulamıyor musunuz? Bize spontane başvurunuzu gönderin. Her zaman ulaşım mühendisliğine tutkulu yetenekler arıyoruz.",
+      "cta": "Başvurumu Gönder"
+    },
+    "jobDetailBtn": "Detayları Gör",
+    "jobApplyBtn": "Başvur"
+  },
+  "contact": {
+    "pageTitle": "Bize Ulaşın",
+    "hero": {
+      "title": "Contact CEEB in Paris",
+      "subtitle": "Our Paris office is ideally located to support transport and infrastructure projects in the region."
+    },
+    "pageHeader": {
+      "title": "Contact CEEB",
+      "locationBadge": "Paris - Val-de-Fontenay"
+    },
+    "strategic": {
+      "title": "Strategic location, smooth access",
+      "lead": "Our Paris office is at the heart of the metropolitan transport network.",
+      "proximity": {
+        "title": "Connected to major transport hubs",
+        "content": "A few minutes from the RER, metro and regional trains."
+      },
+      "clients": {
+        "title": "Close to key clients",
+        "content": "Located near transport authorities, operators and major infrastructure clients."
+      },
+      "infrastructure": {
+        "title": "Access to infrastructure network",
+        "content": "Easy access to major road, rail and airport routes facilitates travel."
+      }
+    },
+    "details": {
+      "title": "Contact information",
+      "address": {
+        "heading": "Address",
+        "content": "1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois"
+      },
+      "phone": {
+        "heading": "Phone",
+        "content": "+33 1 48 77 77 00"
+      },
+      "email": {
+        "heading": "Email",
+        "content": "stephane.moreau@ceeb.fr"
+      },
+      "hours": {
+        "heading": "Opening hours",
+        "content": "Monday – Friday, 9:00 AM – 6:00 PM"
+      }
+    },
+    "form": {
+      "title": "Bize mesaj gönderin",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "subject": "Subject",
+      "subjectOptions": {
+        "placeholder": "Select a subject",
+        "project": "Project request",
+        "partnership": "Partnership",
+        "recruitment": "Recruitment / Application",
+        "information": "Information request",
+        "other": "Other"
+      },
+      "message": "Message",
+      "submit": "Mesaj gönder",
+      "firstName": "First name",
+      "firstNamePlaceholder": "Your first name",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Your last name",
+      "emailPlaceholder": "your@email.com",
+      "phonePlaceholder": "+33 1 23 45 67 89",
+      "companyPlaceholder": "Your company",
+      "messagePlaceholder": "Describe your project or request...",
+      "consent": "I agree that my data will be processed by CEEB in connection with my request."
+    },
+    "access": {
+      "title": "How to reach us",
+      "intro": "Our offices are well served by train, metro, tram, bus and road.",
+      "rer": {
+        "title": "RER",
+        "content": "RER A to Val-de-Fontenay station, a few minutes' walk from the office."
+      },
+      "metro": {
+        "title": "Metro",
+        "content": "Metro line 1 provides direct access to the business district."
+      },
+      "tram": {
+        "title": "Tram",
+        "content": "Tram T1 stops near the office for quick east-west travel."
+      },
+      "bus": {
+        "title": "Bus",
+        "content": "Several bus lines serve the nearby station and main avenues."
+      },
+      "car": {
+        "title": "By car",
+        "content": "Easy access to motorways and nearby car parks."
+      },
+      "bike": {
+        "title": "By bike",
+        "content": "Cycle lanes and secure parking for active commuters."
+      },
+      "future": {
+        "title": "Future network",
+        "content": "Planned transport improvements will further enhance our connectivity."
+      },
+      "airports": {
+        "title": "Airports",
+        "content": "Paris airports are accessible in under one hour by train and road."
+      }
+    },
+    "map": {
+      "title": "Our location",
+      "address": "1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois, France"
+    },
+    "partners": {
+      "title": "Trusted Clients & Partners",
+      "subtitle": "They have trusted us for over 30 years in the transport, infrastructure and public sector."
+    },
+    "pageSubtitle": "Ekibimiz tüm sorularınızı yanıtlamak ve projelerinizde size destek olmak için hazır.",
+    "info": {
+      "title": "İletişim bilgilerimiz",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Opening hours",
+      "hoursText": "Pazartesi — Cuma: 09:00 — 18:00"
+    }
+  },
+  "values": {
+    "badge": "Değerlerimiz",
+    "title": "Neden CEEB'i Seçmelisiniz?",
+    "subtitle": "Taahhüdümüz: teknik mükemmellik, zamanında teslimat ve her projede müşteri memnuniyeti.",
+    "card1": {
+      "title": "Teknik Mükemmellik",
+      "desc": "En karmaşık mühendislik projelerinde 30 yıllık deneyim."
+    },
+    "card2": {
+      "title": "Kalıcı Ortaklık",
+      "desc": "Şeffaflık ve performansa dayalı müşteri güven ilişkileri."
+    },
+    "card3": {
+      "title": "Hızlı Yanıt",
+      "desc": "Acil durumlara ve sıkı teslim tarihlerine kısa sürede yanıt verebilen ekipler."
+    },
+    "card4": {
+      "title": "Sürdürülebilir İnovasyon",
+      "desc": "Çevresel zorlukları ve enerji dönüşümünü entegre eden yenilikçi çözümler."
+    }
+  },
+  "partners": {
+    "title": "Bize güveniyorlar"
+  },
+  "contactPage": {
+    "hero": {
+      "badge": "Bize Ulaşın",
+      "title": "Projeniz Hakkında Konuşalım",
+      "subtitle": "Ekibimiz tüm sorularınızı yanıtlamaya ve ihtiyaçlarınızı incelemeye hazır.",
+      "badge2": "Val de Fontenay",
+      "title2": "Ofisimiz",
+      "subtitle2": "Paris'e 10 dakika uzaklıkta, Île-de-France'ın kalbinde Val de Fontenay'da."
+    },
+    "info": {
+      "badge": "İletişim Bilgilerimiz",
+      "title": "Bizi Nerede Bulabilirsiniz",
+      "intro": "CEEB, Paris'e yakın Val de Fontenay'da bulunmaktadır. Pazartesiden Cumaya 9'dan 18'e kadar hizmetinizdeyiz.",
+      "addressLabel": "Adres",
+      "address": "Val de Fontenay\nFontenay-sous-Bois, 94120\nÎle-de-France, Fransa",
+      "emailLabel": "E-posta",
+      "accessLabel": "Ulaşım",
+      "access": "RER A — Val de Fontenay İstasyonu\nMetro Hat 1 (aktarma)\nYerinde otopark mevcut",
+      "hoursLabel": "Çalışma Saatleri",
+      "hours": "Pazartesi — Cuma: 09:00 — 18:00\nCumartesi — Pazar: Kapalı"
+    },
+    "form": {
+      "badge": "Bize Yazın",
+      "title": "Bize Mesaj Gönderin",
+      "subjectLabel": "Konu *",
+      "subjectDefault": "Bir konu seçin",
+      "subject1": "Teklif talebi",
+      "subject2": "Ortaklık",
+      "subject3": "Başvuru / İşe alım",
+      "subject4": "Spontane başvuru",
+      "subject5": "Bilgi",
+      "subject6": "Diğer",
+      "firstNameLabel": "Ad *",
+      "lastNameLabel": "Soyad *",
+      "emailLabel": "E-posta *",
+      "phoneLabel": "Telefon",
+      "companyLabel": "Şirket / Kuruluş",
+      "messageLabel": "Mesaj *",
+      "messagePlaceholder": "Projenizi veya talebinizi açıklayın...",
+      "rgpd": "Verilerimin CEEB'in gizlilik politikasına uygun olarak talebimi işlemek için kullanılmasını kabul ediyorum.",
+      "submitBtn": "Mesajı Gönder",
+      "successMsg": "Mesajınız gönderildi. En kısa sürede size geri döneceğiz.",
+      "errorMsg": "Bir hata oluştu. Lütfen tekrar deneyin veya doğrudan e-posta ile bizimle iletişime geçin."
+    }
+  },
+  "adp": {
+    "subtitle": "Strategic Partnership & Innovation",
+    "title": "Multi-Technical Synergies & ADP Projects",
+    "desc": "In close partnership with SOFRE-IN and Crites, C.E.E.B. provides a comprehensive, integrated, and highly qualified response to the major infrastructure challenges of the ADP Group (Roissy CDG & Paris-Orly) for today and tomorrow.",
+    "ceeb": {
+      "title": "Civil Engineering & Utilities",
+      "desc": "Engineering consultancy specialising in civil engineering, structures, utility networks, roadworks, technical diagnostics, and geotechnical modelling."
+    },
+    "sofre": {
+      "title": "Electrical Engineering & Energy",
+      "desc": "State-of-the-art expertise in High Voltage (CFO) / Low Voltage (CFA), telecommunications networks, airport security, and smart energy grid management."
+    },
+    "crites": {
+      "title": "BIM Synthesis & CAD/BIM Support",
+      "desc": "Complex project management, CAD/BIM support (AutoCAD/Revit), technical coordination, 3D/4D network synthesis, and global BIM infrastructure management."
+    },
+    "projects": {
+      "title": "Our Fields of Intervention & Ecological Transition",
+      "desc": "As a trusted consortium, we are ideally positioned to intervene in the major reorganization and modernization markets of ADP:"
+    },
+    "lot1": {
+      "title": "⚡ Ecological Transition & Electrification",
+      "desc": "Electrical engineering studies for the electrification of aircraft stands at contact in order to eliminate the use of polluting APUs and integrate future electric GPUs."
+    },
+    "lot2": {
+      "title": "✈️ Terminal Reorganization 2027",
+      "desc": "Supporting ADP in its major restructuring of Roissy CDG terminals (renaming and reconfiguring Terminals 1 to 7, access, parking, passenger flows)."
+    },
+    "lot3": {
+      "title": "🛠️ Runway Rehabilitation & Lighting",
+      "desc": "Project management and technical assistance for complete runway renovation (e.g. Orly Runway 4), airfield lighting loops, cabling, and secure power supply."
+    }
+  }
+}
