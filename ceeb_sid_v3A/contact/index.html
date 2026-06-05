@@ -285,10 +285,11 @@
                         required aria-required="true"></textarea>
             </div>
 
+
             <!-- RGPD -->
-            <div class="form-group form-checkbox-group">
-              <input type="checkbox" id="rgpd" name="rgpd" class="form-checkbox" required aria-required="true">
-              <label for="rgpd" class="form-checkbox-label" data-i18n="contactPage.form.rgpd">
+            <div class="rgpd-consent">
+              <input type="checkbox" id="rgpd" name="rgpd" class="rgpd-consent-checkbox" required aria-required="true">
+              <label for="rgpd" class="rgpd-consent-label" data-i18n="contactPage.form.rgpd">
                 J'accepte que mes données soient utilisées pour traiter ma demande conformément à la politique de confidentialité de C.E.E.B..
               </label>
             </div>
@@ -365,80 +366,80 @@
   <section class="access-section" style="padding: 5rem 0; background: var(--color-bg-alt);">
     <div class="container">
       <div class="text-center" style="margin-bottom: 3.5rem;">
-        <span class="section-badge">HUB Val de Fontenay</span>
-        <h2 class="section-title">🚇 Comment Nous Rejoindre</h2>
-        <p class="section-subtitle">Notre localisation stratégique au cœur du HUB de Val de Fontenay vous offre un accès exceptionnel par tous les moyens de transport.</p>
+        <span class="section-badge" data-i18n="contactPage.access.badge">HUB Val de Fontenay</span>
+        <h2 class="section-title" data-i18n="contactPage.access.title">🚇 Comment Nous Rejoindre</h2>
+        <p class="section-subtitle" data-i18n="contactPage.access.subtitle">Notre localisation stratégique au cœur du HUB de Val de Fontenay vous offre un accès exceptionnel par tous les moyens de transport.</p>
       </div>
       <div class="access-grid">
         <div class="access-card">
           <div class="access-icon">🚆</div>
-          <h3>RER</h3>
+          <h3 data-i18n="contactPage.access.cards.rer.title">RER</h3>
           <ul>
-            <li><strong>RER A</strong> - Station Val de Fontenay (2 min à pied)</li>
-            <li><strong>RER E</strong> - Station Val de Fontenay (2 min à pied)</li>
-            <li>Accès direct depuis Paris, La Défense, Marne-la-Vallée</li>
+            <li data-i18n="contactPage.access.cards.rer.line1"><strong>RER A</strong> - Station Val de Fontenay (2 min à pied)</li>
+            <li data-i18n="contactPage.access.cards.rer.line2"><strong>RER E</strong> - Station Val de Fontenay (2 min à pied)</li>
+            <li data-i18n="contactPage.access.cards.rer.line3">Accès direct depuis Paris, La Défense, Marne-la-Vallée</li>
           </ul>
         </div>
         <div class="access-card">
           <div class="access-icon">🚇</div>
-          <h3>Métro</h3>
+          <h3 data-i18n="contactPage.access.cards.metro.title">Métro</h3>
           <ul>
-            <li><strong>Ligne 1</strong> - Château de Vincennes (puis RER A)</li>
-            <li><strong>Ligne 4</strong> - Gare de l'Est (correspondance RER E)</li>
-            <li><strong>Ligne 7</strong> - La Courneuve (puis RER A)</li>
+            <li data-i18n="contactPage.access.cards.metro.line1"><strong>Ligne 1</strong> - Château de Vincennes (puis RER A)</li>
+            <li data-i18n="contactPage.access.cards.metro.line2"><strong>Ligne 4</strong> - Gare de l'Est (correspondance RER E)</li>
+            <li data-i18n="contactPage.access.cards.metro.line3"><strong>Ligne 7</strong> - La Courneuve (puis RER A)</li>
           </ul>
         </div>
         <div class="access-card">
           <div class="access-icon">🚊</div>
-          <h3>Tramway</h3>
+          <h3 data-i18n="contactPage.access.cards.tramway.title">Tramway</h3>
           <ul>
-            <li><strong>T1</strong> - Station Val de Fontenay (2 min à pied)</li>
-            <li>Connexion directe avec Noisy-le-Sec, Bobigny</li>
+            <li data-i18n="contactPage.access.cards.tramway.line1"><strong>T1</strong> - Station Val de Fontenay (2 min à pied)</li>
+            <li data-i18n="contactPage.access.cards.tramway.line2">Connexion directe avec Noisy-le-Sec, Bobigny</li>
           </ul>
         </div>
         <div class="access-card">
           <div class="access-icon">🚌</div>
-          <h3>Bus</h3>
+          <h3 data-i18n="contactPage.access.cards.bus.title">Bus</h3>
           <ul>
-            <li><strong>Lignes RATP</strong> - 116, 118, 122, 124, 301, 524</li>
-            <li>Arrêt Val de Fontenay - RER</li>
-            <li>Réseau dense vers toute l'Île-de-France</li>
+            <li data-i18n="contactPage.access.cards.bus.line1"><strong>Lignes RATP</strong> - 116, 118, 122, 124, 301, 524</li>
+            <li data-i18n="contactPage.access.cards.bus.line2">Arrêt Val de Fontenay - RER</li>
+            <li data-i18n="contactPage.access.cards.bus.line3">Réseau dense vers toute l'Île-de-France</li>
           </ul>
         </div>
         <div class="access-card">
           <div class="access-icon">🚗</div>
-          <h3>Voiture</h3>
+          <h3 data-i18n="contactPage.access.cards.car.title">Voiture</h3>
           <ul>
-            <li><strong>A86</strong> - Sortie Val de Fontenay (5 min)</li>
-            <li><strong>A4</strong> - Sortie Nogent-sur-Marne / Fontenay-sous-Bois</li>
-            <li>Parking public disponible à proximité immédiate</li>
+            <li data-i18n="contactPage.access.cards.car.line1"><strong>A86</strong> - Sortie Val de Fontenay (5 min)</li>
+            <li data-i18n="contactPage.access.cards.car.line2"><strong>A4</strong> - Sortie Nogent-sur-Marne / Fontenay-sous-Bois</li>
+            <li data-i18n="contactPage.access.cards.car.line3">Parking public disponible à proximité immédiate</li>
           </ul>
         </div>
         <div class="access-card">
           <div class="access-icon">🚲</div>
-          <h3>Mobilité Douce</h3>
+          <h3 data-i18n="contactPage.access.cards.softMobility.title">Mobilité Douce</h3>
           <ul>
-            <li><strong>Vélib'</strong> - Stations à proximité de la gare</li>
-            <li><strong>Trottinettes électriques</strong> - Zones de stationnement dédiées</li>
-            <li>Pistes cyclables sécurisées reliant le Bois de Vincennes</li>
+            <li data-i18n="contactPage.access.cards.softMobility.line1"><strong>Vélib'</strong> - Stations à proximité de la gare</li>
+            <li data-i18n="contactPage.access.cards.softMobility.line2"><strong>Trottinettes électriques</strong> - Zones de stationnement dédiées</li>
+            <li data-i18n="contactPage.access.cards.softMobility.line3">Pistes cyclables sécurisées reliant le Bois de Vincennes</li>
           </ul>
         </div>
         <div class="access-card future-transport">
           <div class="access-icon">🚇</div>
-          <h3>Futur : Ligne 15 du Grand Paris</h3>
+          <h3 data-i18n="contactPage.access.cards.future.title">Futur : Ligne 15 du Grand Paris</h3>
           <ul>
-            <li><strong>Ligne 15 Est</strong> - Station Val de Fontenay (en cours)</li>
-            <li>Connexion directe avec tous les pôles du Grand Paris Express</li>
-            <li>Renforcement du statut de HUB stratégique</li>
+            <li data-i18n="contactPage.access.cards.future.line1"><strong>Ligne 15 Est</strong> - Station Val de Fontenay (en cours)</li>
+            <li data-i18n="contactPage.access.cards.future.line2">Connexion directe avec tous les pôles du Grand Paris Express</li>
+            <li data-i18n="contactPage.access.cards.future.line3">Renforcement du statut de HUB stratégique</li>
           </ul>
         </div>
         <div class="access-card">
           <div class="access-icon">✈️</div>
-          <h3>Depuis les Aéroports</h3>
+          <h3 data-i18n="contactPage.access.cards.airports.title">Depuis les Aéroports</h3>
           <ul>
-            <li><strong>Roissy-CDG</strong> - RER B + RER A (45 min)</li>
-            <li><strong>Orly</strong> - Orlyval + RER B + RER A (55 min)</li>
-            <li>Accès direct et fluide pour nos collaborateurs et partenaires</li>
+            <li data-i18n="contactPage.access.cards.airports.line1"><strong>Roissy-CDG</strong> - RER B + RER A (45 min)</li>
+            <li data-i18n="contactPage.access.cards.airports.line2"><strong>Orly</strong> - Orlyval + RER B + RER A (55 min)</li>
+            <li data-i18n="contactPage.access.cards.airports.line3">Accès direct et fluide pour nos collaborateurs et partenaires</li>
           </ul>
         </div>
       </div>
@@ -451,32 +452,32 @@
   <section class="section" id="hotels-section" style="padding: 5rem 0;">
     <div class="container">
       <div class="text-center" style="margin-bottom: 3.5rem;">
-        <span class="section-badge">Hébergement</span>
-        <h2 class="section-title">🏨 Hôtels à Proximité</h2>
-        <p class="section-subtitle">Pour faciliter le séjour de nos partenaires et collaborateurs, voici les établissements hôteliers de qualité situés à proximité immédiate de nos bureaux.</p>
+        <span class="section-badge" data-i18n="contactPage.hotels.badge">Hébergement</span>
+        <h2 class="section-title" data-i18n="contactPage.hotels.title">🏨 Hôtels à Proximité</h2>
+        <p class="section-subtitle" data-i18n="contactPage.hotels.subtitle">Pour faciliter le séjour de nos partenaires et collaborateurs, voici les établissements hôteliers de qualité situés à proximité immédiate de nos bureaux.</p>
       </div>
       <div class="cards-grid cards-grid-3">
         <div class="card" style="padding: 0; overflow: hidden; text-align: left;">
           <img src="../images/values/conseil.webp" alt="Hôtel Mercure Paris Val de Fontenay" style="width: 100%; height: 200px; object-fit: cover;">
           <div style="padding: 1.5rem;">
-            <h3 style="font-size: 18px; margin-bottom: 0.5rem; color: var(--color-primary);">Hôtel Mercure Paris Val de Fontenay ★★★★</h3>
-            <p style="font-size: 14px; opacity: 0.9; margin-bottom: 1rem;">Situé à 1 minute à pied de nos bureaux. Établissement haut de gamme idéal pour les séjours professionnels.</p>
+            <h3 style="font-size: 18px; margin-bottom: 0.5rem; color: var(--color-primary);" data-i18n="contactPage.hotels.card1.title">Hôtel Mercure Paris Val de Fontenay ★★★★</h3>
+            <p style="font-size: 14px; opacity: 0.9; margin-bottom: 1rem;" data-i18n="contactPage.hotels.card1.desc">Situé à 1 minute à pied de nos bureaux. Établissement haut de gamme idéal pour les séjours professionnels.</p>
             <p style="font-size: 13px; font-weight: bold; color: #ff6600;">📍 1 Avenue du Val de Fontenay, 94120</p>
           </div>
         </div>
         <div class="card" style="padding: 0; overflow: hidden; text-align: left;">
           <img src="../images/values/excellence.webp" alt="Ibis Styles Paris Val de Fontenay" style="width: 100%; height: 200px; object-fit: cover;">
           <div style="padding: 1.5rem;">
-            <h3 style="font-size: 18px; margin-bottom: 0.5rem; color: var(--color-primary);">Ibis Styles Paris Val de Fontenay ★★★</h3>
-            <p style="font-size: 14px; opacity: 0.9; margin-bottom: 1rem;">Situé à 2 minutes à pied. Design moderne, confortable et très pratique pour les déplacements d'affaires.</p>
+            <h3 style="font-size: 18px; margin-bottom: 0.5rem; color: var(--color-primary);" data-i18n="contactPage.hotels.card2.title">Ibis Styles Paris Val de Fontenay ★★★</h3>
+            <p style="font-size: 14px; opacity: 0.9; margin-bottom: 1rem;" data-i18n="contactPage.hotels.card2.desc">Situé à 2 minutes à pied. Design moderne, confortable et très pratique pour les déplacements d'affaires.</p>
             <p style="font-size: 13px; font-weight: bold; color: #ff6600;">📍 2-4 Avenue du Val de Fontenay, 94120</p>
           </div>
         </div>
         <div class="card" style="padding: 0; overflow: hidden; text-align: left;">
           <img src="../images/values/urbanisme.webp" alt="Campanile Val de Fontenay" style="width: 100%; height: 200px; object-fit: cover;">
           <div style="padding: 1.5rem;">
-            <h3 style="font-size: 18px; margin-bottom: 0.5rem; color: var(--color-primary);">Aparthotel Adagio Access Paris Porte de Charenton</h3>
-            <p style="font-size: 14px; opacity: 0.9; margin-bottom: 1rem;">Résidence hôtelière de qualité située à quelques minutes en RER A, idéale pour les séjours de moyenne ou longue durée.</p>
+            <h3 style="font-size: 18px; margin-bottom: 0.5rem; color: var(--color-primary);" data-i18n="contactPage.hotels.card3.title">Aparthotel Adagio Access Paris Porte de Charenton</h3>
+            <p style="font-size: 14px; opacity: 0.9; margin-bottom: 1rem;" data-i18n="contactPage.hotels.card3.desc">Résidence hôtelière de qualité située à quelques minutes en RER A, idéale pour les séjours de moyenne ou longue durée.</p>
             <p style="font-size: 13px; font-weight: bold; color: #ff6600;">📍 Nogent-sur-Marne / Charenton</p>
           </div>
         </div>
@@ -490,7 +491,7 @@
   <section class="map-section" style="padding: 0 0 5rem 0;">
     <div class="container">
       <div class="text-center" style="margin-bottom: 2rem;">
-        <h2 class="section-title">📍 Plan d'Accès Interactif</h2>
+        <h2 class="section-title" data-i18n="contactPage.map.title">📍 Plan d'Accès Interactif</h2>
       </div>
       <div class="map-container" style="box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden; margin-bottom: 1.5rem;">
         <iframe 
@@ -504,7 +505,7 @@
             title="Plan d'accès interactif C.E.E.B.">
         </iframe>
       </div>
-      <p class="map-address" style="text-align: center; font-size: 16px; line-height: 1.6; font-weight: 500;">
+      <p class="map-address" data-i18n="contactPage.map.address" style="text-align: center; font-size: 16px; line-height: 1.6; font-weight: 500;">
         <strong>C.E.E.B.</strong> - 1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois<br>
         <span style="color: #ff6600; font-weight: bold;">🌟 Val de Fontenay - La Défense Bis | HUB du Pôle Est de Paris</span>
       </p>

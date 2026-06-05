@@ -79,7 +79,9 @@
       "description": "Solutions durables pour RATP, SNCF et les grands réseaux de transport urbain."
     }
   },
+  
   "about": {
+  
     "title": "Notre expertise multidisciplinaire",
     "content1": "CEEB : une ingénierie durable au service du monde",
     "content2": "CEEB s'est imposée comme un acteur clé de l'ingénierie durable et des infrastructures à l'échelle internationale. De la mobilité ferroviaire et aéroportuaire aux projets urbains, nous accompagnons nos clients et partenaires à chaque étape de leurs projets, en alliant expertise technique et vision stratégique.",
@@ -200,6 +202,7 @@
     "legal": "Mentions légales | Politique de confidentialité"
   },
   "aboutPage": {
+    
     "hero": {
       "title": "35 ans d'Excellence en Ingénierie",
       "description": "Fondée en 1989, CEEB est un partenaire de confiance dans les grands projets d'infrastructure français.",
@@ -295,6 +298,12 @@
       "button": "Nous contacter"
     },
     "who": {
+      "p1": "CEEB : L'Ingénierie au Service des Infrastructures",
+      "p2": "Fondée le 1er mars 1989 par Gérard SEBAG, CEEB — Concept Européen Équipement Bâtiment est un bureau d'études d'ingénierie Second Œuvre spécialisé dans les projets ferroviaires et aéroportuaires.",
+      "cta": "Nous Contacter.",
+      "founderName": "Gérard SEBAG",
+      "founderTitle": "Fondateur & Président",
+      "quote": "Notre mission est d'accompagner nos clients du concept à la mise en service, en veillant à ce que chaque projet bénéficie d'une ingénierie rigoureuse, d'un savoir-faire opérationnel et d'une forte culture du service. Des premiers projets dessinés à la main avec des stylos Rotring aux outils numériques modernes et à l'IA, nous continuons d'évoluer tout en maintenant une profonde culture technique fondée sur la précision et la fiabilité.",
       "badge": "Qui Sommes-Nous",
       "title": "CEEB : L'Ingénierie au Service des Infrastructures",
       "text1": "Fondée le 1er mars 1989 par Gérard SEBAG, CEEB — Concept Européen Équipement Bâtiment est un bureau d'études d'ingénierie Second Œuvre spécialisé dans les projets ferroviaires et aéroportuaires.",

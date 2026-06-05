@@ -2595,3 +2595,30 @@ input, textarea, select { font-family: inherit; }
 .access-card.future-transport ul li::before {
     color: #0066cc;
 }
+
+/* ============================================================
+   RGPD CHECKBOX ONLY
+   ============================================================ */
+
+.rgpd-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.rgpd-consent-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  flex-shrink: 0;
+  cursor: pointer;
+  accent-color: var(--color-accent);
+}
+
+.rgpd-consent-label {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-gray);
+  cursor: pointer;
+}
