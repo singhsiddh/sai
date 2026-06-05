@@ -221,8 +221,6 @@
       "paragraph1": "Fondata il 1° marzo 1989 da Gérard SEBAG, CEEB | Concept Européen Équipement Bâtiment è nata come una consulenza ingegneristica specializzata. Fin dall'inizio, l'azienda si è concentrata su studi tecnici di elevata qualità e soluzioni pratiche per infrastrutture e trasporti.",
       "paragraph2": "In oltre 35 anni, CEEB è cresciuta in una società multidisciplinare con competenze comprovate in mobilità, pianificazione urbana, ingegneria dei sistemi e grandi opere pubbliche.",
       "badge": "La Nostra Storia",
-      "photo1": "CEEB headquarters in Val de Fontenay since 1989",
-      "photo2": "35 years of engineering supporting infrastructure projects",
       "event1": {
         "year": "1989",
         "title": "Fondazione di CEEB",
@@ -252,11 +250,6 @@
         "year": "2024",
         "title": "Grand Paris Express",
         "desc": "Contributo importante ai progetti del Grand Paris Express. 35 anni di competenza al servizio delle infrastrutture del futuro."
-      },
-      "event7": {
-        "year": "2025",
-        "title": "35 Years of Excellence",
-        "desc": "Celebrating 35 years of engineering expertise, more than 500 delivered projects, a team of 40+ specialists and a presence in 7 countries."
       }
     },
     "mission": {
@@ -299,32 +292,9 @@
     "cta": {
       "title": "Volete collaborare con noi?",
       "text": "Contattateci per discutere dei vostri progetti e di come CEEB può supportare il vostro prossimo progetto infrastrutturale.",
-      "subtitle": "Contact our team of experts to discuss your railway, airport or BIM engineering needs.",
-      "contact": "Contact Us",
-      "expertise": "View Our Expertise",
       "button": "Contattateci"
     },
-    "direction": {
-      "badge": "Current Leadership",
-      "title": "The New Generation",
-      "subtitle": "In 2023, Stéphane and Fabrice, sons of Gérard SEBAG, officially take the helm of CEEB and continue the company’s founding mission.",
-      "stephane": {
-        "role": "Strategic Director",
-        "desc": "He leads CEEB’s development in France and internationally, with a focus on BIM innovation and major infrastructure projects."
-      },
-      "team": {
-        "title": "Our Team",
-        "role": "MOA / MOE — Secondary Works Engineering",
-        "desc": "40+ experts in electrical engineering, HVAC, plumbing, BMS, fire safety and ICT dedicated to the success of your railway and airport projects."
-      }
-    },
     "who": {
-      "p1": "CEEB: Engineering at the Service of Infrastructure",
-      "cta": "Contact Us.",
-      "p2": "Founded on 1 March 1989 by Gérard SEBAG, CEEB — European Concept Building Equipment is an engineering consultancy specialising in railway and airport secondary works.",
-      "founderName": "Gerard SEBAG",
-      "founderTitle": "Founder & President",
-      "quote": "Our mission is to support our clients from concept to commissioning, ensuring that every project benefits from rigorous engineering, operational expertise and a strong service culture. From early projects drawn by hand with Rotring pens to modern digital tools and AI, we continue to evolve while maintaining a deep technical culture based on precision and reliability.",
       "badge": "Chi Siamo",
       "title": "CEEB: L'Ingegneria al Servizio delle Infrastrutture",
       "text1": "Fondata il 1° marzo 1989 da Gérard SEBAG, CEEB è uno studio di ingegneria specializzato in opere secondarie ferroviarie e aeroportuali.",
@@ -839,81 +809,6 @@
       "submitBtn": "Invia il Messaggio",
       "successMsg": "Il vostro messaggio è stato inviato. Vi risponderemo al più presto.",
       "errorMsg": "Si è verificato un errore. Riprovate o contattateci direttamente via email."
-    },
-    "access": {
-      "badge": "Val de Fontenay Hub",
-      "title": "How to Reach Us",
-      "subtitle": "Our strategic location at the heart of the Val de Fontenay hub gives you exceptional access by every mode of transport.",
-      "cards": {
-        "rer": {
-          "title": "RER",
-          "line1": "<strong>RER A</strong> - Val de Fontenay station (2 min walk)",
-          "line2": "<strong>RER E</strong> - Val de Fontenay station (2 min walk)",
-          "line3": "Direct access from Paris, La Défense, Marne-la-Vallée"
-        },
-        "metro": {
-          "title": "Metro",
-          "line1": "<strong>Line 1</strong> - Château de Vincennes (then RER A)",
-          "line2": "<strong>Line 4</strong> - Gare de l'Est (RER E connection)",
-          "line3": "<strong>Line 7</strong> - La Courneuve (then RER A)"
-        },
-        "tramway": {
-          "title": "Tramway",
-          "line1": "<strong>T1</strong> - Val de Fontenay station (2 min walk)",
-          "line2": "Direct connection with Noisy-le-Sec, Bobigny"
-        },
-        "bus": {
-          "title": "Bus",
-          "line1": "<strong>RATP lines</strong> - 116, 118, 122, 124, 301, 524",
-          "line2": "Val de Fontenay - RER stop",
-          "line3": "Dense network across Île-de-France"
-        },
-        "car": {
-          "title": "Car",
-          "line1": "<strong>A86</strong> - Val de Fontenay exit (5 min)",
-          "line2": "<strong>A4</strong> - Nogent-sur-Marne / Fontenay-sous-Bois exit",
-          "line3": "Public parking available nearby"
-        },
-        "softMobility": {
-          "title": "Soft Mobility",
-          "line1": "<strong>Vélib'</strong> - Stations close to the station",
-          "line2": "<strong>Electric scooters</strong> - Dedicated parking zones",
-          "line3": "Secure cycle paths linking Bois de Vincennes"
-        },
-        "future": {
-          "title": "Future: Grand Paris Line 15",
-          "line1": "<strong>Line 15 East</strong> - Val de Fontenay station (under construction)",
-          "line2": "Direct connection with all Grand Paris Express hubs",
-          "line3": "Strengthening the strategic hub status"
-        },
-        "airports": {
-          "title": "From Airports",
-          "line1": "<strong>Roissy-CDG</strong> - RER B + RER A (45 min)",
-          "line2": "<strong>Orly</strong> - Orlyval + RER B + RER A (55 min)",
-          "line3": "Direct and smooth access for our collaborators and partners"
-        }
-      }
-    },
-    "hotels": {
-      "badge": "Accommodation",
-      "title": "Nearby Hotels",
-      "subtitle": "To make stays easier for our partners and collaborators, here are quality hotels located just minutes from our offices.",
-      "card1": {
-        "title": "Hôtel Mercure Paris Val de Fontenay ★★★★",
-        "desc": "Located 1 minute on foot from our offices. A premium hotel ideal for business stays."
-      },
-      "card2": {
-        "title": "Ibis Styles Paris Val de Fontenay ★★★",
-        "desc": "Located 2 minutes on foot. Modern, comfortable and very convenient for business travel."
-      },
-      "card3": {
-        "title": "Aparthotel Adagio Access Paris Porte de Charenton",
-        "desc": "Quality aparthotel located a few minutes by RER A, ideal for medium or long stays."
-      }
-    },
-    "map": {
-      "title": "Interactive Access Map",
-      "address": "<strong>CEEB</strong> - 1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois<br><span style=\"color: #ff6600; font-weight: bold;\">🌟 Val de Fontenay - La Défense Bis | East Paris hub</span>"
     }
   },
   "adp": {

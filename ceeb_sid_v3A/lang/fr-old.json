@@ -79,7 +79,9 @@
       "description": "Solutions durables pour RATP, SNCF et les grands réseaux de transport urbain."
     }
   },
+  
   "about": {
+  
     "title": "Notre expertise multidisciplinaire",
     "content1": "CEEB : une ingénierie durable au service du monde",
     "content2": "CEEB s'est imposée comme un acteur clé de l'ingénierie durable et des infrastructures à l'échelle internationale. De la mobilité ferroviaire et aéroportuaire aux projets urbains, nous accompagnons nos clients et partenaires à chaque étape de leurs projets, en alliant expertise technique et vision stratégique.",
@@ -200,6 +202,7 @@
     "legal": "Mentions légales | Politique de confidentialité"
   },
   "aboutPage": {
+    
     "hero": {
       "title": "35 ans d'Excellence en Ingénierie",
       "description": "Fondée en 1989, CEEB est un partenaire de confiance dans les grands projets d'infrastructure français.",
@@ -221,8 +224,6 @@
       "paragraph1": "Fondée le 1er mars 1989 par Gérard SEBAG, CEEB | Concept Européen Équipement Bâtiment est née comme un bureau d'études ingénierie spécialisé. Dès ses débuts, la société s'est concentrée sur des études techniques de haute qualité et des solutions pratiques pour les infrastructures et les transports.",
       "paragraph2": "En plus de 35 ans, CEEB est devenue une société multidisciplinaire avec des compétences éprouvées en mobilité, urbanisme, ingénierie des systèmes et grands travaux publics. Notre histoire est marquée par l'engagement envers nos clients et par des projets qui renforcent les territoires et améliorent la vie quotidienne.",
       "badge": "Notre Histoire",
-      "photo1": "CEEB headquarters in Val de Fontenay since 1989",
-      "photo2": "35 years of engineering supporting infrastructure projects",
       "event1": {
         "year": "1989",
         "title": "Fondation de CEEB",
@@ -252,11 +253,6 @@
         "year": "2024",
         "title": "Grand Paris Express",
         "desc": "Contribution majeure aux projets du Grand Paris Express. 35 ans d'expertise au service des infrastructures de demain."
-      },
-      "event7": {
-        "year": "2025",
-        "title": "35 Years of Excellence",
-        "desc": "Celebrating 35 years of engineering expertise, more than 500 delivered projects, a team of 40+ specialists and a presence in 7 countries."
       }
     },
     "mission": {
@@ -299,29 +295,12 @@
     "cta": {
       "title": "Vous souhaitez collaborer avec nous ?",
       "text": "Contactez-nous pour discuter de vos projets et de la manière dont CEEB peut soutenir votre prochain projet d'infrastructure.",
-      "subtitle": "Contact our team of experts to discuss your railway, airport or BIM engineering needs.",
-      "contact": "Contact Us",
-      "expertise": "View Our Expertise",
       "button": "Nous contacter"
-    },
-    "direction": {
-      "badge": "Current Leadership",
-      "title": "The New Generation",
-      "subtitle": "In 2023, Stéphane and Fabrice, sons of Gérard SEBAG, officially take the helm of CEEB and continue the company’s founding mission.",
-      "stephane": {
-        "role": "Strategic Director",
-        "desc": "He leads CEEB’s development in France and internationally, with a focus on BIM innovation and major infrastructure projects."
-      },
-      "team": {
-        "title": "Our Team",
-        "role": "MOA / MOE — Secondary Works Engineering",
-        "desc": "40+ experts in electrical engineering, HVAC, plumbing, BMS, fire safety and ICT dedicated to the success of your railway and airport projects."
-      }
     },
     "who": {
       "p1": "CEEB : L'Ingénierie au Service des Infrastructures",
-      "cta": "Nous Contacter.",
       "p2": "Fondée le 1er mars 1989 par Gérard SEBAG, CEEB — Concept Européen Équipement Bâtiment est un bureau d'études d'ingénierie Second Œuvre spécialisé dans les projets ferroviaires et aéroportuaires.",
+      "cta": "Nous Contacter.",
       "founderName": "Gérard SEBAG",
       "founderTitle": "Fondateur & Président",
       "quote": "Notre mission est d'accompagner nos clients du concept à la mise en service, en veillant à ce que chaque projet bénéficie d'une ingénierie rigoureuse, d'un savoir-faire opérationnel et d'une forte culture du service. Des premiers projets dessinés à la main avec des stylos Rotring aux outils numériques modernes et à l'IA, nous continuons d'évoluer tout en maintenant une profonde culture technique fondée sur la précision et la fiabilité.",
@@ -839,81 +818,6 @@
       "submitBtn": "Envoyer le Message",
       "successMsg": "Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.",
       "errorMsg": "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement par email."
-    },
-    "access": {
-      "badge": "Val de Fontenay Hub",
-      "title": "How to Reach Us",
-      "subtitle": "Our strategic location at the heart of the Val de Fontenay hub gives you exceptional access by every mode of transport.",
-      "cards": {
-        "rer": {
-          "title": "RER",
-          "line1": "<strong>RER A</strong> - Val de Fontenay station (2 min walk)",
-          "line2": "<strong>RER E</strong> - Val de Fontenay station (2 min walk)",
-          "line3": "Direct access from Paris, La Défense, Marne-la-Vallée"
-        },
-        "metro": {
-          "title": "Metro",
-          "line1": "<strong>Line 1</strong> - Château de Vincennes (then RER A)",
-          "line2": "<strong>Line 4</strong> - Gare de l'Est (RER E connection)",
-          "line3": "<strong>Line 7</strong> - La Courneuve (then RER A)"
-        },
-        "tramway": {
-          "title": "Tramway",
-          "line1": "<strong>T1</strong> - Val de Fontenay station (2 min walk)",
-          "line2": "Direct connection with Noisy-le-Sec, Bobigny"
-        },
-        "bus": {
-          "title": "Bus",
-          "line1": "<strong>RATP lines</strong> - 116, 118, 122, 124, 301, 524",
-          "line2": "Val de Fontenay - RER stop",
-          "line3": "Dense network across Île-de-France"
-        },
-        "car": {
-          "title": "Car",
-          "line1": "<strong>A86</strong> - Val de Fontenay exit (5 min)",
-          "line2": "<strong>A4</strong> - Nogent-sur-Marne / Fontenay-sous-Bois exit",
-          "line3": "Public parking available nearby"
-        },
-        "softMobility": {
-          "title": "Soft Mobility",
-          "line1": "<strong>Vélib'</strong> - Stations close to the station",
-          "line2": "<strong>Electric scooters</strong> - Dedicated parking zones",
-          "line3": "Secure cycle paths linking Bois de Vincennes"
-        },
-        "future": {
-          "title": "Future: Grand Paris Line 15",
-          "line1": "<strong>Line 15 East</strong> - Val de Fontenay station (under construction)",
-          "line2": "Direct connection with all Grand Paris Express hubs",
-          "line3": "Strengthening the strategic hub status"
-        },
-        "airports": {
-          "title": "From Airports",
-          "line1": "<strong>Roissy-CDG</strong> - RER B + RER A (45 min)",
-          "line2": "<strong>Orly</strong> - Orlyval + RER B + RER A (55 min)",
-          "line3": "Direct and smooth access for our collaborators and partners"
-        }
-      }
-    },
-    "hotels": {
-      "badge": "Accommodation",
-      "title": "Nearby Hotels",
-      "subtitle": "To make stays easier for our partners and collaborators, here are quality hotels located just minutes from our offices.",
-      "card1": {
-        "title": "Hôtel Mercure Paris Val de Fontenay ★★★★",
-        "desc": "Located 1 minute on foot from our offices. A premium hotel ideal for business stays."
-      },
-      "card2": {
-        "title": "Ibis Styles Paris Val de Fontenay ★★★",
-        "desc": "Located 2 minutes on foot. Modern, comfortable and very convenient for business travel."
-      },
-      "card3": {
-        "title": "Aparthotel Adagio Access Paris Porte de Charenton",
-        "desc": "Quality aparthotel located a few minutes by RER A, ideal for medium or long stays."
-      }
-    },
-    "map": {
-      "title": "Interactive Access Map",
-      "address": "<strong>CEEB</strong> - 1 avenue du Maréchal de Lattre de Tassigny, 94120 Fontenay-sous-Bois<br><span style=\"color: #ff6600; font-weight: bold;\">🌟 Val de Fontenay - La Défense Bis | East Paris hub</span>"
     }
   },
   "adp": {
